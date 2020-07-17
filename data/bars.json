@@ -1,0 +1,97 @@
+[
+	{
+		"id" : "a1",
+		"name" : "Phyrst",
+		"description" : "No clue",
+		"hours" : {
+			"Sunday" : "7:00 pm - 2:00 am",
+			"Monday" : "7:00 pm - 2:00 am",
+			"Tuesday" : "7:00 pm - 2:00 am",
+			"Wednesday" : "7:00 pm - 2:00 am",
+			"Thursday" : "5:00 pm - 2:00 am",
+			"Friday" : "5:00 pm - 2:00 am",
+			"Saturday" : "5:00 pm - 2:00 am"
+		},
+		"address" : "111 East Beaver Street"
+	},
+
+	{
+		"id" : "a2",
+		"name" : "Champs Downtown",
+		"description" : "Sports bar in the heart of State College",
+		"hours" : {
+			"Sunday" : "7:00 pm - 2:00 am",
+			"Monday" : "7:00 pm - 2:00 am",
+			"Tuesday" : "7:00 pm - 2:00 am",
+			"Wednesday" : "7:00 pm - 2:00 am",
+			"Thursday" : "5:00 pm - 2:00 am",
+			"Friday" : "5:00 pm - 2:00 am",
+			"Saturday" : "5:00 pm - 2:00 am"
+		},
+		"address" : "111 East Beaver Street"
+	},
+
+	{
+		"id" : "a3",
+		"name" : "Bar Bleu",
+		"description" : "",
+		"hours" : {
+			"Sunday" : "7:00 pm - 2:00 am",
+			"Monday" : "7:00 pm - 2:00 am",
+			"Tuesday" : "7:00 pm - 2:00 am",
+			"Wednesday" : "7:00 pm - 2:00 am",
+			"Thursday" : "5:00 pm - 2:00 am",
+			"Friday" : "5:00 pm - 2:00 am",
+			"Saturday" : "5:00 pm - 2:00 am"
+		},
+		"address" : "111 East Beaver Street"
+	},
+
+	{
+		"id" : "a4",
+		"name" : "Lions Den",
+		"description" : "",
+		"hours" : {
+			"Sunday" : "7:00 pm - 2:00 am",
+			"Monday" : "7:00 pm - 2:00 am",
+			"Tuesday" : "7:00 pm - 2:00 am",
+			"Wednesday" : "7:00 pm - 2:00 am",
+			"Thursday" : "5:00 pm - 2:00 am",
+			"Friday" : "5:00 pm - 2:00 am",
+			"Saturday" : "5:00 pm - 2:00 am"
+		},
+		"address" : "111 East Beaver Street"
+	},
+
+	{
+		"id" : "a5",
+		"name" : "Primanti Brothers",
+		"description" : "",
+		"hours" : {
+			"Sunday" : "7:00 pm - 2:00 am",
+			"Monday" : "7:00 pm - 2:00 am",
+			"Tuesday" : "7:00 pm - 2:00 am",
+			"Wednesday" : "7:00 pm - 2:00 am",
+			"Thursday" : "5:00 pm - 2:00 am",
+			"Friday" : "5:00 pm - 2:00 am",
+			"Saturday" : "5:00 pm - 2:00 am"
+		},
+		"address" : "111 East Beaver Street"
+	},
+
+	 {
+		"id" : "a6",
+		"name" : "Chrome",
+		"description" : "",
+		"hours" : {
+			"Sunday" : "7:00 pm - 2:00 am",
+			"Monday" : "7:00 pm - 2:00 am",
+			"Tuesday" : "7:00 pm - 2:00 am",
+			"Wednesday" : "7:00 pm - 2:00 am",
+			"Thursday" : "5:00 pm - 2:00 am",
+			"Friday" : "5:00 pm - 2:00 am",
+			"Saturday" : "5:00 pm - 2:00 am"
+		},
+		"address" : "111 East Beaver Street"
+	}
+]

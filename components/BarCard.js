@@ -97,5 +97,3 @@ export default function BarCard({barName, barDescription}){
     }
   });
 
-
-//   <BarCard barName="[NAME]" barDescription="[BAR DESCRIPTION]"/>

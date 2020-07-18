@@ -13,7 +13,7 @@ export default function App() {
       data={barsList}
       renderItem= {({item}) => {
         return(
-          <BarCard key={item.id} barName={item.name} barDescription={item.description}/>
+          <BarCard key={item.id} barName={item.name} barDescription={item.description} barPic={item.pic_name}/>
           )
       }}
     />

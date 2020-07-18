@@ -1,206 +1,205 @@
 [
-	{
-		"id" : "a1",
-		"name" : "Phyrst",
-		"description" : "No clue",
-		"pic_name" : "Phyrst",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	},
+  {
+    "id": "a1",
+    "name": "Phyrst",
+    "description": "No clue",
+    "pic_name": "Phyrst",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 
-	{
-		"id" : "a2",
-		"name" : "Champs Downtown",
-		"description" : "Sports bar in the heart of State College",
-		"pic_name" : "Champs",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	},
+  {
+    "id": "a2",
+    "name": "Champs Downtown",
+    "description": "Sports bar in the heart of State College",
+    "pic_name": "Champs",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 
-	{
-		"id" : "a3",
-		"name" : "Bar Bleu",
-		"description" : "",
-		"pic_name" : "Bar_Bleu",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	},
+  {
+    "id": "a3",
+    "name": "Bar Bleu",
+    "description": "",
+    "pic_name": "Bar_Bleu",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 
-	{
-		"id" : "a4",
-		"name" : "Lions Den",
-		"description" : "",
-		"pic_name" : "Lions_Den",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	},
+  {
+    "id": "a4",
+    "name": "Lions Den",
+    "description": "",
+    "pic_name": "Lions_Den",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 
-	{
-		"id" : "a5",
-		"name" : "Primanti Brothers",
-		"description" : "",
-		"pic_name" : "Primanti_Bros",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	},
+  {
+    "id": "a5",
+    "name": "Primanti Brothers",
+    "description": "",
+    "pic_name": "Primanti_Bros",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 
-	 {
-		"id" : "a6",
-		"name" : "Chrome",
-		"description" : "",
-		"pic_name" : "Chrome",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	},
+  {
+    "id": "a6",
+    "name": "Chrome",
+    "description": "",
+    "pic_name": "Chrome",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 
-	{
-		"id" : "a7",
-		"name" : "Basement",
-		"description" : "",
-		"pic_name" : "Basement",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	},
-	
-	{
-		"id" : "a8",
-		"name" : "Cafe 210",
-		"description" : "",
-		"pic_name" : "Cafe_210",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	},
+  {
+    "id": "a7",
+    "name": "Basement",
+    "description": "",
+    "pic_name": "Basement",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 
-	{
-		"id" : "a9",
-		"name" : "Doggies",
-		"description" : "",
-		"pic_name" : "Doggies",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	},
+  {
+    "id": "a8",
+    "name": "Cafe 210",
+    "description": "",
+    "pic_name": "Cafe_210",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 
-	{
-		"id" : "a10",
-		"name" : "Mad Mex",
-		"description" : "",
-		"pic_name" : "Mad_Mex",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	},
+  {
+    "id": "a9",
+    "name": "Doggies",
+    "description": "",
+    "pic_name": "Doggies",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 
-	{
-		"id" : "a11",
-		"name" : "Pickles",
-		"description" : "",
-		"pic_name" : "Pickles",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	},
+  {
+    "id": "a10",
+    "name": "Mad Mex",
+    "description": "",
+    "pic_name": "Mad_Mex",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 
-	{
-		"id" : "a12",
-		"name" : "Shandygaff",
-		"description" : "",
-		"pic_name" : "Shandygaff",
-		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
-		},
-		"address" : "111 East Beaver Street"
-	}
+  {
+    "id": "a11",
+    "name": "Pickles",
+    "description": "",
+    "pic_name": "Pickles",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 
+  {
+    "id": "a12",
+    "name": "Shandygaff",
+    "description": "",
+    "pic_name": "Shandygaff",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  }
 ]

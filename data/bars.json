@@ -2,7 +2,7 @@
 	{
 		"id" : "a1",
 		"name" : "Phyrst",
-		"description" : "No clue",
+		"description" : "Subterranean Irish pub featuring daily live, local music & drink specials plus billiards & games.",
 		"hours" : {
 			"Sunday" : "7:00 pm - 2:00 am",
 			"Monday" : "7:00 pm - 2:00 am",
@@ -12,6 +12,7 @@
 			"Friday" : "5:00 pm - 2:00 am",
 			"Saturday" : "5:00 pm - 2:00 am"
 		},
+		"phone" : "7178675309",
 		"address" : "111 East Beaver Street"
 	},
 
@@ -20,31 +21,33 @@
 		"name" : "Champs Downtown",
 		"description" : "Sports bar in the heart of State College",
 		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
+			"Sunday" : "12:00 pm - 2:00 am",
+			"Monday" : "4:00 pm - 2:00 am",
+			"Tuesday" : "4:00 pm - 2:00 am",
+			"Wednesday" : "4:00 pm - 2:00 am",
+			"Thursday" : "4:00 pm - 2:00 am",
+			"Friday" : "4:00 pm - 2:00 am",
+			"Saturday" : "12:00 pm - 2:00 am"
 		},
-		"address" : "111 East Beaver Street"
+		"phone" : "8142381110",
+		"address" : "139 S Allen St"
 	},
 
 	{
 		"id" : "a3",
 		"name" : "Bar Bleu",
-		"description" : "",
+		"description" : "Craft beer, cocktails & Kansas City-style BBQ served in a bilevel sports bar with pool & live music.",
 		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
+			"Sunday" : "Closed",
+			"Monday" : "5:30 pm - 2:00 am",
+			"Tuesday" : "5:30 pm - 2:00 am",
+			"Wednesday" : "5:30 pm - 2:00 am",
+			"Thursday" : "5:30 pm - 2:00 am",
+			"Friday" : "5:30 pm - 2:00 am",
+			"Saturday" : "3:00 pm - 2:00 am"
 		},
-		"address" : "111 East Beaver Street"
+		"phone" : "8142370374",
+		"address" : "112 S Garner St"
 	},
 
 	{
@@ -52,31 +55,33 @@
 		"name" : "Lions Den",
 		"description" : "",
 		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
+			"Sunday" : "Closed",
+			"Monday" : "Closed",
+			"Tuesday" : "8:00 pm - 2:00 am",
+			"Wednesday" : "Closed",
+			"Thursday" : "8:00 pm - 2:00 am",
+			"Friday" : "8:00 pm - 2:00 am",
+			"Saturday" : "8:00 pm - 2:00 am"
 		},
-		"address" : "111 East Beaver Street"
+		"phone" : "8142375081",
+		"address" : "118 S Garner St"
 	},
 
 	{
 		"id" : "a5",
 		"name" : "Primanti Brothers",
-		"description" : "",
+		"description" : "Pittsburgh-born counter-serve chain known for its sandwiches.",
 		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
+			"Sunday" : "11:00 am - 11:00 pm",
+			"Monday" : "11:00 am - 11:00 pm",
+			"Tuesday" : "11:00 am - 11:00 pm",
+			"Wednesday" : "11:00 am - 11:00 pm",
+			"Thursday" : "11:00 am - 11:00 pm",
+			"Friday" : "11:00 am - 12:00 am",
+			"Saturday" : "11:00 am - 12:00 am"
 		},
-		"address" : "111 East Beaver Street"
+		"phone" : "8148629367",
+		"address" : "130 Heister St"
 	},
 
 	 {
@@ -84,14 +89,15 @@
 		"name" : "Chrome",
 		"description" : "",
 		"hours" : {
-			"Sunday" : "7:00 pm - 2:00 am",
-			"Monday" : "7:00 pm - 2:00 am",
-			"Tuesday" : "7:00 pm - 2:00 am",
-			"Wednesday" : "7:00 pm - 2:00 am",
-			"Thursday" : "5:00 pm - 2:00 am",
-			"Friday" : "5:00 pm - 2:00 am",
-			"Saturday" : "5:00 pm - 2:00 am"
+			"Sunday" : "Closed",
+			"Monday" : "Closed",
+			"Tuesday" : "Closed",
+			"Wednesday" : "Closed",
+			"Thursday" : "9:00 pm - 2:00 am",
+			"Friday" : "9:00 pm - 2:00 am",
+			"Saturday" : "9:00 pm - 2:00 am"
 		},
-		"address" : "111 East Beaver Street"
+		"phone" : "8142310808",
+		"address" : "222 W Beaver Street"
 	}
 ]

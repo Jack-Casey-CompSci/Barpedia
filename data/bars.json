@@ -1,5 +1,5 @@
 [
-	{
+  {
 		"id" : "a1",
 		"name" : "Phyrst",
 		"description" : "Subterranean Irish pub featuring daily live, local music & drink specials plus billiards & games.",
@@ -99,5 +99,108 @@
 		},
 		"phone" : "8142310808",
 		"address" : "222 W Beaver Street"
-	}
+	},
+  
+  {
+    "id": "a7",
+    "name": "Basement",
+    "description": "",
+    "pic_name": "Basement",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
+
+  {
+    "id": "a8",
+    "name": "Cafe 210",
+    "description": "",
+    "pic_name": "Cafe_210",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
+
+  {
+    "id": "a9",
+    "name": "Doggies",
+    "description": "",
+    "pic_name": "Doggies",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
+
+  {
+    "id": "a10",
+    "name": "Mad Mex",
+    "description": "",
+    "pic_name": "Mad_Mex",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
+
+  {
+    "id": "a11",
+    "name": "Pickles",
+    "description": "",
+    "pic_name": "Pickles",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
+
+  {
+    "id": "a12",
+    "name": "Shandygaff",
+    "description": "",
+    "pic_name": "Shandygaff",
+    "hours": {
+      "Sunday": "7:00 pm - 2:00 am",
+      "Monday": "7:00 pm - 2:00 am",
+      "Tuesday": "7:00 pm - 2:00 am",
+      "Wednesday": "7:00 pm - 2:00 am",
+      "Thursday": "5:00 pm - 2:00 am",
+      "Friday": "5:00 pm - 2:00 am",
+      "Saturday": "5:00 pm - 2:00 am"
+    },
+    "address": "111 East Beaver Street"
+  },
 ]
+

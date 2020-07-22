@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import {
+  Pressable,
   StyleSheet,
   Dimensions,
   Text,
@@ -18,20 +19,22 @@ const windowHeight = Dimensions.get("window").height;
 
 export default function App() {
   return (
-    <FlatList
-      style={styles.container}
-      data={barsList}
-      renderItem={({ item }) => {
-        return (
-          <BarCard
-            key={item.id}
-            barName={item.name}
-            barDescription={item.description}
-            barPic={item.pic_name}
-          />
-        );
-      }}
-    />
+    <>
+      <FlatList
+        style={styles.container}
+        data={barsList}
+        renderItem={({ item }) => {
+          return (
+            <BarCard
+              key={item.id}
+              barName={item.name}
+              barDescription={item.description}
+              barPic={item.pic_name}
+            />
+          );
+        }}
+      />
+    </>
   );
 }
 

@@ -12,7 +12,6 @@ import {
 } from "react-native";
 import barsList from "./data/bars.json";
 import BarCard from "./components/BarCard.js";
-import BarPage from "./components/BarPage.js";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
@@ -28,6 +27,7 @@ export default function App() {
             key={item.id}
             barName={item.name}
             barDescription={item.description}
+            barPic={item.pic_name}
           />
         );
       }}

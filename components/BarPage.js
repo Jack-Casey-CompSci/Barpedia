@@ -17,22 +17,22 @@ export default function BarPage() {
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scroll}>
         <View style={styles.pageImage}>
-          <Text style={styles.title}>Image goes here</Text>
+          <Text style={styles.title}>Test</Text>
         </View>
         <View style={styles.eventandSpecialTile}>
           <View style={styles.eventTile}>
-            <Text style={styles.title}>Events here</Text>
+            <Text style={styles.title}>Test</Text>
           </View>
           <View style={styles.specialTile}>
-            <Text style={styles.title}>Specials here</Text>
+            <Text style={styles.title}>Test</Text>
           </View>
         </View>
         <View style={styles.menuandDrinkTile}>
           <View style={styles.menuTile}>
-            <Text style={styles.title}>Menu here</Text>
+            <Text style={styles.title}>Test</Text>
           </View>
           <View style={styles.drinksTile}>
-            <Text style={styles.title}>Drinks here</Text>
+            <Text style={styles.title}>Test</Text>
           </View>
         </View>
       </ScrollView>
@@ -53,8 +53,6 @@ const styles = StyleSheet.create({
   },
   pageImage: {
     flexGrow: 1,
-    margin: 10,
-    width: windowWidth - 20,
     height: 200,
     backgroundColor: "black",
   },
@@ -65,36 +63,28 @@ const styles = StyleSheet.create({
   },
   eventandSpecialTile: {
     flexDirection: "row",
-    margin: 10,
-    width: windowWidth - 20,
-    height: 400,
+    height: 250,
     backgroundColor: "purple",
   },
   eventTile: {
     flexGrow: 1,
-    margin: 5,
     backgroundColor: "green",
   },
   specialTile: {
     flexGrow: 1,
-    margin: 5,
     backgroundColor: "orange",
   },
   menuandDrinkTile: {
     flexDirection: "row",
-    margin: 10,
-    width: windowWidth - 20,
-    height: 400,
+    height: 250,
     backgroundColor: "yellow",
   },
   menuTile: {
     flexGrow: 1,
-    margin: 5,
     backgroundColor: "red",
   },
   drinksTile: {
     flexGrow: 1,
-    margin: 5,
     backgroundColor: "blue",
   },
 });

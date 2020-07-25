@@ -15,7 +15,7 @@ import barsList from "./data/bars.json";
 import BarCard from "./components/BarCard.js";
 import BarMenu from "./components/BarMenu.js"
 import BarPage from "./components/BarPage.js"
-import BaseTest from "./components/baseTest.js"
+
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";

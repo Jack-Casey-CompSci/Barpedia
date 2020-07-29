@@ -15,6 +15,7 @@ import barsList from "./data/bars.json";
 import BarCard from "./components/BarCard.js";
 import BarMenu from "./components/BarMenu.js"
 import BarPage from "./components/BarPage.js"
+import EventsSpecials from "./components/EventsSpecials.js"
 
 
 import { NavigationContainer } from "@react-navigation/native";
@@ -31,8 +32,12 @@ export default function App() {
       <Navigator>
         <Screen
           name="Home"
-          component={BarMenu}
+          component={EventsSpecials}
         />
+        {/* <Screen
+          name="Home"
+          component={BarMenu}
+        /> */}
         <Screen name="Details" component={BarPage} />
       </Navigator>
     </NavigationContainer>

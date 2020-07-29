@@ -1,0 +1,168 @@
+[
+    {
+        "name": "Champs",
+        "days": [
+            {
+                "day": "Monday",
+                "info": {
+                    "DrinkSpecials": {
+                        "Event1": {
+                            "Description": "$3 White Claws",
+                            "Time": "All Day"
+                        },
+                        "Event2": {
+                            "Description": "1/2 Price Happys",
+                            "Time": "10pm-Midnight"
+                        }
+                    },
+                    "FoodSpecials": {
+                        "Description": "50 cent Wings & Meatless Monday",
+                        "Time": "5pm-10pm"
+                    },
+                    "Events": {
+                        "Description": "",
+                        "Time": ""
+                    }
+                }
+            },
+            {
+                "day": "Tuesday",
+                "info": {
+                    "DrinkSpecials": {
+                        "Event1": {
+                            "Description": "$4 Frose",
+                            "Time": "All Day"
+                        },
+                        "Event2": {
+                            "Description": "$2uesday",
+                            "Time": "9pm-Midnight"
+                        }
+                    },
+                    "FoodSpecials": {
+                        "Description": "$1 Nachos",
+                        "Time": "8pm-10pm"
+                    },
+                    "Events": {
+                        "Description": "",
+                        "Time": ""
+                    }
+                }
+            },
+            {
+                "day": "Wednesday",
+                "info": {
+                    "DrinkSpecials": {
+                        "Event1": {
+                            "Description": "$3 Fat Tires",
+                            "Time": "All Day"
+                        },
+                        "Event2": {
+                            "Description": "1/2 Price Happys",
+                            "Time": "10pm-Midnight"
+                        }
+                    },
+                    "FoodSpecials": {
+                        "Description": "$1 Tacos",
+                        "Time": "8pm-10pm"
+                    },
+                    "Events": {
+                        "Description": "",
+                        "Time": ""
+                    }
+                }
+            },
+            {
+                "day": "Thursday",
+                "info": {
+                    "DrinkSpecials": {
+                        "Event1": {
+                            "Description": "$4 Frose",
+                            "Time": "All Day"
+                        },
+                        "Event2": {
+                            "Description": "Thirsty Thursday",
+                            "Time": "9pm-Midnight"
+                        }
+                    },
+                    "FoodSpecials": {
+                        "Description": "50 cent Wings",
+                        "Time": "8pm-11pm"
+                    },
+                    "Events": {
+                        "Description": "",
+                        "Time": ""
+                    }
+                }
+            },
+            {
+                "day": "Friday",
+                "info": {
+                    "DrinkSpecials": {
+                        "Event1": {
+                            "Description": "$5 Don Julio Shots and Margaritas",
+                            "Time": "All Day"
+                        },
+                        "Event2": {
+                            "Description": "1/2 Price Happys",
+                            "Time": "10pm-Midnight"
+                        }
+                    },
+                    "FoodSpecials": {
+                        "Description": "",
+                        "Time": ""
+                    },
+                    "Events": {
+                        "Description": "",
+                        "Time": ""
+                    }
+                }
+            },
+            {
+                "day": "Saturday",
+                "info": {
+                    "DrinkSpecials": {
+                        "Event1": {
+                            "Description": "1/2 Price Happys",
+                            "Time": "10pm-Midnight"
+                        },
+                        "Event2": {
+                            "Description": "",
+                            "Time": ""
+                        }
+                    },
+                    "FoodSpecials": {
+                        "Description": "",
+                        "Time": ""
+                    },
+                    "Events": {
+                        "Description": "",
+                        "Time": ""
+                    }
+                }
+            },
+            {
+                "day": "Sunday",
+                "info": {
+                    "DrinkSpecials": {
+                        "Event1": {
+                            "Description": "$3 Mimosas, $3 Brunchboxes, $4 Pedia-Boxes",
+                            "Time": "All Day"
+                        },
+                        "Event2": {
+                            "Description": "",
+                            "Time": ""
+                        }
+                    },
+                    "FoodSpecials": {
+                        "Description": "$1 Tacos",
+                        "Time": "2pm-10pm"
+                    },
+                    "Events": {
+                        "Description": "",
+                        "Time": ""
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -22,16 +22,16 @@ export default function DayBox({ day,
                 <View style={styles.dayTextBox}>
                     <Text style={styles.text}>{day}</Text>
                 </View>
-                <View style={styles.eventTextBox}>
+                <View style={styles.drinkTextBox}>
                     <View style={styles.specific}>
                         <Text style={styles.specificDescription}>{drinkSpecial1Description}</Text>
-                        <Text style={styles.specificDescription}>{drinkSpecial1Time}</Text>
+                        <Text style={styles.specificTime}>{drinkSpecial1Time}</Text>
                     </View>
                 </View>
-                <View style={styles.eventTextBox}>
+                <View style={styles.foodTextBox}>
                     <View style={styles.specific}>
                         <Text style={styles.specificDescription}>{foodSpecialDescription}</Text>
-                        <Text style={styles.specificDescription}>{foodSpecialTime}</Text>
+                        <Text style={styles.specificTime}>{foodSpecialTime}</Text>
                     </View>
                 </View>
             </View>
@@ -43,20 +43,20 @@ export default function DayBox({ day,
             <View style={styles.dayTextBox}>
                 <Text style={styles.text}>{day}</Text>
             </View>
-            <View style={styles.eventTextBox}>
+            <View style={styles.drinkTextBox}>
                 <View style={styles.specific}>
                     <Text style={styles.specificDescription}>{drinkSpecial1Description}</Text>
-                    <Text style={styles.specificDescription}>{drinkSpecial1Time}</Text>
+                    <Text style={styles.specificTime}>{drinkSpecial1Time}</Text>
                 </View>
                 <View style={styles.specific}>
                     <Text style={styles.specificDescription}>{drinkSpecial2Description}</Text>
-                    <Text style={styles.specificDescription}>{drinkSpecial2Time}</Text>
+                    <Text style={styles.specificTime}>{drinkSpecial2Time}</Text>
                 </View>
             </View>
-            <View style={styles.eventTextBox}>
+            <View style={styles.foodTextBox}>
                 <View style={styles.specific}>
                     <Text style={styles.specificDescription}>{foodSpecialDescription}</Text>
-                    <Text style={styles.specificDescription}>{foodSpecialTime}</Text>
+                    <Text style={styles.specificTime}>{foodSpecialTime}</Text>
                 </View>
             </View>
         </View>
@@ -93,10 +93,15 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "flex-end"
     },
-    eventTextBox: {
+    drinkTextBox: {
         borderColor: "black",
         borderWidth: 2,
-        flex: 3
+        flex: 4
+    },
+    foodTextBox: {
+        borderColor: "black",
+        borderWidth: 2,
+        flex: 2
     },
     specific: {
         justifyContent: "center",
@@ -109,6 +114,7 @@ const styles = StyleSheet.create({
         textAlign: "center"
     },
     specificTime: {
-        textAlign: "center"
+        textAlign: "center",
+        fontWeight: "bold"
     }
 });

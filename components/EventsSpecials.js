@@ -7,32 +7,7 @@ import barsList from "../data/events_specials.json";
 
 export default function EventsSpecials() {
     return (
-        // <SafeAreaView style={styles.container} >
-        //     <ScrollView style={styles.scrollView} horizontal={true}>
-        //         <View style={styles.weekBox}>
-        //             <DayBox day="Sunday"></DayBox>
-        //             <DayBox day="Monday"></DayBox>
-        //             <DayBox day="Tuesday"></DayBox>
-        //             <DayBox day="Wednesday"></DayBox>
-        //             <DayBox day="Thursday"></DayBox>
-        //             <DayBox day="Friday"></DayBox>
-        //             <DayBox day="Saturday"></DayBox>
-        //         </View>
-        //     </ScrollView>
-        // </SafeAreaView>
-
         <View style={styles.box}>
-            <View>
-                <View style={styles.titleTop}>
-                    <Text></Text>
-                </View>
-                <View style={styles.title}>
-                    <Text style={styles.titleText}>Drink Specials</Text>
-                </View>
-                <View style={styles.title}>
-                    <Text style={styles.titleText}>Food Specials</Text>
-                </View>
-            </View>
             <FlatList
                 style={styles.container}
                 data={barsList[0].days}
@@ -41,6 +16,7 @@ export default function EventsSpecials() {
                     return (
                         <>
                             <DayBox
+                                key={item.id}
                                 day={item.day}
                                 drinkSpecial1Description={item.info.DrinkSpecials.Event1.Description}
                                 drinkSpecial1Time={item.info.DrinkSpecials.Event1.Time}
@@ -77,8 +53,11 @@ const styles = StyleSheet.create({
     titleTop: {
         flex: 1
     },
+    titleView: {
+        marginTop: 2,
+        marginBottom: 17
+    },
     titleText: {
-        transform: [{ rotate: "270deg" }],
         fontWeight: "bold",
         fontSize: 14
     }

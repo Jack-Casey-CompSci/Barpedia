@@ -3,6 +3,7 @@
         "name": "Champs",
         "days": [
             {
+                "id": "1",
                 "day": "Monday",
                 "info": {
                     "DrinkSpecials": {
@@ -26,6 +27,7 @@
                 }
             },
             {
+                "id": "2",
                 "day": "Tuesday",
                 "info": {
                     "DrinkSpecials": {
@@ -49,6 +51,7 @@
                 }
             },
             {
+                "id": "3",
                 "day": "Wednesday",
                 "info": {
                     "DrinkSpecials": {
@@ -72,6 +75,7 @@
                 }
             },
             {
+                "id": "4",
                 "day": "Thursday",
                 "info": {
                     "DrinkSpecials": {
@@ -95,6 +99,7 @@
                 }
             },
             {
+                "id": "5",
                 "day": "Friday",
                 "info": {
                     "DrinkSpecials": {
@@ -118,6 +123,7 @@
                 }
             },
             {
+                "id": "6",
                 "day": "Saturday",
                 "info": {
                     "DrinkSpecials": {
@@ -141,6 +147,7 @@
                 }
             },
             {
+                "id": "7",
                 "day": "Sunday",
                 "info": {
                     "DrinkSpecials": {

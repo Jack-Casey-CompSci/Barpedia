@@ -66,11 +66,10 @@ export default function DayBox({ day,
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: Constants.statusBarHeight,
         height: 250
     },
     scrollView: {
-        backgroundColor: 'lightgrey',
+        backgroundColor: 'white',
         marginHorizontal: 20
     },
     text: {
@@ -78,8 +77,6 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
     dayBox: {
-        borderColor: "black",
-        borderWidth: 2,
         flex: 1,
         width: 150
     },
@@ -111,7 +108,8 @@ const styles = StyleSheet.create({
         flex: 1
     },
     specificDescription: {
-        textAlign: "center"
+        textAlign: "center",
+        fontSize: 16
     },
     specificTime: {
         textAlign: "center",

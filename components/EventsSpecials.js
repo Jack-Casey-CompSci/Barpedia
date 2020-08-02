@@ -3,14 +3,17 @@ import { StyleSheet, Text, SafeAreaView, ScrollView, View, FlatList } from 'reac
 import Constants from 'expo-constants';
 
 import DayBox from "./dayBox.js"
-import barsList from "../data/events_specials.json";
+import barsList from "../data/specials.json";
 
-export default function EventsSpecials() {
+export default function EventsSpecials({ name }) {
+    const barData = barsList.find((element) => {
+        return element.name === name;
+    })
     return (
         <View style={styles.box}>
             <FlatList
                 style={styles.container}
-                data={barsList[0].days}
+                data={barData.days}
                 horizontal={true}
                 renderItem={({ item }) => {
                     return (
@@ -49,13 +52,6 @@ const styles = StyleSheet.create({
         borderColor: "black",
         justifyContent: "center",
         alignItems: "center"
-    },
-    titleTop: {
-        flex: 1
-    },
-    titleView: {
-        marginTop: 2,
-        marginBottom: 17
     },
     titleText: {
         fontWeight: "bold",

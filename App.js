@@ -13,28 +13,29 @@ import {
 } from "react-native";
 import barsList from "./data/bars.json";
 import BarCard from "./components/BarCard.js";
+import BarMenu from "./components/BarMenu.js"
+import BarPage from "./components/BarPage.js"
+
+
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
+const { Navigator, Screen } = createStackNavigator();
+
 export default function App() {
   return (
-    <>
-      <FlatList
-        style={styles.container}
-        data={barsList}
-        renderItem={({ item }) => {
-          return (
-            <BarCard
-              key={item.id}
-              barName={item.name}
-              barDescription={item.description}
-              barPic={item.pic_name}
-            />
-          );
-        }}
-      />
-    </>
+    <NavigationContainer>
+      <Navigator>
+        <Screen
+          name="Home"
+          component={BarMenu}
+        />
+        <Screen name="Details" component={BarPage} />
+      </Navigator>
+    </NavigationContainer>
   );
 }
 

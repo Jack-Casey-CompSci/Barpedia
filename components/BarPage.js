@@ -12,12 +12,12 @@ import {
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
-export default function BarPage() {
+export default function BarPage({ route }) {
   return (
     <ScrollView style={styles.scroll}>
       <View style={styles.container}>
         <View style={styles.pageImage}>
-          <Text style={styles.title}>Test</Text>
+          <Text style={styles.title}>{route.params.name}</Text>
         </View>
         <View style={styles.eventandSpecialTile}>
           <Text style={styles.title}> Events and Specials </Text>

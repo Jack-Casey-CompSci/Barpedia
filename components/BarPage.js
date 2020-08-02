@@ -14,49 +14,46 @@ const windowHeight = Dimensions.get("window").height;
 
 export default function BarPage({ route }) {
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scroll}>
+    <ScrollView style={styles.scroll}>
+      <View style={styles.container}>
         <View style={styles.pageImage}>
           <Text style={styles.title}>{route.params.name}</Text>
         </View>
         <View style={styles.eventandSpecialTile}>
-          <View style={styles.eventTile}>
-            <Text style={styles.title}>Events here</Text>
-          </View>
-          <View style={styles.specialTile}>
-            <Text style={styles.title}>Specials here</Text>
-          </View>
+          <Text style={styles.title}> Events and Specials </Text>
         </View>
         <View style={styles.menuandDrinkTile}>
           <View style={styles.menuTile}>
-            <Text style={styles.title}>Menu here</Text>
+            <Text style={styles.title}>Test</Text>
           </View>
           <View style={styles.drinksTile}>
-            <Text style={styles.title}>Drinks here</Text>
+            <Text style={styles.title}>Test</Text>
           </View>
         </View>
-      </ScrollView>
-    </SafeAreaView>
+      </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: 50,
-    backgroundColor: "white",
-  },
   scroll: {
     flexGrow: 1,
-    marginHorizontal: 5,
     backgroundColor: "grey",
+  },
+  container: {
+    flex: 1,
+    alignItems: "center",
+    backgroundColor: "orange",
   },
   pageImage: {
     flexGrow: 1,
-    margin: 10,
-    width: windowWidth - 20,
+    margin: 5,
+    marginBottom: 2.5,
+    width: windowWidth - 10,
     height: 200,
-    backgroundColor: "black",
+    backgroundColor: "green",
+    borderWidth: 2,
+    borderColor: "black",
   },
   title: {
     fontSize: 16,
@@ -64,37 +61,36 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   eventandSpecialTile: {
-    flexDirection: "row",
-    margin: 10,
-    width: windowWidth - 20,
-    height: 400,
+    margin: 5,
+    marginBottom: 2.5,
+    marginTop: 2.5,
+    width: windowWidth - 10,
+    height: 200,
     backgroundColor: "purple",
-  },
-  eventTile: {
-    flexGrow: 1,
-    margin: 5,
-    backgroundColor: "green",
-  },
-  specialTile: {
-    flexGrow: 1,
-    margin: 5,
-    backgroundColor: "orange",
+    borderWidth: 2,
+    borderColor: "black",
   },
   menuandDrinkTile: {
     flexDirection: "row",
-    margin: 10,
-    width: windowWidth - 20,
-    height: 400,
+    justifyContent: "center",
+    margin: 5,
+    marginTop: 2.5,
+    width: windowWidth - 10,
+    height: 200,
     backgroundColor: "yellow",
   },
   menuTile: {
     flexGrow: 1,
-    margin: 5,
     backgroundColor: "red",
+    borderWidth: 2,
+    borderRightWidth: 1,
+    borderColor: "black",
   },
   drinksTile: {
     flexGrow: 1,
-    margin: 5,
     backgroundColor: "blue",
+    borderWidth: 2,
+    borderLeftWidth: 1,
+    borderColor: "black",
   },
 });

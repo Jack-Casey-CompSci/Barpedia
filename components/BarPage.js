@@ -20,16 +20,7 @@ export default function BarPage() {
           <Text style={styles.title}>Test</Text>
         </View>
         <View style={styles.eventandSpecialTile}>
-<<<<<<< Updated upstream
-          <View style={styles.eventTile}>
-            <Text style={styles.title}>Test</Text>
-          </View>
-          <View style={styles.specialTile}>
-            <Text style={styles.title}>Test</Text>
-          </View>
-=======
           <Text style={styles.title}> Events and Specials </Text>
->>>>>>> Stashed changes
         </View>
         <View style={styles.menuandDrinkTile}>
           <View style={styles.menuTile}>
@@ -56,12 +47,9 @@ const styles = StyleSheet.create({
   },
   pageImage: {
     flexGrow: 1,
-<<<<<<< Updated upstream
-=======
     margin: 5,
     marginBottom: 2.5,
     width: windowWidth - 10,
->>>>>>> Stashed changes
     height: 200,
     backgroundColor: "green",
     borderWidth: 2,
@@ -73,23 +61,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   eventandSpecialTile: {
-<<<<<<< Updated upstream
-    flexDirection: "row",
-    height: 250,
-    backgroundColor: "purple",
-  },
-  eventTile: {
-    flexGrow: 1,
-    backgroundColor: "green",
-  },
-  specialTile: {
-    flexGrow: 1,
-    backgroundColor: "orange",
-  },
-  menuandDrinkTile: {
-    flexDirection: "row",
-    height: 250,
-=======
     margin: 5,
     marginBottom: 2.5,
     marginTop: 2.5,
@@ -106,7 +77,6 @@ const styles = StyleSheet.create({
     marginTop: 2.5,
     width: windowWidth - 10,
     height: 200,
->>>>>>> Stashed changes
     backgroundColor: "yellow",
   },
   menuTile: {

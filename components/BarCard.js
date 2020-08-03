@@ -1,11 +1,18 @@
-import { StatusBar, setStatusBarBackgroundColor } from 'expo-status-bar';
-import React, { useState } from 'react';
-import { ImageBackground, StyleSheet, Dimensions, Text, TouchableHighlight, Button } from 'react-native';
+import { StatusBar, setStatusBarBackgroundColor } from "expo-status-bar";
+import React, { useState } from "react";
+import {
+  ImageBackground,
+  StyleSheet,
+  Dimensions,
+  Text,
+  TouchableHighlight,
+  Button,
+} from "react-native";
 
 import barImages from "../assets/bar_list.js";
 
-const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
 
 function getBarLink(bar) {
   if (bar == "Champs") {
@@ -35,15 +42,19 @@ function getBarLink(bar) {
   }
 }
 
-export default function BarCard({ barName, barDescription, barPic,
-  onPress = f => f
+export default function BarCard({
+  barName,
+  barDescription,
+  barPic,
+  onPress = (f) => f,
 }) {
   const bar_link = getBarLink(barPic);
   return (
     <TouchableHighlight
       style={styles.barTab}
       onPress={() => onPress()}
-      underlayColor="white" >
+      underlayColor="white"
+    >
       <ImageBackground style={styles.image} source={bar_link}>
         <Text style={styles.barName}>{barName}</Text>
       </ImageBackground>
@@ -64,7 +75,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
   },
   barName: {
-    fontSize: 32
+    fontSize: 32,
   },
   image: {
     flex: 1,
@@ -74,6 +85,6 @@ const styles = StyleSheet.create({
   barName: {
     color: "white",
     fontWeight: "bold",
-    fontSize: 32
+    fontSize: 32,
   },
 });

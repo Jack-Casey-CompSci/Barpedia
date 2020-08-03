@@ -7,13 +7,14 @@ import {
   SafeAreaView,
   View,
   Dimensions,
+  TouchableHighlight,
 } from "react-native";
 import EventsSpecials from "./EventsSpecials.js";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
-export default function BarPage({ route }) {
+export default function BarPage({ navigation, route }) {
   return (
     <ScrollView style={styles.scroll}>
       <View style={styles.container}>
@@ -25,12 +26,23 @@ export default function BarPage({ route }) {
           <Text style={styles.title}> Events and Specials </Text>
         </View>
         <View style={styles.menuandDrinkTile}>
-          <View style={styles.menuTile}>
-            <Text style={styles.title}>Test</Text>
-          </View>
-          <View style={styles.drinksTile}>
-            <Text style={styles.title}>Test</Text>
-          </View>
+          <TouchableHighlight
+            style={styles.menuTile}
+            onPress={() => navigation.navigate("BarFood", {})}
+          >
+            <View style={styles.menuTile}>
+              <Text style={styles.title}>Test</Text>
+            </View>
+          </TouchableHighlight>
+
+          <TouchableHighlight
+            style={styles.menuTile}
+            onPress={() => navigation.navigate("BarDrinks", {})}
+          >
+            <View style={styles.drinksTile}>
+              <Text style={styles.title}>Test</Text>
+            </View>
+          </TouchableHighlight>
         </View>
       </View>
     </ScrollView>

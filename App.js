@@ -16,6 +16,8 @@ import BarCard from "./components/BarCard.js";
 import BarMenu from "./components/BarMenu.js";
 import BarPage from "./components/BarPage.js";
 import EventsSpecials from "./components/EventsSpecials.js";
+import BarFood from "./components/BarSpecificMenu";
+import BarDrinks from "./components/BarSpecificDrinks";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -32,6 +34,8 @@ export default function App() {
         <Screen name="Home" component={BarMenu} />
         <Screen name="EventsSpecials" component={EventsSpecials} />
         <Screen name="Details" component={BarPage} />
+        <Screen name="BarFood" component={BarFood} />
+        <Screen name="BarDrinks" component={BarDrinks} />
       </Navigator>
     </NavigationContainer>
   );

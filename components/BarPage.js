@@ -8,6 +8,7 @@ import {
   View,
   Dimensions,
 } from "react-native";
+import EventsSpecials from "./EventsSpecials.js";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
@@ -20,6 +21,7 @@ export default function BarPage({ route }) {
           <Text style={styles.title}>{route.params.name}</Text>
         </View>
         <View style={styles.eventandSpecialTile}>
+          <EventsSpecials name="Phyrst" />
           <Text style={styles.title}> Events and Specials </Text>
         </View>
         <View style={styles.menuandDrinkTile}>

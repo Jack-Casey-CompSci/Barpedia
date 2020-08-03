@@ -21,10 +21,7 @@ export default function BarPage({ navigation, route }) {
         <View style={styles.pageImage}>
           <Text style={styles.title}>{route.params.name}</Text>
         </View>
-        <View style={styles.eventandSpecialTile}>
-          <EventsSpecials name="Phyrst" />
-          <Text style={styles.title}> Events and Specials </Text>
-        </View>
+        <EventsSpecials name={route.params.name} />
         <View style={styles.menuandDrinkTile}>
           <TouchableHighlight
             style={styles.menuTile}

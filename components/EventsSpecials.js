@@ -54,7 +54,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   container: {
-    marginTop: Constants.statusBarHeight,
     height: 250,
   },
   title: {

@@ -30,16 +30,5 @@ const images = [
 ];
 
 export default function BarSpecificMenu() {
-  return (
-    <Modal visible={true} trasparent={true}>
-      <ImageViewer imageUrls={images} />
-    </Modal>
-  );
+  return <ImageViewer imageUrls={images} />;
 }
-
-const styles = StyleSheet.create({
-  tinyLogo: {
-    height: "100%",
-    width: "100%",
-  },
-});

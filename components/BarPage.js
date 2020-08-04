@@ -28,7 +28,7 @@ export default function BarPage({ navigation, route }) {
             onPress={() => navigation.navigate("BarFood", {})}
           >
             <View style={styles.menuTile}>
-              <Text style={styles.title}>Test</Text>
+              <Text style={styles.title}>Menu</Text>
             </View>
           </TouchableHighlight>
 
@@ -37,7 +37,7 @@ export default function BarPage({ navigation, route }) {
             onPress={() => navigation.navigate("BarDrinks", {})}
           >
             <View style={styles.drinksTile}>
-              <Text style={styles.title}>Test</Text>
+              <Text style={styles.title}>Drinks</Text>
             </View>
           </TouchableHighlight>
         </View>
@@ -48,7 +48,7 @@ export default function BarPage({ navigation, route }) {
 
 const styles = StyleSheet.create({
   scroll: {
-    flexGrow: 1,
+    flex: 1,
     backgroundColor: "grey",
   },
   container: {

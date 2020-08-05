@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Image,
+  ImageBackground,
   ScrollView,
   Text,
   StyleSheet,
@@ -10,34 +11,44 @@ import {
   TouchableHighlight,
 } from "react-native";
 import EventsSpecials from "./EventsSpecials.js";
+import picture_linker from "./picture_linker.js";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
 export default function BarPage({ navigation, route }) {
+  const bar_link = picture_linker.getBarLink(route.params.barPic);
   return (
     <ScrollView style={styles.scroll}>
       <View style={styles.container}>
-        <View style={styles.pageImage}>
-          <Text style={styles.title}>{route.params.name}</Text>
-        </View>
+        <ImageBackground style={styles.pageImage} source={bar_link}>
+          <Text style={styles.barTitle}>{route.params.name}</Text>
+        </ImageBackground>
         <EventsSpecials name={route.params.name} />
         <View style={styles.menuandDrinkTile}>
           <TouchableHighlight
             style={styles.menuTile}
-            onPress={() => navigation.navigate("BarFood", {})}
+            onPress={() =>
+              navigation.navigate("BarFood", {
+                name: route.params.name,
+              })
+            }
           >
             <View style={styles.menuTile}>
-              <Text style={styles.title}>Test</Text>
+              <Text style={styles.title}>Menu</Text>
             </View>
           </TouchableHighlight>
 
           <TouchableHighlight
             style={styles.menuTile}
-            onPress={() => navigation.navigate("BarDrinks", {})}
+            onPress={() =>
+              navigation.navigate("BarDrinks", {
+                name: route.params.name,
+              })
+            }
           >
             <View style={styles.drinksTile}>
-              <Text style={styles.title}>Test</Text>
+              <Text style={styles.title}>Drinks</Text>
             </View>
           </TouchableHighlight>
         </View>
@@ -48,7 +59,7 @@ export default function BarPage({ navigation, route }) {
 
 const styles = StyleSheet.create({
   scroll: {
-    flexGrow: 1,
+    flex: 1,
     backgroundColor: "grey",
   },
   container: {
@@ -65,6 +76,11 @@ const styles = StyleSheet.create({
     backgroundColor: "green",
     borderWidth: 2,
     borderColor: "black",
+  },
+  barTitle: {
+    fontSize: 32,
+    color: "white",
+    textAlign: "center",
   },
   title: {
     fontSize: 16,

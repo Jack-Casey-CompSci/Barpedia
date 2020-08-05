@@ -20,7 +20,7 @@ export default function BarMenu({ navigation }) {
                 navigation.navigate("Details", {
                   name: item.name,
                   description: item.description,
-                  barPic: item.barPic,
+                  barPic: item.pic_name,
                 })
               }
             />

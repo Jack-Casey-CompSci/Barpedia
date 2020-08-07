@@ -13,7 +13,7 @@ import {
 import EventsSpecials from "./EventsSpecials.js";
 import picture_linker from "./picture_linker.js";
 import menu_pic from "../assets/menuPictures/menu_pic.jpg";
-import drink_pic from "../assets/menuPictures/drink_pic.jpg";
+import drink_pic from "../assets/menuPictures/drink_pic.png";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
@@ -49,7 +49,11 @@ export default function BarPage({ navigation, route }) {
               })
             }
           >
-            <ImageBackground style={styles.drinksTile} source={drink_pic}>
+            <ImageBackground
+              style={styles.drinksTile}
+              source={drink_pic}
+              resizeMode={"stretch"}
+            >
               <Text style={styles.title}>Drinks</Text>
             </ImageBackground>
           </TouchableHighlight>
@@ -70,7 +74,7 @@ const styles = StyleSheet.create({
     backgroundColor: "orange",
   },
   pageImage: {
-    flexGrow: 1,
+    flex: 1,
     margin: 5,
     marginBottom: 2.5,
     width: windowWidth - 10,
@@ -89,17 +93,8 @@ const styles = StyleSheet.create({
     color: "white",
     textAlign: "center",
   },
-  eventandSpecialTile: {
-    margin: 5,
-    marginBottom: 2.5,
-    marginTop: 2.5,
-    width: windowWidth - 10,
-    height: 200,
-    backgroundColor: "purple",
-    borderWidth: 2,
-    borderColor: "black",
-  },
   menuandDrinkTile: {
+    flex: 1,
     flexDirection: "row",
     margin: 5,
     marginTop: 2.5,
@@ -116,7 +111,6 @@ const styles = StyleSheet.create({
   },
   drinksTile: {
     flex: 1,
-    backgroundColor: "blue",
     borderWidth: 2,
     borderLeftWidth: 1,
     borderColor: "black",

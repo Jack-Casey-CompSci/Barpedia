@@ -19,10 +19,6 @@
           "FoodSpecials": {
             "Description": "50 cent Wings & Meatless Monday",
             "Time": "5pm-10pm"
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -43,10 +39,6 @@
           "FoodSpecials": {
             "Description": "$1 Nachos",
             "Time": "8pm-10pm"
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -67,10 +59,6 @@
           "FoodSpecials": {
             "Description": "$1 Tacos",
             "Time": "8pm-10pm"
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -91,10 +79,6 @@
           "FoodSpecials": {
             "Description": "50 cent Wings",
             "Time": "8pm-11pm"
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -113,10 +97,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -139,10 +119,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -163,10 +139,6 @@
           "FoodSpecials": {
             "Description": "$1 Tacos",
             "Time": "2pm-10pm"
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       }
@@ -192,10 +164,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "Band Camp Open Mic",
-            "Time": "10pm - 2am"
           }
         }
       },
@@ -216,10 +184,6 @@
           "FoodSpecials": {
             "Description": "1/2 Dozen Wings",
             "Time": "9pm-10pm"
-          },
-          "Events": {
-            "Description": "Bar Bingo",
-            "Time": "9pm-11pm"
           }
         }
       },
@@ -238,10 +202,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -264,10 +224,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -286,10 +242,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -312,10 +264,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -336,10 +284,6 @@
           "FoodSpecials": {
             "Description": "$1 Tacos",
             "Time": "2pm-10pm"
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       }
@@ -365,10 +309,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -387,10 +327,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -413,10 +349,6 @@
           "FoodSpecials": {
             "Description": "$",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -435,10 +367,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -461,10 +389,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -485,10 +409,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -507,10 +427,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -538,10 +454,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -560,10 +472,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -586,10 +494,6 @@
           "FoodSpecials": {
             "Description": "$",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -608,10 +512,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -634,10 +534,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -658,10 +554,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -680,10 +572,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -711,10 +599,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -733,10 +617,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -759,10 +639,6 @@
           "FoodSpecials": {
             "Description": "$",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -781,10 +657,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -807,10 +679,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -831,10 +699,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -853,10 +717,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -884,10 +744,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -906,10 +762,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -932,10 +784,6 @@
           "FoodSpecials": {
             "Description": "$",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -954,10 +802,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -980,10 +824,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1004,10 +844,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1026,10 +862,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1058,10 +890,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1080,10 +908,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1106,10 +930,6 @@
           "FoodSpecials": {
             "Description": "$",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1128,10 +948,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1154,10 +970,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1178,10 +990,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1200,10 +1008,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1231,10 +1035,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1253,10 +1053,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1279,10 +1075,6 @@
           "FoodSpecials": {
             "Description": "$",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1301,10 +1093,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1327,10 +1115,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1351,10 +1135,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1373,10 +1153,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1404,10 +1180,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1426,10 +1198,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1452,10 +1220,6 @@
           "FoodSpecials": {
             "Description": "$",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1474,10 +1238,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1500,10 +1260,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1524,10 +1280,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1546,10 +1298,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1577,10 +1325,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1599,10 +1343,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1625,10 +1365,6 @@
           "FoodSpecials": {
             "Description": "$",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1647,10 +1383,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1673,10 +1405,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1697,10 +1425,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1719,10 +1443,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1750,10 +1470,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1772,10 +1488,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1798,10 +1510,6 @@
           "FoodSpecials": {
             "Description": "$",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1820,10 +1528,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1846,10 +1550,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1870,10 +1570,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1892,10 +1588,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1923,10 +1615,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1945,10 +1633,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -1971,10 +1655,6 @@
           "FoodSpecials": {
             "Description": "$",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -1993,10 +1673,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }
@@ -2019,10 +1695,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -2043,10 +1715,6 @@
           "FoodSpecials": {
             "Description": "",
             "Time": ""
-          },
-          "Events": {
-            "Description": "",
-            "Time": ""
           }
         }
       },
@@ -2065,10 +1733,6 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
-          },
-          "Events": {
             "Description": "",
             "Time": ""
           }

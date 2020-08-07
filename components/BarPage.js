@@ -12,6 +12,8 @@ import {
 } from "react-native";
 import EventsSpecials from "./EventsSpecials.js";
 import picture_linker from "./picture_linker.js";
+import menu_pic from "../assets/menuPictures/menu_pic.jpg";
+import drink_pic from "../assets/menuPictures/drink_pic.jpg";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
@@ -34,22 +36,22 @@ export default function BarPage({ navigation, route }) {
               })
             }
           >
-            <View style={styles.menuTile}>
+            <ImageBackground style={styles.menuTile} source={menu_pic}>
               <Text style={styles.title}>Menu</Text>
-            </View>
+            </ImageBackground>
           </TouchableHighlight>
 
           <TouchableHighlight
-            style={styles.menuTile}
+            style={styles.drinksTile}
             onPress={() =>
               navigation.navigate("BarDrinks", {
                 name: route.params.name,
               })
             }
           >
-            <View style={styles.drinksTile}>
+            <ImageBackground style={styles.drinksTile} source={drink_pic}>
               <Text style={styles.title}>Drinks</Text>
-            </View>
+            </ImageBackground>
           </TouchableHighlight>
         </View>
       </View>
@@ -99,7 +101,6 @@ const styles = StyleSheet.create({
   },
   menuandDrinkTile: {
     flexDirection: "row",
-    justifyContent: "center",
     margin: 5,
     marginTop: 2.5,
     width: windowWidth - 10,
@@ -107,14 +108,14 @@ const styles = StyleSheet.create({
     backgroundColor: "yellow",
   },
   menuTile: {
-    flexGrow: 1,
+    flex: 1,
     backgroundColor: "red",
     borderWidth: 2,
     borderRightWidth: 1,
     borderColor: "black",
   },
   drinksTile: {
-    flexGrow: 1,
+    flex: 1,
     backgroundColor: "blue",
     borderWidth: 2,
     borderLeftWidth: 1,

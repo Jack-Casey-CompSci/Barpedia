@@ -38,8 +38,6 @@ export default function EventsSpecials({ name }) {
                 drinkSpecial2Time={item.info.DrinkSpecials.Event2.Time}
                 foodSpecialDescription={item.info.FoodSpecials.Description}
                 foodSpecialTime={item.info.FoodSpecials.Time}
-                eventDescription={item.info.Events.Description}
-                eventTime={item.info.Events.Time}
               ></DayBox>
             </>
           );

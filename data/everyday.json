@@ -1,50 +1,151 @@
 [
   {
-    "name": "Champs Downtown",
-    "everday": []
-  },
-  {
-    "name": "Phyrst",
-    "everyday": []
-  },
-  {
     "name": "Bar Bleu",
-    "everyday": []
+    "everyday": {
+      "Deal1": {
+        "Drink": "Captain Morgan Pitchers",
+        "Price": "$7"
+      },
+      "Deal2": {
+        "Drink": "Fireballs",
+        "Price": "$4"
+      },
+      "Deal3": {
+        "Drink": "Bud & Bud Light Pitchers",
+        "Price": "$6"
+      },
+      "Deal4": {
+        "Drink": "Yards & Sly Fox Drafts",
+        "Price": "$3.50"
+      },
+      "Deal5": {
+        "Drink": "Blue Moon - Leinenkugle - Shock Top Drafts",
+        "Price": "$3.75"
+      }
+    }
   },
   {
     "name": "Lions Den",
-    "everyday": []
-  },
-  {
-    "name": "Primanti Brothers",
-    "everyday": []
-  },
-  {
-    "name": "Chrome",
-    "everyday": []
+    "everyday": {
+      "Deal1": {
+        "Drink": "16oz Bud Light",
+        "Price": "$3"
+      },
+      "Deal2": {
+        "Drink": "Blue Moon Bottle",
+        "Price": "$3"
+      },
+      "Deal3": {
+        "Drink": "Smirnoff Pitchers",
+        "Price": "$6"
+      },
+      "Deal4": {
+        "Drink": "Captain & Cola",
+        "Price": "$3"
+      },
+      "Deal5": {
+        "Drink": "Royal & Cola",
+        "Price": "$3"
+      },
+      "Deal6": {
+        "Drink": "Iced Teas",
+        "Price": "$3"
+      }
+    }
   },
   {
     "name": "Basement",
-    "everyday": []
-  },
-  {
-    "name": "Cafe 210",
-    "everyday": []
-  },
-  {
-    "name": "Doggies",
-    "everyday": []
-  },
-  {
-    "name": "Mad Mex",
-    "everyday": []
+    "everyday": {
+      "Deal1": {
+        "Drink": "Vodka Drinks",
+        "Price": "$3"
+      },
+      "Deal2": {
+        "Drink": "16oz Domestic Beers",
+        "Price": "$3"
+      },
+      "Deal3": {
+        "Drink": "Green Tea Shots",
+        "Price": "$3"
+      },
+      "Deal4": {
+        "Drink": "Red Bull Vodka",
+        "Price": "$4"
+      },
+      "Deal5": {
+        "Drink": "Corona",
+        "Price": "$4"
+      },
+      "Deal6": {
+        "Drink": "Jameson",
+        "Price": "$5"
+      },
+      "Deal7": {
+        "Drink": "Dumpsters",
+        "Price": "$6"
+      }
+    }
   },
   {
     "name": "Pickles",
-    "everyday": []
+    "everyday": {
+      "Deal1": {
+        "Drink": "Pickles Day Longs",
+        "Price": "$4"
+      },
+      "Deal2": {
+        "Drink": "Captain Morgan Drinks",
+        "Price": "$4.50"
+      },
+      "Deal3": {
+        "Drink": "Coors Light Bottles",
+        "Price": "$2.50"
+      },
+      "Deal4": {
+        "Drink": "Miller Lite Drafts",
+        "Price": "$2"
+      },
+      "Deal5": {
+        "Drink": "Budweiser Drafts",
+        "Price": "$2"
+      },
+      "Deal6": {
+        "Drink": "Long Island Iced Teas",
+        "Price": "$3"
+      },
+      "Deal7": {
+        "Drink": "Pickle Back Shots",
+        "Price": "$5"
+      },
+      "Deal8": {
+        "Drink": "Fireball",
+        "Price": "$4"
+      }
+    }
   },
   {
     "name": "Shandygaff",
-    "everyday": []
+    "everyday": {
+      "Deal1": {
+        "Drink": "24oz Domestic Cans",
+        "Price": "$4"
+      },
+      "Deal2": {
+        "Drink": "Well Drinks",
+        "Price": "$4"
+      },
+      "Deal3": {
+        "Drink": "Turbo Vodkas",
+        "Price": "$4"
+      },
+      "Deal4": {
+        "Drink": "Adios and Lits",
+        "Price": "$4"
+      },
+      "Deal5": {
+        "Drink": "Select Shots",
+        "Price": "$3"
+      }
+    }
   }
 ]

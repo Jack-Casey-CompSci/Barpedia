@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Image,
   ImageBackground,
@@ -9,6 +9,7 @@ import {
   View,
   Dimensions,
   TouchableHighlight,
+  Picker,
 } from "react-native";
 import EventsSpecials from "./EventsSpecials.js";
 import picture_linker from "./picture_linker.js";
@@ -20,13 +21,24 @@ const windowHeight = Dimensions.get("window").height;
 
 export default function BarPage({ navigation, route }) {
   const bar_link = picture_linker.getBarLink(route.params.barPic);
+  const [selectedValue, setSelectedValue] = useState("dailySpecials");
   return (
     <ScrollView style={styles.scroll}>
       <View style={styles.container}>
         <ImageBackground style={styles.pageImage} source={bar_link}>
           <Text style={styles.barTitle}>{route.params.name}</Text>
         </ImageBackground>
-        <EventsSpecials name={route.params.name} />
+        <Picker
+          selectedValue={selectedValue}
+          style={{ height: 50, width: 250, alignItems: "flex-end" }}
+          mode={"dropdown"}
+          onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        >
+          <Picker.Item label="Daily Specials" value="dailySpecials" />
+          <Picker.Item label="All Day Everyday Deals" value="everyday" />
+          <Picker.Item label="Entertainment" value="entertainment" />
+          <Picker.Item label="Happy Hours" value="happyHours" />
+        </Picker>
         <View style={styles.menuandDrinkTile}>
           <TouchableHighlight
             style={styles.menuTile}

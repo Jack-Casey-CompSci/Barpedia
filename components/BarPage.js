@@ -9,36 +9,54 @@ import {
   View,
   Dimensions,
   TouchableHighlight,
-  Picker,
 } from "react-native";
+import { Accordion, Item } from "native-base";
 import EventsSpecials from "./EventsSpecials.js";
 import picture_linker from "./picture_linker.js";
 import menu_pic from "../assets/menuPictures/menu_pic.jpg";
 import drink_pic from "../assets/menuPictures/drink_pic.png";
+import { render } from "react-dom";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
+const accordionArray = [
+  {
+    title: "Daily Specials",
+    content: "Test",
+  },
+  {
+    title: "Entertainment",
+    content: "TEST",
+  },
+  { title: "All Day Everyday", content: "Lorem ipsum dolor sit amet" },
+  { title: "Happy Hours", content: "Lorem ipsum dolor sit amet" },
+];
+
+function renderContent(item) {
+  console.log(item);
+  if (item.title == "Daily Specials") {
+    return (
+      <View>
+        <EventsSpecials name={"Phyrst"} />
+      </View>
+    );
+  }
+}
 
 export default function BarPage({ navigation, route }) {
   const bar_link = picture_linker.getBarLink(route.params.barPic);
-  const [selectedValue, setSelectedValue] = useState("dailySpecials");
   return (
-    <ScrollView style={styles.scroll}>
+    <View style={styles.scroll}>
       <View style={styles.container}>
         <ImageBackground style={styles.pageImage} source={bar_link}>
           <Text style={styles.barTitle}>{route.params.name}</Text>
         </ImageBackground>
-        <Picker
-          selectedValue={selectedValue}
-          style={{ height: 50, width: 250, alignItems: "flex-end" }}
-          mode={"dropdown"}
-          onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
-        >
-          <Picker.Item label="Daily Specials" value="dailySpecials" />
-          <Picker.Item label="All Day Everyday Deals" value="everyday" />
-          <Picker.Item label="Entertainment" value="entertainment" />
-          <Picker.Item label="Happy Hours" value="happyHours" />
-        </Picker>
+        <Accordion
+          dataArray={accordionArray}
+          expanded={0}
+          style={styles.accordion}
+          renderContent={renderContent}
+        ></Accordion>
         <View style={styles.menuandDrinkTile}>
           <TouchableHighlight
             style={styles.menuTile}
@@ -71,7 +89,7 @@ export default function BarPage({ navigation, route }) {
           </TouchableHighlight>
         </View>
       </View>
-    </ScrollView>
+    </View>
   );
 }
 
@@ -104,6 +122,15 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "white",
     textAlign: "center",
+  },
+  accordion: {
+    flex: 1,
+    borderWidth: 2,
+    borderColor: "red",
+    height: 300,
+    width: windowWidth,
+    marginTop: 2.5,
+    marginBottom: 2.5,
   },
   menuandDrinkTile: {
     flex: 1,

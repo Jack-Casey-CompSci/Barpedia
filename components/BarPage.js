@@ -19,55 +19,67 @@ import { render } from "react-dom";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
-const accordionArray = [
-  { title: "Daily Specials", content: "" },
-  { title: "Entertainment", content: "" },
-  { title: "All Day Everyday", content: "" },
-  { title: "Happy Hours", content: "" },
-];
+const dailyArray = [{ title: "Daily Specials", content: "" }];
+const entertainArray = [{ title: "Entertainment", content: "" }];
+const everydayArray = [{ title: "All Day Everyday", content: "" }];
+const happyArray = [{ title: "Happy Hours", content: "" }];
 
-function renderContent(item) {
-  console.log(item);
-  if (item.title == "Daily Specials") {
-    return (
-      <View>
-        <EventsSpecials name={"Phyrst"} />
-      </View>
-    );
-  } else if (item.title == "Entertainment") {
-    return (
-      <View>
-        <Text> Entertainment here</Text>
-      </View>
-    );
-  } else if (item.title == "All Day Everyday") {
-    return (
-      <View>
-        <Text> Everyday deals here</Text>
-      </View>
-    );
-  } else if (item.title == "Happy Hours") {
-    return (
-      <View>
-        <Text> Happy hours here</Text>
-      </View>
-    );
-  }
+function renderDaily(item) {
+  return (
+    <View>
+      <EventsSpecials name={"Phyrst"} />
+    </View>
+  );
+}
+function renderEntertain(item) {
+  return (
+    <View>
+      <Text>Entertainment Here</Text>
+    </View>
+  );
+}
+function renderEveryday(item) {
+  return (
+    <View>
+      <Text>All Day Everyday Deals Here</Text>
+    </View>
+  );
+}
+function renderHappy(item) {
+  return (
+    <View>
+      <Text>Happy Hours Here</Text>
+    </View>
+  );
 }
 
 export default function BarPage({ navigation, route }) {
   const bar_link = picture_linker.getBarLink(route.params.barPic);
   return (
-    <View style={styles.scroll}>
+    <ScrollView style={styles.scroll}>
       <View style={styles.container}>
         <ImageBackground style={styles.pageImage} source={bar_link}>
           <Text style={styles.barTitle}>{route.params.name}</Text>
         </ImageBackground>
         <Accordion
-          dataArray={accordionArray}
-          expanded={0}
+          dataArray={dailyArray}
           style={styles.accordion}
-          renderContent={renderContent}
+          renderContent={renderDaily}
+        ></Accordion>
+        <Accordion
+          dataArray={entertainArray}
+          renderContent={renderEntertain}
+          style={styles.accordion}
+        ></Accordion>
+        <Accordion
+          dataArray={everydayArray}
+          style={styles.accordion}
+          renderContent={renderEveryday}
+        ></Accordion>
+        <Accordion
+          dataArray={happyArray}
+          style={styles.accordion}
+          renderContent={renderHappy}
         ></Accordion>
         <View style={styles.menuandDrinkTile}>
           <TouchableHighlight
@@ -101,7 +113,7 @@ export default function BarPage({ navigation, route }) {
           </TouchableHighlight>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
@@ -136,13 +148,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   accordion: {
-    flex: 1,
-    borderWidth: 2,
-    borderColor: "red",
-    height: 300,
     width: windowWidth,
-    marginTop: 2.5,
-    marginBottom: 2.5,
   },
   menuandDrinkTile: {
     flex: 1,

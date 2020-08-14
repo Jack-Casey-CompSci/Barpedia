@@ -20,16 +20,10 @@ import { render } from "react-dom";
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 const accordionArray = [
-  {
-    title: "Daily Specials",
-    content: "Test",
-  },
-  {
-    title: "Entertainment",
-    content: "TEST",
-  },
-  { title: "All Day Everyday", content: "Lorem ipsum dolor sit amet" },
-  { title: "Happy Hours", content: "Lorem ipsum dolor sit amet" },
+  { title: "Daily Specials", content: "" },
+  { title: "Entertainment", content: "" },
+  { title: "All Day Everyday", content: "" },
+  { title: "Happy Hours", content: "" },
 ];
 
 function renderContent(item) {
@@ -38,6 +32,24 @@ function renderContent(item) {
     return (
       <View>
         <EventsSpecials name={"Phyrst"} />
+      </View>
+    );
+  } else if (item.title == "Entertainment") {
+    return (
+      <View>
+        <Text> Entertainment here</Text>
+      </View>
+    );
+  } else if (item.title == "All Day Everyday") {
+    return (
+      <View>
+        <Text> Everyday deals here</Text>
+      </View>
+    );
+  } else if (item.title == "Happy Hours") {
+    return (
+      <View>
+        <Text> Happy hours here</Text>
       </View>
     );
   }

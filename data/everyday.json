@@ -1,5 +1,38 @@
 [
   {
+    "name": "Phyrst",
+    "everyday": {
+      "Deal1": {
+        "Drink": "Trash Cans",
+        "Price": "$5"
+      },
+      "Deal2": {
+        "Drink": "Paddy's Irish Whiskey & Green Tea Shots",
+        "Price": "$4"
+      },
+      "Deal3": {
+        "Drink": "Fireball",
+        "Price": "$3"
+      },
+      "Deal4": {
+        "Drink": "Tecate",
+        "Price": "$2"
+      },
+      "Deal5": {
+        "Drink": "Mitch-A-Palooza",
+        "Price": "$3"
+      },
+      "Deal6": {
+        "Drink": "Skinny Bitches",
+        "Price": "$3"
+      },
+      "Deal7": {
+        "Drink": "Smirnoff Ice",
+        "Price": "$3"
+      }
+    }
+  },
+  {
     "name": "Bar Bleu",
     "everyday": {
       "Deal1": {
@@ -145,6 +178,54 @@
       "Deal5": {
         "Drink": "Select Shots",
         "Price": "$3"
+      }
+    }
+  },
+  {
+    "name": "Champs Downtown",
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
+      }
+    }
+  },
+  {
+    "name": "Primanti Brothers",
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
+      }
+    }
+  },
+  {
+    "name": "Doggies",
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
+      }
+    }
+  },
+  {
+    "name": "Mad Mex",
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
+      }
+    }
+  },
+  {
+    "name": "Cafe 210",
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
+      }
+    }
+  },
+  {
+    "name": "Chrome",
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
       }
     }
   }

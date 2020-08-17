@@ -14,6 +14,7 @@ import { Accordion, Item } from "native-base";
 import EventsSpecials from "./EventsSpecials.js";
 import picture_linker from "./picture_linker.js";
 import HappyHour from "./happyHourAccordion";
+import Everyday from "./everydayAccordion.js";
 import menu_pic from "../assets/menuPictures/menu_pic.jpg";
 import drink_pic from "../assets/menuPictures/drink_pic.png";
 import { render } from "react-dom";
@@ -39,21 +40,16 @@ function renderEntertain(item) {
     </View>
   );
 }
-function renderEveryday(item) {
-  return (
-    <View>
-      <Text>All Day Everyday Deals Here</Text>
-    </View>
-  );
+function renderEveryday(name) {
+  return <Everyday />;
 }
 function renderHappy(item) {
-  return (
-    <HappyHour></HappyHour>
-  );
+  return <HappyHour />;
 }
 
 export default function BarPage({ navigation, route }) {
   const bar_link = picture_linker.getBarLink(route.params.barPic);
+  const bar_name = route.params.name;
   return (
     <ScrollView style={styles.scroll}>
       <View style={styles.container}>

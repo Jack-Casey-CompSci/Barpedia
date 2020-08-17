@@ -1,0 +1,187 @@
+[
+    {
+        "name": "Phyrst",
+        "happyHour": [
+            {
+                "description": "Vodka Redbull",
+                "price": "$4.25"
+            },
+            {
+                "description": "Purple Gatorade",
+                "price": "$3.00"
+            },
+            {
+                "description": "Green Tea",
+                "price": "$2.50"
+            },
+            {
+                "description": "Bear Fight",
+                "price": "$8.00"
+            },
+            {
+                "description": "Irish Car Bomb",
+                "price": "$3.25"
+            },
+            {
+                "description": "4.09 Bomb",
+                "price": "$4.00"
+            },
+            {
+                "description": "Jason O Bomb",
+                "price": "$4.00"
+            },
+            {
+                "description": "Vegas Bomb",
+                "price": "$4.00"
+            },
+            {
+                "description": "Jager Bomb",
+                "price": "$4.00"
+            },
+            {
+                "description": "Bazooka Joe",
+                "price": "$4.00"
+            },
+            {
+                "description": "Stars & Stripes",
+                "price": "$4.00"
+            },
+            {
+                "description": "Hero Zero Bombs",
+                "price": "$4.00"
+            },
+            {
+                "description": "Batman Bomb",
+                "price": "$4.00"
+            },
+            {
+                "description": "American Gladiator Bomb",
+                "price": "$4.00"
+            }
+        ]
+    },
+    {
+        "name": "Champs Downtown",
+        "happyHour": []
+    },
+    {
+        "name": "Bar Bleu",
+        "happyHour": []
+    },
+    {
+        "name": "Lions Den",
+        "happyHour": []
+    },
+    {
+        "name": "Primanti Brothers",
+        "happyHour": []
+    },
+    {
+        "name": "Basement",
+        "happyHour": [
+            {
+                "description": "Big Basement Teas",
+                "price": "$2.00"
+            },
+            {
+                "description": "Jolly Rancher Shots",
+                "price": "$2.00"
+            },
+            {
+                "description": "Red Kamikaze Shots",
+                "price": "$2.00"
+            },
+            {
+                "description": "Well Liquors (Vodka, Rum, Gin, Whiskey)",
+                "price": "$3.00"
+            },
+            {
+                "description": "Fireball Shots",
+                "price": "$3.00"
+            },
+            {
+                "description": "Tequila Shots",
+                "price": "$3.00"
+            },
+            {
+                "description": "Hypnotiq Cocktails",
+                "price": "$3.00"
+            },
+            {
+                "description": "Bacardi Drinks",
+                "price": "$3.50"
+            },
+            {
+                "description": "Captain Morgan Drinks",
+                "price": "$3.50"
+            },
+            {
+                "description": "Smirnoff Drinks",
+                "price": "$3.50"
+            },
+            {
+                "description": "Vegas Bombs",
+                "price": "$4.00"
+            },
+            {
+                "description": "Cuervo & Lemonade",
+                "price": "$4.00"
+            },
+            {
+                "description": "Incredible Hulk Shots",
+                "price": "$5.00"
+            },
+            {
+                "description": "Patron",
+                "price": "$6.00"
+            },
+            {
+                "description": "Full Shooter Menu",
+                "price": "$3.00"
+            }
+        ]
+    },
+    {
+        "name": "Doggies",
+        "happyHour": [
+            {
+                "description": "White Claw",
+                "price": "$4.00"
+            },
+            {
+                "description": "Captain Morgan",
+                "price": "$3.00"
+            },
+            {
+                "description": "Smirnoff Raspberry Lemonade",
+                "price": "$3.00"
+            }
+        ]
+    },
+    {
+        "name": "Mad Mex",
+        "happyHour": [
+            {
+                "description": "Big Azz Margaritas",
+                "price": "$7.00"
+            },
+            {
+                "description": "12oz House Margaritas",
+                "price": "$3.00"
+            },
+            {
+                "description": "16oz House Margaritas",
+                "price": "$5.00"
+            }
+        ]
+    },
+    {
+        "name": "Shandygaff",
+        "happyHour": [
+            {
+                "description": "",
+                "price": ""
+            }
+        ]
+    }
+]

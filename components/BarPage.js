@@ -13,6 +13,7 @@ import {
 import { Accordion, Item } from "native-base";
 import EventsSpecials from "./EventsSpecials.js";
 import picture_linker from "./picture_linker.js";
+import HappyHour from "./happyHourAccordion";
 import menu_pic from "../assets/menuPictures/menu_pic.jpg";
 import drink_pic from "../assets/menuPictures/drink_pic.png";
 import { render } from "react-dom";
@@ -47,9 +48,7 @@ function renderEveryday(item) {
 }
 function renderHappy(item) {
   return (
-    <View>
-      <Text>Happy Hours Here</Text>
-    </View>
+    <HappyHour></HappyHour>
   );
 }
 

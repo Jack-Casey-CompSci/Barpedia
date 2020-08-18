@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Component } from "react";
 import {
   Image,
   ImageBackground,
@@ -10,11 +10,12 @@ import {
   Dimensions,
   TouchableHighlight,
 } from "react-native";
-import { Accordion, Item } from "native-base";
-import EventsSpecials from "./EventsSpecials.js";
+import { Accordion } from "native-base";
+import EventsSpecials from "./AccordionFiles/specialsAccordion.js";
 import picture_linker from "./picture_linker.js";
-import HappyHour from "./happyHourAccordion";
-import Everyday from "./everydayAccordion.js";
+import HappyHour from "./AccordionFiles/happyHourAccordion.js";
+import Everyday from "./AccordionFiles/everydayAccordion.js";
+import Entertainment from "./AccordionFiles/entertainmentAccordion";
 import menu_pic from "../assets/menuPictures/menu_pic.jpg";
 import drink_pic from "../assets/menuPictures/drink_pic.png";
 import { render } from "react-dom";
@@ -26,90 +27,94 @@ const entertainArray = [{ title: "Entertainment", content: "" }];
 const everydayArray = [{ title: "All Day Everyday", content: "" }];
 const happyArray = [{ title: "Happy Hours", content: "" }];
 
-function renderDaily(item) {
-  return (
-    <View>
-      <EventsSpecials name={"Phyrst"} />
-    </View>
-  );
-}
-function renderEntertain(item) {
-  return (
-    <View>
-      <Text>Entertainment Here</Text>
-    </View>
-  );
-}
-function renderEveryday(name) {
-  return <Everyday />;
-}
-function renderHappy(item) {
-  return <HappyHour />;
-}
+export default class BarPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      barName: this.props.route.params.name,
+    };
+  }
 
-export default function BarPage({ navigation, route }) {
-  const bar_link = picture_linker.getBarLink(route.params.barPic);
-  const bar_name = route.params.name;
-  return (
-    <ScrollView style={styles.scroll}>
-      <View style={styles.container}>
-        <ImageBackground style={styles.pageImage} source={bar_link}>
-          <Text style={styles.barTitle}>{route.params.name}</Text>
-        </ImageBackground>
-        <Accordion
-          dataArray={dailyArray}
-          style={styles.accordion}
-          renderContent={renderDaily}
-        ></Accordion>
-        <Accordion
-          dataArray={entertainArray}
-          renderContent={renderEntertain}
-          style={styles.accordion}
-        ></Accordion>
-        <Accordion
-          dataArray={everydayArray}
-          style={styles.accordion}
-          renderContent={renderEveryday}
-        ></Accordion>
-        <Accordion
-          dataArray={happyArray}
-          style={styles.accordion}
-          renderContent={renderHappy}
-        ></Accordion>
-        <View style={styles.menuandDrinkTile}>
-          <TouchableHighlight
-            style={styles.menuTile}
-            onPress={() =>
-              navigation.navigate("BarFood", {
-                name: route.params.name,
-              })
-            }
-          >
-            <ImageBackground style={styles.menuTile} source={menu_pic}>
-              <Text style={styles.title}>Menu</Text>
-            </ImageBackground>
-          </TouchableHighlight>
+  _renderDaily = (item) => {
+    return <EventsSpecials name={this.state.barName}></EventsSpecials>;
+  };
 
-          <TouchableHighlight
-            style={styles.drinksTile}
-            onPress={() =>
-              navigation.navigate("BarDrinks", {
-                name: route.params.name,
-              })
-            }
-          >
-            <ImageBackground
-              style={styles.drinksTile}
-              source={drink_pic}
-              resizeMode={"stretch"}
+  _renderEveryday = (item) => {
+    return <Everyday name={this.state.barName}></Everyday>;
+  };
+
+  _renderHappyHour = (item) => {
+    return <HappyHour name={this.state.barName}></HappyHour>;
+  };
+
+  _renderEntertainment = (item) => {
+    return <Entertainment name={this.state.barName}></Entertainment>;
+  };
+
+  render() {
+    const barpic = this.props.route.params.barPic;
+    const bar_link = picture_linker.getBarLink(barpic);
+    return (
+      <View style={styles.scroll}>
+        <View style={styles.container}>
+          <ImageBackground style={styles.pageImage} source={bar_link}>
+            <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
+          </ImageBackground>
+          <Accordion
+            dataArray={dailyArray}
+            style={styles.accordion}
+            renderContent={this._renderDaily}
+          ></Accordion>
+          <Accordion
+            dataArray={entertainArray}
+            renderContent={this._renderEntertainment}
+            style={styles.accordion}
+          ></Accordion>
+          <Accordion
+            dataArray={everydayArray}
+            style={styles.accordion}
+            renderContent={this._renderEveryday}
+          ></Accordion>
+          <Accordion
+            dataArray={happyArray}
+            style={styles.accordion}
+            renderContent={this._renderHappyHour}
+          ></Accordion>
+          <View style={styles.menuandDrinkTile}>
+            <TouchableHighlight
+              style={styles.menuTile}
+              onPress={() =>
+                navigation.navigate("BarFood", {
+                  name: route.params.name,
+                })
+              }
             >
-              <Text style={styles.title}>Drinks</Text>
-            </ImageBackground>
-          </TouchableHighlight>
+              <ImageBackground style={styles.menuTile} source={menu_pic}>
+                <Text style={styles.title}>Menu</Text>
+              </ImageBackground>
+            </TouchableHighlight>
+
+            <TouchableHighlight
+              style={styles.drinksTile}
+              onPress={() =>
+                navigation.navigate("BarDrinks", {
+                  name: route.params.name,
+                })
+              }
+            >
+              <ImageBackground
+                style={styles.drinksTile}
+                source={drink_pic}
+                resizeMode={"stretch"}
+              >
+                <Text style={styles.title}>Drinks</Text>
+              </ImageBackground>
+            </TouchableHighlight>
+          </View>
         </View>
       </View>
-    </ScrollView>
-  );
+    );
+  }
 }
 
 const styles = StyleSheet.create({

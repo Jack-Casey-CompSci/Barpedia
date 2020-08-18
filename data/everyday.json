@@ -1,6 +1,7 @@
 [
   {
     "name": "Phyrst",
+    "available": true,
     "everyday": {
       "Deal1": {
         "Drink": "Trash Cans",
@@ -29,11 +30,16 @@
       "Deal7": {
         "Drink": "Smirnoff Ice",
         "Price": "$3"
+      },
+      "Deal8": {
+        "Drink": "",
+        "Price": ""
       }
     }
   },
   {
     "name": "Bar Bleu",
+    "available": true,
     "everyday": {
       "Deal1": {
         "Drink": "Captain Morgan Pitchers",
@@ -54,11 +60,24 @@
       "Deal5": {
         "Drink": "Blue Moon - Leinenkugle - Shock Top Drafts",
         "Price": "$3.75"
+      },
+      "Deal6": {
+        "Drink": "",
+        "Price": ""
+      },
+      "Deal7": {
+        "Drink": "",
+        "Price": ""
+      },
+      "Deal8": {
+        "Drink": "",
+        "Price": ""
       }
     }
   },
   {
     "name": "Lions Den",
+    "available": true,
     "everyday": {
       "Deal1": {
         "Drink": "16oz Bud Light",
@@ -83,11 +102,20 @@
       "Deal6": {
         "Drink": "Iced Teas",
         "Price": "$3"
+      },
+      "Deal7": {
+        "Drink": "",
+        "Price": ""
+      },
+      "Deal8": {
+        "Drink": "",
+        "Price": ""
       }
     }
   },
   {
     "name": "Basement",
+    "available": true,
     "everyday": {
       "Deal1": {
         "Drink": "Vodka Drinks",
@@ -116,11 +144,16 @@
       "Deal7": {
         "Drink": "Dumpsters",
         "Price": "$6"
+      },
+      "Deal8": {
+        "Drink": "",
+        "Price": ""
       }
     }
   },
   {
     "name": "Pickles",
+    "available": true,
     "everyday": {
       "Deal1": {
         "Drink": "Pickles Day Longs",
@@ -158,6 +191,7 @@
   },
   {
     "name": "Shandygaff",
+    "available": true,
     "everyday": {
       "Deal1": {
         "Drink": "24oz Domestic Cans",
@@ -178,11 +212,24 @@
       "Deal5": {
         "Drink": "Select Shots",
         "Price": "$3"
+      },
+      "Deal6": {
+        "Drink": "",
+        "Price": ""
+      },
+      "Deal7": {
+        "Drink": "",
+        "Price": ""
+      },
+      "Deal8": {
+        "Drink": "",
+        "Price": ""
       }
     }
   },
   {
     "name": "Champs Downtown",
+    "available": false,
     "everyday": {
       "noDeal": {
         "Message": "This bar does not offer all day everyday deals"
@@ -191,6 +238,7 @@
   },
   {
     "name": "Primanti Brothers",
+    "available": false,
     "everyday": {
       "noDeal": {
         "Message": "This bar does not offer all day everyday deals"
@@ -199,6 +247,7 @@
   },
   {
     "name": "Doggies",
+    "available": false,
     "everyday": {
       "noDeal": {
         "Message": "This bar does not offer all day everyday deals"
@@ -207,6 +256,7 @@
   },
   {
     "name": "Mad Mex",
+    "available": false,
     "everyday": {
       "noDeal": {
         "Message": "This bar does not offer all day everyday deals"
@@ -215,6 +265,7 @@
   },
   {
     "name": "Cafe 210",
+    "available": false,
     "everyday": {
       "noDeal": {
         "Message": "This bar does not offer all day everyday deals"
@@ -223,6 +274,7 @@
   },
   {
     "name": "Chrome",
+    "available": false,
     "everyday": {
       "noDeal": {
         "Message": "This bar does not offer all day everyday deals"

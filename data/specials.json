@@ -1,6 +1,7 @@
 [
   {
     "name": "Champs Downtown",
+    "available": true,
     "days": [
       {
         "id": "1",
@@ -146,6 +147,7 @@
   },
   {
     "name": "Phyrst",
+    "available": true,
     "days": [
       {
         "id": "1",
@@ -291,6 +293,7 @@
   },
   {
     "name": "Bar Bleu",
+    "available": false,
     "days": [
       {
         "id": "1",
@@ -436,6 +439,7 @@
   },
   {
     "name": "Lions Den",
+    "available": false,
     "days": [
       {
         "id": "1",
@@ -581,6 +585,7 @@
   },
   {
     "name": "Primanti Brothers",
+    "available": false,
     "days": [
       {
         "id": "1",
@@ -726,6 +731,7 @@
   },
   {
     "name": "Chrome",
+    "available": false,
     "days": [
       {
         "id": "1",
@@ -872,6 +878,7 @@
 
   {
     "name": "Basement",
+    "available": false,
     "days": [
       {
         "id": "1",
@@ -1017,6 +1024,7 @@
   },
   {
     "name": "Cafe 210",
+    "available": false,
     "days": [
       {
         "id": "1",
@@ -1162,6 +1170,7 @@
   },
   {
     "name": "Doggies",
+    "available": false,
     "days": [
       {
         "id": "1",
@@ -1307,6 +1316,7 @@
   },
   {
     "name": "Mad Mex",
+    "available": false,
     "days": [
       {
         "id": "1",
@@ -1452,6 +1462,7 @@
   },
   {
     "name": "Pickles",
+    "available": false,
     "days": [
       {
         "id": "1",
@@ -1597,6 +1608,7 @@
   },
   {
     "name": "Shandygaff",
+    "available": false,
     "days": [
       {
         "id": "1",

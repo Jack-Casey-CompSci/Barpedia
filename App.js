@@ -15,7 +15,6 @@ import barsList from "./data/bars.json";
 import BarCard from "./components/BarCard.js";
 import BarMenu from "./components/BarMenu.js";
 import BarPage from "./components/BarPage.js";
-import EventsSpecials from "./components/EventsSpecials.js";
 import BarFood from "./components/BarSpecificMenu";
 import BarDrinks from "./components/BarSpecificDrinks";
 
@@ -32,7 +31,6 @@ export default function App() {
     <NavigationContainer>
       <Navigator>
         <Screen name="Home" component={BarMenu} />
-        <Screen name="EventsSpecials" component={EventsSpecials} />
         <Screen name="Details" component={BarPage} />
         <Screen name="BarFood" component={BarFood} />
         <Screen name="BarDrinks" component={BarDrinks} />

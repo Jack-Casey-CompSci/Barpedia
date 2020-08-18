@@ -9,7 +9,6 @@ import {
   Button,
 } from "react-native";
 
-import barImages from "../assets/bar_list.js";
 import picture_linker from "./picture_linker";
 
 const windowWidth = Dimensions.get("window").width;

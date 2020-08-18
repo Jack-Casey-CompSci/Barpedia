@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Basement",
+    "available": false
+  },
+  {
+    "name": "Bar Bleu",
+    "available": false
+  },
+  {
+    "name": "Cafe 210",
+    "available": false
+  },
+  {
+    "name": "Champs Downtown",
+    "available": false
+  },
+  {
+    "name": "Chrome",
+    "available": false
+  },
+  {
+    "name": "Doggies",
+    "available": false
+  },
+  {
+    "name": "Lions Den",
+    "available": false
+  },
+  {
+    "name": "Mad Mex",
+    "available": false
+  },
+  {
+    "name": "Phyrst",
+    "available": false
+  },
+  {
+    "name": "Pickles",
+    "available": false
+  },
+  {
+    "name": "Primanti Brothers",
+    "available": false
+  },
+  {
+    "name": "Shandygaff",
+    "available": false
+  }
+]

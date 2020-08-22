@@ -2,7 +2,10 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import EverydayValues from "../../data/everyday.json";
 
-export default function HappyHourAccordion(name) {
+export default function HappyHourAccordion({ name }) {
+  const barData = EverydayValues.find((element) => {
+    return element.name === name;
+  });
   return (
     <View style={styles.container}>
       <View style={styles.row}>

@@ -2,40 +2,16 @@
   {
     "name": "Phyrst",
     "available": true,
-    "everyday": {
-      "Deal1": {
-        "Drink": "Trash Cans",
-        "Price": "$5"
-      },
-      "Deal2": {
-        "Drink": "Paddy's Irish Whiskey & Green Tea Shots",
-        "Price": "$4"
-      },
-      "Deal3": {
-        "Drink": "Fireball",
-        "Price": "$3"
-      },
-      "Deal4": {
-        "Drink": "Tecate",
-        "Price": "$2"
-      },
-      "Deal5": {
-        "Drink": "Mitch-A-Palooza",
-        "Price": "$3"
-      },
-      "Deal6": {
-        "Drink": "Skinny Bitches",
-        "Price": "$3"
-      },
-      "Deal7": {
-        "Drink": "Smirnoff Ice",
-        "Price": "$3"
-      },
-      "Deal8": {
-        "Drink": "",
-        "Price": ""
-      }
-    }
+    "dealCount": 7,
+    "everyday": [
+      { "Drink": "Trash Cans", "Price": "$5" },
+      { "Drink": "Paddy's Irish Whiskey & Green Tea Shots", "Price": "$4" },
+      { "Drink": "Fireball", "Price": "$3" },
+      { "Drink": "Tecate Cans", "Price": "$2" },
+      { "Drink": "Mitch-A-Palooza", "Price": "$3" },
+      { "Drink": "Skinny Bitches", "Price": "$3" },
+      { "Drink": "Smirnoff", "Price": "$3" }
+    ]
   },
   {
     "name": "Bar Bleu",

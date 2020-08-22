@@ -10,21 +10,19 @@ export default function BarMenu({ navigation }) {
       data={barsList}
       renderItem={({ item }) => {
         return (
-          <>
-            <BarCard
-              key={item.id}
-              barName={item.name}
-              barDescription={item.description}
-              barPic={item.pic_name}
-              onPress={() =>
-                navigation.navigate("Details", {
-                  name: item.name,
-                  description: item.description,
-                  barPic: item.pic_name,
-                })
-              }
-            />
-          </>
+          <BarCard
+            key={item.id}
+            barName={item.name}
+            barDescription={item.description}
+            barPic={item.pic_name}
+            onPress={() =>
+              navigation.navigate("Details", {
+                name: item.name,
+                description: item.description,
+                barPic: item.pic_name,
+              })
+            }
+          />
         );
       }}
     />

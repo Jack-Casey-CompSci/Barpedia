@@ -9,7 +9,6 @@ export default function everydayAccordion({ name }) {
   });
   if (barData.available) {
     return barData.everyday.map((data, key) => {
-      console.log(data, key);
       return (
         <View style={styles.container}>
           <View style={styles.box}>

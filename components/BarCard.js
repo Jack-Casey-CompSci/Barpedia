@@ -1,12 +1,10 @@
-import { StatusBar, setStatusBarBackgroundColor } from "expo-status-bar";
-import React, { useState } from "react";
+import React from "react";
 import {
   ImageBackground,
   StyleSheet,
   Dimensions,
   Text,
   TouchableHighlight,
-  Button,
 } from "react-native";
 
 import picture_linker from "./picture_linker";

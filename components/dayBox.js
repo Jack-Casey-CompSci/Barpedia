@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, Text, SafeAreaView, ScrollView, View } from "react-native";
-import Constants from "expo-constants";
 
 export default function DayBox({
   day,

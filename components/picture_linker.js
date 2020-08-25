@@ -1,4 +1,3 @@
-import React from "react";
 import barImages from "../assets/bar_list.js";
 
 function getBarLink(bar) {

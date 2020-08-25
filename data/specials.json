@@ -5,23 +5,7 @@
     "days": [
       {
         "id": "1",
-        "day": "Monday",
-        "info": {
-          "DrinkSpecials": {
-            "Event1": {
-              "Description": "$3 White Claws",
-              "Time": "All Day"
-            },
-            "Event2": {
-              "Description": "1/2 Price Happys",
-              "Time": "10pm-Midnight"
-            }
-          },
-          "FoodSpecials": {
-            "Description": "50 cent Wings & Meatless Monday",
-            "Time": "5pm-10pm"
-          }
-        }
+        "day": "Monday"
       },
       {
         "id": "2",
@@ -1077,7 +1061,7 @@
             },
             "Event2": {
               "Description": "",
-              "Time": "t"
+              "Time": ""
             }
           },
           "FoodSpecials": {

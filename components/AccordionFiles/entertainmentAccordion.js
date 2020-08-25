@@ -1,55 +1,27 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import EverydayValues from "../../data/everyday.json";
 
-export default function HappyHourAccordion({ name }) {
-  const barData = EverydayValues.find((element) => {
+import Entertainment from "../../data/entertainment.json";
+
+export default function EntertainmentAccordion({ name }) {
+  const barData = Entertainment.find((element) => {
     return element.name === name;
   });
-  return (
-    <View style={styles.container}>
-      <View style={styles.row}>
-        <View style={styles.box}>
-          <Text style={styles.description}>Vodka Redbull</Text>
-          <Text style={styles.price}>$4.25</Text>
+  if (barData.available) {
+    return barData.days.map((data, key) => {
+      // Need to fix possible two events and add days of the week
+      return (
+        <View style={styles.container}>
+          <View style={styles.box}>
+            <Text style={styles.description}>{data.entertainment[0].Band}</Text>
+            <Text style={styles.price}>{data.entertainment[0].Time}</Text>
+          </View>
         </View>
-        <View style={styles.box}>
-          <Text style={styles.description}>Purple Gatorade</Text>
-          <Text style={styles.price}>$3.00</Text>
-        </View>
-      </View>
-      <View style={styles.row}>
-        <View style={styles.box}>
-          <Text style={styles.description}>Green Tea</Text>
-          <Text style={styles.price}>$2.50</Text>
-        </View>
-        <View style={styles.box}>
-          <Text style={styles.description}>Irish Car Bomb</Text>
-          <Text style={styles.price}>$2.75</Text>
-        </View>
-      </View>
-      <View style={styles.row}>
-        <View style={styles.box}>
-          <Text style={styles.description}>Vodka Redbull</Text>
-          <Text style={styles.price}>$4.25</Text>
-        </View>
-        <View style={styles.box}>
-          <Text style={styles.description}>Purple Gatorade</Text>
-          <Text style={styles.price}>$3.00</Text>
-        </View>
-      </View>
-      <View style={styles.row}>
-        <View style={styles.box}>
-          <Text style={styles.description}>Green Tea</Text>
-          <Text style={styles.price}>$2.50</Text>
-        </View>
-        <View style={styles.box}>
-          <Text style={styles.description}>Irish Car Bomb</Text>
-          <Text style={styles.price}>$2.75</Text>
-        </View>
-      </View>
-    </View>
-  );
+      );
+    });
+  } else {
+    return <Text>This is not offered at this bar</Text>;
+  }
 }
 
 const styles = StyleSheet.create({

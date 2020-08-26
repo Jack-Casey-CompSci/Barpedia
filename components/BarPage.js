@@ -55,64 +55,62 @@ export default class BarPage extends Component {
     const barpic = this.props.route.params.barPic;
     const bar_link = picture_linker.getBarLink(barpic);
     return (
-      <View style={styles.scroll}>
-        <View style={styles.container}>
-          <ImageBackground style={styles.pageImage} source={bar_link}>
-            <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
-          </ImageBackground>
-          <Accordion
-            dataArray={dailyArray}
-            style={styles.accordion}
-            renderContent={this._renderDaily}
-          ></Accordion>
-          <Accordion
-            dataArray={entertainArray}
-            renderContent={this._renderEntertainment}
-            style={styles.accordion}
-          ></Accordion>
-          <Accordion
-            dataArray={everydayArray}
-            style={styles.accordion}
-            renderContent={this._renderEveryday}
-          ></Accordion>
-          <Accordion
-            dataArray={happyArray}
-            style={styles.accordion}
-            renderContent={this._renderHappyHour}
-          ></Accordion>
-          <View style={styles.menuandDrinkTile}>
-            <TouchableHighlight
-              style={styles.menuTile}
-              onPress={() =>
-                navigation.navigate("BarFood", {
-                  name: route.params.name,
-                })
-              }
-            >
-              <ImageBackground style={styles.menuTile} source={menu_pic}>
-                <Text style={styles.title}>Menu</Text>
-              </ImageBackground>
-            </TouchableHighlight>
+      <ScrollView style={styles.scroll}>
+        <ImageBackground style={styles.pageImage} source={bar_link}>
+          <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
+        </ImageBackground>
+        <Accordion
+          dataArray={dailyArray}
+          style={styles.accordion}
+          renderContent={this._renderDaily}
+        ></Accordion>
+        <Accordion
+          dataArray={entertainArray}
+          renderContent={this._renderEntertainment}
+          style={styles.accordion}
+        ></Accordion>
+        <Accordion
+          dataArray={everydayArray}
+          style={styles.accordion}
+          renderContent={this._renderEveryday}
+        ></Accordion>
+        <Accordion
+          dataArray={happyArray}
+          style={styles.accordion}
+          renderContent={this._renderHappyHour}
+        ></Accordion>
+        <View style={styles.menuandDrinkTile}>
+          <TouchableHighlight
+            style={styles.menuTile}
+            onPress={() =>
+              navigation.navigate("BarFood", {
+                name: route.params.name,
+              })
+            }
+          >
+            <ImageBackground style={styles.menuTile} source={menu_pic}>
+              <Text style={styles.title}>Menu</Text>
+            </ImageBackground>
+          </TouchableHighlight>
 
-            <TouchableHighlight
+          <TouchableHighlight
+            style={styles.drinksTile}
+            onPress={() =>
+              navigation.navigate("BarDrinks", {
+                name: route.params.name,
+              })
+            }
+          >
+            <ImageBackground
               style={styles.drinksTile}
-              onPress={() =>
-                navigation.navigate("BarDrinks", {
-                  name: route.params.name,
-                })
-              }
+              source={drink_pic}
+              resizeMode={"stretch"}
             >
-              <ImageBackground
-                style={styles.drinksTile}
-                source={drink_pic}
-                resizeMode={"stretch"}
-              >
-                <Text style={styles.title}>Drinks</Text>
-              </ImageBackground>
-            </TouchableHighlight>
-          </View>
+              <Text style={styles.title}>Drinks</Text>
+            </ImageBackground>
+          </TouchableHighlight>
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }

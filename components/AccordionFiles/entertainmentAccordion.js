@@ -11,7 +11,7 @@ export default function EntertainmentAccordion({ name }) {
     return barData.days.map((data, key) => {
       // Need to fix possible two events and add days of the week
       return (
-        <View style={styles.container}>
+        <View style={styles.container} key={key}>
           <View style={styles.box}>
             <Text style={styles.description}>{data.entertainment[0].Band}</Text>
             <Text style={styles.price}>{data.entertainment[0].Time}</Text>

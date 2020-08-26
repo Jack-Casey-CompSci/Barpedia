@@ -13,7 +13,7 @@ export default function HappyHourAccordion({ name }) {
     return barData.happyHour.map((data, key) => {
       console.log(data, key);
       return (
-        <View style={styles.container}>
+        <View style={styles.container} key={key}>
           <View style={styles.row}>
             <View style={styles.box}>
               <Text style={styles.description}>{data.description}</Text>

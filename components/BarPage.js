@@ -118,12 +118,10 @@ export default class BarPage extends Component {
 const styles = StyleSheet.create({
   scroll: {
     flex: 1,
-    backgroundColor: "grey",
   },
   container: {
     flex: 1,
     alignItems: "center",
-    backgroundColor: "orange",
   },
   pageImage: {
     flex: 1,
@@ -131,7 +129,6 @@ const styles = StyleSheet.create({
     marginBottom: 2.5,
     width: windowWidth - 10,
     height: 200,
-    backgroundColor: "green",
     borderWidth: 2,
     borderColor: "black",
   },
@@ -155,11 +152,9 @@ const styles = StyleSheet.create({
     marginTop: 2.5,
     width: windowWidth - 10,
     height: 200,
-    backgroundColor: "yellow",
   },
   menuTile: {
     flex: 1,
-    backgroundColor: "red",
     borderWidth: 2,
     borderRightWidth: 1,
     borderColor: "black",

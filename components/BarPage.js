@@ -55,6 +55,46 @@ export default class BarPage extends Component {
     const barpic = this.props.route.params.barPic;
     const bar_link = picture_linker.getBarLink(barpic);
     return (
+<<<<<<< HEAD
+      <ScrollView style={styles.scroll} height={windowHeight}>
+        <View style={styles.container}>
+          <ImageBackground style={styles.pageImage} source={bar_link}>
+            <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
+          </ImageBackground>
+          <Accordion
+            dataArray={dailyArray}
+            style={styles.accordion}
+            renderContent={this._renderDaily}
+          ></Accordion>
+          <Accordion
+            dataArray={entertainArray}
+            renderContent={this._renderEntertainment}
+            style={styles.accordion}
+          ></Accordion>
+          <Accordion
+            dataArray={everydayArray}
+            style={styles.accordion}
+            renderContent={this._renderEveryday}
+          ></Accordion>
+          <Accordion
+            dataArray={happyArray}
+            style={styles.accordion}
+            renderContent={this._renderHappyHour}
+          ></Accordion>
+          <View style={styles.menuandDrinkTile}>
+            <TouchableHighlight
+              style={styles.menuTile}
+              onPress={() =>
+                navigation.navigate("BarFood", {
+                  name: route.params.name,
+                })
+              }
+            >
+              <ImageBackground style={styles.menuTile} source={menu_pic}>
+                <Text style={styles.title}>Menu</Text>
+              </ImageBackground>
+            </TouchableHighlight>
+=======
       <ScrollView style={styles.scroll}>
         <ImageBackground style={styles.pageImage} source={bar_link}>
           <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
@@ -92,6 +132,7 @@ export default class BarPage extends Component {
               <Text style={styles.title}>Menu</Text>
             </ImageBackground>
           </TouchableHighlight>
+>>>>>>> c8b0ff0e744864e701711ef9ed1b9130ce96ecdf
 
           <TouchableHighlight
             style={styles.drinksTile}
@@ -118,9 +159,18 @@ export default class BarPage extends Component {
 const styles = StyleSheet.create({
   scroll: {
     flex: 1,
+<<<<<<< HEAD
+=======
+  },
+  fit: {
+    flexGrow: 1,
+    backgroundColor: "green",
+    height: windowHeight
+>>>>>>> 6ef09b2cfe691ec704c80dcf4b3a642af0f99adc
   },
   container: {
     flex: 1,
+    flexGrow: 1,
     alignItems: "center",
   },
   pageImage: {
@@ -144,6 +194,7 @@ const styles = StyleSheet.create({
   },
   accordion: {
     width: windowWidth,
+    flex: 1
   },
   menuandDrinkTile: {
     flex: 1,

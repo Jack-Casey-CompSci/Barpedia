@@ -6,37 +6,72 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       }
     ]
   },
@@ -47,42 +82,77 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "Bar Bingo", "Time": "10pm - 12am" }]
+        "entertainment": [
+          {
+            "Band": "Bar Bingo",
+            "Time": "10pm - 12am"
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "Eric Faust", "Time": "11pm - 1am" }]
+        "entertainment": [
+          {
+            "Band": "Eric Faust",
+            "Time": "11pm - 1am"
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
+        "count": 3,
         "entertainment": [
-          { "Band": "Drew Zimmerman", "Time": "11:30pm - 1:30am" },
-          { "Band": "Geeks Who Drink Trivia", "Time": "9pm - 11pm" }
+          {
+            "Band": "Drew Zimmerman",
+            "Time": "11:30pm - 1:30am"
+          },
+          {
+            "Band": "Geeks Who Drink Trivia",
+            "Time": "9pm - 11pm"
+          }
         ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "Donny Burns", "Time": "10pm - 1am" }]
+        "entertainment": [
+          {
+            "Band": "Donny Burns",
+            "Time": "10pm - 1am"
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
         "entertainment": [
-          { "Band": "The Corner Brothers", "Time": "10pm - 1am" }
+          {
+            "Band": "The Corner Brothers",
+            "Time": "10pm - 1am"
+          }
         ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "Lowjack Lite", "Time": "10pm - 1am" }]
+        "entertainment": [
+          {
+            "Band": "Lowjack Lite",
+            "Time": "10pm - 1am"
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "2nd Degree Burn", "Time": "10pm - 1am" }]
+        "entertainment": [
+          {
+            "Band": "2nd Degree Burn",
+            "Time": "10pm - 1am"
+          }
+        ]
       }
     ]
   },
@@ -93,37 +163,72 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       }
     ]
   },
@@ -134,39 +239,72 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "DJ Cashous", "Time": "10pm - Close" }]
+        "entertainment": [
+          {
+            "Band": "DJ Cashous",
+            "Time": "10pm - Close"
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
         "entertainment": [
-          { "Band": "DJ Alex Nepa & Special Events", "Time": "10pm - Close" }
+          {
+            "Band": "DJ Alex Nepa & Special Events",
+            "Time": "10pm - Close"
+          }
         ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "DJ Secr3t", "Time": "10pm - Close" }]
+        "entertainment": [
+          {
+            "Band": "DJ Secr3t",
+            "Time": "10pm - Close"
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       }
     ]
   },
@@ -177,37 +315,72 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       }
     ]
   },
@@ -218,37 +391,72 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       }
     ]
   },
@@ -259,37 +467,72 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       }
     ]
   },
@@ -300,37 +543,72 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       }
     ]
   },
@@ -341,37 +619,72 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "Country Night", "Time": "9pm - 2am" }]
+        "entertainment": [
+          {
+            "Band": "Country Night",
+            "Time": "9pm - 2am"
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
-        "entertainment": [{ "Band": "Team Trivia", "Time": "8pm - 10pm" }]
+        "entertainment": [
+          {
+            "Band": "Team Trivia",
+            "Time": "8pm - 10pm"
+          }
+        ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
-        "entertainment": [{ "Band": "DJ State Smokes", "Time": "9pm - Close" }]
+        "entertainment": [
+          {
+            "Band": "DJ State Smokes",
+            "Time": "9pm - Close"
+          }
+        ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "DJ Clear EV", "Time": "10pm - 12am" }]
+        "entertainment": [
+          {
+            "Band": "DJ Clear EV",
+            "Time": "10pm - 12am"
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       }
     ]
   },
@@ -382,37 +695,72 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       }
     ]
   },
@@ -423,37 +771,72 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       }
     ]
   },
@@ -464,37 +847,72 @@
       {
         "id": "1",
         "day": "Monday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "2",
         "day": "Tuesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "3",
         "day": "Wednesday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "4",
         "day": "Thursday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "5",
         "day": "Friday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "6",
         "day": "Saturday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       },
       {
         "id": "7",
         "day": "Sunday",
-        "entertainment": [{ "Band": "", "Time": "" }]
+        "entertainment": [
+          {
+            "Band": "",
+            "Time": ""
+          }
+        ]
       }
     ]
   }

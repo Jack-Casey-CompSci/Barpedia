@@ -55,7 +55,7 @@ export default class BarPage extends Component {
     const barpic = this.props.route.params.barPic;
     const bar_link = picture_linker.getBarLink(barpic);
     return (
-      <View style={styles.scroll}>
+      <ScrollView style={styles.scroll} height={windowHeight}>
         <View style={styles.container}>
           <ImageBackground style={styles.pageImage} source={bar_link}>
             <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
@@ -112,7 +112,7 @@ export default class BarPage extends Component {
             </TouchableHighlight>
           </View>
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }
@@ -120,12 +120,16 @@ export default class BarPage extends Component {
 const styles = StyleSheet.create({
   scroll: {
     flex: 1,
-    backgroundColor: "grey",
+  },
+  fit: {
+    flexGrow: 1,
+    backgroundColor: "green",
+    height: windowHeight
   },
   container: {
     flex: 1,
+    flexGrow: 1,
     alignItems: "center",
-    backgroundColor: "orange",
   },
   pageImage: {
     flex: 1,
@@ -149,6 +153,7 @@ const styles = StyleSheet.create({
   },
   accordion: {
     width: windowWidth,
+    flex: 1
   },
   menuandDrinkTile: {
     flex: 1,

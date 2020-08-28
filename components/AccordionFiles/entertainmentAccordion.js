@@ -10,14 +10,30 @@ export default function EntertainmentAccordion({ name }) {
   if (barData.available) {
     return barData.days.map((data, key) => {
       // Need to fix possible two events and add days of the week
-      return (
-        <View style={styles.container}>
-          <View style={styles.box}>
-            <Text style={styles.description}>{data.entertainment[0].Band}</Text>
-            <Text style={styles.price}>{data.entertainment[0].Time}</Text>
+      if (data.count > 1) {
+        return (
+          <View style={styles.container} key={key}>
+            <View style={styles.box}>
+              <Text style={styles.description}>{data.day}</Text>
+              <Text style={styles.description}>{data.entertainment[0].Band}</Text>
+              <Text style={styles.price}>{data.entertainment[0].Time}</Text>
+              <Text style={styles.description}>{data.entertainment[1].Band}</Text>
+              <Text style={styles.price}>{data.entertainment[1].Time}</Text>
+            </View>
           </View>
-        </View>
-      );
+        );
+      }
+      else {
+        return (
+          <View style={styles.container} key={key}>
+            <View style={styles.box}>
+              <Text style={styles.description}>{data.day}</Text>
+              <Text style={styles.description}>{data.entertainment[0].Band}</Text>
+              <Text style={styles.price}>{data.entertainment[0].Time}</Text>
+            </View>
+          </View>
+        );
+      }
     });
   } else {
     return <Text>This is not offered at this bar</Text>;

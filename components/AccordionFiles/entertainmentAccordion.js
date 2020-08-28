@@ -9,27 +9,37 @@ export default function EntertainmentAccordion({ name }) {
   });
   if (barData.available) {
     return barData.days.map((data, key) => {
-      // Need to fix possible two events and add days of the week
       if (data.count > 1) {
         return (
           <View style={styles.container} key={key}>
-            <View style={styles.box}>
-              <Text style={styles.description}>{data.day}</Text>
-              <Text style={styles.description}>{data.entertainment[0].Band}</Text>
-              <Text style={styles.price}>{data.entertainment[0].Time}</Text>
-              <Text style={styles.description}>{data.entertainment[1].Band}</Text>
-              <Text style={styles.price}>{data.entertainment[1].Time}</Text>
+            <View style={styles.day}>
+              <Text style={styles.day}>{data.day}</Text>
+              <View style={styles.event}>
+                <Text style={styles.description}>
+                  {data.entertainment[0].Band}
+                </Text>
+                <Text style={styles.price}>{data.entertainment[0].Time}</Text>
+              </View>
+              <View style={styles.event}>
+                <Text style={styles.description}>
+                  {data.entertainment[1].Band}
+                </Text>
+                <Text style={styles.price}>{data.entertainment[1].Time}</Text>
+              </View>
             </View>
           </View>
         );
-      }
-      else {
+      } else {
         return (
           <View style={styles.container} key={key}>
-            <View style={styles.box}>
-              <Text style={styles.description}>{data.day}</Text>
-              <Text style={styles.description}>{data.entertainment[0].Band}</Text>
-              <Text style={styles.price}>{data.entertainment[0].Time}</Text>
+            <View style={styles.day}>
+              <Text style={styles.day}>{data.day}</Text>
+              <View style={styles.event}>
+                <Text style={styles.description}>
+                  {data.entertainment[0].Band}
+                </Text>
+                <Text style={styles.price}>{data.entertainment[0].Time}</Text>
+              </View>
             </View>
           </View>
         );
@@ -43,18 +53,19 @@ export default function EntertainmentAccordion({ name }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin: 10,
+    margin: 5,
   },
-  row: {
-    flexDirection: "row",
+  day: {
+    flexDirection: "column",
+    fontSize: 20,
+    fontWeight: "bold",
   },
-  box: {
-    flex: 3,
+  event: {
     flexDirection: "row",
   },
   description: {
     fontSize: 16,
-    flex: 2,
+    flex: 1,
   },
   price: {
     fontSize: 16,

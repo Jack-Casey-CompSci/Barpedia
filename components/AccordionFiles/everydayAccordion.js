@@ -10,7 +10,7 @@ export default function everydayAccordion({ name }) {
   if (barData.available) {
     return barData.everyday.map((data, key) => {
       return (
-        <View style={styles.container}>
+        <View style={styles.container} key={key}>
           <View style={styles.box}>
             <Text style={styles.description}>{data.Drink}</Text>
             <Text style={styles.price}>{data.Price}</Text>

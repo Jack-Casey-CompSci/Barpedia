@@ -3,7 +3,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../assets/menuPictures/barBleuDrinks.png"),
+          source: require("../assets/menuPictures/phyrstDrinks.png"),
         },
       },
     ];
@@ -11,7 +11,17 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../assets/menuPictures/champsDrinks.png"),
+          source: require("../assets/menuPictures/champsDrinks1.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../assets/menuPictures/champsDrinks2.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../assets/menuPictures/champsDrinks3.png"),
         },
       },
     ];
@@ -19,7 +29,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../assets/menuPictures/champsDrinks.png"),
+          source: require("../assets/menuPictures/barBleuDrinks.png"),
         },
       },
     ];
@@ -27,7 +37,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../assets/menuPictures/champsDrinks.png"),
+          source: require("../assets/menuPictures/noMenu.png"),
         },
       },
     ];
@@ -35,7 +45,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../assets/menuPictures/champsDrinks.png"),
+          source: require("../assets/menuPictures/primantiDrinks.png"),
         },
       },
     ];
@@ -43,7 +53,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../assets/menuPictures/champsDrinks.png"),
+          source: require("../assets/menuPictures/noMenu.png"),
         },
       },
     ];
@@ -51,7 +61,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../assets/menuPictures/champsDrinks.png"),
+          source: require("../assets/menuPictures/noMenu.png"),
         },
       },
     ];
@@ -67,7 +77,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../assets/menuPictures/champsDrinks.png"),
+          source: require("../assets/menuPictures/noMenu.png"),
         },
       },
     ];
@@ -75,7 +85,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../assets/menuPictures/champsDrinks.png"),
+          source: require("../assets/menuPictures/madMexDrinks.png"),
         },
       },
     ];
@@ -83,7 +93,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../assets/menuPictures/champsDrinks.png"),
+          source: require("../assets/menuPictures/champsDrinks1.png"),
         },
       },
     ];
@@ -91,7 +101,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../assets/menuPictures/champsDrinks.png"),
+          source: require("../assets/menuPictures/noMenu.png"),
         },
       },
     ];

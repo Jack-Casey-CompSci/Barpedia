@@ -55,6 +55,7 @@ export default class BarPage extends Component {
   render() {
     const barpic = this.props.route.params.barPic;
     const bar_link = picture_linker.getBarLink(barpic);
+    console.log(this.props.route.params.name);
     return (
       <ScrollView style={styles.scroll}>
         <ImageBackground style={styles.pageImage} source={bar_link}>
@@ -84,8 +85,8 @@ export default class BarPage extends Component {
           <TouchableHighlight
             style={styles.menuTile}
             onPress={() =>
-              navigation.navigate("BarFood", {
-                name: route.params.name,
+              this.props.navigation.navigate("BarFood", {
+                name: this.props.route.params.name
               })
             }
           >
@@ -97,8 +98,8 @@ export default class BarPage extends Component {
           <TouchableHighlight
             style={styles.drinksTile}
             onPress={() =>
-              navigation.navigate("BarDrinks", {
-                name: route.params.name,
+              this.props.navigation.navigate("BarDrinks", {
+                name: this.props.route.params.name
               })
             }
           >

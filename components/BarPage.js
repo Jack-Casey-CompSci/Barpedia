@@ -21,6 +21,8 @@ import drink_pic from "../assets/menuPictures/drink_pic.png";
 import logo from "../assets/Barpedia_logo.png";
 import { render } from "react-dom";
 
+import CoverChargeModal from "./CoverChargeModal.js";
+
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 const dailyArray = [{ title: "Daily Specials", content: "" }];
@@ -57,63 +59,66 @@ export default class BarPage extends Component {
     const bar_link = picture_linker.getBarLink(barpic);
     console.log(this.props.route.params.name);
     return (
-      <ScrollView style={styles.scroll}>
-        <ImageBackground style={styles.pageImage} source={bar_link}>
-          <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
-        </ImageBackground>
-        <Accordion
-          dataArray={dailyArray}
-          style={styles.accordion}
-          renderContent={this._renderDaily}
-        ></Accordion>
-        <Accordion
-          dataArray={entertainArray}
-          renderContent={this._renderEntertainment}
-          style={styles.accordion}
-        ></Accordion>
-        <Accordion
-          dataArray={everydayArray}
-          style={styles.accordion}
-          renderContent={this._renderEveryday}
-        ></Accordion>
-        <Accordion
-          dataArray={happyArray}
-          style={styles.accordion}
-          renderContent={this._renderHappyHour}
-        ></Accordion>
-        <View style={styles.menuandDrinkTile}>
-          <TouchableHighlight
-            style={styles.menuTile}
-            onPress={() =>
-              this.props.navigation.navigate("BarFood", {
-                name: this.props.route.params.name
-              })
-            }
-          >
-            <ImageBackground style={styles.menuTile} source={menu_pic}>
-              <Text style={styles.title}>Menu</Text>
-            </ImageBackground>
-          </TouchableHighlight>
-
-          <TouchableHighlight
-            style={styles.drinksTile}
-            onPress={() =>
-              this.props.navigation.navigate("BarDrinks", {
-                name: this.props.route.params.name
-              })
-            }
-          >
-            <ImageBackground
-              style={styles.drinksTile}
-              source={drink_pic}
-              resizeMode={"stretch"}
+      <>
+        <CoverChargeModal coverCharge={this.props.route.params.coverCharge}></CoverChargeModal>
+        <ScrollView style={styles.scroll}>
+          <ImageBackground style={styles.pageImage} source={bar_link}>
+            <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
+          </ImageBackground>
+          <Accordion
+            dataArray={dailyArray}
+            style={styles.accordion}
+            renderContent={this._renderDaily}
+          ></Accordion>
+          <Accordion
+            dataArray={entertainArray}
+            renderContent={this._renderEntertainment}
+            style={styles.accordion}
+          ></Accordion>
+          <Accordion
+            dataArray={everydayArray}
+            style={styles.accordion}
+            renderContent={this._renderEveryday}
+          ></Accordion>
+          <Accordion
+            dataArray={happyArray}
+            style={styles.accordion}
+            renderContent={this._renderHappyHour}
+          ></Accordion>
+          <View style={styles.menuandDrinkTile}>
+            <TouchableHighlight
+              style={styles.menuTile}
+              onPress={() =>
+                this.props.navigation.navigate("BarFood", {
+                  name: this.props.route.params.name
+                })
+              }
             >
-              <Text style={styles.title}>Drinks</Text>
-            </ImageBackground>
-          </TouchableHighlight>
-        </View>
-        <Image style={styles.logo} source={logo}></Image>
-      </ScrollView>
+              <ImageBackground style={styles.menuTile} source={menu_pic}>
+                <Text style={styles.title}>Menu</Text>
+              </ImageBackground>
+            </TouchableHighlight>
+
+            <TouchableHighlight
+              style={styles.drinksTile}
+              onPress={() =>
+                this.props.navigation.navigate("BarDrinks", {
+                  name: this.props.route.params.name
+                })
+              }
+            >
+              <ImageBackground
+                style={styles.drinksTile}
+                source={drink_pic}
+                resizeMode={"stretch"}
+              >
+                <Text style={styles.title}>Drinks</Text>
+              </ImageBackground>
+            </TouchableHighlight>
+          </View>
+          <Image style={styles.logo} source={logo}></Image>
+        </ScrollView>
+      </>
     );
   }
 }

@@ -14,9 +14,9 @@
       "Saturday": "5:00 pm - 2:00 am"
     },
     "phone": "7178675309",
-    "address": "111 East Beaver Street"
+    "address": "111 East Beaver Street",
+    "coverCharge": 5
   },
-
   {
     "id": "a2",
     "name": "Champs Downtown",
@@ -32,9 +32,9 @@
       "Saturday": "12:00 pm - 2:00 am"
     },
     "phone": "8142381110",
-    "address": "139 S Allen St"
+    "address": "139 S Allen St",
+    "coverCharge": 0
   },
-
   {
     "id": "a3",
     "name": "Bar Bleu",
@@ -50,9 +50,9 @@
       "Saturday": "3:00 pm - 2:00 am"
     },
     "phone": "8142370374",
-    "address": "112 S Garner St"
+    "address": "112 S Garner St",
+    "coverCharge": 0
   },
-
   {
     "id": "a4",
     "name": "Lions Den",
@@ -68,9 +68,9 @@
       "Saturday": "8:00 pm - 2:00 am"
     },
     "phone": "8142375081",
-    "address": "118 S Garner St"
+    "address": "118 S Garner St",
+    "coverCharge": 0
   },
-
   {
     "id": "a5",
     "name": "Primanti Brothers",
@@ -86,9 +86,9 @@
       "Saturday": "11:00 am - 12:00 am"
     },
     "phone": "8148629367",
-    "address": "130 Heister St"
+    "address": "130 Heister St",
+    "coverCharge": 0
   },
-
   {
     "id": "a6",
     "name": "Chrome",
@@ -104,9 +104,9 @@
       "Saturday": "9:00 pm - 2:00 am"
     },
     "phone": "8142310808",
-    "address": "222 W Beaver Street"
+    "address": "222 W Beaver Street",
+    "coverCharge": 0
   },
-
   {
     "id": "a7",
     "name": "Basement",
@@ -121,9 +121,9 @@
       "Friday": "5:00 pm - 2:00 am",
       "Saturday": "5:00 pm - 2:00 am"
     },
-    "address": "111 East Beaver Street"
+    "address": "111 East Beaver Street",
+    "coverCharge": 0
   },
-
   {
     "id": "a8",
     "name": "Cafe 210",
@@ -138,9 +138,9 @@
       "Friday": "5:00 pm - 2:00 am",
       "Saturday": "5:00 pm - 2:00 am"
     },
-    "address": "111 East Beaver Street"
+    "address": "111 East Beaver Street",
+    "coverCharge": 0
   },
-
   {
     "id": "a9",
     "name": "Doggies",
@@ -155,9 +155,9 @@
       "Friday": "5:00 pm - 2:00 am",
       "Saturday": "5:00 pm - 2:00 am"
     },
-    "address": "111 East Beaver Street"
+    "address": "111 East Beaver Street",
+    "coverCharge": 0
   },
-
   {
     "id": "a10",
     "name": "Mad Mex",
@@ -172,9 +172,9 @@
       "Friday": "5:00 pm - 2:00 am",
       "Saturday": "5:00 pm - 2:00 am"
     },
-    "address": "111 East Beaver Street"
+    "address": "111 East Beaver Street",
+    "coverCharge": 0
   },
-
   {
     "id": "a11",
     "name": "Pickles",
@@ -189,9 +189,9 @@
       "Friday": "5:00 pm - 2:00 am",
       "Saturday": "5:00 pm - 2:00 am"
     },
-    "address": "111 East Beaver Street"
+    "address": "111 East Beaver Street",
+    "coverCharge": 0
   },
-
   {
     "id": "a12",
     "name": "Shandygaff",
@@ -206,6 +206,7 @@
       "Friday": "5:00 pm - 2:00 am",
       "Saturday": "5:00 pm - 2:00 am"
     },
-    "address": "111 East Beaver Street"
+    "address": "111 East Beaver Street",
+    "coverCharge": 0
   }
 ]

@@ -1,27 +1,25 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-import EverydayValues from "../../data/happyHour.json";
+import HappyHour from "../../data/happyHour.json";
 
 export default function HappyHourAccordion({ name }) {
-  const barData = EverydayValues.find((element) => {
+  const barData = HappyHour.find((element) => {
     return element.name === name;
   });
-
   if (barData.available) {
     return barData.happyHour.map((data, key) => {
-      console.log(data, key);
       return (
         <View style={styles.container} key={key}>
-          <View style={styles.row}>
-            <View style={styles.box}>
-              <Text style={styles.description}>{data.description}</Text>
-              <Text style={styles.price}>{data.price}</Text>
-            </View>
+          <View style={styles.box}>
+            <Text style={styles.description}>{data.Drink}</Text>
+            <Text style={styles.price}>{data.Price}</Text>
           </View>
         </View>
       );
     });
+  } else {
+    return <Text>This is not offered at this bar</Text>;
   }
 }
 

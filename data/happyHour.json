@@ -4,60 +4,60 @@
     "available": true,
     "happyHour": [
       {
-        "description": "Vodka Redbull",
-        "price": "$4.25"
+        "Drink": "Vodka Redbull",
+        "Price": "$4.25"
       },
       {
-        "description": "Purple Gatorade",
-        "price": "$3.00"
+        "Drink": "Purple Gatorade",
+        "Price": "$3.00"
       },
       {
-        "description": "Green Tea",
-        "price": "$2.50"
+        "Drink": "Green Tea",
+        "Price": "$2.50"
       },
       {
-        "description": "Bear Fight",
-        "price": "$8.00"
+        "Drink": "Bear Fight",
+        "Price": "$8.00"
       },
       {
-        "description": "Irish Car Bomb",
-        "price": "$3.25"
+        "Drink": "Irish Car Bomb",
+        "Price": "$3.25"
       },
       {
-        "description": "4.09 Bomb",
-        "price": "$4.00"
+        "Drink": "4.09 Bomb",
+        "Price": "$4.00"
       },
       {
-        "description": "Jason O Bomb",
-        "price": "$4.00"
+        "Drink": "Jason O Bomb",
+        "Price": "$4.00"
       },
       {
-        "description": "Vegas Bomb",
-        "price": "$4.00"
+        "Drink": "Vegas Bomb",
+        "Price": "$4.00"
       },
       {
-        "description": "Jager Bomb",
-        "price": "$4.00"
+        "Drink": "Jager Bomb",
+        "Price": "$4.00"
       },
       {
-        "description": "Bazooka Joe",
-        "price": "$4.00"
+        "Drink": "Bazooka Joe",
+        "Price": "$4.00"
       },
       {
-        "description": "Stars & Stripes",
-        "price": "$4.00"
+        "Drink": "Stars & Stripes",
+        "Price": "$4.00"
       },
       {
-        "description": "Hero Zero Bombs",
-        "price": "$4.00"
+        "Drink": "Hero Zero Bombs",
+        "Price": "$4.00"
       },
       {
-        "description": "Batman Bomb",
-        "price": "$4.00"
+        "Drink": "Batman Bomb",
+        "Price": "$4.00"
       },
       {
-        "description": "American Gladiator Bomb",
-        "price": "$4.00"
+        "Drink": "American Gladiator Bomb",
+        "Price": "$4.00"
       }
     ]
   },
@@ -86,64 +86,64 @@
     "available": true,
     "happyHour": [
       {
-        "description": "Big Basement Teas",
-        "price": "$2.00"
+        "Drink": "Big Basement Teas",
+        "Price": "$2.00"
       },
       {
-        "description": "Jolly Rancher Shots",
-        "price": "$2.00"
+        "Drink": "Jolly Rancher Shots",
+        "Price": "$2.00"
       },
       {
-        "description": "Red Kamikaze Shots",
-        "price": "$2.00"
+        "Drink": "Red Kamikaze Shots",
+        "Price": "$2.00"
       },
       {
-        "description": "Well Liquors (Vodka, Rum, Gin, Whiskey)",
-        "price": "$3.00"
+        "Drink": "Well Liquors (Vodka, Rum, Gin, Whiskey)",
+        "Price": "$3.00"
       },
       {
-        "description": "Fireball Shots",
-        "price": "$3.00"
+        "Drink": "Fireball Shots",
+        "Price": "$3.00"
       },
       {
-        "description": "Tequila Shots",
-        "price": "$3.00"
+        "Drink": "Tequila Shots",
+        "Price": "$3.00"
       },
       {
-        "description": "Hypnotiq Cocktails",
-        "price": "$3.00"
+        "Drink": "Hypnotiq Cocktails",
+        "Price": "$3.00"
       },
       {
-        "description": "Bacardi Drinks",
-        "price": "$3.50"
+        "Drink": "Bacardi Drinks",
+        "Price": "$3.50"
       },
       {
-        "description": "Captain Morgan Drinks",
-        "price": "$3.50"
+        "Drink": "Captain Morgan Drinks",
+        "Price": "$3.50"
       },
       {
-        "description": "Smirnoff Drinks",
-        "price": "$3.50"
+        "Drink": "Smirnoff Drinks",
+        "Price": "$3.50"
       },
       {
-        "description": "Vegas Bombs",
-        "price": "$4.00"
+        "Drink": "Vegas Bombs",
+        "Price": "$4.00"
       },
       {
-        "description": "Cuervo & Lemonade",
-        "price": "$4.00"
+        "Drink": "Cuervo & Lemonade",
+        "Price": "$4.00"
       },
       {
-        "description": "Incredible Hulk Shots",
-        "price": "$5.00"
+        "Drink": "Incredible Hulk Shots",
+        "Price": "$5.00"
       },
       {
-        "description": "Patron",
-        "price": "$6.00"
+        "Drink": "Patron",
+        "Price": "$6.00"
       },
       {
-        "description": "Full Shooter Menu",
-        "price": "$3.00"
+        "Drink": "Full Shooter Menu",
+        "Price": "$3.00"
       }
     ]
   },
@@ -152,16 +152,16 @@
     "available": true,
     "happyHour": [
       {
-        "description": "White Claw",
-        "price": "$4.00"
+        "Drink": "White Claw",
+        "Price": "$4.00"
       },
       {
-        "description": "Captain Morgan",
-        "price": "$3.00"
+        "Drink": "Captain Morgan",
+        "Price": "$3.00"
       },
       {
-        "description": "Smirnoff Raspberry Lemonade",
-        "price": "$3.00"
+        "Drink": "Smirnoff Raspberry Lemonade",
+        "Price": "$3.00"
       }
     ]
   },
@@ -170,27 +170,37 @@
     "available": true,
     "happyHour": [
       {
-        "description": "Big Azz Margaritas",
-        "price": "$7.00"
+        "Drink": "Big Azz Margaritas",
+        "Price": "$7.00"
       },
       {
-        "description": "12oz House Margaritas",
-        "price": "$3.00"
+        "Drink": "12oz House Margaritas",
+        "Price": "$3.00"
       },
       {
-        "description": "16oz House Margaritas",
-        "price": "$5.00"
+        "Drink": "16oz House Margaritas",
+        "Price": "$5.00"
       }
     ]
   },
   {
     "name": "Shandygaff",
     "available": false,
-    "happyHour": [
-      {
-        "description": "",
-        "price": ""
-      }
-    ]
+    "happyHour": []
+  },
+  {
+    "name": "Cafe 210",
+    "available": false,
+    "happyHour": []
+  },
+  {
+    "name": "Chrome",
+    "available": false,
+    "happyHour": []
+  },
+  {
+    "name": "Pickles",
+    "available": false,
+    "happyHour": []
   }
 ]

@@ -60,7 +60,9 @@ export default class BarPage extends Component {
     console.log(this.props.route.params.name);
     return (
       <>
-        <CoverChargeModal coverCharge={this.props.route.params.coverCharge}></CoverChargeModal>
+        <CoverChargeModal
+          coverCharge={this.props.route.params.coverCharge}
+        ></CoverChargeModal>
         <ScrollView style={styles.scroll}>
           <ImageBackground style={styles.pageImage} source={bar_link}>
             <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
@@ -90,7 +92,7 @@ export default class BarPage extends Component {
               style={styles.menuTile}
               onPress={() =>
                 this.props.navigation.navigate("BarFood", {
-                  name: this.props.route.params.name
+                  name: this.props.route.params.name,
                 })
               }
             >
@@ -103,7 +105,7 @@ export default class BarPage extends Component {
               style={styles.drinksTile}
               onPress={() =>
                 this.props.navigation.navigate("BarDrinks", {
-                  name: this.props.route.params.name
+                  name: this.props.route.params.name,
                 })
               }
             >

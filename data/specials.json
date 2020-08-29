@@ -1,0 +1,1755 @@
+[
+  {
+    "name": "Champs Downtown",
+    "available": true,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$3 White Claws",
+              "Time": "All Day"
+            },
+            "Event2": {
+              "Description": "1/2 Price Happys",
+              "Time": "10pm-Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "50 cent Wings & Meatless Monday",
+            "Time": "5pm-10pm"
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$4 Frose",
+              "Time": "All Day"
+            },
+            "Event2": {
+              "Description": "$2uesday",
+              "Time": "9pm-Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$1 Nachos",
+            "Time": "8pm-10pm"
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$3 Fat Tires",
+              "Time": "All Day"
+            },
+            "Event2": {
+              "Description": "1/2 Price Happys",
+              "Time": "10pm-Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$1 Tacos",
+            "Time": "8pm-10pm"
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$4 Frose",
+              "Time": "All Day"
+            },
+            "Event2": {
+              "Description": "Thirsty Thursday",
+              "Time": "9pm-Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "50 cent Wings",
+            "Time": "8pm-11pm"
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$5 Don Julio Shots and Margaritas",
+              "Time": "All Day"
+            },
+            "Event2": {
+              "Description": "1/2 Price Happys",
+              "Time": "10pm-Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "1/2 Price Happys",
+              "Time": "10pm-Midnight"
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$3 Mimosas, $3 Brunchboxes, $4 Pedia-Boxes",
+              "Time": "All Day"
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$1 Tacos",
+            "Time": "2pm-10pm"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Phyrst",
+    "available": true,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "Happy Hour",
+              "Time": "9pm-11pm"
+            },
+            "Event2": {
+              "Description": "Mojito Pitcher $10",
+              "Time": "Until Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "Happy Hour",
+              "Time": "9pm-11pm"
+            },
+            "Event2": {
+              "Description": "$2 22oz Yuengling Drafts",
+              "Time": "Until Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "1/2 Dozen Wings",
+            "Time": "9pm-10pm"
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "Happy Hour",
+              "Time": "9pm-11pm"
+            },
+            "Event2": {
+              "Description": "$4 Smirnoff Crushes",
+              "Time": "Until Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "Happy Hour",
+              "Time": "9pm-11pm"
+            },
+            "Event2": {
+              "Description": "$7 Truly Punch Pitchers",
+              "Time": "Until Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "Happy Hour",
+              "Time": "8pm-10pm"
+            },
+            "Event2": {
+              "Description": "$2 Miller Lite Drafts",
+              "Time": "Until Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "Happy Hour",
+              "Time": "8pm-10pm"
+            },
+            "Event2": {
+              "Description": "$3 Mitch-a-Palooza's",
+              "Time": "Until Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "Happy Hour",
+              "Time": "9pm-11pm"
+            },
+            "Event2": {
+              "Description": "$17.50 Corona Premier Buckets",
+              "Time": "Until Midnight"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$1 Tacos",
+            "Time": "2pm-10pm"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bar Bleu",
+    "available": false,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": "t"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Lions Den",
+    "available": false,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": "t"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Primanti Brothers",
+    "available": false,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": "t"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Chrome",
+    "available": false,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": "t"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      }
+    ]
+  },
+
+  {
+    "name": "Basement",
+    "available": false,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": "t"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Cafe 210",
+    "available": false,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Doggies",
+    "available": false,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": "t"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mad Mex",
+    "available": false,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": "t"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Pickles",
+    "available": false,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": "t"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Shandygaff",
+    "available": false,
+    "days": [
+      {
+        "id": "1",
+        "day": "Monday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "2",
+        "day": "Tuesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "3",
+        "day": "Wednesday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": "t"
+            }
+          },
+          "FoodSpecials": {
+            "Description": "$",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "4",
+        "day": "Thursday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "5",
+        "day": "Friday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "$",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "6",
+        "day": "Saturday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      },
+      {
+        "id": "7",
+        "day": "Sunday",
+        "info": {
+          "DrinkSpecials": {
+            "Event1": {
+              "Description": "",
+              "Time": ""
+            },
+            "Event2": {
+              "Description": "",
+              "Time": ""
+            }
+          },
+          "FoodSpecials": {
+            "Description": "",
+            "Time": ""
+          }
+        }
+      }
+    ]
+  }
+]

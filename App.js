@@ -1,21 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+
+import BarMenu from "./components/BarMenu.js";
+import BarPage from "./components/BarPage.js";
+import BarFood from "./components/BarSpecificMenu";
+import BarDrinks from "./components/BarSpecificDrinks";
+
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+
+const { Navigator, Screen } = createStackNavigator();
+
+console.disableYellowBox = true;
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Navigator>
+        <Screen name="Home" component={BarMenu} />
+        <Screen name="Details" component={BarPage} />
+        <Screen name="BarFood" component={BarFood} />
+        <Screen name="BarDrinks" component={BarDrinks} />
+      </Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

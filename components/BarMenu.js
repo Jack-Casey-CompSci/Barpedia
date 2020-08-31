@@ -25,7 +25,7 @@ export default function BarMenu({ navigation }) {
                   name: item.name,
                   description: item.description,
                   barPic: item.pic_name,
-                  coverCharge: item.coverCharge
+                  coverCharge: item.coverCharge,
                 })
               }
             />

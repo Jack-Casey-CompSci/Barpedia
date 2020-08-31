@@ -23,7 +23,7 @@ export default function CoverChargeModal({ coverCharge }) {
                                 setModalVisible(!modalVisible);
                             }}
                         >
-                            <Text style={styles.textStyle}></Text>
+                            <Text style={styles.textStyle}>Dismiss</Text>
                         </TouchableHighlight>
                     </View>
                 </View>

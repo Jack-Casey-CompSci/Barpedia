@@ -65,11 +65,13 @@ export default class BarPage extends Component {
           <ImageBackground style={styles.pageImage} source={bar_link}>
             <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
           </ImageBackground>
-          <Button title="Report Line/Cover Charge" onPress={() => this.props.navigation.navigate("LineReporting",
-            {
-              name: this.props.route.params.name
-            })
-          }
+          <Button
+            title="Report Line/Cover Charge"
+            onPress={() =>
+              this.props.navigation.navigate("LineReporting", {
+                name: this.props.route.params.name,
+              })
+            }
           ></Button>
           <Accordion
             dataArray={dailyArray}

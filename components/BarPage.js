@@ -1,5 +1,6 @@
 import React, { useState, Component } from "react";
 import {
+  Button,
   Image,
   ImageBackground,
   ScrollView,
@@ -20,7 +21,6 @@ import menu_pic from "../assets/menuPictures/menu_pic.jpg";
 import drink_pic from "../assets/menuPictures/drink_pic.png";
 import logo from "../assets/Barpedia_logo.png";
 import { render } from "react-dom";
-
 import CoverChargeModal from "./CoverChargeModal.js";
 
 const windowWidth = Dimensions.get("window").width;
@@ -37,7 +37,6 @@ export default class BarPage extends Component {
       barName: this.props.route.params.name,
     };
   }
-
   _renderDaily = (item) => {
     return <EventsSpecials name={this.state.barName}></EventsSpecials>;
   };
@@ -57,7 +56,6 @@ export default class BarPage extends Component {
   render() {
     const barpic = this.props.route.params.barPic;
     const bar_link = picture_linker.getBarLink(barpic);
-    console.log(this.props.route.params.name);
     return (
       <>
         <CoverChargeModal
@@ -67,6 +65,12 @@ export default class BarPage extends Component {
           <ImageBackground style={styles.pageImage} source={bar_link}>
             <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
           </ImageBackground>
+          <Button title="Report Line/Cover Charge" onPress={() => this.props.navigation.navigate("LineReporting",
+            {
+              name: this.props.route.params.name
+            })
+          }
+          ></Button>
           <Accordion
             dataArray={dailyArray}
             style={styles.accordion}

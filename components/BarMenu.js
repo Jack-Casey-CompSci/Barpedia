@@ -20,7 +20,6 @@ export default function BarMenu({ navigation }) {
     wait(1000).then(() => setRefreshing(false));
   }, []);
   return (
-
     <ScrollView
       style={styles.container}
       refreshControl={

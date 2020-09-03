@@ -4,6 +4,7 @@ import BarMenu from "./components/BarMenu.js";
 import BarPage from "./components/BarPage.js";
 import BarFood from "./components/BarSpecificMenu";
 import BarDrinks from "./components/BarSpecificDrinks";
+import LineReporting from "./components/TestForm.js"
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -20,6 +21,7 @@ export default function App() {
         <Screen name="Details" component={BarPage} />
         <Screen name="BarFood" component={BarFood} />
         <Screen name="BarDrinks" component={BarDrinks} />
+        <Screen name="LineReporting" component={LineReporting} />
       </Navigator>
     </NavigationContainer>
   );

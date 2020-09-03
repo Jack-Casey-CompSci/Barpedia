@@ -1,4 +1,4 @@
-import barImages from "../assets/bar_list.js";
+import barImages from "../../assets/bar_list.js";
 
 function getBarLink(bar) {
   //console.log(bar);

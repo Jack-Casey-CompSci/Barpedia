@@ -13,7 +13,7 @@ import {
 } from "react-native";
 import { Accordion } from "native-base";
 import EventsSpecials from "./AccordionFiles/specialsAccordion.js";
-import picture_linker from "./picture_linker.js";
+import picture_linker from "./PictureLinkers/picture_linker.js";
 import HappyHour from "./AccordionFiles/happyHourAccordion.js";
 import Everyday from "./AccordionFiles/everydayAccordion.js";
 import Entertainment from "./AccordionFiles/entertainmentAccordion";

@@ -2,9 +2,9 @@ import React from "react";
 
 import BarMenu from "./components/BarMenu.js";
 import BarPage from "./components/BarPage.js";
-import BarFood from "./components/BarSpecificMenu";
-import BarDrinks from "./components/BarSpecificDrinks";
-import LineReporting from "./components/TestForm.js"
+import BarFood from "./components/PictureLinkers/BarSpecificMenu.js";
+import BarDrinks from "./components/PictureLinkers/BarSpecificDrinks.js";
+import LineReporting from "./components/TestForm.js";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";

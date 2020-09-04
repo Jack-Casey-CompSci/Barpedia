@@ -7,7 +7,7 @@ import {
   TouchableHighlight,
 } from "react-native";
 
-import picture_linker from "./picture_linker";
+import picture_linker from "./PictureLinkers/picture_linker";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;

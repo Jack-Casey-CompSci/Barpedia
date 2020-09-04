@@ -13,7 +13,7 @@ import {
 } from "react-native";
 import { Accordion } from "native-base";
 import EventsSpecials from "./AccordionFiles/specialsAccordion.js";
-import picture_linker from "./picture_linker.js";
+import picture_linker from "./PictureLinkers/picture_linker.js";
 import HappyHour from "./AccordionFiles/happyHourAccordion.js";
 import Everyday from "./AccordionFiles/everydayAccordion.js";
 import Entertainment from "./AccordionFiles/entertainmentAccordion";
@@ -65,11 +65,13 @@ export default class BarPage extends Component {
           <ImageBackground style={styles.pageImage} source={bar_link}>
             <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
           </ImageBackground>
-          <Button title="Report Line/Cover Charge" onPress={() => this.props.navigation.navigate("LineReporting",
-            {
-              name: this.props.route.params.name
-            })
-          }
+          <Button
+            title="Report Line/Cover Charge"
+            onPress={() =>
+              this.props.navigation.navigate("LineReporting", {
+                name: this.props.route.params.name,
+              })
+            }
           ></Button>
           <Accordion
             dataArray={dailyArray}

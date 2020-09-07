@@ -5,7 +5,9 @@ import {
   Dimensions,
   Text,
   TouchableHighlight,
+  View,
 } from "react-native";
+import { Icon } from "native-base";
 
 import picture_linker from "./PictureLinkers/picture_linker";
 
@@ -16,20 +18,66 @@ export default function BarCard({
   barName,
   barDescription,
   barPic,
+  barLine,
   onPress = (f) => f,
 }) {
   const bar_link = picture_linker.getBarLink(barPic);
-  return (
-    <TouchableHighlight
-      style={styles.barTab}
-      onPress={() => onPress()}
-      underlayColor="white"
-    >
-      <ImageBackground style={styles.image} source={bar_link}>
-        <Text style={styles.barName}>{barName}</Text>
-      </ImageBackground>
-    </TouchableHighlight>
-  );
+
+  if (barLine == 0) {
+    return (
+      <TouchableHighlight
+        style={styles.barTab}
+        onPress={() => onPress()}
+        underlayColor="white"
+      >
+        <ImageBackground style={styles.image} source={bar_link}>
+          <View style={styles.iconBox}>
+            <Icon name="person" style={styles.icon}></Icon>
+          </View>
+          <View style={styles.nameBox}>
+            <Text style={styles.barName}>{barName}</Text>
+          </View>
+        </ImageBackground>
+      </TouchableHighlight>
+    );
+  } else if (barLine == 1) {
+    return (
+      <TouchableHighlight
+        style={styles.barTab}
+        onPress={() => onPress()}
+        underlayColor="white"
+      >
+        <ImageBackground style={styles.image} source={bar_link}>
+          <View style={styles.iconBox}>
+            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="person" style={styles.icon}></Icon>
+          </View>
+          <View style={styles.nameBox}>
+            <Text style={styles.barName}>{barName}</Text>
+          </View>
+        </ImageBackground>
+      </TouchableHighlight>
+    );
+  } else {
+    return (
+      <TouchableHighlight
+        style={styles.barTab}
+        onPress={() => onPress()}
+        underlayColor="white"
+      >
+        <ImageBackground style={styles.image} source={bar_link}>
+          <View style={styles.iconBox}>
+            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="person" style={styles.icon}></Icon>
+          </View>
+          <View style={styles.nameBox}>
+            <Text style={styles.barName}>{barName}</Text>
+          </View>
+        </ImageBackground>
+      </TouchableHighlight>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
@@ -42,15 +90,26 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginBottom: 10,
     borderColor: "black",
-    flexDirection: "column",
+  },
+  icon: {
+    color: "white",
+    marginLeft: 5,
+  },
+  iconBox: {
+    flex: 1,
+    flexDirection: "row",
+  },
+  nameBox: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "flex-end",
   },
   barName: {
     fontSize: 32,
   },
   image: {
     flex: 1,
-    justifyContent: "flex-end",
-    alignItems: "center",
+    flexDirection: "column",
   },
   barName: {
     color: "white",

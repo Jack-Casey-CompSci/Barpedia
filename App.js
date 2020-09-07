@@ -1,6 +1,6 @@
 import React from "react";
 
-import BarMenu from "./components/BarMenu.js";
+import BarMenu from "./components/BarMenuClass.js";
 import BarPage from "./components/BarPage.js";
 import BarFood from "./components/PictureLinkers/BarSpecificMenu.js";
 import BarDrinks from "./components/PictureLinkers/BarSpecificDrinks.js";

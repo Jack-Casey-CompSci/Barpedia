@@ -35,6 +35,7 @@ export default class BarPage extends Component {
     super(props);
     this.state = {
       barName: this.props.route.params.name,
+      coverCharge: this.props.route.params.coverCharge,
     };
   }
   _renderDaily = (item) => {
@@ -56,6 +57,7 @@ export default class BarPage extends Component {
   render() {
     const barpic = this.props.route.params.barPic;
     const bar_link = picture_linker.getBarLink(barpic);
+    console.log(this.props.route.params.coverCharge);
     return (
       <>
         <CoverChargeModal

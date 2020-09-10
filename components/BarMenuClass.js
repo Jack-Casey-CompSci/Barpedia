@@ -49,6 +49,7 @@ export default class App extends React.Component {
           name: data.item.name,
           description: data.item.description,
           barPic: data.item.pic_name,
+          coverCharge: data.item.coverCharge,
         })
       }
     />

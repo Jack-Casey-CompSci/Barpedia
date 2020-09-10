@@ -19,6 +19,7 @@ export default function BarCard({
   barDescription,
   barPic,
   barLine,
+  barCoverCharge,
   onPress = (f) => f,
 }) {
   const bar_link = picture_linker.getBarLink(barPic);

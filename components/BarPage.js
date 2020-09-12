@@ -12,6 +12,10 @@ import {
   TouchableHighlight,
 } from "react-native";
 import { Accordion } from "native-base";
+import specials from "../data/specials.json";
+import everyday from "../data/everyday.json";
+import entertainment from "../data/entertainment.json";
+import happyhour from "../data/happyHour.json";
 import EventsSpecials from "./AccordionFiles/specialsAccordion.js";
 import picture_linker from "./PictureLinkers/picture_linker.js";
 import HappyHour from "./AccordionFiles/happyHourAccordion.js";
@@ -25,10 +29,6 @@ import CoverChargeModal from "./CoverChargeModal.js";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
-const dailyArray = [{ title: "Daily Specials", content: "" }];
-const entertainArray = [{ title: "Entertainment", content: "" }];
-const everydayArray = [{ title: "All Day Everyday", content: "" }];
-const happyArray = [{ title: "Happy Hours", content: "" }];
 
 export default class BarPage extends Component {
   constructor(props) {
@@ -38,6 +38,7 @@ export default class BarPage extends Component {
       coverCharge: this.props.route.params.coverCharge,
     };
   }
+
   _renderDaily = (item) => {
     return <EventsSpecials name={this.state.barName}></EventsSpecials>;
   };
@@ -55,9 +56,44 @@ export default class BarPage extends Component {
   };
 
   render() {
+    const barspec = specials.find((element) => {
+      return element.name === this.state.barName;
+    });
+    const barenter = entertainment.find((element) => {
+      return element.name === this.state.barName;
+    });
+    const barevery = everyday.find((element) => {
+      return element.name === this.state.barName;
+    });
+    const barhappy = happyhour.find((element) => {
+      return element.name === this.state.barName;
+    });
     const barpic = this.props.route.params.barPic;
     const bar_link = picture_linker.getBarLink(barpic);
-    console.log(this.props.route.params.coverCharge);
+    var dailyArray = [{ title: "Daily Specials", content: "" }];
+    var entertainArray = [{ title: "Entertainment", content: "" }];
+    var everydayArray = [{ title: "All Day Everyday", content: "" }];
+    var happyArray = [{ title: "Happy Hours", content: "" }];
+    if (barspec.available == false) {
+      dailyArray = [
+        { title: "Daily Specials (not available at this bar)", content: "" },
+      ];
+    }
+    if (barenter.available == false) {
+      entertainArray = [
+        { title: "Entertainment (not available at this bar)", content: "" },
+      ];
+    }
+    if (barevery.available == false) {
+      everydayArray = [
+        { title: "All Day Everyday (not available at this bar)", content: "" },
+      ];
+    }
+    if (barhappy.available == false) {
+      happyArray = [
+        { title: "Happy Hours (not available at this bar)", content: "" },
+      ];
+    }
     return (
       <>
         <CoverChargeModal

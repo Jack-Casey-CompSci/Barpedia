@@ -59,7 +59,8 @@ export default class TestForm extends Component {
     }
 
     //HTTP Request
-    fetch("http://192.168.0.5:3000/test", {
+    var requestString = "http://192.168.0.5:3000/linedata/" + this.state.name;
+    fetch(requestString, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -25,6 +25,7 @@ export default class TestForm extends Component {
     super(props);
     this.state = {
       name: this.props.route.params.name,
+      id: this.props.route.params.id,
     };
   }
 
@@ -59,7 +60,7 @@ export default class TestForm extends Component {
     }
 
     //HTTP Request
-    var requestString = "http://192.168.0.5:3000/linedata/" + this.state.name;
+    var requestString = "http://192.168.0.5:3000/linedata/" + this.state.id;
     fetch(requestString, {
       method: "POST",
       headers: {

@@ -33,6 +33,7 @@ export default class App extends React.Component {
           loading: false,
           dataSource: responseData,
         });
+        console.log(this.state.dataSource);
       })
       .catch((error) => console.log(error)); //to catch the errors if any
   }
@@ -41,7 +42,7 @@ export default class App extends React.Component {
     <BarCard
       key={data.item.id}
       barName={data.item.name}
-      barLine={data.item.line}
+      barCoverCharge={data.item.coverCharge}
       barPic={data.item.pic_name}
       barLine={data.item.line}
       onPress={() =>
@@ -50,6 +51,7 @@ export default class App extends React.Component {
           description: data.item.description,
           barPic: data.item.pic_name,
           coverCharge: data.item.coverCharge,
+          line: data.item.line,
         })
       }
     />

@@ -60,7 +60,8 @@ export default class TestForm extends Component {
     }
 
     //HTTP Request
-    var requestString = "http://192.168.0.5:3000/linedata/" + this.state.id;
+    var requestString =
+      "https://barpedia.herokuapp.com/linedata/" + this.state.id;
     fetch(requestString, {
       method: "POST",
       headers: {

@@ -108,6 +108,7 @@ export default class BarPage extends Component {
             onPress={() =>
               this.props.navigation.navigate("LineReporting", {
                 name: this.props.route.params.name,
+                id: this.props.route.params.id,
               })
             }
           ></Button>

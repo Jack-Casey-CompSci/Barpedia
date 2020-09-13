@@ -9,7 +9,6 @@ import {
 
 export default function CoverChargeModal({ coverCharge }) {
   const [modalVisible, setModalVisible] = useState(true);
-  console.log(coverCharge);
   if (coverCharge) {
     return (
       <Modal

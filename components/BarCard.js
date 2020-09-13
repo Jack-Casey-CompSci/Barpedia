@@ -23,8 +23,65 @@ export default function BarCard({
   onPress = (f) => f,
 }) {
   const bar_link = picture_linker.getBarLink(barPic);
-
-  if (barLine == 0) {
+  console.log(barCoverCharge);
+  if (barLine == 0 & barCoverCharge > 0) {
+    return (
+      <TouchableHighlight
+        style={styles.barTab}
+        onPress={() => onPress()}
+        underlayColor="white"
+      >
+        <ImageBackground style={styles.image} source={bar_link}>
+          <View style={styles.iconBox}>
+            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="ios-cash" style={styles.icon}></Icon>
+          </View>
+          <View style={styles.nameBox}>
+            <Text style={styles.barName}>{barName}</Text>
+          </View>
+        </ImageBackground>
+      </TouchableHighlight>
+    );
+  } else if (barLine == 1 & barCoverCharge > 0) {
+    return (
+      <TouchableHighlight
+        style={styles.barTab}
+        onPress={() => onPress()}
+        underlayColor="white"
+      >
+        <ImageBackground style={styles.image} source={bar_link}>
+          <View style={styles.iconBox}>
+            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="ios-cash" style={styles.icon}></Icon>
+          </View>
+          <View style={styles.nameBox}>
+            <Text style={styles.barName}>{barName}</Text>
+          </View>
+        </ImageBackground>
+      </TouchableHighlight>
+    );
+  } else if (barLine == 2 & barCoverCharge > 0) {
+    return (
+      <TouchableHighlight
+        style={styles.barTab}
+        onPress={() => onPress()}
+        underlayColor="white"
+      >
+        <ImageBackground style={styles.image} source={bar_link}>
+          <View style={styles.iconBox}>
+            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="ios-cash" style={styles.icon}></Icon>
+          </View>
+          <View style={styles.nameBox}>
+            <Text style={styles.barName}>{barName}</Text>
+          </View>
+        </ImageBackground>
+      </TouchableHighlight>
+    );
+  } else if (barLine == 0 & barCoverCharge == 0) {
     return (
       <TouchableHighlight
         style={styles.barTab}
@@ -41,7 +98,7 @@ export default function BarCard({
         </ImageBackground>
       </TouchableHighlight>
     );
-  } else if (barLine == 1) {
+  } else if (barLine == 1 & barCoverCharge == 0) {
     return (
       <TouchableHighlight
         style={styles.barTab}

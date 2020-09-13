@@ -1,7 +1,6 @@
 import barImages from "../../assets/bar_list.js";
 
 function getBarLink(bar) {
-  //console.log(bar);
   if (bar == "Champs") {
     return barImages.Champs;
   } else if (bar == "Phyrst") {

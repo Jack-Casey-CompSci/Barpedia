@@ -26,6 +26,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
+    //fetch("http:/192.168.0.5:3000/linedata")
     fetch("https://barpedia.herokuapp.com/linedata/")
       .then((response) => response.json())
       .then((responseData) => {

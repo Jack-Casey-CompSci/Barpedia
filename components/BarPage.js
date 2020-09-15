@@ -94,24 +94,50 @@ export default class BarPage extends Component {
         { title: "Happy Hours (not available at this bar)", content: "" },
       ];
     }
+
+    const canReportLine = false;
+    var button;
+    if (canReportLine) {
+      button = (
+        <Button
+          title="Report Line/Cover Charge"
+          onPress={() =>
+            this.props.navigation.navigate("LineReporting", {
+              name: this.props.route.params.name,
+              id: this.props.route.params.id,
+            })
+          }
+        ></Button>
+      );
+    } else {
+      button = (
+        <Button
+          title="Already Submitted"
+          disabled
+          onPress={() =>
+            this.props.navigation.navigate("LineReporting", {
+              name: this.props.route.params.name,
+              id: this.props.route.params.id,
+            })
+          }
+        ></Button>
+      );
+    }
+
     return (
       <>
         <CoverChargeModal
           coverCharge={this.props.route.params.coverCharge}
         ></CoverChargeModal>
         <ScrollView style={styles.scroll}>
-          <ImageBackground style={styles.pageImage} source={bar_link}>
-            <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
-          </ImageBackground>
-          <Button
-            title="Report Line/Cover Charge"
-            onPress={() =>
-              this.props.navigation.navigate("LineReporting", {
-                name: this.props.route.params.name,
-                id: this.props.route.params.id,
-              })
-            }
-          ></Button>
+          <View style={styles.box}>
+            <ImageBackground style={styles.pageImage} source={bar_link}>
+              <Text style={styles.barTitle}>
+                {this.props.route.params.name}
+              </Text>
+            </ImageBackground>
+          </View>
+          {button}
           <Accordion
             dataArray={dailyArray}
             style={styles.accordion}
@@ -185,13 +211,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   pageImage: {
-    flex: 1,
-    margin: 5,
-    marginBottom: 2.5,
-    width: windowWidth - 10,
+    width: windowWidth - 12,
     height: 200,
+  },
+  box: {
     borderWidth: 2,
     borderColor: "black",
+    margin: 4,
   },
   barTitle: {
     fontSize: 32,

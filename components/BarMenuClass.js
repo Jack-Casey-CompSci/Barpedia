@@ -22,6 +22,7 @@ export default class App extends React.Component {
     this.state = {
       loading: true,
       dataSource: [],
+      refresh: 0,
     };
   }
 
@@ -34,9 +35,17 @@ export default class App extends React.Component {
           loading: false,
           dataSource: responseData,
         });
-        console.log(this.state.dataSource);
       })
       .catch((error) => console.log(error)); //to catch the errors if any
+
+    this._unsubscribe = this.props.navigation.addListener("focus", () => {
+      console.log("HELLO");
+      this.state.refresh = !this.state.refresh;
+    });
+  }
+
+  componentWillUnmount() {
+    this._unsubscribe();
   }
 
   renderItem = (data) => (

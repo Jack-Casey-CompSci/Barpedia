@@ -24,6 +24,7 @@ const exampleData = [...Array(20)].map((d, index) => ({
     index * 5
   }, ${132})`,
 }));
+console.log({ exampleData });
 
 export default class App extends React.Component {
   constructor(props) {
@@ -42,7 +43,7 @@ export default class App extends React.Component {
       .then((responseData) => {
         this.setState({
           loading: false,
-          dataSource: responseData,
+          data: responseData,
         });
       })
       .catch((error) => console.log(error)); //to catch the errors if any
@@ -74,7 +75,7 @@ export default class App extends React.Component {
             fontSize: 32,
           }}
         >
-          {item.label}
+          {item.name}
         </Text>
       </TouchableOpacity>
     );
@@ -88,12 +89,14 @@ export default class App extends React.Component {
         </View>
       );
     }
+    const testdata = this.state.data;
+    console.log({ testdata });
     return (
       <View style={{ flex: 1 }}>
         <DraggableFlatList
           data={this.state.data}
           renderItem={this.renderItem}
-          keyExtractor={(item, index) => `draggable-item-${item.key}`}
+          keyExtractor={(item, index) => `draggable-item-${item.id}`}
           onDragEnd={({ data }) => this.setState({ data })}
         />
       </View>

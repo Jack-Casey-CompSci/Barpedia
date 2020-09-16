@@ -24,6 +24,7 @@ export default function BarCard({
   onLongPress = (f) => f,
 }) {
   const bar_link = picture_linker.getBarLink(barPic);
+  console.log(barName);
   if ((barLine == 0) & (barCoverCharge > 0)) {
     return (
       <TouchableHighlight

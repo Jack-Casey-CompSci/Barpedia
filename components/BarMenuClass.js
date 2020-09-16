@@ -11,7 +11,8 @@ import {
   ScrollView,
 } from "react-native";
 
-import DraggableFlatList from 'react-native-draggable-flatlist';
+import DraggableFlatList from "react-native-draggable-flatlist";
+import Animated from "react-native-reanimated";
 import BarCard from "./BarCard.js";
 import logo from "../assets/Barpedia_logo.png";
 
@@ -22,7 +23,7 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       loading: true,
-      dataSource: [],
+      data: [],
       refresh: 0,
     };
   }
@@ -34,7 +35,7 @@ export default class App extends React.Component {
       .then((responseData) => {
         this.setState({
           loading: false,
-          dataSource: responseData,
+          data: responseData,
         });
       })
       .catch((error) => console.log(error)); //to catch the errors if any
@@ -49,13 +50,14 @@ export default class App extends React.Component {
     this._unsubscribe();
   }
 
-  renderItem = (data) => (
+  renderItem = (data, drag) => (
     <BarCard
       key={data.item.id}
       barName={data.item.name}
       barCoverCharge={data.item.coverCharge}
       barPic={data.item.pic_name}
       barLine={data.item.line}
+      onLongPress={() => console.log("LONNNGGGG PRESS")}
       onPress={() =>
         this.props.navigation.navigate("Details", {
           name: data.item.name,
@@ -77,16 +79,14 @@ export default class App extends React.Component {
       );
     }
     return (
-      <ScrollView>
-        <View style={styles.container}>
-          <DraggableFlatList
-            data={this.state.dataSource}
-            renderItem={(item) => this.renderItem(item)}
-            keyExtractor={(item) => item.id.toString()}
-          />
-        </View>
-        <Image style={styles.logo} source={logo}></Image>
-      </ScrollView>
+      <View style={styles.container}>
+        <DraggableFlatList
+          data={this.state.data}
+          renderItem={(item, drag) => this.renderItem(item, drag)}
+          keyExtractor={(item, index) => item.id.toString()}
+          onDragEnd={({ data }) => this.setState({ data })}
+        />
+      </View>
     );
   }
 }

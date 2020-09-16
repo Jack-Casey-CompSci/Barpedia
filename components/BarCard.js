@@ -21,6 +21,7 @@ export default function BarCard({
   barLine,
   barCoverCharge,
   onPress = (f) => f,
+  onLongPress = (f) => f,
 }) {
   const bar_link = picture_linker.getBarLink(barPic);
   if ((barLine == 0) & (barCoverCharge > 0)) {
@@ -28,6 +29,7 @@ export default function BarCard({
       <TouchableHighlight
         style={styles.barTab}
         onPress={() => onPress()}
+        onLongPress={() => onLongPress()}
         underlayColor="white"
       >
         <ImageBackground style={styles.image} source={bar_link}>
@@ -46,6 +48,7 @@ export default function BarCard({
       <TouchableHighlight
         style={styles.barTab}
         onPress={() => onPress()}
+        onLongPress={() => onLongPress()}
         underlayColor="white"
       >
         <ImageBackground style={styles.image} source={bar_link}>
@@ -65,6 +68,7 @@ export default function BarCard({
       <TouchableHighlight
         style={styles.barTab}
         onPress={() => onPress()}
+        onLongPress={() => onLongPress()}
         underlayColor="white"
       >
         <ImageBackground style={styles.image} source={bar_link}>
@@ -85,6 +89,7 @@ export default function BarCard({
       <TouchableHighlight
         style={styles.barTab}
         onPress={() => onPress()}
+        onLongPress={() => onLongPress()}
         underlayColor="white"
       >
         <ImageBackground style={styles.image} source={bar_link}>
@@ -102,6 +107,7 @@ export default function BarCard({
       <TouchableHighlight
         style={styles.barTab}
         onPress={() => onPress()}
+        onLongPress={() => onLongPress()}
         underlayColor="white"
       >
         <ImageBackground style={styles.image} source={bar_link}>
@@ -120,6 +126,7 @@ export default function BarCard({
       <TouchableHighlight
         style={styles.barTab}
         onPress={() => onPress()}
+        onLongPress={() => onLongPress()}
         underlayColor="white"
       >
         <ImageBackground style={styles.image} source={bar_link}>

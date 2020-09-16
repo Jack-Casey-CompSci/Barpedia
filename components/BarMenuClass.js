@@ -17,13 +17,20 @@ import BarCard from "./BarCard.js";
 import logo from "../assets/Barpedia_logo.png";
 
 const windowWidth = Dimensions.get("window").width;
+const exampleData = [...Array(20)].map((d, index) => ({
+  key: `item-${index}`, // For example only -- don't use index as your key!
+  label: index,
+  backgroundColor: `rgb(${Math.floor(Math.random() * 255)}, ${
+    index * 5
+  }, ${132})`,
+}));
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       loading: true,
-      data: [],
+      data: exampleData,
       refresh: 0,
     };
   }
@@ -35,7 +42,7 @@ export default class App extends React.Component {
       .then((responseData) => {
         this.setState({
           loading: false,
-          data: responseData,
+          dataSource: responseData,
         });
       })
       .catch((error) => console.log(error)); //to catch the errors if any
@@ -50,26 +57,29 @@ export default class App extends React.Component {
     this._unsubscribe();
   }
 
-  renderItem = (data, drag) => (
-    <BarCard
-      key={data.item.id}
-      barName={data.item.name}
-      barCoverCharge={data.item.coverCharge}
-      barPic={data.item.pic_name}
-      barLine={data.item.line}
-      onLongPress={() => console.log("LONNNGGGG PRESS")}
-      onPress={() =>
-        this.props.navigation.navigate("Details", {
-          name: data.item.name,
-          description: data.item.description,
-          barPic: data.item.pic_name,
-          coverCharge: data.item.coverCharge,
-          line: data.item.line,
-          id: data.item.id,
-        })
-      }
-    />
-  );
+  renderItem = ({ item, drag }) => {
+    return (
+      <TouchableOpacity
+        style={{
+          height: 100,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+        onLongPress={drag}
+      >
+        <Text
+          style={{
+            fontWeight: "bold",
+            color: "white",
+            fontSize: 32,
+          }}
+        >
+          {item.label}
+        </Text>
+      </TouchableOpacity>
+    );
+  };
+
   render() {
     if (this.state.loading) {
       return (
@@ -79,11 +89,11 @@ export default class App extends React.Component {
       );
     }
     return (
-      <View style={styles.container}>
+      <View style={{ flex: 1 }}>
         <DraggableFlatList
           data={this.state.data}
-          renderItem={(item, drag) => this.renderItem(item, drag)}
-          keyExtractor={(item, index) => item.id.toString()}
+          renderItem={this.renderItem}
+          keyExtractor={(item, index) => `draggable-item-${item.key}`}
           onDragEnd={({ data }) => this.setState({ data })}
         />
       </View>

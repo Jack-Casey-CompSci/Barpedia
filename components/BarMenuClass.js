@@ -3,6 +3,7 @@ import {
   StyleSheet,
   View,
   ActivityIndicator,
+  ImageBackground,
   FlatList,
   Text,
   TouchableOpacity,
@@ -12,26 +13,19 @@ import {
 } from "react-native";
 
 import DraggableFlatList from "react-native-draggable-flatlist";
-import Animated from "react-native-reanimated";
 import BarCard from "./BarCard.js";
 import logo from "../assets/Barpedia_logo.png";
+import picture_linker from "./PictureLinkers/picture_linker";
+import { Icon } from "native-base";
 
 const windowWidth = Dimensions.get("window").width;
-const exampleData = [...Array(20)].map((d, index) => ({
-  key: `item-${index}`, // For example only -- don't use index as your key!
-  label: index,
-  backgroundColor: `rgb(${Math.floor(Math.random() * 255)}, ${
-    index * 5
-  }, ${132})`,
-}));
-console.log({ exampleData });
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       loading: true,
-      data: exampleData,
+      data: [],
       refresh: 0,
     };
   }
@@ -59,26 +53,173 @@ export default class App extends React.Component {
   }
 
   renderItem = ({ item, drag }) => {
-    return (
-      <TouchableOpacity
-        style={{
-          height: 100,
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-        onLongPress={drag}
-      >
-        <Text
-          style={{
-            fontWeight: "bold",
-            color: "white",
-            fontSize: 32,
-          }}
+    const bar_link = picture_linker.getBarLink(item.pic_name);
+    if ((item.line == 0) & (item.coverCharge > 0)) {
+      return (
+        <TouchableOpacity
+          style={styles.barTab}
+          onLongPress={drag}
+          onPress={() =>
+            this.props.navigation.navigate("Details", {
+              name: item.name,
+              description: item.description,
+              barPic: item.pic_name,
+              coverCharge: item.coverCharge,
+              line: item.line,
+              id: item.id,
+            })
+          }
         >
-          {item.name}
-        </Text>
-      </TouchableOpacity>
-    );
+          <ImageBackground style={styles.image} source={bar_link}>
+            <View style={styles.iconBox}>
+              <Icon name="person" style={styles.icon}></Icon>
+              <Icon name="ios-cash" style={styles.icon}></Icon>
+            </View>
+            <View style={styles.nameBox}>
+              <Text style={styles.barName}>{item.name}</Text>
+            </View>
+          </ImageBackground>
+        </TouchableOpacity>
+      );
+    } else if ((item.line == 1) & (item.coverCharge > 0)) {
+      return (
+        <TouchableOpacity
+          style={styles.barTab}
+          onLongPress={drag}
+          onPress={() =>
+            this.props.navigation.navigate("Details", {
+              name: item.name,
+              description: item.description,
+              barPic: item.pic_name,
+              coverCharge: item.coverCharge,
+              line: item.line,
+              id: item.id,
+            })
+          }
+        >
+          <ImageBackground style={styles.image} source={bar_link}>
+            <View style={styles.iconBox}>
+              <Icon name="person" style={styles.icon}></Icon>
+              <Icon name="person" style={styles.icon}></Icon>
+              <Icon name="ios-cash" style={styles.icon}></Icon>
+            </View>
+            <View style={styles.nameBox}>
+              <Text style={styles.barName}>{item.name}</Text>
+            </View>
+          </ImageBackground>
+        </TouchableOpacity>
+      );
+    } else if ((item.line == 2) & (item.coverCharge > 0)) {
+      return (
+        <TouchableOpacity
+          style={styles.barTab}
+          onLongPress={drag}
+          onPress={() =>
+            this.props.navigation.navigate("Details", {
+              name: item.name,
+              description: item.description,
+              barPic: item.pic_name,
+              coverCharge: item.coverCharge,
+              line: item.line,
+              id: item.id,
+            })
+          }
+        >
+          <ImageBackground style={styles.image} source={bar_link}>
+            <View style={styles.iconBox}>
+              <Icon name="person" style={styles.icon}></Icon>
+              <Icon name="person" style={styles.icon}></Icon>
+              <Icon name="person" style={styles.icon}></Icon>
+              <Icon name="ios-cash" style={styles.icon}></Icon>
+            </View>
+            <View style={styles.nameBox}>
+              <Text style={styles.barName}>{item.name}</Text>
+            </View>
+          </ImageBackground>
+        </TouchableOpacity>
+      );
+    } else if ((item.line == 0) & (item.coverCharge == 0)) {
+      return (
+        <TouchableOpacity
+          style={styles.barTab}
+          onLongPress={drag}
+          onPress={() =>
+            this.props.navigation.navigate("Details", {
+              name: item.name,
+              description: item.description,
+              barPic: item.pic_name,
+              coverCharge: item.coverCharge,
+              line: item.line,
+              id: item.id,
+            })
+          }
+        >
+          <ImageBackground style={styles.image} source={bar_link}>
+            <View style={styles.iconBox}>
+              <Icon name="person" style={styles.icon}></Icon>
+            </View>
+            <View style={styles.nameBox}>
+              <Text style={styles.barName}>{item.name}</Text>
+            </View>
+          </ImageBackground>
+        </TouchableOpacity>
+      );
+    } else if ((item.line == 1) & (item.coverCharge == 0)) {
+      return (
+        <TouchableOpacity
+          style={styles.barTab}
+          onLongPress={drag}
+          onPress={() =>
+            this.props.navigation.navigate("Details", {
+              name: item.name,
+              description: item.description,
+              barPic: item.pic_name,
+              coverCharge: item.coverCharge,
+              line: item.line,
+              id: item.id,
+            })
+          }
+        >
+          <ImageBackground style={styles.image} source={bar_link}>
+            <View style={styles.iconBox}>
+              <Icon name="person" style={styles.icon}></Icon>
+              <Icon name="person" style={styles.icon}></Icon>
+            </View>
+            <View style={styles.nameBox}>
+              <Text style={styles.barName}>{item.name}</Text>
+            </View>
+          </ImageBackground>
+        </TouchableOpacity>
+      );
+    } else if ((item.line == 2) & (item.coverCharge == 0)) {
+      return (
+        <TouchableOpacity
+          style={styles.barTab}
+          onLongPress={drag}
+          onPress={() =>
+            this.props.navigation.navigate("Details", {
+              name: item.name,
+              description: item.description,
+              barPic: item.pic_name,
+              coverCharge: item.coverCharge,
+              line: item.line,
+              id: item.id,
+            })
+          }
+        >
+          <ImageBackground style={styles.image} source={bar_link}>
+            <View style={styles.iconBox}>
+              <Icon name="person" style={styles.icon}></Icon>
+              <Icon name="person" style={styles.icon}></Icon>
+              <Icon name="person" style={styles.icon}></Icon>
+            </View>
+            <View style={styles.nameBox}>
+              <Text style={styles.barName}>{item.name}</Text>
+            </View>
+          </ImageBackground>
+        </TouchableOpacity>
+      );
+    }
   };
 
   render() {
@@ -122,5 +263,40 @@ const styles = StyleSheet.create({
     width: windowWidth - 40,
     height: 200,
     marginLeft: 20,
+  },
+  barTab: {
+    flex: 1,
+    width: windowWidth - 20,
+    height: 150,
+    backgroundColor: "grey",
+    borderWidth: 2,
+    marginLeft: 10,
+    marginBottom: 10,
+    borderColor: "black",
+  },
+  icon: {
+    color: "white",
+    marginLeft: 5,
+  },
+  iconBox: {
+    flex: 1,
+    flexDirection: "row",
+  },
+  nameBox: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "flex-end",
+  },
+  barName: {
+    fontSize: 32,
+  },
+  image: {
+    flex: 1,
+    flexDirection: "column",
+  },
+  barName: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 32,
   },
 });

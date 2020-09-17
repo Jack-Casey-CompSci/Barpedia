@@ -95,7 +95,7 @@ export default class BarPage extends Component {
       ];
     }
 
-    const canReportLine = false;
+    const canReportLine = true;
     var button;
     if (canReportLine) {
       button = (

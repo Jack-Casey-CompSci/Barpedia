@@ -37,15 +37,6 @@ export default class App extends React.Component {
         });
       })
       .catch((error) => console.log(error)); //to catch the errors if any
-
-    this._unsubscribe = this.props.navigation.addListener("focus", () => {
-      console.log("HELLO");
-      this.state.refresh = !this.state.refresh;
-    });
-  }
-
-  componentWillUnmount() {
-    this._unsubscribe();
   }
 
   renderItem = (data) => (

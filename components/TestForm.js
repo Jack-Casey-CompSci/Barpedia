@@ -6,9 +6,10 @@ import t from "tcomb-form-native"; // 0.6.9
 const Form = t.form.Form;
 
 var LineLengthVar = t.enums({
-  0: "Short Wait: 0-10 Minutes",
-  1: "Medium Wait: 10-30 Minutes",
-  2: "Long Wait: More than 30 Minutes",
+  0: "No Wait",
+  1: "Short Wait: 5-10 Minutes",
+  2: "Medium Wait: 11-30 Minutes",
+  3: "Long Wait: More than 30 Minutes",
 });
 
 var value = {};
@@ -105,3 +106,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
   },
 });
+
+export { LineLengthVar };

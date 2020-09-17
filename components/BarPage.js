@@ -30,6 +30,15 @@ import CoverChargeModal from "./CoverChargeModal.js";
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
+var lineLength = [
+  {
+    0: "No Wait",
+    1: "Small Wait - 5-10 Minutes",
+    2: "Medium Wait - 11-30 Minutes",
+    3: "Long Wait - Longer than 30 Minutes",
+  },
+];
+
 export default class BarPage extends Component {
   constructor(props) {
     super(props);
@@ -56,6 +65,8 @@ export default class BarPage extends Component {
   };
 
   render() {
+    console.log(lineLength[0][2]);
+    console.log(this.props.route.params.line);
     const barspec = specials.find((element) => {
       return element.name === this.state.barName;
     });
@@ -138,6 +149,14 @@ export default class BarPage extends Component {
             </ImageBackground>
           </View>
           {button}
+          <View style={styles.line_and_cover}>
+            <Text style={styles.line_and_cover_text}>
+              Approx wait is: {lineLength[0][this.props.route.params.line]}
+            </Text>
+            <Text style={styles.line_and_cover_text}>
+              The cover charge is ${this.props.route.params.coverCharge}
+            </Text>
+          </View>
           <Accordion
             dataArray={dailyArray}
             style={styles.accordion}
@@ -228,6 +247,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "white",
     textAlign: "center",
+  },
+  line_and_cover: {
+    backgroundColor: "grey",
+    justifyContent: "center",
+    alignItems: "center",
+    height: 100,
+  },
+  line_and_cover_text: {
+    fontSize: 16,
+    fontWeight: "bold",
   },
   accordion: {
     width: windowWidth,

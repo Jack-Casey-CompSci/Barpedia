@@ -65,8 +65,6 @@ export default class BarPage extends Component {
   };
 
   render() {
-    console.log(lineLength[0][2]);
-    console.log(this.props.route.params.line);
     const barspec = specials.find((element) => {
       return element.name === this.state.barName;
     });

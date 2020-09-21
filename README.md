@@ -1,7 +1,7 @@
 # Barpedia
 PSU Bars app created by Dylan Reb and Alex Rang
 
-# Back End in Node.js
+## Back End in Node.js
 [Click here](https://github.com/alexrang83/barpediabackend)
 
 ## Technologies

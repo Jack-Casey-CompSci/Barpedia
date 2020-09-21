@@ -26,6 +26,7 @@ import drink_pic from "../assets/menuPictures/drink_pic.png";
 import logo from "../assets/Barpedia_logo.png";
 import { render } from "react-dom";
 import CoverChargeModal from "./CoverChargeModal.js";
+import Timer from "./Timer.js";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
@@ -137,7 +138,16 @@ export default class BarPage extends Component {
               </Text>
             </ImageBackground>
           </View>
-          {button}
+          {/* {button} */}
+          <Timer
+            barName={this.props.route.params.name}
+            onPress={() =>
+              this.props.navigation.navigate("LineReporting", {
+                name: this.props.route.params.name,
+                id: this.props.route.params.id,
+              })
+            }
+          ></Timer>
           <Accordion
             dataArray={dailyArray}
             style={styles.accordion}

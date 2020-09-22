@@ -33,9 +33,9 @@ const windowHeight = Dimensions.get("window").height;
 var lineLength = [
   {
     0: "No Wait",
-    1: "Small Wait - 5-10 Minutes",
-    2: "Medium Wait - 11-30 Minutes",
-    3: "Long Wait - Longer than 30 Minutes",
+    1: "5-10 Minutes",
+    2: "11-30 Minutes",
+    3: "Longer than 30 Minutes",
   },
 ];
 
@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   line_and_cover: {
-    backgroundColor: "grey",
+    backgroundColor: "lightgray",
     justifyContent: "center",
     alignItems: "center",
     height: 100,

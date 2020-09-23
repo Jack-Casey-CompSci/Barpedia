@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   line_and_cover: {
-    backgroundColor: "lightgray",
+    backgroundColor: "whitesmoke",
     justifyContent: "center",
     alignItems: "center",
     height: 100,

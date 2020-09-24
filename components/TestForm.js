@@ -31,23 +31,19 @@ export default class TestForm extends Component {
   handleSubmit = () => {
     const value = this._form.getValue(); // use that ref to get the form value
     var data;
-    console.log(value);
     if (value.CoverCharge == null && value.LineLength == null) {
-      console.log("Case 1");
       data = {
         name: this.state.name,
         line: -1,
         coverCharge: 0,
       };
     } else if (value.CoverCharge && value.LineLength == null) {
-      console.log("Case 2");
       data = {
         name: this.state.name,
         line: -1,
         coverCharge: value.CoverCharge,
       };
     } else if (value.CoverCharge == null && value.LineLength) {
-      console.log("Case 3");
       data = {
         name: this.state.name,
         line: value.LineLength,
@@ -55,7 +51,6 @@ export default class TestForm extends Component {
       };
       //Possibly change sending a 0 for cover charge
     } else {
-      console.log("Case 4");
       data = {
         name: this.state.name,
         line: value.LineLength,

@@ -1,12 +1,12 @@
 import React, { useState, Component } from "react";
 import {
+  ActivityIndicator,
   Button,
   Image,
   ImageBackground,
   ScrollView,
   Text,
   StyleSheet,
-  SafeAreaView,
   View,
   Dimensions,
   TouchableHighlight,
@@ -45,7 +45,22 @@ export default class BarPage extends Component {
     this.state = {
       barName: this.props.route.params.name,
       coverCharge: this.props.route.params.coverCharge,
+      dataSource: [],
+      loading: true,
     };
+  }
+
+  componentDidMount() {
+    //fetch("http:/192.168.0.5:3000/linedata")
+    fetch("https://barpedia.herokuapp.com/linedata/")
+      .then((response) => response.json())
+      .then((responseData) => {
+        this.setState({
+          loading: false,
+          dataSource: responseData,
+        });
+      })
+      .catch((error) => console.log(error)); //to catch the errors if any
   }
 
   _renderDaily = (item) => {
@@ -65,6 +80,16 @@ export default class BarPage extends Component {
   };
 
   render() {
+    if (this.state.loading) {
+      return (
+        <View style={styles.loader}>
+          <ActivityIndicator size="large" color="#0c9" />
+        </View>
+      );
+    }
+    const bar_hours = this.state.dataSource.find((element) => {
+      return element.name === this.state.barName;
+    });
     const barspec = specials.find((element) => {
       return element.name === this.state.barName;
     });
@@ -206,6 +231,30 @@ export default class BarPage extends Component {
               </ImageBackground>
             </TouchableHighlight>
           </View>
+          <View style={styles.hours}>
+            <Text style={styles.hours_title}> Bar Hours: </Text>
+            <Text style={styles.hours_text}>
+              Monday: {bar_hours.hours.Monday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Tuesday: {bar_hours.hours.Tuesday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Wednesday: {bar_hours.hours.Wednesday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Thursday: {bar_hours.hours.Thursday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Friday: {bar_hours.hours.Friday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Saturday: {bar_hours.hours.Saturday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Sunday: {bar_hours.hours.Sunday}
+            </Text>
+          </View>
           <Image style={styles.logo} source={logo}></Image>
         </ScrollView>
       </>
@@ -284,5 +333,18 @@ const styles = StyleSheet.create({
     width: windowWidth - 40,
     height: 200,
     marginLeft: 20,
+  },
+  hours: {
+    backgroundColor: "whitesmoke",
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  hours_title: {
+    fontSize: 18,
+    fontWeight: "bold",
+  },
+  hours_text: {
+    fontSize: 16,
   },
 });

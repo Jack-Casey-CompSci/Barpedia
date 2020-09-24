@@ -17,6 +17,7 @@ import BarCard from "./BarCard.js";
 import logo from "../assets/Barpedia_logo.png";
 import picture_linker from "./PictureLinkers/picture_linker";
 import { Icon } from "native-base";
+import AsyncStorage from "@react-native-community/async-storage";
 
 const windowWidth = Dimensions.get("window").width;
 
@@ -51,6 +52,17 @@ export default class App extends React.Component {
   componentWillUnmount() {
     this._unsubscribe();
   }
+
+  const saveData = async () => {
+    try {
+      await AsyncStorage.setItem(this.props.route.params.name, num);
+      //setTime(num);
+      alert("Data successfully saved");
+    } catch (e) {
+      console.log(e);
+      alert("Failed to save the data to the storage");
+    }
+  };
 
   renderItem = ({ item, drag }) => {
     const bar_link = picture_linker.getBarLink(item.pic_name);

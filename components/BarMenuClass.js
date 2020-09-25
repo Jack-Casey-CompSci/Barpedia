@@ -25,47 +25,63 @@ const STORAGE_KEY = "bar_favs";
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    //this.readData();
     this.state = {
       loading: true,
+      getting_data: true,
       data: [],
+      jsonValue: [],
       refresh: 0,
+      STORAGE_KEY: "bar_favs"
     };
   }
 
   readData = async () => {
     try {
+      this.setState({ getting_data: false });
       const jsonValue = await AsyncStorage.getItem(STORAGE_KEY);
+      const jsonreturn = JSON.parse(jsonValue);
       console.log(jsonValue);
       if (jsonValue !== null) {
-        this.setState({ STORAGE_KEY: jsonValue });
+        this.setState({ STORAGE_KEY: jsonreturn });
       }
     } catch (e) {
       alert("Failed to fetch the data from storage");
     }
   };
+  saveData = async () => {
+    try {
+      this.setState({ STORAGE_KEY: "bar_favs" });
+      const jsonValue = JSON.stringify(this.state.data);
+      await AsyncStorage.setItem(this.state.STORAGE_KEY, jsonValue);
+      alert("Data successfully saved");
+    } catch (e) {
+      console.log(e);
+      alert("Failed to save the data to the storage");
+    }
+  };
 
-  componentDidMount() {
+  async componentDidMount() {
     //fetch("http:/192.168.0.5:3000/linedata")
     fetch("https://barpedia.herokuapp.com/linedata/")
       .then((response) => response.json())
       .then((responseData) => {
         this.setState({
-          loading: false,
           data: responseData,
         });
       })
+      .then(this.saveData())
+      .then(this.setState({ loading: false }))
       .catch((error) => console.log(error)); //to catch the errors if any
 
-    this._unsubscribe = this.props.navigation.addListener("focus", () => {
-      console.log("HELLO");
-      this.state.refresh = !this.state.refresh;
-    });
+    //    this._unsubscribe = this.props.navigation.addListener("focus", () => {
+    //      console.log("HELLO");
+    //      this.state.refresh = !this.state.refresh;
+    //    });
   }
 
-  componentWillUnmount() {
-    this._unsubscribe();
-  }
+  //  componentWillUnmount() {
+  //    this._unsubscribe();
+  //  }
 
   renderItem = ({ item, drag }) => {
     const bar_link = picture_linker.getBarLink(item.pic_name);
@@ -245,26 +261,13 @@ export default class App extends React.Component {
         </View>
       );
     }
-    const saveData = async () => {
-      try {
-        this.setState({ STORAGE_KEY: "bar_favs" });
-        const jsonValue = JSON.stringify(this.state.data);
-        await AsyncStorage.setItem(STORAGE_KEY, jsonValue);
-        alert("Data successfully saved");
-      } catch (e) {
-        console.log(e);
-        alert("Failed to save the data to the storage");
-      }
-    };
-    console.log(this.state.data);
-    const bar_fav_list = this.readData();
     return (
       <View style={{ flex: 1 }}>
         <DraggableFlatList
-          data={bar_fav_list}
+          data={this.readData()}
           renderItem={this.renderItem}
           keyExtractor={(item, index) => `draggable-item-${item.id}`}
-          onDragEnd={saveData}
+          onDragEnd={() => { saveData(); ({ data }) => { data }; }}
         />
       </View>
     );

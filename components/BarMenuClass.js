@@ -20,16 +20,30 @@ import { Icon } from "native-base";
 import AsyncStorage from "@react-native-community/async-storage";
 
 const windowWidth = Dimensions.get("window").width;
+const STORAGE_KEY = "bar_favs";
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
+    //this.readData();
     this.state = {
       loading: true,
       data: [],
       refresh: 0,
     };
   }
+
+  readData = async () => {
+    try {
+      const jsonValue = await AsyncStorage.getItem(STORAGE_KEY);
+      console.log(jsonValue);
+      if (jsonValue !== null) {
+        this.setState({ STORAGE_KEY: jsonValue });
+      }
+    } catch (e) {
+      alert("Failed to fetch the data from storage");
+    }
+  };
 
   componentDidMount() {
     //fetch("http:/192.168.0.5:3000/linedata")
@@ -52,17 +66,6 @@ export default class App extends React.Component {
   componentWillUnmount() {
     this._unsubscribe();
   }
-
-  const saveData = async () => {
-    try {
-      await AsyncStorage.setItem(this.props.route.params.name, num);
-      //setTime(num);
-      alert("Data successfully saved");
-    } catch (e) {
-      console.log(e);
-      alert("Failed to save the data to the storage");
-    }
-  };
 
   renderItem = ({ item, drag }) => {
     const bar_link = picture_linker.getBarLink(item.pic_name);
@@ -242,15 +245,26 @@ export default class App extends React.Component {
         </View>
       );
     }
-    const testdata = this.state.data;
-    console.log({ testdata });
+    const saveData = async () => {
+      try {
+        this.setState({ STORAGE_KEY: "bar_favs" });
+        const jsonValue = JSON.stringify(this.state.data);
+        await AsyncStorage.setItem(STORAGE_KEY, jsonValue);
+        alert("Data successfully saved");
+      } catch (e) {
+        console.log(e);
+        alert("Failed to save the data to the storage");
+      }
+    };
+    console.log(this.state.data);
+    const bar_fav_list = this.readData();
     return (
       <View style={{ flex: 1 }}>
         <DraggableFlatList
-          data={this.state.data}
+          data={bar_fav_list}
           renderItem={this.renderItem}
           keyExtractor={(item, index) => `draggable-item-${item.id}`}
-          onDragEnd={({ data }) => this.setState({ data })}
+          onDragEnd={saveData}
         />
       </View>
     );

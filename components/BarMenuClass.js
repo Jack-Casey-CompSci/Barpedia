@@ -261,7 +261,7 @@ export default class App extends React.Component {
     return (
       <View style={{ flex: 1 }}>
         <DraggableFlatList
-          data={bar_fav_list}
+          data={this.readData()}
           renderItem={this.renderItem}
           keyExtractor={(item, index) => `draggable-item-${item.id}`}
           onDragEnd={saveData}

@@ -3,6 +3,7 @@ import {
   Button,
   Image,
   ImageBackground,
+  ActivityIndicator,
   ScrollView,
   Text,
   StyleSheet,
@@ -37,7 +38,21 @@ export default class BarPage extends Component {
     this.state = {
       barName: this.props.route.params.name,
       coverCharge: this.props.route.params.coverCharge,
+      listener: '',
+      loading: true,
     };
+  }
+
+  componentDidMount() {
+    this.setState({ loading: false })
+  }
+
+  UNSAFE_componentWillReceiveProps(nextProps) {
+    console.log("REFRESHING");
+    this.forceUpdate();
+    this.setState({ listener: Date.now().toString() })
+
+
   }
 
   _renderDaily = (item) => {
@@ -57,6 +72,14 @@ export default class BarPage extends Component {
   };
 
   render() {
+    console.log(this.state.listener);
+    if (this.state.loading) {
+      return (
+        <View style={styles.loader}>
+          <ActivityIndicator size="large" color="#0c9" />
+        </View>
+      );
+    }
     const barspec = specials.find((element) => {
       return element.name === this.state.barName;
     });
@@ -145,6 +168,7 @@ export default class BarPage extends Component {
               this.props.navigation.navigate("LineReporting", {
                 name: this.props.route.params.name,
                 id: this.props.route.params.id,
+                listen: this.state.listener
               })
             }
           ></Timer>

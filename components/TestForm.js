@@ -95,7 +95,9 @@ export default class TestForm extends Component {
     };
     saveData();
 
-    this.props.navigation.goBack();
+    this.props.navigation.navigate("Details", {
+      listener: 1,
+    });
   };
 
   render() {

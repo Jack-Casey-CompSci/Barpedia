@@ -1,6 +1,5 @@
 import React, { useState, Component } from "react";
 import {
-  ActivityIndicator,
   Button,
   Image,
   ImageBackground,
@@ -65,14 +64,29 @@ export default class BarPage extends Component {
       })
       .catch((error) => console.log(error)); //to catch the errors if any
   }
+
+  componentDidUpdate() {
+    fetch("https://barpedia.herokuapp.com/linedata/")
+      .then((response) => response.json())
+      .then((responseData) => {
+        this.setState({
+          loading: false,
+          dataSource: responseData,
+        });
+      })
+      .catch((error) => console.log(error));
+  }
+
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log("NEXT ", nextProps.route.params.listenerprop);
     console.log("PREV ", prevState.listener);
     if (nextProps.route.params.listenerprop !== prevState.listener) {
-      return (prevState.listener = nextProps.route.params.listenerprop);
+      return (
+        (prevState.listener = nextProps.route.params.listenerprop),
+        (prevState.loading = true)
+      );
     } else return null;
   }
-
   _renderDaily = (item) => {
     return <EventsSpecials name={this.state.barName}></EventsSpecials>;
   };
@@ -91,7 +105,7 @@ export default class BarPage extends Component {
 
   render() {
     console.log("LISTENER: ", this.state.listener);
-    /*
+    console.log("PROP LISTEN ", this.props.route.params.listenerprop);
     if (this.state.loading) {
       return (
         <View style={styles.loader}>
@@ -99,7 +113,6 @@ export default class BarPage extends Component {
         </View>
       );
     }
-    */
     const bar_hours = this.state.dataSource.find((element) => {
       return element.name === this.state.barName;
     });

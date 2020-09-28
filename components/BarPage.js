@@ -1,5 +1,6 @@
 import React, { useState, Component } from "react";
 import {
+  ActivityIndicator,
   Button,
   Image,
   ImageBackground,
@@ -7,7 +8,6 @@ import {
   ScrollView,
   Text,
   StyleSheet,
-  SafeAreaView,
   View,
   Dimensions,
   TouchableHighlight,
@@ -32,17 +32,39 @@ import Timer from "./Timer.js";
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
+var lineLength = [
+  {
+    0: "No Wait",
+    1: "5-10 Minutes",
+    2: "11-30 Minutes",
+    3: "Longer than 30 Minutes",
+  },
+];
+
 export default class BarPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
       barName: this.props.route.params.name,
       coverCharge: this.props.route.params.coverCharge,
+      dataSource: [],
       listener: this.props.route.params.listenerprop,
       loading: true,
     };
   }
 
+  componentDidMount() {
+    //fetch("http:/192.168.0.5:3000/linedata")
+    fetch("https://barpedia.herokuapp.com/linedata/")
+      .then((response) => response.json())
+      .then((responseData) => {
+        this.setState({
+          loading: false,
+          dataSource: responseData,
+        });
+      })
+      .catch((error) => console.log(error)); //to catch the errors if any
+  }
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log("NEXT ", nextProps.route.params.listenerprop);
     console.log("PREV ", prevState.listener);
@@ -78,6 +100,9 @@ export default class BarPage extends Component {
       );
     }
     */
+    const bar_hours = this.state.dataSource.find((element) => {
+      return element.name === this.state.barName;
+    });
     const barspec = specials.find((element) => {
       return element.name === this.state.barName;
     });
@@ -170,6 +195,14 @@ export default class BarPage extends Component {
               })
             }
           ></Timer>
+          <View style={styles.line_and_cover}>
+            <Text style={styles.line_and_cover_text}>
+              Approx wait is: {lineLength[0][this.props.route.params.line]}
+            </Text>
+            <Text style={styles.line_and_cover_text}>
+              The cover charge is ${this.props.route.params.coverCharge}
+            </Text>
+          </View>
           <Accordion
             dataArray={dailyArray}
             style={styles.accordion}
@@ -221,6 +254,30 @@ export default class BarPage extends Component {
               </ImageBackground>
             </TouchableHighlight>
           </View>
+          <View style={styles.hours}>
+            <Text style={styles.hours_title}> Bar Hours: </Text>
+            <Text style={styles.hours_text}>
+              Monday: {bar_hours.hours.Monday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Tuesday: {bar_hours.hours.Tuesday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Wednesday: {bar_hours.hours.Wednesday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Thursday: {bar_hours.hours.Thursday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Friday: {bar_hours.hours.Friday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Saturday: {bar_hours.hours.Saturday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Sunday: {bar_hours.hours.Sunday}
+            </Text>
+          </View>
           <Image style={styles.logo} source={logo}></Image>
           <Text style={styles.faketext}>{this.state.listener}</Text>
         </ScrollView>
@@ -262,6 +319,16 @@ const styles = StyleSheet.create({
     color: "white",
     textAlign: "center",
   },
+  line_and_cover: {
+    backgroundColor: "whitesmoke",
+    justifyContent: "center",
+    alignItems: "center",
+    height: 100,
+  },
+  line_and_cover_text: {
+    fontSize: 16,
+    fontWeight: "bold",
+  },
   accordion: {
     width: windowWidth,
     flex: 1,
@@ -290,6 +357,19 @@ const styles = StyleSheet.create({
     width: windowWidth - 40,
     height: 200,
     marginLeft: 20,
+  },
+  hours: {
+    backgroundColor: "whitesmoke",
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  hours_title: {
+    fontSize: 18,
+    fontWeight: "bold",
+  },
+  hours_text: {
+    fontSize: 16,
   },
   faketext: {
     flex: 1,

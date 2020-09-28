@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, StyleSheet, Button } from "react-native";
+import AsyncStorage from "@react-native-community/async-storage";
 
 import t from "tcomb-form-native"; // 0.6.9
 
@@ -76,7 +77,24 @@ export default class TestForm extends Component {
       .catch((error) => {
         console.error("Error:", error);
       });
-    this.props.navigation.goBack();
+
+    const num = Date.now().toString();
+    const saveData = async () => {
+      try {
+        await AsyncStorage.setItem(this.props.route.params.name, num);
+        //setTime(num);
+        alert("Data successfully saved");
+      } catch (e) {
+        console.log(e);
+        alert("Failed to save the data to the storage");
+      }
+    };
+    saveData();
+
+    //console.log("IN TEST FORM ", Date().toLocaleUpperCase());
+    this.props.navigation.navigate("Details", {
+      listenerprop: Date().toLocaleUpperCase(),
+    });
   };
 
   render() {

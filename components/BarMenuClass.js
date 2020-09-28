@@ -54,6 +54,7 @@ export default class App extends React.Component {
           coverCharge: data.item.coverCharge,
           line: data.item.line,
           id: data.item.id,
+          listenerprop: Date().toLocaleUpperCase(),
         })
       }
     />

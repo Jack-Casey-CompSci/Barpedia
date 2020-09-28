@@ -4,6 +4,7 @@ import {
   Button,
   Image,
   ImageBackground,
+  ActivityIndicator,
   ScrollView,
   Text,
   StyleSheet,
@@ -26,6 +27,7 @@ import drink_pic from "../assets/menuPictures/drink_pic.png";
 import logo from "../assets/Barpedia_logo.png";
 import { render } from "react-dom";
 import CoverChargeModal from "./CoverChargeModal.js";
+import Timer from "./Timer.js";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
@@ -46,6 +48,7 @@ export default class BarPage extends Component {
       barName: this.props.route.params.name,
       coverCharge: this.props.route.params.coverCharge,
       dataSource: [],
+      listener: this.props.route.params.listenerprop,
       loading: true,
     };
   }
@@ -61,6 +64,13 @@ export default class BarPage extends Component {
         });
       })
       .catch((error) => console.log(error)); //to catch the errors if any
+  }
+  static getDerivedStateFromProps(nextProps, prevState) {
+    console.log("NEXT ", nextProps.route.params.listenerprop);
+    console.log("PREV ", prevState.listener);
+    if (nextProps.route.params.listenerprop !== prevState.listener) {
+      return (prevState.listener = nextProps.route.params.listenerprop);
+    } else return null;
   }
 
   _renderDaily = (item) => {
@@ -80,6 +90,8 @@ export default class BarPage extends Component {
   };
 
   render() {
+    console.log("LISTENER: ", this.state.listener);
+    /*
     if (this.state.loading) {
       return (
         <View style={styles.loader}>
@@ -87,6 +99,7 @@ export default class BarPage extends Component {
         </View>
       );
     }
+    */
     const bar_hours = this.state.dataSource.find((element) => {
       return element.name === this.state.barName;
     });
@@ -171,7 +184,17 @@ export default class BarPage extends Component {
               </Text>
             </ImageBackground>
           </View>
-          {button}
+          {/* {button} */}
+          <Timer
+            barName={this.props.route.params.name}
+            onPress={() =>
+              this.props.navigation.navigate("LineReporting", {
+                name: this.props.route.params.name,
+                id: this.props.route.params.id,
+                listen: this.state.listener,
+              })
+            }
+          ></Timer>
           <View style={styles.line_and_cover}>
             <Text style={styles.line_and_cover_text}>
               Approx wait is: {lineLength[0][this.props.route.params.line]}
@@ -256,6 +279,7 @@ export default class BarPage extends Component {
             </Text>
           </View>
           <Image style={styles.logo} source={logo}></Image>
+          <Text style={styles.faketext}>{this.state.listener}</Text>
         </ScrollView>
       </>
     );
@@ -346,5 +370,9 @@ const styles = StyleSheet.create({
   },
   hours_text: {
     fontSize: 16,
+  },
+  faketext: {
+    flex: 1,
+    fontSize: 32,
   },
 });

@@ -38,21 +38,17 @@ export default class BarPage extends Component {
     this.state = {
       barName: this.props.route.params.name,
       coverCharge: this.props.route.params.coverCharge,
-      listener: '',
+      listener: this.props.route.params.listenerprop,
       loading: true,
     };
   }
 
-  componentDidMount() {
-    this.setState({ loading: false })
-  }
-
-  UNSAFE_componentWillReceiveProps(nextProps) {
-    console.log("REFRESHING");
-    this.forceUpdate();
-    this.setState({ listener: Date.now().toString() })
-
-
+  static getDerivedStateFromProps(nextProps, prevState) {
+    console.log("NEXT ", nextProps.route.params.listenerprop);
+    console.log("PREV ", prevState.listener);
+    if (nextProps.route.params.listenerprop !== prevState.listener) {
+      return (prevState.listener = nextProps.route.params.listenerprop);
+    } else return null;
   }
 
   _renderDaily = (item) => {
@@ -72,7 +68,8 @@ export default class BarPage extends Component {
   };
 
   render() {
-    console.log(this.state.listener);
+    console.log("LISTENER: ", this.state.listener);
+    /*
     if (this.state.loading) {
       return (
         <View style={styles.loader}>
@@ -80,6 +77,7 @@ export default class BarPage extends Component {
         </View>
       );
     }
+    */
     const barspec = specials.find((element) => {
       return element.name === this.state.barName;
     });
@@ -168,7 +166,7 @@ export default class BarPage extends Component {
               this.props.navigation.navigate("LineReporting", {
                 name: this.props.route.params.name,
                 id: this.props.route.params.id,
-                listen: this.state.listener
+                listen: this.state.listener,
               })
             }
           ></Timer>
@@ -224,6 +222,7 @@ export default class BarPage extends Component {
             </TouchableHighlight>
           </View>
           <Image style={styles.logo} source={logo}></Image>
+          <Text style={styles.faketext}>{this.state.listener}</Text>
         </ScrollView>
       </>
     );
@@ -291,5 +290,9 @@ const styles = StyleSheet.create({
     width: windowWidth - 40,
     height: 200,
     marginLeft: 20,
+  },
+  faketext: {
+    flex: 1,
+    fontSize: 32,
   },
 });

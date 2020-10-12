@@ -26,7 +26,6 @@ export default function Timer({ barName, onPress = (f) => f }) {
   // save data
   const num = Date.now().toString();
   const diff = num - time;
-  console.log(diff);
 
   const saveData = async () => {
     try {

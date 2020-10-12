@@ -78,8 +78,6 @@ export default class BarPage extends Component {
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    console.log("NEXT ", nextProps.route.params.listenerprop);
-    console.log("PREV ", prevState.listener);
     if (nextProps.route.params.listenerprop !== prevState.listener) {
       return (
         (prevState.listener = nextProps.route.params.listenerprop),
@@ -104,8 +102,6 @@ export default class BarPage extends Component {
   };
 
   render() {
-    console.log("LISTENER: ", this.state.listener);
-    console.log("PROP LISTEN ", this.props.route.params.listenerprop);
     if (this.state.loading) {
       return (
         <View style={styles.loader}>
@@ -210,10 +206,10 @@ export default class BarPage extends Component {
           ></Timer>
           <View style={styles.line_and_cover}>
             <Text style={styles.line_and_cover_text}>
-              Approx wait is: {lineLength[0][this.props.route.params.line]}
+              Approx wait is: {lineLength[0][bar_hours.line]}
             </Text>
             <Text style={styles.line_and_cover_text}>
-              The cover charge is ${this.props.route.params.coverCharge}
+              The cover charge is ${bar_hours.coverCharge}
             </Text>
           </View>
           <Accordion
@@ -292,7 +288,6 @@ export default class BarPage extends Component {
             </Text>
           </View>
           <Image style={styles.logo} source={logo}></Image>
-          <Text style={styles.faketext}>{this.state.listener}</Text>
         </ScrollView>
       </>
     );

@@ -1,6 +1,6 @@
 [
   {
-    "id": "a1",
+    "id": 0,
     "name": "Phyrst",
     "description": "Subterranean Irish pub featuring daily live, local music & drink specials plus billiards & games.",
     "pic_name": "Phyrst",
@@ -18,7 +18,7 @@
     "coverCharge": 5
   },
   {
-    "id": "a2",
+    "id": 1,
     "name": "Champs Downtown",
     "description": "Sports bar in the heart of State College",
     "pic_name": "Champs",
@@ -36,7 +36,7 @@
     "coverCharge": 0
   },
   {
-    "id": "a3",
+    "id": 2,
     "name": "Bar Bleu",
     "description": "Craft beer, cocktails & Kansas City-style BBQ served in a bilevel sports bar with pool & live music.",
     "pic_name": "Bar_Bleu",
@@ -54,7 +54,7 @@
     "coverCharge": 0
   },
   {
-    "id": "a4",
+    "id": 3,
     "name": "Lions Den",
     "description": "",
     "pic_name": "Lions_Den",
@@ -72,7 +72,7 @@
     "coverCharge": 0
   },
   {
-    "id": "a5",
+    "id": 4,
     "name": "Primanti Brothers",
     "description": "Pittsburgh-born counter-serve chain known for its sandwiches.",
     "pic_name": "Primanti_Bros",
@@ -90,7 +90,7 @@
     "coverCharge": 0
   },
   {
-    "id": "a6",
+    "id": 5,
     "name": "Chrome",
     "description": "",
     "pic_name": "Chrome",
@@ -108,7 +108,7 @@
     "coverCharge": 0
   },
   {
-    "id": "a7",
+    "id": 6,
     "name": "Basement",
     "description": "",
     "pic_name": "Basement",
@@ -125,7 +125,7 @@
     "coverCharge": 0
   },
   {
-    "id": "a8",
+    "id": 7,
     "name": "Cafe 210",
     "description": "",
     "pic_name": "Cafe_210",
@@ -142,7 +142,7 @@
     "coverCharge": 0
   },
   {
-    "id": "a9",
+    "id": 8,
     "name": "Doggies",
     "description": "",
     "pic_name": "Doggies",
@@ -159,7 +159,7 @@
     "coverCharge": 0
   },
   {
-    "id": "a10",
+    "id": 9,
     "name": "Mad Mex",
     "description": "",
     "pic_name": "Mad_Mex",
@@ -176,7 +176,7 @@
     "coverCharge": 0
   },
   {
-    "id": "a11",
+    "id": 10,
     "name": "Pickles",
     "description": "",
     "pic_name": "Pickles",
@@ -193,7 +193,7 @@
     "coverCharge": 0
   },
   {
-    "id": "a12",
+    "id": 11,
     "name": "Shandygaff",
     "description": "",
     "pic_name": "Shandygaff",

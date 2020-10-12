@@ -1,18 +1,23 @@
 import React, { useState, Component } from "react";
 import {
+  Button,
   Image,
   ImageBackground,
+  ActivityIndicator,
   ScrollView,
   Text,
   StyleSheet,
-  SafeAreaView,
   View,
   Dimensions,
   TouchableHighlight,
 } from "react-native";
 import { Accordion } from "native-base";
+import specials from "../data/specials.json";
+import everyday from "../data/everyday.json";
+import entertainment from "../data/entertainment.json";
+import happyhour from "../data/happyHour.json";
 import EventsSpecials from "./AccordionFiles/specialsAccordion.js";
-import picture_linker from "./picture_linker.js";
+import picture_linker from "./PictureLinkers/picture_linker.js";
 import HappyHour from "./AccordionFiles/happyHourAccordion.js";
 import Everyday from "./AccordionFiles/everydayAccordion.js";
 import Entertainment from "./AccordionFiles/entertainmentAccordion";
@@ -20,24 +25,66 @@ import menu_pic from "../assets/menuPictures/menu_pic.jpg";
 import drink_pic from "../assets/menuPictures/drink_pic.png";
 import logo from "../assets/Barpedia_logo.png";
 import { render } from "react-dom";
-
 import CoverChargeModal from "./CoverChargeModal.js";
+import Timer from "./Timer.js";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
-const dailyArray = [{ title: "Daily Specials", content: "" }];
-const entertainArray = [{ title: "Entertainment", content: "" }];
-const everydayArray = [{ title: "All Day Everyday", content: "" }];
-const happyArray = [{ title: "Happy Hours", content: "" }];
+
+var lineLength = [
+  {
+    0: "No Wait",
+    1: "5-10 Minutes",
+    2: "11-30 Minutes",
+    3: "Longer than 30 Minutes",
+  },
+];
 
 export default class BarPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
       barName: this.props.route.params.name,
+      coverCharge: this.props.route.params.coverCharge,
+      dataSource: [],
+      listener: this.props.route.params.listenerprop,
+      loading: true,
     };
   }
 
+  componentDidMount() {
+    //fetch("http:/192.168.0.5:3000/linedata")
+    fetch("https://barpedia.herokuapp.com/linedata/")
+      .then((response) => response.json())
+      .then((responseData) => {
+        this.setState({
+          loading: false,
+          dataSource: responseData,
+        });
+      })
+      .catch((error) => console.log(error)); //to catch the errors if any
+  }
+
+  componentDidUpdate() {
+    fetch("https://barpedia.herokuapp.com/linedata/")
+      .then((response) => response.json())
+      .then((responseData) => {
+        this.setState({
+          loading: false,
+          dataSource: responseData,
+        });
+      })
+      .catch((error) => console.log(error));
+  }
+
+  static getDerivedStateFromProps(nextProps, prevState) {
+    if (nextProps.route.params.listenerprop !== prevState.listener) {
+      return (
+        (prevState.listener = nextProps.route.params.listenerprop),
+        (prevState.loading = true)
+      );
+    } else return null;
+  }
   _renderDaily = (item) => {
     return <EventsSpecials name={this.state.barName}></EventsSpecials>;
   };
@@ -55,18 +102,116 @@ export default class BarPage extends Component {
   };
 
   render() {
+    if (this.state.loading) {
+      return (
+        <View style={styles.loader}>
+          <ActivityIndicator size="large" color="#0c9" />
+        </View>
+      );
+    }
+    const bar_hours = this.state.dataSource.find((element) => {
+      return element.name === this.state.barName;
+    });
+    const barspec = specials.find((element) => {
+      return element.name === this.state.barName;
+    });
+    const barenter = entertainment.find((element) => {
+      return element.name === this.state.barName;
+    });
+    const barevery = everyday.find((element) => {
+      return element.name === this.state.barName;
+    });
+    const barhappy = happyhour.find((element) => {
+      return element.name === this.state.barName;
+    });
     const barpic = this.props.route.params.barPic;
     const bar_link = picture_linker.getBarLink(barpic);
-    console.log(this.props.route.params.name);
+    var dailyArray = [{ title: "Daily Specials", content: "" }];
+    var entertainArray = [{ title: "Entertainment", content: "" }];
+    var everydayArray = [{ title: "All Day Everyday", content: "" }];
+    var happyArray = [{ title: "Happy Hours", content: "" }];
+    if (barspec.available == false) {
+      dailyArray = [
+        { title: "Daily Specials (not available at this bar)", content: "" },
+      ];
+    }
+    if (barenter.available == false) {
+      entertainArray = [
+        { title: "Entertainment (not available at this bar)", content: "" },
+      ];
+    }
+    if (barevery.available == false) {
+      everydayArray = [
+        { title: "All Day Everyday (not available at this bar)", content: "" },
+      ];
+    }
+    if (barhappy.available == false) {
+      happyArray = [
+        { title: "Happy Hours (not available at this bar)", content: "" },
+      ];
+    }
+
+    const canReportLine = true;
+    var button;
+    if (canReportLine) {
+      button = (
+        <Button
+          title="Report Line/Cover Charge"
+          onPress={() =>
+            this.props.navigation.navigate("LineReporting", {
+              name: this.props.route.params.name,
+              id: this.props.route.params.id,
+            })
+          }
+        ></Button>
+      );
+    } else {
+      button = (
+        <Button
+          title="Already Submitted"
+          disabled
+          onPress={() =>
+            this.props.navigation.navigate("LineReporting", {
+              name: this.props.route.params.name,
+              id: this.props.route.params.id,
+            })
+          }
+        ></Button>
+      );
+    }
+
     return (
       <>
         <CoverChargeModal
           coverCharge={this.props.route.params.coverCharge}
         ></CoverChargeModal>
         <ScrollView style={styles.scroll}>
-          <ImageBackground style={styles.pageImage} source={bar_link}>
-            <Text style={styles.barTitle}>{this.props.route.params.name}</Text>
-          </ImageBackground>
+          <View style={styles.box}>
+            <ImageBackground style={styles.pageImage} source={bar_link}>
+              <Text style={styles.barTitle}>
+                {this.props.route.params.name}
+              </Text>
+            </ImageBackground>
+          </View>
+          {/* {button} */}
+          <Timer
+            barName={this.props.route.params.name}
+            onPress={() =>
+              this.props.navigation.navigate("LineReporting", {
+                name: this.props.route.params.name,
+                id: this.props.route.params.id,
+                listen: this.state.listener,
+              })
+            }
+          ></Timer>
+          <View style={styles.line_and_cover}>
+            <Text style={styles.line_and_cover_text}>
+              Approx wait is: {lineLength[0][bar_hours.line]}
+            </Text>
+            <Text style={styles.line_and_cover_text}>
+              The cover charge is ${bar_hours.coverCharge}
+            </Text>
+          </View>
           <Accordion
             dataArray={dailyArray}
             style={styles.accordion}
@@ -118,6 +263,30 @@ export default class BarPage extends Component {
               </ImageBackground>
             </TouchableHighlight>
           </View>
+          <View style={styles.hours}>
+            <Text style={styles.hours_title}> Bar Hours: </Text>
+            <Text style={styles.hours_text}>
+              Monday: {bar_hours.hours.Monday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Tuesday: {bar_hours.hours.Tuesday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Wednesday: {bar_hours.hours.Wednesday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Thursday: {bar_hours.hours.Thursday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Friday: {bar_hours.hours.Friday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Saturday: {bar_hours.hours.Saturday}
+            </Text>
+            <Text style={styles.hours_text}>
+              Sunday: {bar_hours.hours.Sunday}
+            </Text>
+          </View>
           <Image style={styles.logo} source={logo}></Image>
         </ScrollView>
       </>
@@ -140,13 +309,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   pageImage: {
-    flex: 1,
-    margin: 5,
-    marginBottom: 2.5,
-    width: windowWidth - 10,
+    width: windowWidth - 12,
     height: 200,
+  },
+  box: {
     borderWidth: 2,
     borderColor: "black",
+    margin: 4,
   },
   barTitle: {
     fontSize: 32,
@@ -157,6 +326,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "white",
     textAlign: "center",
+  },
+  line_and_cover: {
+    backgroundColor: "whitesmoke",
+    justifyContent: "center",
+    alignItems: "center",
+    height: 100,
+  },
+  line_and_cover_text: {
+    fontSize: 16,
+    fontWeight: "bold",
   },
   accordion: {
     width: windowWidth,
@@ -186,5 +365,22 @@ const styles = StyleSheet.create({
     width: windowWidth - 40,
     height: 200,
     marginLeft: 20,
+  },
+  hours: {
+    backgroundColor: "whitesmoke",
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  hours_title: {
+    fontSize: 18,
+    fontWeight: "bold",
+  },
+  hours_text: {
+    fontSize: 16,
+  },
+  faketext: {
+    flex: 1,
+    fontSize: 32,
   },
 });

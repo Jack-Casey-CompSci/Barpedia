@@ -1,65 +1,75 @@
 import React from "react";
-import { StyleSheet, Text, View, FlatList } from "react-native";
+import { StyleSheet, Text, View, FlatList, Dimensions } from "react-native";
 import Constants from "expo-constants";
 
 import DayBox from "../dayBox.js";
 import barsList from "../../data/specials.json";
+
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
 
 export default function EventsSpecials({ name }) {
   const barData = barsList.find((element) => {
     return element.name === name;
   });
   if (barData.available) {
-    return (
-      <View style={styles.box}>
-        <FlatList
-          style={styles.container}
-          data={barData.days}
-          horizontal={true}
-          renderItem={({ item }) => {
-            return (
-              <>
-                <DayBox
-                  key={item.id}
-                  day={item.day}
-                  drinkSpecial1Description={
-                    item.info.DrinkSpecials.Event1.Description
-                  }
-                  drinkSpecial1Time={item.info.DrinkSpecials.Event1.Time}
-                  drinkSpecial2Description={
-                    item.info.DrinkSpecials.Event2.Description
-                  }
-                  drinkSpecial2Time={item.info.DrinkSpecials.Event2.Time}
-                  foodSpecialDescription={item.info.FoodSpecials.Description}
-                  foodSpecialTime={item.info.FoodSpecials.Time}
-                ></DayBox>
-              </>
-            );
-          }}
-        />
-      </View>
-    );
+    return barData.days.map((data, key) => {
+      return (
+        <View style={styles.container} key={key}>
+          <View style={styles.day}>
+            <Text style={styles.day}>{data.day}</Text>
+            <View style={styles.event}>
+              <Text style={styles.description}>
+                {data.info.DrinkSpecials.Event1.Description}
+              </Text>
+              <Text style={styles.time}>
+                {data.info.DrinkSpecials.Event1.Time}
+              </Text>
+            </View>
+            <View style={styles.event}>
+              <Text style={styles.description}>
+                {data.info.DrinkSpecials.Event2.Description}
+              </Text>
+              <Text style={styles.time}>
+                {data.info.DrinkSpecials.Event2.Time}
+              </Text>
+            </View>
+            <View style={styles.event}>
+              <Text style={styles.description}>
+                {data.info.FoodSpecials.Description}
+              </Text>
+              <Text style={styles.time}>{data.info.FoodSpecials.Time}</Text>
+            </View>
+          </View>
+        </View>
+      );
+    });
   } else {
     return <Text>This is not offered at this bar</Text>;
   }
 }
 
 const styles = StyleSheet.create({
-  box: {
-    flexDirection: "row",
-  },
   container: {
-    height: 250,
+    marginLeft: 5,
   },
-  title: {
-    flex: 3,
-    borderWidth: 1,
-    borderColor: "black",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  titleText: {
+  day: {
+    flexDirection: "column",
+    fontSize: 20,
     fontWeight: "bold",
-    fontSize: 14,
+  },
+  event: {
+    flexDirection: "row",
+    marginBottom: 5,
+  },
+  description: {
+    fontSize: 16,
+    marginRight: 5,
+    flex: 1,
+  },
+  time: {
+    fontSize: 16,
+    fontWeight: "bold",
+    flex: 1,
   },
 });

@@ -152,7 +152,29 @@ export default class BarPage extends Component {
     }
 
     const canReportLine = true;
+    var closed;
     var button;
+    if (!bar_hours.closed) {
+      closed = (
+        <View style={styles.line_and_cover}>
+          <Text style={styles.line_and_cover_text}>
+            Approx wait is: {lineLength[0][bar_hours.line]}
+          </Text>
+          <Text style={styles.line_and_cover_text}>
+            The cover charge is ${bar_hours.coverCharge}
+          </Text>
+        </View>
+      )
+    }
+    if (bar_hours.closed) {
+      closed = (
+        <View style={styles.line_and_cover}>
+          <Text style={styles.line_and_cover_text}>
+            This bar is currently closed due to COVID
+          </Text>
+        </View>
+      )
+    }
     if (canReportLine) {
       button = (
         <Button
@@ -185,7 +207,7 @@ export default class BarPage extends Component {
         <CoverChargeModal
           coverCharge={this.props.route.params.coverCharge}
         ></CoverChargeModal>
-        <ScrollView style={styles.scroll}>
+        <ScrollView style={styles.scroll} scrollIndicatorInsets={{ right: 1 }}>
           <View style={styles.box}>
             <ImageBackground style={styles.pageImage} source={bar_link}>
               <Text style={styles.barTitle}>
@@ -204,14 +226,7 @@ export default class BarPage extends Component {
               })
             }
           ></Timer>
-          <View style={styles.line_and_cover}>
-            <Text style={styles.line_and_cover_text}>
-              Approx wait is: {lineLength[0][bar_hours.line]}
-            </Text>
-            <Text style={styles.line_and_cover_text}>
-              The cover charge is ${bar_hours.coverCharge}
-            </Text>
-          </View>
+          {closed}
           <Accordion
             dataArray={dailyArray}
             style={styles.accordion}

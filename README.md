@@ -15,6 +15,8 @@ PSU Bars app created by Dylan Reb and Alex Rang
         style="float: left; margin-right: 10px;" />
 </p>
 
+![alt text](https://imgur.com/RZseGjr)
+
 ## Current Features
 * Up-to-date drink and food menus
 * Daily specials

@@ -9,7 +9,9 @@ PSU Bars app created by Dylan Reb and Alex Rang
 
 <p float="left">
     <img src="/assets/BarMenu.jpg" width="250"/>
+    <br>
     <img src="/assets/BarPage.jpg" width="250"/>
+    <br>
     <img src="/assets/BarForm.jpg" width="250"/>
 </p>
 

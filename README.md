@@ -7,10 +7,11 @@ PSU Bars app created by Dylan Reb and Alex Rang
 ## Technologies
 * React Native
 
-<img src="/assets/BarMenu.jpg" width="350"/>
-<img src="/assets/BarPage.jpg" width="350"/>
-<img src="/assets/BarForm.jpg" width="350"/>
-
+<p float="left">
+    <img src="/assets/BarMenu.jpg" width="350"/>
+    <img src="/assets/BarPage.jpg" width="350"/>
+    <img src="/assets/BarForm.jpg" width="350"/>
+</p>
 
 ## Current Features
 * Up-to-date drink and food menus

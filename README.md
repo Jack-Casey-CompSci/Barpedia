@@ -8,9 +8,9 @@ PSU Bars app created by Dylan Reb and Alex Rang
 * React Native
 
 <p float="left">
-    <img src="/assets/BarMenu.jpg" width="200"/>
-    <img src="/assets/BarPage.jpg" width="200"/>
-    <img src="/assets/BarForm.jpg" width="200"/>
+    <img src="/assets/BarMenu.jpg" width="250"/>
+    <img src="/assets/BarPage.jpg" width="250"/>
+    <img src="/assets/BarForm.jpg" width="250"/>
 </p>
 
 ## Current Features

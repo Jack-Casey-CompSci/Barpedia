@@ -7,17 +7,10 @@ PSU Bars app created by Dylan Reb and Alex Rang
 ## Technologies
 * React Native
 
-[![An old rock in the desert]("Shiprock, New Mexico by Beau Rogers")](https://imgur.com/RZseGjr)
-
-<p>
-    <img src="https://imgur.com/RZseGjr"
-        alt="Markdown Monster icon"
-        style="float: left; margin-right: 10px;" />
-</p>
-
-![alt text](https://imgur.com/RZseGjr)
-
 ![ScreenShot](/assets/BarMenu.jpg)
+![ScreenShot](/assets/BarPage.jpg)
+![ScreenShot](/assets/BarForm.jpg)
+
 
 ## Current Features
 * Up-to-date drink and food menus

@@ -1,15 +1,21 @@
 # Barpedia
 PSU Bars app created by Dylan Reb and Alex Rang
 
+## Back End in Node.js
+[Click here](https://github.com/alexrang83/barpediabackend)
+
 ## Technologies
 * React Native
 
+## Current Features
+* Up-to-date drink and food menus
+* Daily specials
+* Events
+* Real time line reporting and cover charges
+
 ## Planned Features
-* Bar check-in feature
-* Alcohol/food menus
-* Events/bands schedule
-* Line length/ cover charge reporting
-* Sorting by events, happy hours, etc.
+* Favorites
 
 ## Contact Us
 alexrang83@gmail.com
+

@@ -9,9 +9,11 @@ PSU Bars app created by Dylan Reb and Alex Rang
 
 [![An old rock in the desert]("Shiprock, New Mexico by Beau Rogers")](https://imgur.com/RZseGjr)
 
-<img src="https://imgur.com/RZseGjr"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
+<p>
+    <img src="https://imgur.com/RZseGjr"
+        alt="Markdown Monster icon"
+        style="float: left; margin-right: 10px;" />
+</p>
 
 ## Current Features
 * Up-to-date drink and food menus

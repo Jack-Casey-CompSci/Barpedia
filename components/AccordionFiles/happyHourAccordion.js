@@ -35,15 +35,15 @@ export default function HappyHourAccordion({ name }) {
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: "center",
+    height: 35,
     flex: 1,
     marginLeft: 10,
     marginRight: 10,
-    marginTop: 2.5,
-    marginBottom: 2.5,
   },
   container2: {
-    marginTop: 2.5,
-    marginBottom: 2.5,
+    alignItems: "center",
+    height: 35,
     flex: 1,
     marginLeft: 10,
     marginRight: 10,
@@ -53,8 +53,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   box: {
+    paddingLeft: 5,
     flex: 3,
     flexDirection: "row",
+    alignItems: "center"
   },
   description: {
     fontSize: 16,

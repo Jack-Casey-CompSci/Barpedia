@@ -43,7 +43,6 @@ var lineLength = [
 export default class BarPage extends Component {
   constructor(props) {
     super(props);
-    console.log("CONSTRUCTING");
     this.state = {
       barName: this.props.route.params.name,
       coverCharge: this.props.route.params.coverCharge,
@@ -54,7 +53,6 @@ export default class BarPage extends Component {
   }
 
   componentDidMount() {
-    console.log("MOUNTING")
     //fetch("http:/192.168.0.5:3000/linedata")
     fetch("https://barpedia.herokuapp.com/linedata/")
       .then((response) => response.json())
@@ -68,23 +66,21 @@ export default class BarPage extends Component {
   }
 
   componentDidUpdate() {
-    console.log("UPDATING");
-    
-    fetch("https://barpedia.herokuapp.com/linedata/")
-      .then((response) => response.json())
-      .then((responseData) => {
-        this.setState({
-          loading: false,
-          dataSource: responseData,
-        });
-      })
-      .catch((error) => console.log(error));
+    if (this.state.loading) {
+      fetch("https://barpedia.herokuapp.com/linedata/")
+        .then((response) => response.json())
+        .then((responseData) => {
+          this.setState({
+            loading: false,
+            dataSource: responseData,
+          });
+        })
+        .catch((error) => console.log(error));
+      }
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    console.log("DERIVED 1");
     if (nextProps.route.params.listenerprop !== prevState.listener) {
-      console.log("DERIVED 2");
       return (
         (prevState.listener = nextProps.route.params.listenerprop),
         (prevState.loading = true)
@@ -109,7 +105,6 @@ export default class BarPage extends Component {
 
   render() {
     if (this.state.loading) {
-      console.log("LOADING");
       return (
         <View style={styles.loader}>
           <ActivityIndicator size="large" color="#0c9" />
@@ -208,8 +203,6 @@ export default class BarPage extends Component {
         ></Button>
       );
     }
-    console.log("TESTING");
-    console.log();
     return (
       <>
         <CoverChargeModal

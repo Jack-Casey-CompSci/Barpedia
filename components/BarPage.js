@@ -151,35 +151,7 @@ export default class BarPage extends Component {
       ];
     }
 
-    const canReportLine = true;
-    var button;
-    if (canReportLine) {
-      button = (
-        <Button
-          title="Report Line/Cover Charge"
-          onPress={() =>
-            this.props.navigation.navigate("LineReporting", {
-              name: this.props.route.params.name,
-              id: this.props.route.params.id,
-            })
-          }
-        ></Button>
-      );
-    } else {
-      button = (
-        <Button
-          title="Already Submitted"
-          disabled
-          onPress={() =>
-            this.props.navigation.navigate("LineReporting", {
-              name: this.props.route.params.name,
-              id: this.props.route.params.id,
-            })
-          }
-        ></Button>
-      );
-    }
-
+    
     return (
       <>
         <CoverChargeModal
@@ -391,5 +363,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#B2B8C6",
     borderColor: "black",
     borderWidth: 0.75,
+  },
+  reportButton: {
+    marginHorizontal: 50
   }
 });

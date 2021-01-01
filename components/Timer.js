@@ -51,10 +51,10 @@ export default function Timer({ barName, onPress = (f) => f }) {
   if (diff > 60000) {
     button = <Button title={activeText} onPress={() => onPress()}></Button>;
   } else {
-    button = <Button disabled title="Already Submitted"></Button>;
+    button = <Button disabled  title="Already Submitted"></Button>;
   }
 
-  return <View>{button}</View>;
+  return <View style={styles.button}>{button}</View>;
 }
 
 const styles = StyleSheet.create({
@@ -90,9 +90,7 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   button: {
-    margin: 10,
-    padding: 10,
-    backgroundColor: "yellow",
+    marginHorizontal: 10,
   },
   buttonText: {
     fontSize: 18,

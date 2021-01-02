@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   button: {
-    marginHorizontal: 10,
+    marginHorizontal: 5,
   },
   buttonText: {
     fontSize: 18,

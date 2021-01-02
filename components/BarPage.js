@@ -363,6 +363,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#B2B8C6",
     borderColor: "black",
     borderWidth: 0.75,
+    marginHorizontal: 5
   },
   reportButton: {
     marginHorizontal: 50

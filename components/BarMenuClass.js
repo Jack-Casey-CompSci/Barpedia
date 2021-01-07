@@ -13,6 +13,7 @@ import {
 
 import BarCard from "./BarCard.js";
 import logo from "../assets/Barpedia_logo.png";
+import { Alert } from "react-native";
 
 const windowWidth = Dimensions.get("window").width;
 
@@ -26,8 +27,7 @@ export default class App extends React.Component {
     };
   }
 
-  componentDidMount() {
-    //fetch("http:/192.168.0.5:3000/linedata")
+  refreshData() {
     fetch("https://barpedia.herokuapp.com/linedata/")
       .then((response) => response.json())
       .then((responseData) => {
@@ -37,6 +37,17 @@ export default class App extends React.Component {
         });
       })
       .catch((error) => console.log(error)); //to catch the errors if any
+  }
+
+  componentDidMount() {
+    this._unsubscribe = this.props.navigation.addListener('focus', () => {
+      this.refreshData();
+    });
+    //fetch("http:/192.168.0.5:3000/linedata")
+    }
+  
+  componentWillUnmount() {
+    this._unsubscribe();
   }
 
   renderItem = (data) => (

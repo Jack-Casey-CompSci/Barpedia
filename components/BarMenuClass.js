@@ -1,21 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-  StyleSheet,
   View,
   ActivityIndicator,
   FlatList,
-  Text,
-  TouchableOpacity,
-  Dimensions,
   Image,
   ScrollView,
 } from "react-native";
 
+import styles from "./StyleFiles/BarMenuClassStyle"
 import BarCard from "./BarCard.js";
 import logo from "../assets/Barpedia_logo.png";
-import { Alert } from "react-native";
 
-const windowWidth = Dimensions.get("window").width;
 
 export default class App extends React.Component {
   constructor(props) {
@@ -92,24 +87,4 @@ export default class App extends React.Component {
     );
   }
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  loader: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  list: {
-    paddingVertical: 2,
-    margin: 5,
-    backgroundColor: "#fff",
-  },
-  logo: {
-    width: windowWidth - 40,
-    height: 200,
-    marginLeft: 20,
-  },
-});
+

@@ -1,8 +1,6 @@
 import React from "react";
 import {
   ImageBackground,
-  StyleSheet,
-  Dimensions,
   Text,
   TouchableHighlight,
   View,
@@ -10,9 +8,7 @@ import {
 import { Icon } from "native-base";
 
 import picture_linker from "./PictureLinkers/picture_linker";
-
-const windowWidth = Dimensions.get("window").width;
-const windowHeight = Dimensions.get("window").height;
+import styles from "./StyleFiles/BarCardStyle.js";
 
 export default function BarCard({
   barName,
@@ -124,41 +120,3 @@ export default function BarCard({
     );
   }
 }
-
-const styles = StyleSheet.create({
-  barTab: {
-    flex: 1,
-    width: windowWidth - 20,
-    height: 150,
-    backgroundColor: "grey",
-    borderWidth: 2,
-    marginLeft: 10,
-    marginBottom: 10,
-    borderColor: "black",
-  },
-  icon: {
-    color: "white",
-    marginLeft: 5,
-  },
-  iconBox: {
-    flex: 1,
-    flexDirection: "row",
-  },
-  nameBox: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "flex-end",
-  },
-  barName: {
-    fontSize: 32,
-  },
-  image: {
-    flex: 1,
-    flexDirection: "column",
-  },
-  barName: {
-    color: "white",
-    fontWeight: "bold",
-    fontSize: 32,
-  },
-});

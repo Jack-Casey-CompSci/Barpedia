@@ -31,7 +31,6 @@ export default function Timer({ barName, onPress = (f) => f }) {
     try {
       await AsyncStorage.setItem(STORAGE_KEY, num);
       setTime(num);
-      alert("Data successfully saved");
     } catch (e) {
       alert("Failed to save the data to the storage");
     }

@@ -182,7 +182,7 @@ export default class BarPage extends Component {
         <Button
           title="Report Line/Cover Charge"
           onPress={() =>
-            this.props.navigation.navigate("LineReporting", {
+            this.props.navigation.navigate("Line Reporting", {
               name: this.props.route.params.name,
               id: this.props.route.params.id,
             })
@@ -195,7 +195,7 @@ export default class BarPage extends Component {
           title="Already Submitted"
           disabled
           onPress={() =>
-            this.props.navigation.navigate("LineReporting", {
+            this.props.navigation.navigate("Line Reporting", {
               name: this.props.route.params.name,
               id: this.props.route.params.id,
             })
@@ -221,7 +221,7 @@ export default class BarPage extends Component {
           <Timer
             barName={this.props.route.params.name}
             onPress={() =>
-              this.props.navigation.navigate("LineReporting", {
+              this.props.navigation.navigate("Line Reporting", {
                 name: this.props.route.params.name,
                 id: this.props.route.params.id,
                 listen: this.state.listener,
@@ -257,7 +257,7 @@ export default class BarPage extends Component {
             <TouchableHighlight
               style={styles.menuTile}
               onPress={() =>
-                this.props.navigation.navigate("BarFood", {
+                this.props.navigation.navigate("Bar Food", {
                   name: this.props.route.params.name,
                 })
               }
@@ -270,7 +270,7 @@ export default class BarPage extends Component {
             <TouchableHighlight
               style={styles.drinksTile}
               onPress={() =>
-                this.props.navigation.navigate("BarDrinks", {
+                this.props.navigation.navigate("Bar Drinks", {
                   name: this.props.route.params.name,
                 })
               }

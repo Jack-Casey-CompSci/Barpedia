@@ -24,7 +24,6 @@ export default function BarCard({
 }) {
   const bar_link = picture_linker.getBarLink(barPic);
   var coverIcon;
-  console.log(barLine);
   if(barCoverCharge > 0){
     coverIcon = <Icon name="dollar" type="FontAwesome" style={styles.icon}></Icon>
   }

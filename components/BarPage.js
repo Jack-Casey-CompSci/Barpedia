@@ -203,6 +203,7 @@ export default class BarPage extends Component {
         ></Button>
       );
     }
+    
     return (
       <>
         <CoverChargeModal
@@ -231,21 +232,25 @@ export default class BarPage extends Component {
           <Accordion
             dataArray={dailyArray}
             style={styles.accordion}
+            headerStyle={styles.accordionHeader}
             renderContent={this._renderDaily}
           ></Accordion>
           <Accordion
             dataArray={entertainArray}
             renderContent={this._renderEntertainment}
             style={styles.accordion}
+            headerStyle={styles.accordionHeader}
           ></Accordion>
           <Accordion
             dataArray={everydayArray}
             style={styles.accordion}
+            headerStyle={styles.accordionHeader}
             renderContent={this._renderEveryday}
           ></Accordion>
           <Accordion
             dataArray={happyArray}
             style={styles.accordion}
+            headerStyle={styles.accordionHeader}
             renderContent={this._renderHappyHour}
           ></Accordion>
           <View style={styles.menuandDrinkTile}>
@@ -399,4 +404,13 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 32,
   },
+  accordionHeader: {
+    backgroundColor: "#B2B8C6",
+    borderColor: "black",
+    borderWidth: 0.75,
+    marginHorizontal: 5
+  },
+  reportButton: {
+    marginHorizontal: 50
+  }
 });

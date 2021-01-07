@@ -58,7 +58,7 @@ export default class TestForm extends Component {
         coverCharge: value.CoverCharge,
       };
     }
-
+    console.log(value.LineLength);
     //HTTP Request
     //var requestString = "http:/192.168.0.5:3000/linedata/" + this.state.id;
     var requestString =

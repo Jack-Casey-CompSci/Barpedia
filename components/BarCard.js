@@ -23,7 +23,12 @@ export default function BarCard({
   onPress = (f) => f,
 }) {
   const bar_link = picture_linker.getBarLink(barPic);
-  if ((barLine == 0) & (barCoverCharge > 0)) {
+  var coverIcon;
+  console.log(barLine);
+  if(barCoverCharge > 0){
+    coverIcon = <Icon name="dollar" type="FontAwesome" style={styles.icon}></Icon>
+  }
+  if (barLine == 1) {
     return (
       <TouchableHighlight
         style={styles.barTab}
@@ -33,7 +38,7 @@ export default function BarCard({
         <ImageBackground style={styles.image} source={bar_link}>
           <View style={styles.iconBox}>
             <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="ios-cash" style={styles.icon}></Icon>
+            {coverIcon}
           </View>
           <View style={styles.nameBox}>
             <Text style={styles.barName}>{barName}</Text>
@@ -41,7 +46,7 @@ export default function BarCard({
         </ImageBackground>
       </TouchableHighlight>
     );
-  } else if ((barLine == 1) & (barCoverCharge > 0)) {
+  } else if (barLine == 2) {
     return (
       <TouchableHighlight
         style={styles.barTab}
@@ -52,7 +57,7 @@ export default function BarCard({
           <View style={styles.iconBox}>
             <Icon name="person" style={styles.icon}></Icon>
             <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="ios-cash" style={styles.icon}></Icon>
+            {coverIcon}
           </View>
           <View style={styles.nameBox}>
             <Text style={styles.barName}>{barName}</Text>
@@ -60,8 +65,9 @@ export default function BarCard({
         </ImageBackground>
       </TouchableHighlight>
     );
-  } else if ((barLine == 2) & (barCoverCharge > 0)) {
-    return (
+  } 
+  else if (barLine == 0){
+    return(
       <TouchableHighlight
         style={styles.barTab}
         onPress={() => onPress()}
@@ -69,10 +75,7 @@ export default function BarCard({
       >
         <ImageBackground style={styles.image} source={bar_link}>
           <View style={styles.iconBox}>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="ios-cash" style={styles.icon}></Icon>
+            {coverIcon}
           </View>
           <View style={styles.nameBox}>
             <Text style={styles.barName}>{barName}</Text>
@@ -80,7 +83,8 @@ export default function BarCard({
         </ImageBackground>
       </TouchableHighlight>
     );
-  } else if ((barLine == 0) & (barCoverCharge == 0)) {
+  }
+  else if (barLine == 3) {
     return (
       <TouchableHighlight
         style={styles.barTab}
@@ -90,6 +94,9 @@ export default function BarCard({
         <ImageBackground style={styles.image} source={bar_link}>
           <View style={styles.iconBox}>
             <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="person" style={styles.icon}></Icon> 
+            {coverIcon}
           </View>
           <View style={styles.nameBox}>
             <Text style={styles.barName}>{barName}</Text>
@@ -97,7 +104,9 @@ export default function BarCard({
         </ImageBackground>
       </TouchableHighlight>
     );
-  } else if ((barLine == 1) & (barCoverCharge == 0)) {
+    
+  } 
+  else{
     return (
       <TouchableHighlight
         style={styles.barTab}
@@ -106,27 +115,7 @@ export default function BarCard({
       >
         <ImageBackground style={styles.image} source={bar_link}>
           <View style={styles.iconBox}>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="person" style={styles.icon}></Icon>
-          </View>
-          <View style={styles.nameBox}>
-            <Text style={styles.barName}>{barName}</Text>
-          </View>
-        </ImageBackground>
-      </TouchableHighlight>
-    );
-  } else {
-    return (
-      <TouchableHighlight
-        style={styles.barTab}
-        onPress={() => onPress()}
-        underlayColor="white"
-      >
-        <ImageBackground style={styles.image} source={bar_link}>
-          <View style={styles.iconBox}>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="person" style={styles.icon}></Icon>
+            {coverIcon}
           </View>
           <View style={styles.nameBox}>
             <Text style={styles.barName}>{barName}</Text>

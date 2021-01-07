@@ -1,20 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-  StyleSheet,
   View,
   ActivityIndicator,
   FlatList,
-  Text,
-  TouchableOpacity,
-  Dimensions,
   Image,
   ScrollView,
 } from "react-native";
 
+import styles from "./StyleFiles/BarMenuClassStyle"
 import BarCard from "./BarCard.js";
 import logo from "../assets/Barpedia_logo.png";
 
-const windowWidth = Dimensions.get("window").width;
 
 export default class App extends React.Component {
   constructor(props) {
@@ -26,8 +22,7 @@ export default class App extends React.Component {
     };
   }
 
-  componentDidMount() {
-    //fetch("http:/192.168.0.5:3000/linedata")
+  refreshData() {
     fetch("https://barpedia.herokuapp.com/linedata/")
       .then((response) => response.json())
       .then((responseData) => {
@@ -37,6 +32,17 @@ export default class App extends React.Component {
         });
       })
       .catch((error) => console.log(error)); //to catch the errors if any
+  }
+
+  componentDidMount() {
+    this._unsubscribe = this.props.navigation.addListener('focus', () => {
+      this.refreshData();
+    });
+    //fetch("http:/192.168.0.5:3000/linedata")
+    }
+  
+  componentWillUnmount() {
+    this._unsubscribe();
   }
 
   renderItem = (data) => (
@@ -81,24 +87,4 @@ export default class App extends React.Component {
     );
   }
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  loader: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  list: {
-    paddingVertical: 2,
-    margin: 5,
-    backgroundColor: "#fff",
-  },
-  logo: {
-    width: windowWidth - 40,
-    height: 200,
-    marginLeft: 20,
-  },
-});
+

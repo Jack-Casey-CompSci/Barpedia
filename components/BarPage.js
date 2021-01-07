@@ -6,9 +6,7 @@ import {
   ActivityIndicator,
   ScrollView,
   Text,
-  StyleSheet,
-  View,
-  Dimensions,
+  View, 
   TouchableHighlight,
 } from "react-native";
 import { Accordion } from "native-base";
@@ -27,9 +25,9 @@ import logo from "../assets/Barpedia_logo.png";
 import { render } from "react-dom";
 import CoverChargeModal from "./CoverChargeModal.js";
 import Timer from "./Timer.js";
+import styles from "./StyleFiles/BarPageStyle.js";
 
-const windowWidth = Dimensions.get("window").width;
-const windowHeight = Dimensions.get("window").height;
+
 
 var lineLength = [
   {
@@ -66,15 +64,17 @@ export default class BarPage extends Component {
   }
 
   componentDidUpdate() {
-    fetch("https://barpedia.herokuapp.com/linedata/")
-      .then((response) => response.json())
-      .then((responseData) => {
-        this.setState({
-          loading: false,
-          dataSource: responseData,
-        });
-      })
-      .catch((error) => console.log(error));
+    if (this.state.loading) {
+      fetch("https://barpedia.herokuapp.com/linedata/")
+        .then((response) => response.json())
+        .then((responseData) => {
+          this.setState({
+            loading: false,
+            dataSource: responseData,
+          });
+        })
+        .catch((error) => console.log(error));
+      }
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -83,7 +83,7 @@ export default class BarPage extends Component {
         (prevState.listener = nextProps.route.params.listenerprop),
         (prevState.loading = true)
       );
-    } else return null;
+    } else return false;
   }
   _renderDaily = (item) => {
     return <EventsSpecials name={this.state.barName}></EventsSpecials>;
@@ -152,13 +152,35 @@ export default class BarPage extends Component {
     }
 
     const canReportLine = true;
+    var closed;
     var button;
+    if (!bar_hours.closed) {
+      closed = (
+        <View style={styles.line_and_cover}>
+          <Text style={styles.line_and_cover_text}>
+            Approx wait is: {lineLength[0][bar_hours.line]}
+          </Text>
+          <Text style={styles.line_and_cover_text}>
+            The cover charge is ${bar_hours.coverCharge}
+          </Text>
+        </View>
+      )
+    }
+    if (bar_hours.closed) {
+      closed = (
+        <View style={styles.line_and_cover}>
+          <Text style={styles.line_and_cover_text}>
+            This bar is currently closed due to COVID
+          </Text>
+        </View>
+      )
+    }
     if (canReportLine) {
       button = (
         <Button
           title="Report Line/Cover Charge"
           onPress={() =>
-            this.props.navigation.navigate("LineReporting", {
+            this.props.navigation.navigate("Line Reporting", {
               name: this.props.route.params.name,
               id: this.props.route.params.id,
             })
@@ -171,7 +193,7 @@ export default class BarPage extends Component {
           title="Already Submitted"
           disabled
           onPress={() =>
-            this.props.navigation.navigate("LineReporting", {
+            this.props.navigation.navigate("Line Reporting", {
               name: this.props.route.params.name,
               id: this.props.route.params.id,
             })
@@ -179,13 +201,13 @@ export default class BarPage extends Component {
         ></Button>
       );
     }
-
+    
     return (
       <>
         <CoverChargeModal
           coverCharge={this.props.route.params.coverCharge}
         ></CoverChargeModal>
-        <ScrollView style={styles.scroll}>
+        <ScrollView style={styles.scroll} scrollIndicatorInsets={{ right: 1 }}>
           <View style={styles.box}>
             <ImageBackground style={styles.pageImage} source={bar_link}>
               <Text style={styles.barTitle}>
@@ -193,50 +215,47 @@ export default class BarPage extends Component {
               </Text>
             </ImageBackground>
           </View>
-          {/* {button} */}
+          {/* {button} */} 
           <Timer
             barName={this.props.route.params.name}
             onPress={() =>
-              this.props.navigation.navigate("LineReporting", {
+              this.props.navigation.navigate("Line Reporting", {
                 name: this.props.route.params.name,
                 id: this.props.route.params.id,
                 listen: this.state.listener,
               })
             }
           ></Timer>
-          <View style={styles.line_and_cover}>
-            <Text style={styles.line_and_cover_text}>
-              Approx wait is: {lineLength[0][bar_hours.line]}
-            </Text>
-            <Text style={styles.line_and_cover_text}>
-              The cover charge is ${bar_hours.coverCharge}
-            </Text>
-          </View>
+          {closed}
           <Accordion
             dataArray={dailyArray}
             style={styles.accordion}
+            headerStyle={styles.accordionHeader}
             renderContent={this._renderDaily}
           ></Accordion>
           <Accordion
             dataArray={entertainArray}
             renderContent={this._renderEntertainment}
             style={styles.accordion}
+            headerStyle={styles.accordionHeader}
           ></Accordion>
           <Accordion
             dataArray={everydayArray}
             style={styles.accordion}
+            headerStyle={styles.accordionHeader}
             renderContent={this._renderEveryday}
           ></Accordion>
           <Accordion
             dataArray={happyArray}
             style={styles.accordion}
+            headerStyle={styles.accordionHeader}
             renderContent={this._renderHappyHour}
           ></Accordion>
           <View style={styles.menuandDrinkTile}>
             <TouchableHighlight
               style={styles.menuTile}
               onPress={() =>
-                this.props.navigation.navigate("BarFood", {
+                this.props.navigation.navigate("Bar Food", {
                   name: this.props.route.params.name,
                 })
               }
@@ -249,7 +268,7 @@ export default class BarPage extends Component {
             <TouchableHighlight
               style={styles.drinksTile}
               onPress={() =>
-                this.props.navigation.navigate("BarDrinks", {
+                this.props.navigation.navigate("Bar Drinks", {
                   name: this.props.route.params.name,
                 })
               }
@@ -293,94 +312,3 @@ export default class BarPage extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  scroll: {
-    flex: 1,
-  },
-  fit: {
-    flexGrow: 1,
-    backgroundColor: "green",
-    height: windowHeight,
-  },
-  container: {
-    flex: 1,
-    flexGrow: 1,
-    alignItems: "center",
-  },
-  pageImage: {
-    width: windowWidth - 12,
-    height: 200,
-  },
-  box: {
-    borderWidth: 2,
-    borderColor: "black",
-    margin: 4,
-  },
-  barTitle: {
-    fontSize: 32,
-    color: "white",
-    textAlign: "center",
-  },
-  title: {
-    fontSize: 16,
-    color: "white",
-    textAlign: "center",
-  },
-  line_and_cover: {
-    backgroundColor: "whitesmoke",
-    justifyContent: "center",
-    alignItems: "center",
-    height: 100,
-  },
-  line_and_cover_text: {
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-  accordion: {
-    width: windowWidth,
-    flex: 1,
-  },
-  menuandDrinkTile: {
-    flex: 1,
-    flexDirection: "row",
-    margin: 5,
-    marginTop: 2.5,
-    width: windowWidth - 10,
-    height: 200,
-  },
-  menuTile: {
-    flex: 1,
-    borderWidth: 2,
-    borderRightWidth: 1,
-    borderColor: "black",
-  },
-  drinksTile: {
-    flex: 1,
-    borderWidth: 2,
-    borderLeftWidth: 1,
-    borderColor: "black",
-  },
-  logo: {
-    width: windowWidth - 40,
-    height: 200,
-    marginLeft: 20,
-  },
-  hours: {
-    backgroundColor: "whitesmoke",
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  hours_title: {
-    fontSize: 18,
-    fontWeight: "bold",
-  },
-  hours_text: {
-    fontSize: 16,
-  },
-  faketext: {
-    flex: 1,
-    fontSize: 32,
-  },
-});

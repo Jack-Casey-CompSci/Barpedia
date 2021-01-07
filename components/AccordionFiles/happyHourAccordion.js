@@ -9,8 +9,18 @@ export default function HappyHourAccordion({ name }) {
   });
   if (barData.available) {
     return barData.happyHour.map((data, key) => {
+      if(key % 2 == 0){
+        return(
+          <View style={styles.container} key={key}>
+            <View style={styles.box}>
+              <Text style={styles.description}>{data.Drink}</Text>
+              <Text style={styles.price}>{data.Price}</Text>
+            </View>
+          </View>
+          );
+      }
       return (
-        <View style={styles.container} key={key}>
+        <View style={styles.container2} key={key}>
           <View style={styles.box}>
             <Text style={styles.description}>{data.Drink}</Text>
             <Text style={styles.price}>{data.Price}</Text>
@@ -25,15 +35,28 @@ export default function HappyHourAccordion({ name }) {
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: "center",
+    height: 35,
     flex: 1,
-    margin: 10,
+    marginLeft: 10,
+    marginRight: 10,
+  },
+  container2: {
+    alignItems: "center",
+    height: 35,
+    flex: 1,
+    marginLeft: 10,
+    marginRight: 10,
+    backgroundColor: "#CAD5E9"
   },
   row: {
     flexDirection: "row",
   },
   box: {
+    paddingLeft: 5,
     flex: 3,
     flexDirection: "row",
+    alignItems: "center"
   },
   description: {
     fontSize: 16,
@@ -42,5 +65,6 @@ const styles = StyleSheet.create({
   price: {
     fontSize: 16,
     flex: 1,
+    fontWeight: "bold",
   },
 });

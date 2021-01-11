@@ -23,7 +23,7 @@ export default class App extends React.Component {
   }
 
   refreshData() {
-    fetch("https://barpedia.herokuapp.com/linedata/")
+    fetch("https://barpedia.herokuapp.com/api/bars/")
       .then((response) => response.json())
       .then((responseData) => {
         this.setState({

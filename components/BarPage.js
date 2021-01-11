@@ -52,7 +52,7 @@ export default class BarPage extends Component {
 
   componentDidMount() {
     //fetch("http:/192.168.0.5:3000/linedata")
-    fetch("https://barpedia.herokuapp.com/linedata/")
+    fetch("https://barpedia.herokuapp.com/api/bars/")
       .then((response) => response.json())
       .then((responseData) => {
         this.setState({
@@ -65,7 +65,7 @@ export default class BarPage extends Component {
 
   componentDidUpdate() {
     if (this.state.loading) {
-      fetch("https://barpedia.herokuapp.com/linedata/")
+      fetch("https://barpedia.herokuapp.com/api/bars/")
         .then((response) => response.json())
         .then((responseData) => {
           this.setState({

@@ -6,7 +6,7 @@ const images = {
   Cafe_210: require("./bar_pic_list/Cafe_210_entrance.png"),
   Chrome: require("./bar_pic_list/chrome.jpg"),
   Doggies: require("./bar_pic_list/Doggies_entrance.png"),
-  Lions_Den: require("./bar_pic_list/lionsDen.jpg"),
+  Lions_Den: require("./bar_pic_list/lions_den_entrance.png"),
   Mad_Mex: require("./bar_pic_list/Mad_mex_entrance.png"),
   Pickles: require("./bar_pic_list/Pickles_entrance.png"),
   Primanti_Bros: require("./bar_pic_list/primanti.jpg"),

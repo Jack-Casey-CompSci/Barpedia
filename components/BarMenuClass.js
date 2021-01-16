@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Text,
   View,
   ActivityIndicator,
   FlatList,
@@ -83,6 +84,9 @@ export default class App extends React.Component {
           />
         </View>
         <Image style={styles.logo} source={logo}></Image>
+        <View style={styles.comments}>
+          <Text>Feedback? Email us at barpediaapp@gmail.com</Text>
+        </View>
       </ScrollView>
     );
   }

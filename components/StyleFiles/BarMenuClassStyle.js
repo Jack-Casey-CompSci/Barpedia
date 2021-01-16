@@ -22,6 +22,10 @@ const styles = StyleSheet.create({
       height: 200,
       marginLeft: 20,
     },
+    comments: {
+      alignItems: "center",
+      padding: 5
+    }
   });
   
   export default styles;

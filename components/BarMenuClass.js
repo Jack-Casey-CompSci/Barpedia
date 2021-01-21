@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Text,
   View,
   ActivityIndicator,
   FlatList,
@@ -23,7 +24,7 @@ export default class App extends React.Component {
   }
 
   refreshData() {
-    fetch("https://barpedia.herokuapp.com/linedata/")
+    fetch("https://barpedia.herokuapp.com/api/bars/")
       .then((response) => response.json())
       .then((responseData) => {
         this.setState({
@@ -83,6 +84,9 @@ export default class App extends React.Component {
           />
         </View>
         <Image style={styles.logo} source={logo}></Image>
+        <View style={styles.comments}>
+          <Text>Feedback? Email us at barpediaapp@gmail.com</Text>
+        </View>
       </ScrollView>
     );
   }

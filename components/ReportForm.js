@@ -13,7 +13,7 @@ var LineLengthVar = t.enums({
   3: "Long Wait: More than 30 Minutes",
 });
 
-var value = {};
+var value;
 
 const Line = t.struct({
   LineLength: t.maybe(LineLengthVar),
@@ -30,7 +30,7 @@ export default class TestForm extends Component {
   }
 
   handleSubmit = () => {
-    const value = this._form.getValue(); // use that ref to get the form value
+    var value = this._form.getValue(); // use that ref to get the form value
     var data;
     if (value.CoverCharge == null && value.LineLength == null) {
       data = {
@@ -39,11 +39,21 @@ export default class TestForm extends Component {
         coverCharge: 0,
       };
     } else if (value.CoverCharge && value.LineLength == null) {
-      data = {
-        name: this.state.name,
-        line: -1,
-        coverCharge: value.CoverCharge,
-      };
+        console.log(value);
+        if (value.CoverCharge >= 20) {
+          data = {
+            name: this.state.name,
+            line: -1,
+            coverCharge: 0,
+          }
+        }
+      else {  
+        data = {
+          name: this.state.name,
+          line: -1,
+          coverCharge: value.CoverCharge,
+        };
+      }
     } else if (value.CoverCharge == null && value.LineLength) {
       data = {
         name: this.state.name,
@@ -52,17 +62,26 @@ export default class TestForm extends Component {
       };
       //Possibly change sending a 0 for cover charge
     } else {
-      data = {
-        name: this.state.name,
-        line: value.LineLength,
-        coverCharge: value.CoverCharge,
-      };
+        if (value.CoverCharge >= 20) {
+          data = {
+            name: this.state.name,
+            line: value.LineLength,
+            coverCharge: 0,
+          };
+        }
+      else {
+        data = {
+          name: this.state.name,
+          line: value.LineLength,
+          coverCharge: value.CoverCharge,
+        };
+      }
     }
     console.log(value.LineLength);
     //HTTP Request
     //var requestString = "http:/192.168.0.5:3000/linedata/" + this.state.id;
     var requestString =
-      "https://barpedia.herokuapp.com/linedata/" + this.state.id;
+      "https://barpedia.herokuapp.com/api/bars/" + this.state.id;
     fetch(requestString, {
       method: "POST",
       headers: {
@@ -83,7 +102,6 @@ export default class TestForm extends Component {
       try {
         await AsyncStorage.setItem(this.props.route.params.name, num);
         //setTime(num);
-        alert("Data successfully saved");
       } catch (e) {
         console.log(e);
         alert("Failed to save the data to the storage");
@@ -91,7 +109,6 @@ export default class TestForm extends Component {
     };
     saveData();
 
-    //console.log("IN TEST FORM ", Date().toLocaleUpperCase());
     this.props.navigation.navigate("Details", {
       listenerprop: Date().toLocaleUpperCase(),
     });

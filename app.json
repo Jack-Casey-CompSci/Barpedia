@@ -23,7 +23,7 @@
       "favicon": "./assets/favicon.png"
     },
     "sdkVersion": "38.0.0",
-    "description": "Test for the front end of Barpedia",
+    "description": "Test for the version 0.6.0",
     "android": {
       "package": "com.dylan.reb.Barpedia"
     }

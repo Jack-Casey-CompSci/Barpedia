@@ -23,9 +23,13 @@
       "favicon": "./assets/favicon.png"
     },
     "sdkVersion": "38.0.0",
-    "description": "Test for the version 0.6.0",
+    "description": "Initial release for Barpedia",
     "android": {
-      "package": "com.dylan.reb.Barpedia"
-    }
+      "package": "com.dylan.reb.Barpedia",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Barpedia_logo.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    } 
   }
 }

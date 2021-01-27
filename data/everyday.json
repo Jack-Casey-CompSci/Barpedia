@@ -119,14 +119,5 @@
         "Message": "This bar does not offer all day everyday deals"
       }
     }
-  },
-  {
-    "name": "Chrome",
-    "available": false,
-    "everyday": {
-      "noDeal": {
-        "Message": "This bar does not offer all day everyday deals"
-      }
-    }
   }
 ]

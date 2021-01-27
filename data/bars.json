@@ -185,25 +185,6 @@
     "coverCharge": 0
   },
   {
-    "id": 5,
-    "name": "Chrome",
-    "description": "",
-    "pic_name": "Chrome",
-    "closed": 1,
-    "hours": {
-      "Sunday": "Closed",
-      "Monday": "Closed",
-      "Tuesday": "Closed",
-      "Wednesday": "Closed",
-      "Thursday": "9:00 pm - 2:00 am",
-      "Friday": "9:00 pm - 2:00 am",
-      "Saturday": "9:00 pm - 2:00 am"
-    },
-    "phone": "8142310808",
-    "address": "222 W Beaver Street",
-    "coverCharge": 0
-  },
-  {
     "id": 6,
     "name": "Basement",
     "description": "",

@@ -4,7 +4,6 @@ const images = {
   Bar_Bleu: require("./bar_pic_list/barBleu.jpg"),
   Basement: require("./bar_pic_list/Basement_closed.png"),
   Cafe_210: require("./bar_pic_list/Cafe_210_entrance.png"),
-  Chrome: require("./bar_pic_list/chrome_closed.png"),
   Doggies: require("./bar_pic_list/Doggies_entrance.png"),
   Lions_Den: require("./bar_pic_list/lions_den_entrance.png"),
   Mad_Mex: require("./bar_pic_list/Mad_mex_entrance.png"),

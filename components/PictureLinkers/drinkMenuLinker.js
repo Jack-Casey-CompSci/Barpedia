@@ -49,14 +49,6 @@ function returnFilename(name) {
         },
       },
     ];
-  } else if (name == "Chrome") {
-    return [
-      {
-        props: {
-          source: require("../../assets/menuPictures/noMenu.png"),
-        },
-      },
-    ];
   } else if (name == "Basement") {
     return [
       {

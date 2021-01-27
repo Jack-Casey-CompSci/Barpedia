@@ -109,7 +109,7 @@ export default class BarPage extends Component {
         </View>
       );
     }
-    const bar_hours = this.state.dataSource.find((element) => {
+    const bar_data = this.state.dataSource.find((element) => {
       return element.name === this.state.barName;
     });
     const barspec = specials.find((element) => {
@@ -154,19 +154,28 @@ export default class BarPage extends Component {
     const canReportLine = true;
     var closed;
     var button;
-    if (!bar_hours.closed) {
+    if (bar_data.lineleap) {
       closed = (
         <View style={styles.line_and_cover}>
           <Text style={styles.line_and_cover_text}>
-            Approx wait is: {lineLength[0][bar_hours.line]}
-          </Text>
-          <Text style={styles.line_and_cover_text}>
-            The cover charge is ${bar_hours.coverCharge}
+            A pass must be purchased on lineleap
           </Text>
         </View>
       )
     }
-    if (bar_hours.closed) {
+    else if (!bar_data.closed) {
+      closed = (
+        <View style={styles.line_and_cover}>
+          <Text style={styles.line_and_cover_text}>
+            Approx wait is: {lineLength[0][bar_data.line]}
+          </Text>
+          <Text style={styles.line_and_cover_text}>
+            The cover charge is ${bar_data.coverCharge}
+          </Text>
+        </View>
+      )
+    }
+    else if (bar_data.closed) {
       closed = (
         <View style={styles.line_and_cover}>
           <Text style={styles.line_and_cover_text}>
@@ -285,25 +294,25 @@ export default class BarPage extends Component {
           <View style={styles.hours}>
             <Text style={styles.hours_title}> Bar Hours: </Text>
             <Text style={styles.hours_text}>
-              Monday: {bar_hours.hours.Monday}
+              Monday: {bar_data.hours.Monday}
             </Text>
             <Text style={styles.hours_text}>
-              Tuesday: {bar_hours.hours.Tuesday}
+              Tuesday: {bar_data.hours.Tuesday}
             </Text>
             <Text style={styles.hours_text}>
-              Wednesday: {bar_hours.hours.Wednesday}
+              Wednesday: {bar_data.hours.Wednesday}
             </Text>
             <Text style={styles.hours_text}>
-              Thursday: {bar_hours.hours.Thursday}
+              Thursday: {bar_data.hours.Thursday}
             </Text>
             <Text style={styles.hours_text}>
-              Friday: {bar_hours.hours.Friday}
+              Friday: {bar_data.hours.Friday}
             </Text>
             <Text style={styles.hours_text}>
-              Saturday: {bar_hours.hours.Saturday}
+              Saturday: {bar_data.hours.Saturday}
             </Text>
             <Text style={styles.hours_text}>
-              Sunday: {bar_hours.hours.Sunday}
+              Sunday: {bar_data.hours.Sunday}
             </Text>
           </View>
           <Image style={styles.logo} source={logo}></Image>

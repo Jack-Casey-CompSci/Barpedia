@@ -28,7 +28,7 @@
       "permissions": [],
       "package": "com.dylan.reb.Barpedia",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/Barpedia_logo.png",
+        "foregroundImage": "./assets/Barpedia_icon.png",
         "backgroundColor": "#FFFFFF"
       }
     } 

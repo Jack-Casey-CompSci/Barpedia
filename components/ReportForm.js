@@ -39,15 +39,14 @@ export default class TestForm extends Component {
         coverCharge: 0,
       };
     } else if (value.CoverCharge && value.LineLength == null) {
-        console.log(value);
-        if (value.CoverCharge >= 20) {
-          data = {
-            name: this.state.name,
-            line: -1,
-            coverCharge: 0,
-          }
+      if (value.CoverCharge >= 20) {
+        data = {
+          name: this.state.name,
+          line: -1,
+          coverCharge: 0,
         }
-      else {  
+      }
+      else {
         data = {
           name: this.state.name,
           line: -1,
@@ -62,13 +61,13 @@ export default class TestForm extends Component {
       };
       //Possibly change sending a 0 for cover charge
     } else {
-        if (value.CoverCharge >= 20) {
-          data = {
-            name: this.state.name,
-            line: value.LineLength,
-            coverCharge: 0,
-          };
-        }
+      if (value.CoverCharge >= 20) {
+        data = {
+          name: this.state.name,
+          line: value.LineLength,
+          coverCharge: 0,
+        };
+      }
       else {
         data = {
           name: this.state.name,
@@ -77,7 +76,6 @@ export default class TestForm extends Component {
         };
       }
     }
-    console.log(value.LineLength);
     //HTTP Request
     //var requestString = "http:/192.168.0.5:3000/linedata/" + this.state.id;
     var requestString =

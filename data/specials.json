@@ -156,11 +156,11 @@
           "DrinkSpecials": {
             "Event1": {
               "Description": "Happy Hour",
-              "Time": "9pm-11pm"
+              "Time": "8pm-10pm"
             },
             "Event2": {
-              "Description": "Mojito Pitcher $10",
-              "Time": "Until Midnight"
+              "Description": "$5 Seasonal Mules",
+              "Time": ""
             }
           },
           "FoodSpecials": {
@@ -176,16 +176,16 @@
           "DrinkSpecials": {
             "Event1": {
               "Description": "Happy Hour",
-              "Time": "9pm-11pm"
+              "Time": "8pm-10pm"
             },
             "Event2": {
               "Description": "$2 22oz Yuengling Drafts",
-              "Time": "Until Midnight"
+              "Time": ""
             }
           },
           "FoodSpecials": {
-            "Description": "1/2 Dozen Wings",
-            "Time": "9pm-10pm"
+            "Description": "$1 Stanleys Wonder Wings",
+            "Time": ""
           }
         }
       },
@@ -196,11 +196,11 @@
           "DrinkSpecials": {
             "Event1": {
               "Description": "Happy Hour",
-              "Time": "9pm-11pm"
+              "Time": "8pm-10pm"
             },
             "Event2": {
-              "Description": "$4 Smirnoff Crushes",
-              "Time": "Until Midnight"
+              "Description": "$6 Big Azz Claws",
+              "Time": ""
             }
           },
           "FoodSpecials": {
@@ -216,11 +216,11 @@
           "DrinkSpecials": {
             "Event1": {
               "Description": "Happy Hour",
-              "Time": "9pm-11pm"
+              "Time": "8pm-10pm"
             },
             "Event2": {
-              "Description": "$7 Truly Punch Pitchers",
-              "Time": "Until Midnight"
+              "Description": "$5.50 24oz Twisted Teas",
+              "Time": ""
             }
           },
           "FoodSpecials": {
@@ -240,7 +240,7 @@
             },
             "Event2": {
               "Description": "$2 Miller Lite Drafts",
-              "Time": "Until Midnight"
+              "Time": ""
             }
           },
           "FoodSpecials": {
@@ -259,8 +259,8 @@
               "Time": "8pm-10pm"
             },
             "Event2": {
-              "Description": "$3 Mitch-a-Palooza's",
-              "Time": "Until Midnight"
+              "Description": "$3 Guinness Drafts",
+              "Time": ""
             }
           },
           "FoodSpecials": {
@@ -276,16 +276,16 @@
           "DrinkSpecials": {
             "Event1": {
               "Description": "Happy Hour",
-              "Time": "9pm-11pm"
+              "Time": "9pm-10pm"
             },
             "Event2": {
-              "Description": "$17.50 Corona Premier Buckets",
-              "Time": "Until Midnight"
+              "Description": "$$5 Michelob Ultra Pitchers",
+              "Time": ""
             }
           },
           "FoodSpecials": {
-            "Description": "$1 Tacos",
-            "Time": "2pm-10pm"
+            "Description": "",
+            "Time": ""
           }
         }
       }

@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Phyrst",
+    "available": true,
+    "happyHour": [
+      {
+        "Drink": "Vodka Redbull",
+        "Price": "$4.25"
+      },
+      {
+        "Drink": "Purple Gatorade",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "Green Tea",
+        "Price": "$2.50"
+      },
+      {
+        "Drink": "Bear Fight",
+        "Price": "$8.00"
+      },
+      {
+        "Drink": "Irish Car Bomb",
+        "Price": "$3.25"
+      },
+      {
+        "Drink": "4.09 Bomb",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "Jason O Bomb",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "Vegas Bomb",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "Jager Bomb",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "Bazooka Joe",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "Stars & Stripes",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "Hero Zero Bombs",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "Batman Bomb",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "American Gladiator Bomb",
+        "Price": "$4.00"
+      }
+    ]
+  },
+  {
+    "name": "Champs Downtown",
+    "available": false,
+    "happyHour": []
+  },
+  {
+    "name": "Bar Bleu",
+    "available": false,
+    "happyHour": []
+  },
+  {
+    "name": "Lions Den",
+    "available": false,
+    "happyHour": []
+  },
+  {
+    "name": "Primanti Brothers",
+    "available": false,
+    "happyHour": []
+  },
+  {
+    "name": "Basement",
+    "available": true,
+    "happyHour": [
+      {
+        "Drink": "Big Basement Teas",
+        "Price": "$2.00"
+      },
+      {
+        "Drink": "Jolly Rancher Shots",
+        "Price": "$2.00"
+      },
+      {
+        "Drink": "Red Kamikaze Shots",
+        "Price": "$2.00"
+      },
+      {
+        "Drink": "Well Liquors (Vodka, Rum, Gin, Whiskey)",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "Fireball Shots",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "Tequila Shots",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "Hypnotiq Cocktails",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "Bacardi Drinks",
+        "Price": "$3.50"
+      },
+      {
+        "Drink": "Captain Morgan Drinks",
+        "Price": "$3.50"
+      },
+      {
+        "Drink": "Smirnoff Drinks",
+        "Price": "$3.50"
+      },
+      {
+        "Drink": "Vegas Bombs",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "Cuervo & Lemonade",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "Incredible Hulk Shots",
+        "Price": "$5.00"
+      },
+      {
+        "Drink": "Patron",
+        "Price": "$6.00"
+      },
+      {
+        "Drink": "Full Shooter Menu",
+        "Price": "$3.00"
+      }
+    ]
+  },
+  {
+    "name": "Doggies",
+    "available": true,
+    "happyHour": [
+      {
+        "Drink": "White Claw",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "Captain Morgan",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "Smirnoff Raspberry Lemonade",
+        "Price": "$3.00"
+      }
+    ]
+  },
+  {
+    "name": "Mad Mex",
+    "available": true,
+    "happyHour": [
+      {
+        "Drink": "Big Azz Margaritas",
+        "Price": "$7.00"
+      },
+      {
+        "Drink": "12oz House Margaritas",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "16oz House Margaritas",
+        "Price": "$5.00"
+      }
+    ]
+  },
+  {
+    "name": "Shandygaff",
+    "available": false,
+    "happyHour": []
+  },
+  {
+    "name": "Cafe 210",
+    "available": false,
+    "happyHour": []
+  },
+  {
+    "name": "Chrome",
+    "available": false,
+    "happyHour": []
+  },
+  {
+    "name": "Pickles",
+    "available": false,
+    "happyHour": []
+  }
+]

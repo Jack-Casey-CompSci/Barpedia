@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Phyrst",
+    "available": true,
+    "everyday": [
+      { "Drink": "Trash Cans", "Price": "$5.00" },
+      { "Drink": "Paddy's Irish Whiskey & Green Tea Shots", "Price": "$4.00" },
+      { "Drink": "Fireball", "Price": "$3.00" },
+      { "Drink": "Tecate Cans", "Price": "$2.00" },
+      { "Drink": "Mitch-A-Palooza", "Price": "$3.00" },
+      { "Drink": "Skinny Bitches", "Price": "$3.00" },
+      { "Drink": "Smirnoff", "Price": "$3.00" }
+    ]
+  },
+  {
+    "name": "Bar Bleu",
+    "available": true,
+    "everyday": [
+      { "Drink": "Captain Morgan Pitchers", "Price": "$7.00" },
+      { "Drink": "Fireballs", "Price": "$4.00" },
+      { "Drink": "Bud & Bud Light Pitchers", "Price": "$6.00" },
+      { "Drink": "Yards & Sly Fox Drafts", "Price": "$3.50" },
+      {
+        "Drink": "Blue Moon - Leinenkugle - Shock Top Drafts",
+        "Price": "$3.75"
+      },
+      { "Drink": "Skinny Bitches", "Price": "$3.00" },
+      { "Drink": "Smirnoff", "Price": "$3.00" }
+    ]
+  },
+  {
+    "name": "Lions Den",
+    "available": true,
+    "everyday": [
+      { "Drink": "16oz Bud Light", "Price": "$3.00" },
+      { "Drink": "Blue Moon Bottle", "Price": "$3.00" },
+      { "Drink": "Smirnoff Pitchers", "Price": "$6.00" },
+      { "Drink": "Captain & Cola", "Price": "$3.00" },
+      { "Drink": "Royal & Cola", "Price": "$3.00" },
+      { "Drink": "Iced Teas", "Price": "$3.00" }
+    ]
+  },
+  {
+    "name": "Basement",
+    "available": true,
+    "everyday": [
+      { "Drink": "Vodka Drinks", "Price": "$3.00" },
+      { "Drink": "16oz Domestic Beers", "Price": "$3.00" },
+      { "Drink": "Green Tea Shots", "Price": "$3.00" },
+      { "Drink": "Red Bull Vodka", "Price": "$4.00" },
+      { "Drink": "Corona", "Price": "$4.00" },
+      { "Drink": "Jameson", "Price": "$5.00" },
+      { "Drink": "Dumpsters", "Price": "$6.00" }
+    ]
+  },
+  {
+    "name": "Shandygaff",
+    "available": true,
+    "everyday": [
+      { "Drink": "24oz Domestic Cans", "Price": "$4.00" },
+      { "Drink": "Well Drinks", "Price": "$4.00" },
+      { "Drink": "Turbo Vodkas", "Price": "$4.00" },
+      { "Drink": "Adios and Lits", "Price": "$4.00" },
+      { "Drink": "Select Shots", "Price": "$3.00" }
+    ]
+  },
+  {
+    "name": "Pickles",
+    "available": true,
+    "everyday": [
+      { "Drink": "Long Islands", "Price": "$3.00" },
+      { "Drink": "Painkillers", "Price": "$3.00" },
+      { "Drink": "Tequila Shots", "Price": "$3.00" },
+      { "Drink": "Miller Lite Draft", "Price": "$2.50" },
+      { "Drink": "Yuengling Draft", "Price": "$2.50" }
+    ]
+  },
+  {
+    "name": "Champs Downtown",
+    "available": false,
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
+      }
+    }
+  },
+  {
+    "name": "Primanti Brothers",
+    "available": false,
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
+      }
+    }
+  },
+  {
+    "name": "Doggies",
+    "available": false,
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
+      }
+    }
+  },
+  {
+    "name": "Mad Mex",
+    "available": false,
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
+      }
+    }
+  },
+  {
+    "name": "Cafe 210",
+    "available": false,
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
+      }
+    }
+  },
+  {
+    "name": "Chrome",
+    "available": false,
+    "everyday": {
+      "noDeal": {
+        "Message": "This bar does not offer all day everyday deals"
+      }
+    }
+  }
+]

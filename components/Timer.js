@@ -47,7 +47,6 @@ export default function Timer({ barName, lineLeap, onPress = (f) => f }) {
 
   var button;
   var activeText = "Report Line/Cover Charge for " + barName;
-  console.log(lineLeap);
   if(lineLeap){
     button = <Button disabled  title="Cannot Report for Line Leap"></Button>;
   }

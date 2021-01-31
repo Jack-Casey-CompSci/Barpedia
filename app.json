@@ -25,6 +25,7 @@
     "sdkVersion": "38.0.0",
     "description": "Lineleap update",
     "android": {
+      "versionCode": 2,
       "permissions": [],
       "package": "com.dylan.reb.Barpedia",
       "adaptiveIcon": {

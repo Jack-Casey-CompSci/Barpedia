@@ -32,7 +32,7 @@ export default function BarCard({
       >
         <ImageBackground style={styles.image} source={bar_link}>
           <View style={styles.iconBox}>
-            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
             {coverIcon}
           </View>
           <View style={styles.nameBox}>
@@ -50,8 +50,8 @@ export default function BarCard({
       >
         <ImageBackground style={styles.image} source={bar_link}>
           <View style={styles.iconBox}>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="person" style={styles.icon}></Icon>
+            <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
+            <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
             {coverIcon}
           </View>
           <View style={styles.nameBox}>
@@ -88,9 +88,9 @@ export default function BarCard({
       >
         <ImageBackground style={styles.image} source={bar_link}>
           <View style={styles.iconBox}>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="person" style={styles.icon}></Icon> 
+            <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
+            <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
+            <Icon name="person" type="Ionicons" style={styles.icon}></Icon> 
             {coverIcon}
           </View>
           <View style={styles.nameBox}>

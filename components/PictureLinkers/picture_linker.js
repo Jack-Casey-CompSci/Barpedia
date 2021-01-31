@@ -11,8 +11,6 @@ function getBarLink(bar) {
     return barImages.Basement;
   } else if (bar == "Cafe_210") {
     return barImages.Cafe_210;
-  } else if (bar == "Chrome") {
-    return barImages.Chrome;
   } else if (bar == "Doggies") {
     return barImages.Doggies;
   } else if (bar == "Lions_Den") {

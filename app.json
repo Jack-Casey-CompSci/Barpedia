@@ -2,7 +2,7 @@
   "expo": {
     "name": "Barpedia",
     "slug": "Barpedia",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/Barpedia_icon.png",
     "splash": {
@@ -23,9 +23,14 @@
       "favicon": "./assets/favicon.png"
     },
     "sdkVersion": "38.0.0",
-    "description": "Test for the version 0.6.0",
+    "description": "Initial release for Barpedia",
     "android": {
-      "package": "com.dylan.reb.Barpedia"
-    }
+      "permissions": [],
+      "package": "com.dylan.reb.Barpedia",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Barpedia_icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    } 
   }
 }

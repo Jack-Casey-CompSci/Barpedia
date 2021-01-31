@@ -49,14 +49,6 @@ function returnFilename(name) {
         },
       },
     ];
-  } else if (name == "Chrome") {
-    return [
-      {
-        props: {
-          source: require("../../assets/menuPictures/noMenu.png"),
-        },
-      },
-    ];
   } else if (name == "Basement") {
     return [
       {
@@ -77,7 +69,17 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/noMenu.png"),
+          source: require("../../assets/menuPictures/DoggiesDrinks1.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/DoggiesDrinks2.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/DoggiesDrinks3.png"),
         },
       },
     ];

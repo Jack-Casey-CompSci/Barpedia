@@ -3,13 +3,12 @@
     "name": "Phyrst",
     "available": true,
     "everyday": [
-      { "Drink": "Trash Cans", "Price": "$5.00" },
-      { "Drink": "Paddy's Irish Whiskey & Green Tea Shots", "Price": "$4.00" },
-      { "Drink": "Fireball", "Price": "$3.00" },
-      { "Drink": "Tecate Cans", "Price": "$2.00" },
+      { "Drink": "Irish Trash Cans", "Price": "$5.00" },
+      { "Drink": "Green Tea Shots", "Price": "$3.00" },
+      { "Drink": "Peach Lemonade", "Price": "$4.00" },
       { "Drink": "Mitch-A-Palooza", "Price": "$3.00" },
-      { "Drink": "Skinny Bitches", "Price": "$3.00" },
-      { "Drink": "Smirnoff", "Price": "$3.00" }
+      { "Drink": "The Karen", "Price": "$8.00" },
+      { "Drink": "21st Blow Job Shot", "Price": "$5.00" }
     ]
   },
   {
@@ -113,15 +112,6 @@
   },
   {
     "name": "Cafe 210",
-    "available": false,
-    "everyday": {
-      "noDeal": {
-        "Message": "This bar does not offer all day everyday deals"
-      }
-    }
-  },
-  {
-    "name": "Chrome",
     "available": false,
     "everyday": {
       "noDeal": {

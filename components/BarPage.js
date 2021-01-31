@@ -210,7 +210,6 @@ export default class BarPage extends Component {
         ></Button>
       );
     }
-    
     return (
       <>
         <CoverChargeModal
@@ -224,9 +223,9 @@ export default class BarPage extends Component {
               </Text>
             </ImageBackground>
           </View>
-          {/* {button} */} 
           <Timer
             barName={this.props.route.params.name}
+            lineLeap = {bar_data.lineleap}
             onPress={() =>
               this.props.navigation.navigate("Line Reporting", {
                 name: this.props.route.params.name,

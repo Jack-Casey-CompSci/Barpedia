@@ -21,12 +21,6 @@ export default function EntertainmentAccordion({ name }) {
                   </Text>
                   <Text style={styles.price}>{data.entertainment[0].Time}</Text>
                 </View>
-                <View style={styles.event}>
-                  <Text style={styles.description}>
-                    {data.entertainment[1].Band}
-                  </Text>
-                  <Text style={styles.price}>{data.entertainment[1].Time}</Text>
-                </View>
               </View>
             </View>
           );
@@ -41,12 +35,6 @@ export default function EntertainmentAccordion({ name }) {
                     {data.entertainment[0].Band}
                   </Text>
                   <Text style={styles.price}>{data.entertainment[0].Time}</Text>
-                </View>
-                <View style={styles.event}>
-                  <Text style={styles.description}>
-                    {data.entertainment[1].Band}
-                  </Text>
-                  <Text style={styles.price}>{data.entertainment[1].Time}</Text>
                 </View>
               </View>
             </View>

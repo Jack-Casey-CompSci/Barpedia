@@ -18,7 +18,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Navigator>
-        <Screen name="Home" component={Map} />
+        <Screen name="Home" component={BarMenu} />
         <Screen name="Details" component={BarPage} />
         <Screen name="Bar Food" component={BarFood} />
         <Screen name="Bar Drinks" component={BarDrinks} />

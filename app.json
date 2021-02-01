@@ -17,7 +17,8 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "Barpedia"
+      "bundleIdentifier": "com.dylan.reb.Barpedia",
+      "buildNumber": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"

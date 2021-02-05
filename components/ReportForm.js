@@ -29,6 +29,16 @@ export default class TestForm extends Component {
     };
   }
 
+  checkValues = () => {
+    var valid = this._form.getValue();
+    if (valid) {
+      if (valid.CoverCharge >= 0) {
+        this.handleSubmit()
+      }
+    }
+  }
+
+
   handleSubmit = () => {
     var value = this._form.getValue(); // use that ref to get the form value
     var data;
@@ -119,7 +129,7 @@ export default class TestForm extends Component {
           type={Line}
           value={value}
         />
-        <Button title="Submit" onPress={this.handleSubmit} />
+        <Button title="Submit" onPress={this.checkValues} />
       </View>
     );
   }

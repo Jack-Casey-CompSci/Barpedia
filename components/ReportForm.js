@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, StyleSheet, Button } from "react-native";
+import { View, StyleSheet, Button, Text } from "react-native";
 import AsyncStorage from "@react-native-community/async-storage";
 
 import t from "tcomb-form-native"; // 0.6.9
@@ -129,6 +129,7 @@ export default class TestForm extends Component {
           type={Line}
           value={value}
         />
+        <Text style={styles.warning}>Cover charge must be between 0 and 20</Text>
         <Button title="Submit" onPress={this.checkValues} />
       </View>
     );
@@ -142,6 +143,9 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: "#ffffff",
   },
+  warning: {
+    marginBottom: 20
+  }
 });
 
 export { LineLengthVar };

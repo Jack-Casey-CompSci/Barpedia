@@ -179,7 +179,7 @@ export default class BarPage extends Component {
       closed = (
         <View style={styles.line_and_cover}>
           <Text style={styles.line_and_cover_text}>
-            This bar is currently closed due to COVID-19
+            This bar is currently closed
           </Text>
         </View>
       )

@@ -5,7 +5,6 @@ const windowHeight = Dimensions.get("window").height;
 
 const styles = StyleSheet.create({
     barTab: {
-      flex: 1,
       width: windowWidth - 20,
       height: 150,
       backgroundColor: "grey",
@@ -13,31 +12,31 @@ const styles = StyleSheet.create({
       marginLeft: 10,
       marginBottom: 10,
       borderColor: "black",
+      justifyContent: "flex-start",
     },
     icon: {
+      flexDirection: "row",
       color: "white",
       marginLeft: 5,
-    },
-    iconBox: {
-      flex: 1,
-      flexDirection: "row",
+      marginTop: 2,
+      alignSelf: "flex-start",
+      
     },
     nameBox: {
-      flex: 1,
-      alignItems: "center",
-      justifyContent: "flex-end",
-    },
-    barName: {
-      fontSize: 32,
+      width: windowWidth - 22,
+      flexDirection: "row",
+      justifyContent: "space-between",
+      backgroundColor: 'argba(0, 0, 0, 0.6)',
     },
     image: {
       flex: 1,
-      flexDirection: "column",
+      justifyContent: "flex-end",
     },
     barName: {
       color: "white",
       fontWeight: "bold",
-      fontSize: 32,
+      fontSize: 26,
+      marginRight: 5,
     },
   });
   

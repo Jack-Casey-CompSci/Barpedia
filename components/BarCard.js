@@ -30,7 +30,7 @@ export default function BarCard({
         onPress={() => onPress()}
         underlayColor="white"
       >
-        <ImageBackground style={styles.image} source={bar_link}>
+        <ImageBackground style={styles.image} imageStyle={{borderRadius:12}} source={bar_link}>
           <View style={styles.nameBox}>
             <View style={styles.icon}>
               <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
@@ -48,7 +48,7 @@ export default function BarCard({
         onPress={() => onPress()}
         underlayColor="white"
       >
-        <ImageBackground style={styles.image} source={bar_link}>
+        <ImageBackground style={styles.image} imageStyle={{borderRadius:12}} source={bar_link}>
           <View style={styles.nameBox}>
             <View style={styles.icon}>
               <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
@@ -68,7 +68,7 @@ export default function BarCard({
         onPress={() => onPress()}
         underlayColor="white"
       >
-        <ImageBackground style={styles.image} source={bar_link}>
+        <ImageBackground style={styles.image} imageStyle={{borderRadius:12}} source={bar_link}>
           <View style={styles.nameBox}>
             <View style={styles.icon}>
               {coverIcon}
@@ -86,7 +86,7 @@ export default function BarCard({
         onPress={() => onPress()}
         underlayColor="white"
       >
-        <ImageBackground style={styles.image} source={bar_link}>
+        <ImageBackground style={styles.image} imageStyle={{borderRadius:12}} source={bar_link}>
           <View style={styles.nameBox}>
             <View style={styles.icon}>
               <Icon name="person" type="Ionicons" style={styles.icon}></Icon>

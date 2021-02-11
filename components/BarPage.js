@@ -9,6 +9,7 @@ import {
   View, 
   TouchableHighlight,
 } from "react-native";
+import { Icon } from "native-base";
 import { Accordion } from "native-base";
 import specials from "../data/specials.json";
 import everyday from "../data/everyday.json";
@@ -217,10 +218,12 @@ export default class BarPage extends Component {
         ></CoverChargeModal>
         <ScrollView style={styles.scroll} scrollIndicatorInsets={{ right: 1 }}>
           <View style={styles.box}>
-            <ImageBackground style={styles.pageImage} source={bar_link}>
-              <Text style={styles.barTitle}>
-                {this.props.route.params.name}
-              </Text>
+            <ImageBackground style={styles.pageImage} imageStyle={{borderRadius: 15}} source={bar_link}>
+              <View style={styles.titleBox}>  
+                <Text style={styles.barTitle}>
+                  {this.props.route.params.name}
+                </Text>
+              </View>  
             </ImageBackground>
           </View>
           <Timer
@@ -268,9 +271,10 @@ export default class BarPage extends Component {
                 })
               }
             >
-              <ImageBackground style={styles.menuTile} source={menu_pic}>
+              <View style={styles.menuTile}>
                 <Text style={styles.title}>Menu</Text>
-              </ImageBackground>
+                <Icon name='book-open' type='FontAwesome5' style={styles.menuIcon}></Icon>
+              </View>
             </TouchableHighlight>
 
             <TouchableHighlight
@@ -281,13 +285,10 @@ export default class BarPage extends Component {
                 })
               }
             >
-              <ImageBackground
-                style={styles.drinksTile}
-                source={drink_pic}
-                resizeMode={"stretch"}
-              >
+              <View style={styles.drinksTile}>
                 <Text style={styles.title}>Drinks</Text>
-              </ImageBackground>
+                <Icon name='cocktail' type='FontAwesome5' style={styles.drinkIcon}></Icon>
+              </View>
             </TouchableHighlight>
           </View>
           <View style={styles.hours}>

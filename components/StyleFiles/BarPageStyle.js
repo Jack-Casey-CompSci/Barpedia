@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     },
     fit: {
       flexGrow: 1,
-      backgroundColor: "green",
       height: windowHeight,
     },
     container: {
@@ -17,38 +16,55 @@ const styles = StyleSheet.create({
       flexGrow: 1,
       alignItems: "center",
     },
-    pageImage: {
-      width: windowWidth - 12,
-      height: 200,
-    },
     box: {
-      borderWidth: 2,
-      borderColor: "black",
+      borderWidth: 1,
+      borderRadius: 20,
       margin: 4,
+    },
+    pageImage: {
+      width: windowWidth - 10,
+      height: 150,
+      justifyContent: "flex-start",
+    },
+    titleBox: {
+      backgroundColor: 'argba(10, 10, 10, 0.6)',
+      borderTopLeftRadius: 16,
+      borderTopRightRadius: 16,
+      width: windowWidth - 10,
     },
     barTitle: {
       fontSize: 32,
-      color: "white",
-      textAlign: "center",
-    },
-    title: {
-      fontSize: 16,
+      marginBottom: 5,
       color: "white",
       textAlign: "center",
     },
     line_and_cover: {
-      backgroundColor: "whitesmoke",
+      backgroundColor: '#FFFFFF',
+      borderRadius: 20,
+      margin: 5,
       justifyContent: "center",
       alignItems: "center",
       height: 100,
     },
     line_and_cover_text: {
       fontSize: 16,
+      color: 'black',
       fontWeight: "bold",
     },
     accordion: {
-      width: windowWidth,
+      width: windowWidth - 5,
+      marginTop: 5,
+      marginBottom: 2,
+      marginLeft: 5,
+      marginRight: 5,
       flex: 1,
+    },
+    accordionHeader: {
+      backgroundColor: "#FFFFFF",
+      borderColor: "black",
+      borderWidth: 0.1,
+      borderRadius: 10,
+      marginHorizontal: 5
     },
     menuandDrinkTile: {
       flex: 1,
@@ -56,19 +72,36 @@ const styles = StyleSheet.create({
       margin: 5,
       marginTop: 2.5,
       width: windowWidth - 10,
-      height: 200,
+      height: 50,
     },
     menuTile: {
       flex: 1,
-      borderWidth: 2,
-      borderRightWidth: 1,
-      borderColor: "black",
+      flexDirection: "row",
+      justifyContent: "space-evenly",
+      alignItems: "center",
+      borderRadius: 10,
+      margin: 2.5,
+      backgroundColor: '#0696E9',
+    },
+    menuIcon: {
+      color: 'white',
+      marginTop: 3,
+    },
+    title: {
+      fontSize: 32,
+      color: "white",
     },
     drinksTile: {
       flex: 1,
-      borderWidth: 2,
-      borderLeftWidth: 1,
-      borderColor: "black",
+      flexDirection: "row",
+      justifyContent: "space-evenly",
+      alignItems: "center",
+      borderRadius: 10,
+      margin: 2.5,
+      backgroundColor: '#0696E9',
+    },
+    drinkIcon: {
+      color: 'white',
     },
     logo: {
       width: windowWidth - 40,
@@ -87,16 +120,6 @@ const styles = StyleSheet.create({
     },
     hours_text: {
       fontSize: 16,
-    },
-    faketext: {
-      flex: 1,
-      fontSize: 32,
-    },
-    accordionHeader: {
-      backgroundColor: "#B2B8C6",
-      borderColor: "black",
-      borderWidth: 0.75,
-      marginHorizontal: 5
     },
     reportButton: {
       marginHorizontal: 50

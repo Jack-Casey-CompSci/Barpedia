@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
       backgroundColor: 'argba(10, 10, 10, 0.6)',
     },
     image: {
-      borderRadius: 20,
       flex: 1,
       justifyContent: "flex-end",
     },

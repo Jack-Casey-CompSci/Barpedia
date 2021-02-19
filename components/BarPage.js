@@ -27,7 +27,7 @@ import { render } from "react-dom";
 import CoverChargeModal from "./CoverChargeModal.js";
 import Timer from "./Timer.js";
 import styles from "./StyleFiles/BarPageStyle.js";
-
+import Ratings from "./Ratings.js";
 
 
 var lineLength = [
@@ -249,6 +249,7 @@ export default class BarPage extends Component {
             headerStyle={styles.accordionHeader}
             renderContent={this._renderHappyHour}
           ></Accordion>
+          <Ratings></Ratings>
           <View style={styles.menuandDrinkTile}>
             <TouchableHighlight
               style={styles.menuTile}

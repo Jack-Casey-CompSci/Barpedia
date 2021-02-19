@@ -38,6 +38,9 @@ const styles = StyleSheet.create({
       color: "white",
       textAlign: "center",
     },
+    review: {
+      margin: 5,
+    },
     line_and_cover: {
       backgroundColor: '#FFFFFF',
       borderRadius: 20,

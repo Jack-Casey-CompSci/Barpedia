@@ -185,32 +185,6 @@ export default class BarPage extends Component {
         </View>
       )
     }
-    if (canReportLine) {
-      button = (
-        <Button
-          title="Report Line/Cover Charge"
-          onPress={() =>
-            this.props.navigation.navigate("Line Reporting", {
-              name: this.props.route.params.name,
-              id: this.props.route.params.id,
-            })
-          }
-        ></Button>
-      );
-    } else {
-      button = (
-        <Button
-          title="Already Submitted"
-          disabled
-          onPress={() =>
-            this.props.navigation.navigate("Line Reporting", {
-              name: this.props.route.params.name,
-              id: this.props.route.params.id,
-            })
-          }
-        ></Button>
-      );
-    }
     return (
       <>
         <CoverChargeModal
@@ -237,6 +211,19 @@ export default class BarPage extends Component {
               })
             }
           ></Timer>
+          <View style={styles.review}>
+            <Button
+              title="Submit a Review"
+              color="#E50000"
+              style={styles.review}
+              onPress={() =>
+                this.props.navigation.navigate("Reviews", {
+                  name: this.props.route.params.name,
+                  id: this.props.route.params.id,
+                })
+              }
+            ></Button>
+          </View>
           {closed}
           <Accordion
             dataArray={dailyArray}

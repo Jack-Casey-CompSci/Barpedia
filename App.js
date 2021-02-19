@@ -5,6 +5,7 @@ import BarPage from "./components/BarPage.js";
 import BarFood from "./components/PictureLinkers/BarSpecificMenu.js";
 import BarDrinks from "./components/PictureLinkers/BarSpecificDrinks.js";
 import LineReporting from "./components/ReportForm.js";
+import Reviews from "./components/Reviews.js";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -24,6 +25,7 @@ export default function App() {
         <Screen name="Bar Food" component={BarFood} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
         <Screen name="Bar Drinks" component={BarDrinks} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
         <Screen name="Line Reporting" component={LineReporting} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
+        <Screen name="Reviews" component={Reviews} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
       </Navigator>
     </NavigationContainer>
   );

@@ -1,5 +1,6 @@
-import React, { useState, Component } from "react";
-import {Text} from "react-native";
+import { View } from "native-base";
+import React, { Component } from "react";
+import {Text, StyleSheet} from "react-native";
 import ProgressCircle from "react-native-progress-circle";
 
 export default class Ratings extends Component {
@@ -10,75 +11,101 @@ export default class Ratings extends Component {
       }
     
       render() {
+        //Percent has to be 1-rating because the circle fills the opposite way
         return (   
-            <>
-            <ProgressCircle
-                percent={80}
-                radius={50}
-                borderWidth={8}
-                color="#3399FF"
-                shadowColor="#ddd"
-                bgColor="#fff"
-            >
-                <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
-            </ProgressCircle>
-            <Text>Food Quality</Text>
-            <ProgressCircle
-                percent={80}
-                radius={50}
-                borderWidth={8}
-                color="#3399FF"
-                shadowColor="#ddd"
-                bgColor="#fff"
-            >
-                <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
-            </ProgressCircle>
-            <Text>Drink Quality</Text>
-            <ProgressCircle
-                percent={80}
-                radius={50}
-                borderWidth={8}
-                color="#3399FF"
-                shadowColor="#ddd"
-                bgColor="#fff"
-            >
-                <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
-            </ProgressCircle>
-            <Text>Service</Text>
-            <ProgressCircle
-                percent={80}
-                radius={50}
-                borderWidth={8}
-                color="#3399FF"
-                shadowColor="#ddd"
-                bgColor="#fff"
-            >
-                <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
-            </ProgressCircle>
-            <Text>Expensiveness</Text>
-            <ProgressCircle
-                percent={80}
-                radius={50}
-                borderWidth={8}
-                color="#3399FF"
-                shadowColor="#ddd"
-                bgColor="#fff"
-            >
-                <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
-            </ProgressCircle>
-            <Text>Loudness</Text>
-            <ProgressCircle
-                percent={80}
-                radius={50}
-                borderWidth={8}
-                color="#3399FF"
-                shadowColor="#ddd"
-                bgColor="#fff"
-            >
-                <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
-            </ProgressCircle>
-            <Text>Atmosphere</Text>
-            </>
+            <View style={styles.circles}>
+                <View style={styles.individual}>    
+                    <ProgressCircle
+                        percent={30}
+                        radius={50}
+                        borderWidth={8}
+                        color="#dddddd"
+                        shadowColor="#3399FF"
+                        bgColor="#fff"
+                    >
+                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                    </ProgressCircle>
+                    <Text>Food Quality</Text>
+                </View>
+                <View style={styles.individual}>    
+                    <ProgressCircle
+                        percent={80}
+                        radius={50}
+                        borderWidth={8}
+                        color="#dddddd"
+                        shadowColor="#3399FF"
+                        bgColor="#fff"
+                    >
+                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                    </ProgressCircle>
+                    <Text>Drink Quality</Text>
+                </View>
+                <View style={styles.individual}>    
+                    <ProgressCircle
+                        percent={80}
+                        radius={50}
+                        borderWidth={8}
+                        color="#dddddd"
+                        shadowColor="#3399FF"
+                        bgColor="#fff"
+                    >
+                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                    </ProgressCircle>
+                    <Text>Service</Text>
+                </View>
+                <View style={styles.individual}>    
+                    <ProgressCircle
+                        percent={80}
+                        radius={50}
+                        borderWidth={8}
+                        color="#dddddd"
+                        shadowColor="#3399FF"
+                        bgColor="#fff"
+                    >
+                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                    </ProgressCircle>
+                    <Text>Expensiveness</Text>
+                </View>
+                <View style={styles.individual}>    
+                    <ProgressCircle
+                        percent={80}
+                        radius={50}
+                        borderWidth={8}
+                        color="#dddddd"
+                        shadowColor="#3399FF"
+                        bgColor="#fff"
+                    >
+                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                    </ProgressCircle>
+                    <Text>Loudness</Text>
+                </View>
+                <View style={styles.individual}>    
+                    <ProgressCircle
+                        percent={80}
+                        radius={50}
+                        borderWidth={8}
+                        color="#dddddd"
+                        shadowColor="#3399FF"
+                        bgColor="#fff"
+                    >
+                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                    </ProgressCircle>
+                    <Text>Atmosphere</Text>
+                </View>
+            </View>
         );          
     }
 }
+
+const styles = StyleSheet.create({
+    circles: {
+        flex: 1,
+        flexDirection: "row",
+        flexWrap: "wrap",
+    },
+    individual: {
+        flexDirection: "column",
+        alignItems: "center",
+        margin: 10,
+    }
+})

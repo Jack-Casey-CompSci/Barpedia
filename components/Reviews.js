@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { View, StyleSheet, Button, Text, Fragment } from "react-native";
+import { View, StyleSheet, Button, Text } from "react-native";
 import Slider from '@react-native-community/slider';
 
 
@@ -43,6 +43,7 @@ export default class Reviews extends Component {
                     })}
                 minimumTrackTintColor="#FFFFFF"
                 maximumTrackTintColor="#000000"
+                thumbImage={require("../assets/Barpedia_icon.png")}
             />
             <Text style={styles.title}>Drink Quality: {this.state.drinkSlide}</Text>   
             <Slider
@@ -116,8 +117,6 @@ export default class Reviews extends Component {
         
       );
     }
-
-
 }
 
 const styles = StyleSheet.create({

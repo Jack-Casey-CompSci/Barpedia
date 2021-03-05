@@ -9,6 +9,9 @@ import Reviews from "./components/Reviews.js";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+const Tab = createBottomTabNavigator();
+
 
 import styles from "./components/StyleFiles/BarPageStyle.js";
 

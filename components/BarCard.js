@@ -30,12 +30,12 @@ export default function BarCard({
         onPress={() => onPress()}
         underlayColor="white"
       >
-        <ImageBackground style={styles.image} source={bar_link}>
-          <View style={styles.iconBox}>
-            <Icon name="person" style={styles.icon}></Icon>
-            {coverIcon}
-          </View>
+        <ImageBackground style={styles.image} imageStyle={{borderRadius:12}} source={bar_link}>
           <View style={styles.nameBox}>
+            <View style={styles.icon}>
+              <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
+              {coverIcon}
+            </View>
             <Text style={styles.barName}>{barName}</Text>
           </View>
         </ImageBackground>
@@ -48,13 +48,13 @@ export default function BarCard({
         onPress={() => onPress()}
         underlayColor="white"
       >
-        <ImageBackground style={styles.image} source={bar_link}>
-          <View style={styles.iconBox}>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="person" style={styles.icon}></Icon>
-            {coverIcon}
-          </View>
+        <ImageBackground style={styles.image} imageStyle={{borderRadius:12}} source={bar_link}>
           <View style={styles.nameBox}>
+            <View style={styles.icon}>
+              <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
+              <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
+              {coverIcon}
+            </View>
             <Text style={styles.barName}>{barName}</Text>
           </View>
         </ImageBackground>
@@ -68,11 +68,11 @@ export default function BarCard({
         onPress={() => onPress()}
         underlayColor="white"
       >
-        <ImageBackground style={styles.image} source={bar_link}>
-          <View style={styles.iconBox}>
-            {coverIcon}
-          </View>
+        <ImageBackground style={styles.image} imageStyle={{borderRadius:12}} source={bar_link}>
           <View style={styles.nameBox}>
+            <View style={styles.icon}>
+              {coverIcon}
+            </View>
             <Text style={styles.barName}>{barName}</Text>
           </View>
         </ImageBackground>
@@ -86,14 +86,14 @@ export default function BarCard({
         onPress={() => onPress()}
         underlayColor="white"
       >
-        <ImageBackground style={styles.image} source={bar_link}>
-          <View style={styles.iconBox}>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="person" style={styles.icon}></Icon>
-            <Icon name="person" style={styles.icon}></Icon> 
-            {coverIcon}
-          </View>
+        <ImageBackground style={styles.image} imageStyle={{borderRadius:12}} source={bar_link}>
           <View style={styles.nameBox}>
+            <View style={styles.icon}>
+              <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
+              <Icon name="person" type="Ionicons" style={styles.icon}></Icon>
+              <Icon name="person" type="Ionicons" style={styles.icon}></Icon> 
+              {coverIcon}
+            </View>
             <Text style={styles.barName}>{barName}</Text>
           </View>
         </ImageBackground>
@@ -101,22 +101,4 @@ export default function BarCard({
     );
     
   } 
-  else{
-    return (
-      <TouchableHighlight
-        style={styles.barTab}
-        onPress={() => onPress()}
-        underlayColor="white"
-      >
-        <ImageBackground style={styles.image} source={bar_link}>
-          <View style={styles.iconBox}>
-            {coverIcon}
-          </View>
-          <View style={styles.nameBox}>
-            <Text style={styles.barName}>{barName}</Text>
-          </View>
-        </ImageBackground>
-      </TouchableHighlight>
-    );
-  }
 }

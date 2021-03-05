@@ -9,6 +9,7 @@ import {
   View, 
   TouchableHighlight,
 } from "react-native";
+import { Icon } from "native-base";
 import { Accordion } from "native-base";
 import specials from "../data/specials.json";
 import everyday from "../data/everyday.json";
@@ -26,7 +27,7 @@ import { render } from "react-dom";
 import CoverChargeModal from "./CoverChargeModal.js";
 import Timer from "./Timer.js";
 import styles from "./StyleFiles/BarPageStyle.js";
-
+import Ratings from "./Ratings.js";
 
 
 var lineLength = [
@@ -109,7 +110,7 @@ export default class BarPage extends Component {
         </View>
       );
     }
-    const bar_hours = this.state.dataSource.find((element) => {
+    const bar_data = this.state.dataSource.find((element) => {
       return element.name === this.state.barName;
     });
     const barspec = specials.find((element) => {
@@ -154,54 +155,36 @@ export default class BarPage extends Component {
     const canReportLine = true;
     var closed;
     var button;
-    if (!bar_hours.closed) {
+    if (bar_data.lineleap) {
       closed = (
         <View style={styles.line_and_cover}>
           <Text style={styles.line_and_cover_text}>
-            Approx wait is: {lineLength[0][bar_hours.line]}
-          </Text>
-          <Text style={styles.line_and_cover_text}>
-            The cover charge is ${bar_hours.coverCharge}
+            A pass must be purchased on lineleap
           </Text>
         </View>
       )
     }
-    if (bar_hours.closed) {
+    else if (!bar_data.closed) {
       closed = (
         <View style={styles.line_and_cover}>
           <Text style={styles.line_and_cover_text}>
-            This bar is currently closed due to COVID-19
+            Approx wait is: {lineLength[0][bar_data.line]}
+          </Text>
+          <Text style={styles.line_and_cover_text}>
+            The cover charge is ${bar_data.coverCharge}
           </Text>
         </View>
       )
     }
-    if (canReportLine) {
-      button = (
-        <Button
-          title="Report Line/Cover Charge"
-          onPress={() =>
-            this.props.navigation.navigate("Line Reporting", {
-              name: this.props.route.params.name,
-              id: this.props.route.params.id,
-            })
-          }
-        ></Button>
-      );
-    } else {
-      button = (
-        <Button
-          title="Already Submitted"
-          disabled
-          onPress={() =>
-            this.props.navigation.navigate("Line Reporting", {
-              name: this.props.route.params.name,
-              id: this.props.route.params.id,
-            })
-          }
-        ></Button>
-      );
+    else if (bar_data.closed) {
+      closed = (
+        <View style={styles.line_and_cover}>
+          <Text style={styles.line_and_cover_text}>
+            This bar is currently closed
+          </Text>
+        </View>
+      )
     }
-    
     return (
       <>
         <CoverChargeModal
@@ -209,15 +192,17 @@ export default class BarPage extends Component {
         ></CoverChargeModal>
         <ScrollView style={styles.scroll} scrollIndicatorInsets={{ right: 1 }}>
           <View style={styles.box}>
-            <ImageBackground style={styles.pageImage} source={bar_link}>
-              <Text style={styles.barTitle}>
-                {this.props.route.params.name}
-              </Text>
+            <ImageBackground style={styles.pageImage} imageStyle={{borderRadius: 15}} source={bar_link}>
+              <View style={styles.titleBox}>  
+                <Text style={styles.barTitle}>
+                  {this.props.route.params.name}
+                </Text>
+              </View>  
             </ImageBackground>
           </View>
-          {/* {button} */} 
           <Timer
             barName={this.props.route.params.name}
+            lineLeap = {bar_data.lineleap}
             onPress={() =>
               this.props.navigation.navigate("Line Reporting", {
                 name: this.props.route.params.name,
@@ -226,6 +211,19 @@ export default class BarPage extends Component {
               })
             }
           ></Timer>
+          <View style={styles.review}>
+            <Button
+              title="Submit a Review"
+              color="#E50000"
+              style={styles.review}
+              onPress={() =>
+                this.props.navigation.navigate("Reviews", {
+                  name: this.props.route.params.name,
+                  id: this.props.route.params.id,
+                })
+              }
+            ></Button>
+          </View>
           {closed}
           <Accordion
             dataArray={dailyArray}
@@ -251,6 +249,7 @@ export default class BarPage extends Component {
             headerStyle={styles.accordionHeader}
             renderContent={this._renderHappyHour}
           ></Accordion>
+          <Ratings></Ratings>
           <View style={styles.menuandDrinkTile}>
             <TouchableHighlight
               style={styles.menuTile}
@@ -260,9 +259,10 @@ export default class BarPage extends Component {
                 })
               }
             >
-              <ImageBackground style={styles.menuTile} source={menu_pic}>
+              <View style={styles.menuTile}>
                 <Text style={styles.title}>Menu</Text>
-              </ImageBackground>
+                <Icon name='book-open' type='FontAwesome5' style={styles.menuIcon}></Icon>
+              </View>
             </TouchableHighlight>
 
             <TouchableHighlight
@@ -273,37 +273,34 @@ export default class BarPage extends Component {
                 })
               }
             >
-              <ImageBackground
-                style={styles.drinksTile}
-                source={drink_pic}
-                resizeMode={"stretch"}
-              >
+              <View style={styles.drinksTile}>
                 <Text style={styles.title}>Drinks</Text>
-              </ImageBackground>
+                <Icon name='cocktail' type='FontAwesome5' style={styles.drinkIcon}></Icon>
+              </View>
             </TouchableHighlight>
           </View>
           <View style={styles.hours}>
             <Text style={styles.hours_title}> Bar Hours: </Text>
             <Text style={styles.hours_text}>
-              Monday: {bar_hours.hours.Monday}
+              Monday: {bar_data.hours.Monday}
             </Text>
             <Text style={styles.hours_text}>
-              Tuesday: {bar_hours.hours.Tuesday}
+              Tuesday: {bar_data.hours.Tuesday}
             </Text>
             <Text style={styles.hours_text}>
-              Wednesday: {bar_hours.hours.Wednesday}
+              Wednesday: {bar_data.hours.Wednesday}
             </Text>
             <Text style={styles.hours_text}>
-              Thursday: {bar_hours.hours.Thursday}
+              Thursday: {bar_data.hours.Thursday}
             </Text>
             <Text style={styles.hours_text}>
-              Friday: {bar_hours.hours.Friday}
+              Friday: {bar_data.hours.Friday}
             </Text>
             <Text style={styles.hours_text}>
-              Saturday: {bar_hours.hours.Saturday}
+              Saturday: {bar_data.hours.Saturday}
             </Text>
             <Text style={styles.hours_text}>
-              Sunday: {bar_hours.hours.Sunday}
+              Sunday: {bar_data.hours.Sunday}
             </Text>
           </View>
           <Image style={styles.logo} source={logo}></Image>

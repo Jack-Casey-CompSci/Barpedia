@@ -6,9 +6,12 @@ import BarFood from "./components/PictureLinkers/BarSpecificMenu.js";
 import BarDrinks from "./components/PictureLinkers/BarSpecificDrinks.js";
 import LineReporting from "./components/ReportForm.js";
 import Map from "./components/Map.js"
+import Reviews from "./components/Reviews.js";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+
+import styles from "./components/StyleFiles/BarPageStyle.js";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -18,11 +21,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Navigator>
-        <Screen name="Home" component={BarMenu} />
-        <Screen name="Details" component={BarPage} />
-        <Screen name="Bar Food" component={BarFood} />
-        <Screen name="Bar Drinks" component={BarDrinks} />
-        <Screen name="Line Reporting" component={LineReporting} />
+        <Screen name="Home" component={BarMenu} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}} />
+        <Screen name="Details" component={BarPage} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
+        <Screen name="Bar Food" component={BarFood} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
+        <Screen name="Bar Drinks" component={BarDrinks} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
+        <Screen name="Line Reporting" component={LineReporting} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
+        <Screen name="Reviews" component={Reviews} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
       </Navigator>
     </NavigationContainer>
   );

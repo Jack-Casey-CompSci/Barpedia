@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, StyleSheet, Button } from "react-native";
+import { View, StyleSheet, Button, Text } from "react-native";
 import AsyncStorage from "@react-native-community/async-storage";
 
 import t from "tcomb-form-native"; // 0.6.9
@@ -29,6 +29,16 @@ export default class TestForm extends Component {
     };
   }
 
+  checkValues = () => {
+    var valid = this._form.getValue();
+    if (valid) {
+      if (valid.CoverCharge >= 0) {
+        this.handleSubmit()
+      }
+    }
+  }
+
+
   handleSubmit = () => {
     var value = this._form.getValue(); // use that ref to get the form value
     var data;
@@ -39,15 +49,14 @@ export default class TestForm extends Component {
         coverCharge: 0,
       };
     } else if (value.CoverCharge && value.LineLength == null) {
-        console.log(value);
-        if (value.CoverCharge >= 20) {
-          data = {
-            name: this.state.name,
-            line: -1,
-            coverCharge: 0,
-          }
+      if (value.CoverCharge >= 20) {
+        data = {
+          name: this.state.name,
+          line: -1,
+          coverCharge: 0,
         }
-      else {  
+      }
+      else {
         data = {
           name: this.state.name,
           line: -1,
@@ -62,13 +71,13 @@ export default class TestForm extends Component {
       };
       //Possibly change sending a 0 for cover charge
     } else {
-        if (value.CoverCharge >= 20) {
-          data = {
-            name: this.state.name,
-            line: value.LineLength,
-            coverCharge: 0,
-          };
-        }
+      if (value.CoverCharge >= 20) {
+        data = {
+          name: this.state.name,
+          line: value.LineLength,
+          coverCharge: 0,
+        };
+      }
       else {
         data = {
           name: this.state.name,
@@ -77,7 +86,6 @@ export default class TestForm extends Component {
         };
       }
     }
-    console.log(value.LineLength);
     //HTTP Request
     //var requestString = "http:/192.168.0.5:3000/linedata/" + this.state.id;
     var requestString =
@@ -91,7 +99,6 @@ export default class TestForm extends Component {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("Success:", data);
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -122,7 +129,8 @@ export default class TestForm extends Component {
           type={Line}
           value={value}
         />
-        <Button title="Submit" onPress={this.handleSubmit} />
+        <Text style={styles.warning}>Cover charge must be between 0 and 20</Text>
+        <Button title="Submit" onPress={this.checkValues} />
       </View>
     );
   }
@@ -135,6 +143,9 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: "#ffffff",
   },
+  warning: {
+    marginBottom: 20
+  }
 });
 
 export { LineLengthVar };

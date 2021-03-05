@@ -5,6 +5,7 @@ import BarPage from "./components/BarPage.js";
 import BarFood from "./components/PictureLinkers/BarSpecificMenu.js";
 import BarDrinks from "./components/PictureLinkers/BarSpecificDrinks.js";
 import LineReporting from "./components/ReportForm.js";
+import Map from "./components/Map.js"
 import Reviews from "./components/Reviews.js";
 
 import { NavigationContainer } from "@react-navigation/native";

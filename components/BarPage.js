@@ -20,8 +20,6 @@ import picture_linker from "./PictureLinkers/picture_linker.js";
 import HappyHour from "./AccordionFiles/happyHourAccordion.js";
 import Everyday from "./AccordionFiles/everydayAccordion.js";
 import Entertainment from "./AccordionFiles/entertainmentAccordion";
-import menu_pic from "../assets/menuPictures/menu_pic.jpg";
-import drink_pic from "../assets/menuPictures/drink_pic.png";
 import logo from "../assets/Barpedia_logo.png";
 import { render } from "react-dom";
 import CoverChargeModal from "./CoverChargeModal.js";
@@ -90,17 +88,97 @@ export default class BarPage extends Component {
     return <EventsSpecials name={this.state.barName}></EventsSpecials>;
   };
 
+  _renderDailyHeader(item, expanded) {
+    return (
+      <View style={{
+        flexDirection: "row",
+        padding: 10,
+        justifyContent: "space-between",
+        alignItems: "center" ,
+        backgroundColor: "#FFF",
+        borderRadius:10,
+        marginHorizontal: 5 }}>
+        <Text style={{ fontWeight: "600" }}>
+          Daily Specials
+        </Text>
+        {expanded
+          ? <Icon type="AntDesign" style={{ fontSize: 18 }} name="up" />
+          : <Icon type="AntDesign" style={{ fontSize: 18 }} name="down" />}
+      </View>
+    );
+  }
+
   _renderEveryday = (item) => {
     return <Everyday name={this.state.barName}></Everyday>;
   };
+
+  _renderEveryHeader(item, expanded) {
+    return (
+      <View style={{
+        flexDirection: "row",
+        padding: 10,
+        justifyContent: "space-between",
+        alignItems: "center" ,
+        backgroundColor: "#FFF",
+        borderRadius:10,
+        marginHorizontal: 5  }}>
+        <Text style={{ fontWeight: "600" }}>
+          All Day Everyday
+        </Text>
+        {expanded
+          ? <Icon type="AntDesign" style={{ fontSize: 18 }} name="up" />
+          : <Icon type="AntDesign" style={{ fontSize: 18 }} name="down" />}
+      </View>
+    );
+  }  
 
   _renderHappyHour = (item) => {
     return <HappyHour name={this.state.barName}></HappyHour>;
   };
 
+  _renderHappyHeader(item, expanded) {
+    return (
+      <View style={{
+        flexDirection: "row",
+        padding: 10,
+        justifyContent: "space-between",
+        alignItems: "center" ,
+        backgroundColor: "#FFF",
+        borderRadius:10,
+        marginHorizontal: 5  }}>
+        <Text style={{ fontWeight: "600" }}>
+          Happy Hours
+        </Text>
+        {expanded
+          ? <Icon type="AntDesign" style={{ fontSize: 18 }} name="up" />
+          : <Icon type="AntDesign" style={{ fontSize: 18 }} name="down" />}
+      </View>
+    );
+  }
+
   _renderEntertainment = (item) => {
     return <Entertainment name={this.state.barName}></Entertainment>;
   };
+
+  _renderEnterHeader(item, expanded) {
+    return (
+      <View style={{
+        flexDirection: "row",
+        padding: 10,
+        justifyContent: "space-between",
+        alignItems: "center" ,
+        backgroundColor: "#FFF",
+        borderRadius:10,
+        marginHorizontal: 5  }}>
+        <Text style={{ fontWeight: "600" }}>
+          Entertainment
+        </Text>
+        {expanded
+          ? <Icon type="AntDesign" style={{ fontSize: 18 }} name="up" />
+          : <Icon type="AntDesign" style={{ fontSize: 18 }} name="down" />}
+      </View>
+    );
+  }
 
   render() {
     if (this.state.loading) {
@@ -131,6 +209,12 @@ export default class BarPage extends Component {
     var entertainArray = [{ title: "Entertainment", content: "" }];
     var everydayArray = [{ title: "All Day Everyday", content: "" }];
     var happyArray = [{ title: "Happy Hours", content: "" }];
+    const dataArray = [
+      { title: "Daily Specials", content: "" },
+      { title: "Entertainment", content: "" },
+      { title: "All Day Everyday", content: "" },
+      { title: "Happy Hours", content: "" }
+    ];
     if (barspec.available == false) {
       dailyArray = [
         { title: "Daily Specials (not available at this bar)", content: "" },
@@ -225,29 +309,37 @@ export default class BarPage extends Component {
             ></Button>
           </View>
           {closed}
-          <Accordion
+        <Accordion
+            expanded={[]}
             dataArray={dailyArray}
             style={styles.accordion}
             headerStyle={styles.accordionHeader}
             renderContent={this._renderDaily}
+            renderHeader={this._renderDailyHeader}
           ></Accordion>
           <Accordion
             dataArray={entertainArray}
             renderContent={this._renderEntertainment}
+            renderHeader={this._renderEnterHeader}
             style={styles.accordion}
             headerStyle={styles.accordionHeader}
+            expanded={[]} 
           ></Accordion>
           <Accordion
             dataArray={everydayArray}
             style={styles.accordion}
             headerStyle={styles.accordionHeader}
             renderContent={this._renderEveryday}
+            renderHeader={this._renderEveryHeader}
+            expanded={[]} 
           ></Accordion>
           <Accordion
             dataArray={happyArray}
             style={styles.accordion}
             headerStyle={styles.accordionHeader}
             renderContent={this._renderHappyHour}
+            renderHeader={this._renderHappyHeader}
+            expanded={[]} 
           ></Accordion>
           <Ratings></Ratings>
           <View style={styles.menuandDrinkTile}>

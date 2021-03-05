@@ -18,7 +18,7 @@
     "expo-cli": "^4.1.6",
     "expo-font": "~8.2.1",
     "expo-status-bar": "^1.0.2",
-    "native-base": "^2.13.13",
+    "native-base": "^2.15.2",
     "react": "~16.11.0",
     "react-dom": "~16.11.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
@@ -26,14 +26,12 @@
     "react-native-elements": "^2.0.4",
     "react-native-gesture-handler": "~1.6.0",
     "react-native-image-zoom-viewer": "^3.0.1",
+    "react-native-maps": "0.27.1",
     "react-native-progress-circle": "^2.1.0",
     "react-native-reanimated": "~1.9.0",
     "react-native-safe-area-context": "~3.0.7",
     "react-native-screens": "~2.9.0",
     "react-native-web": "~0.11.7",
-    "tcomb-form-native": "^0.6.20",
-    "react-native-maps": "0.27.1"
-    "react-native-web": "^0.15.0",
     "tcomb-form-native": "^0.6.20"
   },
   "devDependencies": {

@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Dimensions, Image, TouchableOpacity }  from 're
 import StoreMarkers from "../data/stores.json";
 import BeerPic from "../assets/beer.png";
 import logo from "../assets/Barpedia_logo.png";
-import { Container, Header, Content, Footer, FooterTab, Button, Icon } from 'native-base';
+import { Container} from 'native-base';
 
 export default class Map extends React.Component {
   render() {
@@ -38,29 +38,6 @@ export default class Map extends React.Component {
     ))}
     </MapView>
     </View>
-    <Image style={styles.logo} source={logo}></Image>
-    
-        <Footer>
-          <FooterTab>
-            <Button vertical>
-              {/* <Icon name="person" /> */}
-              
-              <Text>Apps</Text>
-            </Button>
-            <Button vertical>
-              {/* <Icon name="camera" /> */}
-              <Text>Camera</Text>
-            </Button>
-            <Button vertical active>
-              {/* <Icon active name="navigate" /> */}
-              <Text>Navigate</Text>
-            </Button>
-            <Button vertical>
-              {/* <Icon name="person" /> */}
-              <Text>Contact</Text>
-            </Button>
-          </FooterTab>
-        </Footer>
       </Container>
     );
   }
@@ -76,7 +53,7 @@ const styles = StyleSheet.create({
   },
   map: {
     width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height-200,
+    height: Dimensions.get('window').height,
   },
   buttonBox: {
     flexDirection: "row",

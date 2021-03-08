@@ -7,10 +7,10 @@
        }
    },
    {
-    "name": "Fine Wine and Good Spirits",
-    "latlng":{
-        "latitude": 40.80758995170268, 
-        "longitude": -77.896780089344
+        "name": "Fine Wine and Good Spirits",
+        "latlng":{
+            "latitude": 40.80758995170268, 
+            "longitude": -77.896780089344
         }
 
     },
@@ -19,13 +19,13 @@
         "latlng":{
             "latitude": 40.808501390137195,  
             "longitude": -77.896770419427
-            }
+        }
     },
     {
         "name": "Pletcher's Beer Distributor",
         "latlng":{
             "latitude": 40.80603661106003,  
             "longitude": -77.89284096205073
-            }
+        }
     }
 ]

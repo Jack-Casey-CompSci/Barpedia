@@ -29,6 +29,7 @@ export default function App() {
         <Navigator>
           <Screen name="Home" component={Tabs} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}} />
           <Screen name="Details" component={BarPage} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
+          <Screen name="Map" component={Map} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
           <Screen name="Bar Food" component={BarFood} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
           <Screen name="Bar Drinks" component={BarDrinks} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
           <Screen name="Line Reporting" component={LineReporting} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
@@ -39,7 +40,7 @@ export default function App() {
 }
 function Tabs() {
   return (
-    <Tab.Navigator initialRouteName="Home" 
+    <Tab.Navigator
       tabBarOptions={{activeBackgroundColor: "lightgrey"}}
     >
       <Tab.Screen name="Home" component={Home}  options={{
@@ -48,8 +49,8 @@ function Tabs() {
             <Icon type="Feather" name="home" color={color} size={size} />
           ),
         }}/>
-      <Tab.Screen name="Map" component={Map} options={{
-          tabBarLabel: 'Map',
+      <Tab.Screen name="Maps" component={Map} options={{
+          tabBarLabel: 'Maps',
           tabBarIcon: ({ color, size }) => (
             <Icon type="Feather" name="map" color={color} size={size} />
           ),

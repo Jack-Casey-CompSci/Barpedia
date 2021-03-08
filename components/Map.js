@@ -10,34 +10,24 @@ export default class Map extends React.Component {
   render() {
     return (
       <Container>
-
-        
-    <View style={styles.buttonBox}>
-      <TouchableOpacity style={styles.button1}>
-        <Text style={styles.btnText}>Show Bars</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.button2}>
-        <Text style={styles.btnText}>Show Stores</Text>
-      </TouchableOpacity>
-    </View>
-    <View style={styles.container}>
-      <MapView style={styles.map} initialRegion={{
-      latitude: 40.79331567231344, 
-      longitude: -77.86254004954345,
-      latitudeDelta: 0.0922,
-      longitudeDelta: 0.0421,
-    }}>
-    {StoreMarkers.map((marker, index) => (
-    <Marker
-      key={index}
-      coordinate={marker.latlng}
-      title={marker.name}
-      description={marker.description}
-      image={BeerPic}
-    />
-    ))}
-    </MapView>
-    </View>
+        <View style={styles.container}>
+          <MapView style={styles.map} initialRegion={{
+          latitude: 40.79331567231344, 
+          longitude: -77.86254004954345,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}>
+        {StoreMarkers.map((marker, index) => (
+        <Marker
+          key={index}
+          coordinate={marker.latlng}
+          title={marker.name}
+          description={marker.description}
+          image={BeerPic}
+        />
+        ))}
+        </MapView>
+        </View>
       </Container>
     );
   }

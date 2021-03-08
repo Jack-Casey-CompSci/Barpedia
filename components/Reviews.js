@@ -29,7 +29,7 @@ export default class Reviews extends Component {
             atmosphere: this.state.atmosphereSlide
         }
         var requestString =
-            "https://barpedia.herokuapp.com/api/bars/reviews/" + this.state.id;
+            "https://barpedia.herokuapp.com/api/reviews/" + this.state.id;
         fetch(requestString, {
             method: "POST",
             headers: {
@@ -78,7 +78,6 @@ export default class Reviews extends Component {
                         })}
                     minimumTrackTintColor="#FFFFFF"
                     maximumTrackTintColor="#000000"
-                    thumbImage={require("../assets/Barpedia_icon.png")}
                 />
                 <Text style={styles.title}>Drink Quality: {this.state.drinkSlide}</Text>
                 <Slider
@@ -106,7 +105,7 @@ export default class Reviews extends Component {
                     minimumTrackTintColor="#FFFFFF"
                     maximumTrackTintColor="#000000"
                 />
-                <Text style={styles.title}>Expensiveness: {this.state.expensiveSlide}</Text>
+                <Text style={styles.title}>Cost: {this.state.expensiveSlide}</Text>
                 <Slider
                     style={styles.slider}
                     minimumValue={1}

@@ -16,7 +16,7 @@ export default class Ratings extends Component {
             <View style={styles.circles}>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={30}
+                        percent={20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"
@@ -29,7 +29,7 @@ export default class Ratings extends Component {
                 </View>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={80}
+                        percent={20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"
@@ -42,7 +42,7 @@ export default class Ratings extends Component {
                 </View>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={80}
+                        percent={20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"
@@ -55,7 +55,7 @@ export default class Ratings extends Component {
                 </View>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={80}
+                        percent={20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"
@@ -64,11 +64,11 @@ export default class Ratings extends Component {
                     >
                         <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
                     </ProgressCircle>
-                    <Text>Expensiveness</Text>
+                    <Text>Cost</Text>
                 </View>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={80}
+                        percent={20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"
@@ -81,7 +81,7 @@ export default class Ratings extends Component {
                 </View>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={80}
+                        percent={20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"

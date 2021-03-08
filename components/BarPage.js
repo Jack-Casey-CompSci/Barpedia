@@ -68,12 +68,12 @@ export default class BarPage extends Component {
         .then((response) => response.json())
         .then((responseData) => {
           this.setState({
-            loading: false,
+            loading: true,
             dataSource: responseData,
           });
         })
         .catch((error) => console.log(error));
-      }
+    }
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -341,7 +341,9 @@ export default class BarPage extends Component {
             renderHeader={this._renderHappyHeader}
             expanded={[]} 
           ></Accordion>
-          <Ratings></Ratings>
+          <Ratings
+            barId={bar_data.id}>
+          </Ratings>
           <View style={styles.menuandDrinkTile}>
             <TouchableHighlight
               style={styles.menuTile}

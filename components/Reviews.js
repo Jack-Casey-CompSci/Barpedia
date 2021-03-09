@@ -21,7 +21,7 @@ export default class Reviews extends Component {
     }
 
     submitToServer = () => {
-        //var requestString = "http:/192.168.0.5:3000/linedata/" + this.state.id;
+        //var requestString = "http:/192.168.0.13:3000/api/reviews/" + this.state.id;
         var data = {
             food: this.state.foodSlide,
             drink: this.state.drinkSlide,

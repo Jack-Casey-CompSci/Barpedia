@@ -33,86 +33,87 @@ export default class Ratings extends Component {
               </View>
             );
         }
-        const reviews = JSON.parse(JSON.stringify(this.state.reviewSource));
+        const bar_reviews = this.state.reviewSource.find((element) => {
+            return element.id === this.props.barId;
+          });
         //Percent has to be 1-rating because the circle fills the opposite way
-        const bar_reviews = reviews[this.props.barId]
         return (   
             <View style={styles.circles}>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={bar_reviews.food}
+                        percent={100-bar_reviews.food*20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"
                         shadowColor="#3399FF"
                         bgColor="#fff"
                     >
-                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                        <Text style={{ fontSize: 18 }}>{bar_reviews.food}</Text>
                     </ProgressCircle>
                     <Text>Food Quality</Text>
                 </View>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={bar_reviews.drink}
+                        percent={100-bar_reviews.drink*20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"
                         shadowColor="#3399FF"
                         bgColor="#fff"
                     >
-                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                        <Text style={{ fontSize: 18 }}>{bar_reviews.drink}</Text>
                     </ProgressCircle>
                     <Text>Drink Quality</Text>
                 </View>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={bar_reviews.service}
+                        percent={100-bar_reviews.service*20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"
                         shadowColor="#3399FF"
                         bgColor="#fff"
                     >
-                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                        <Text style={{ fontSize: 18 }}>{bar_reviews.service}</Text>
                     </ProgressCircle>
                     <Text>Service</Text>
                 </View>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={bar_reviews.price}
+                        percent={100-bar_reviews.price*20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"
                         shadowColor="#3399FF"
                         bgColor="#fff"
                     >
-                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                        <Text style={{ fontSize: 18 }}>{bar_reviews.price}</Text>
                     </ProgressCircle>
                     <Text>Cost</Text>
                 </View>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={bar_reviews.noise}
+                        percent={100-bar_reviews.noise*20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"
                         shadowColor="#3399FF"
                         bgColor="#fff"
                     >
-                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                        <Text style={{ fontSize: 18 }}>{bar_reviews.noise}</Text>
                     </ProgressCircle>
                     <Text>Loudness</Text>
                 </View>
                 <View style={styles.individual}>    
                     <ProgressCircle
-                        percent={bar_reviews.atmosphere}
+                        percent={100-bar_reviews.atmosphere*20}
                         radius={50}
                         borderWidth={8}
                         color="#dddddd"
                         shadowColor="#3399FF"
                         bgColor="#fff"
                     >
-                        <Text style={{ fontSize: 18 }}>{"4.0"}</Text>
+                        <Text style={{ fontSize: 18 }}>{bar_reviews.atmosphere}</Text>
                     </ProgressCircle>
                     <Text>Atmosphere</Text>
                 </View>

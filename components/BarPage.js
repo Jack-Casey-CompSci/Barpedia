@@ -68,7 +68,7 @@ export default class BarPage extends Component {
         .then((response) => response.json())
         .then((responseData) => {
           this.setState({
-            loading: true,
+            loading: false,
             dataSource: responseData,
           });
         })

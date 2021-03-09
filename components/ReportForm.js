@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, StyleSheet, Button } from "react-native";
+import { View, StyleSheet, Button, Text } from "react-native";
 import AsyncStorage from "@react-native-community/async-storage";
 
 import t from "tcomb-form-native"; // 0.6.9
@@ -28,6 +28,16 @@ export default class TestForm extends Component {
       id: this.props.route.params.id,
     };
   }
+
+  checkValues = () => {
+    var valid = this._form.getValue();
+    if (valid) {
+      if (valid.CoverCharge >= 0) {
+        this.handleSubmit()
+      }
+    }
+  }
+
 
   handleSubmit = () => {
     var value = this._form.getValue(); // use that ref to get the form value
@@ -119,7 +129,8 @@ export default class TestForm extends Component {
           type={Line}
           value={value}
         />
-        <Button title="Submit" onPress={this.handleSubmit} />
+        <Text style={styles.warning}>Cover charge must be between 0 and 20</Text>
+        <Button title="Submit" onPress={this.checkValues} />
       </View>
     );
   }
@@ -132,6 +143,9 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: "#ffffff",
   },
+  warning: {
+    marginBottom: 20
+  }
 });
 
 export { LineLengthVar };

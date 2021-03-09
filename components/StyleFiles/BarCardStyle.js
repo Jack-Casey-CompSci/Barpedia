@@ -5,39 +5,41 @@ const windowHeight = Dimensions.get("window").height;
 
 const styles = StyleSheet.create({
     barTab: {
-      flex: 1,
       width: windowWidth - 20,
       height: 150,
-      backgroundColor: "grey",
       borderWidth: 2,
+      borderRadius: 15,
       marginLeft: 10,
-      marginBottom: 10,
+      marginBottom: 5,
+      marginTop: 5,
       borderColor: "black",
+      justifyContent: "flex-start",
     },
     icon: {
-      color: "white",
-      marginLeft: 5,
-    },
-    iconBox: {
-      flex: 1,
       flexDirection: "row",
+      color: "white",
+      marginLeft: 3,
+      marginTop: 2,
+      alignSelf: "flex-start",
+      
     },
     nameBox: {
-      flex: 1,
-      alignItems: "center",
-      justifyContent: "flex-end",
-    },
-    barName: {
-      fontSize: 32,
+      width: windowWidth - 22,
+      borderBottomLeftRadius: 12,
+      borderBottomRightRadius: 12,
+      flexDirection: "row",
+      justifyContent: "space-between",
+      backgroundColor: 'argba(10, 10, 10, 0.6)',
     },
     image: {
       flex: 1,
-      flexDirection: "column",
+      justifyContent: "flex-end",
     },
     barName: {
       color: "white",
       fontWeight: "bold",
-      fontSize: 32,
+      fontSize: 26,
+      marginRight: 5,
     },
   });
   

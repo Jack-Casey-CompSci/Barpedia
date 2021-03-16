@@ -24,7 +24,7 @@
       "favicon": "./assets/favicon.png"
     },
     "sdkVersion": "38.0.0",
-    "description": "Lineleap update",
+    "description": "Test map",
     "android": {
       "versionCode": 4,
       "permissions": [],

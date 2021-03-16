@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
   container2: {
     flex: 1,
     margin: 5,
-    backgroundColor: "#CAD5E9",
+    backgroundColor: "#3FBCFF",
     marginHorizontal: 10,
     paddingHorizontal: 5,
   },

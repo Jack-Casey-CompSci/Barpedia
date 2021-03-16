@@ -9,6 +9,7 @@ import {
   View, 
   TouchableHighlight,
 } from "react-native";
+import { Icon } from "native-base";
 import { Accordion } from "native-base";
 import specials from "../data/specials.json";
 import everyday from "../data/everyday.json";
@@ -19,14 +20,12 @@ import picture_linker from "./PictureLinkers/picture_linker.js";
 import HappyHour from "./AccordionFiles/happyHourAccordion.js";
 import Everyday from "./AccordionFiles/everydayAccordion.js";
 import Entertainment from "./AccordionFiles/entertainmentAccordion";
-import menu_pic from "../assets/menuPictures/menu_pic.jpg";
-import drink_pic from "../assets/menuPictures/drink_pic.png";
 import logo from "../assets/Barpedia_logo.png";
 import { render } from "react-dom";
 import CoverChargeModal from "./CoverChargeModal.js";
 import Timer from "./Timer.js";
 import styles from "./StyleFiles/BarPageStyle.js";
-
+import Ratings from "./Ratings.js";
 
 
 var lineLength = [
@@ -74,7 +73,7 @@ export default class BarPage extends Component {
           });
         })
         .catch((error) => console.log(error));
-      }
+    }
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -89,17 +88,97 @@ export default class BarPage extends Component {
     return <EventsSpecials name={this.state.barName}></EventsSpecials>;
   };
 
+  _renderDailyHeader(item, expanded) {
+    return (
+      <View style={{
+        flexDirection: "row",
+        padding: 10,
+        justifyContent: "space-between",
+        alignItems: "center" ,
+        backgroundColor: "#FFF",
+        borderRadius:10,
+        marginHorizontal: 5 }}>
+        <Text style={{ fontWeight: "600" }}>
+          Daily Specials
+        </Text>
+        {expanded
+          ? <Icon type="AntDesign" style={{ fontSize: 18 }} name="up" />
+          : <Icon type="AntDesign" style={{ fontSize: 18 }} name="down" />}
+      </View>
+    );
+  }
+
   _renderEveryday = (item) => {
     return <Everyday name={this.state.barName}></Everyday>;
   };
+
+  _renderEveryHeader(item, expanded) {
+    return (
+      <View style={{
+        flexDirection: "row",
+        padding: 10,
+        justifyContent: "space-between",
+        alignItems: "center" ,
+        backgroundColor: "#FFF",
+        borderRadius:10,
+        marginHorizontal: 5  }}>
+        <Text style={{ fontWeight: "600" }}>
+          All Day Everyday
+        </Text>
+        {expanded
+          ? <Icon type="AntDesign" style={{ fontSize: 18 }} name="up" />
+          : <Icon type="AntDesign" style={{ fontSize: 18 }} name="down" />}
+      </View>
+    );
+  }  
 
   _renderHappyHour = (item) => {
     return <HappyHour name={this.state.barName}></HappyHour>;
   };
 
+  _renderHappyHeader(item, expanded) {
+    return (
+      <View style={{
+        flexDirection: "row",
+        padding: 10,
+        justifyContent: "space-between",
+        alignItems: "center" ,
+        backgroundColor: "#FFF",
+        borderRadius:10,
+        marginHorizontal: 5  }}>
+        <Text style={{ fontWeight: "600" }}>
+          Happy Hours
+        </Text>
+        {expanded
+          ? <Icon type="AntDesign" style={{ fontSize: 18 }} name="up" />
+          : <Icon type="AntDesign" style={{ fontSize: 18 }} name="down" />}
+      </View>
+    );
+  }
+
   _renderEntertainment = (item) => {
     return <Entertainment name={this.state.barName}></Entertainment>;
   };
+
+  _renderEnterHeader(item, expanded) {
+    return (
+      <View style={{
+        flexDirection: "row",
+        padding: 10,
+        justifyContent: "space-between",
+        alignItems: "center" ,
+        backgroundColor: "#FFF",
+        borderRadius:10,
+        marginHorizontal: 5  }}>
+        <Text style={{ fontWeight: "600" }}>
+          Entertainment
+        </Text>
+        {expanded
+          ? <Icon type="AntDesign" style={{ fontSize: 18 }} name="up" />
+          : <Icon type="AntDesign" style={{ fontSize: 18 }} name="down" />}
+      </View>
+    );
+  }
 
   render() {
     if (this.state.loading) {
@@ -130,6 +209,12 @@ export default class BarPage extends Component {
     var entertainArray = [{ title: "Entertainment", content: "" }];
     var everydayArray = [{ title: "All Day Everyday", content: "" }];
     var happyArray = [{ title: "Happy Hours", content: "" }];
+    const dataArray = [
+      { title: "Daily Specials", content: "" },
+      { title: "Entertainment", content: "" },
+      { title: "All Day Everyday", content: "" },
+      { title: "Happy Hours", content: "" }
+    ];
     if (barspec.available == false) {
       dailyArray = [
         { title: "Daily Specials (not available at this bar)", content: "" },
@@ -179,48 +264,21 @@ export default class BarPage extends Component {
       closed = (
         <View style={styles.line_and_cover}>
           <Text style={styles.line_and_cover_text}>
-            This bar is currently closed due to COVID-19
+            This bar is currently closed
           </Text>
         </View>
       )
     }
-    if (canReportLine) {
-      button = (
-        <Button
-          title="Report Line/Cover Charge"
-          onPress={() =>
-            this.props.navigation.navigate("Line Reporting", {
-              name: this.props.route.params.name,
-              id: this.props.route.params.id,
-            })
-          }
-        ></Button>
-      );
-    } else {
-      button = (
-        <Button
-          title="Already Submitted"
-          disabled
-          onPress={() =>
-            this.props.navigation.navigate("Line Reporting", {
-              name: this.props.route.params.name,
-              id: this.props.route.params.id,
-            })
-          }
-        ></Button>
-      );
-    }
     return (
       <>
-        <CoverChargeModal
-          coverCharge={this.props.route.params.coverCharge}
-        ></CoverChargeModal>
         <ScrollView style={styles.scroll} scrollIndicatorInsets={{ right: 1 }}>
           <View style={styles.box}>
-            <ImageBackground style={styles.pageImage} source={bar_link}>
-              <Text style={styles.barTitle}>
-                {this.props.route.params.name}
-              </Text>
+            <ImageBackground style={styles.pageImage} imageStyle={{borderRadius: 15}} source={bar_link}>
+              <View style={styles.titleBox}>  
+                <Text style={styles.barTitle}>
+                  {this.props.route.params.name}
+                </Text>
+              </View>  
             </ImageBackground>
           </View>
           <Timer
@@ -234,31 +292,55 @@ export default class BarPage extends Component {
               })
             }
           ></Timer>
+          <View style={styles.review}>
+            <Button
+              title="Submit a Review"
+              color="#E50000"
+              style={styles.review}
+              onPress={() =>
+                this.props.navigation.navigate("Reviews", {
+                  name: this.props.route.params.name,
+                  id: this.props.route.params.id,
+                })
+              }
+            ></Button>
+          </View>
           {closed}
-          <Accordion
+        <Accordion
+            expanded={[]}
             dataArray={dailyArray}
             style={styles.accordion}
             headerStyle={styles.accordionHeader}
             renderContent={this._renderDaily}
+            renderHeader={this._renderDailyHeader}
           ></Accordion>
           <Accordion
             dataArray={entertainArray}
             renderContent={this._renderEntertainment}
+            renderHeader={this._renderEnterHeader}
             style={styles.accordion}
             headerStyle={styles.accordionHeader}
+            expanded={[]} 
           ></Accordion>
           <Accordion
             dataArray={everydayArray}
             style={styles.accordion}
             headerStyle={styles.accordionHeader}
             renderContent={this._renderEveryday}
+            renderHeader={this._renderEveryHeader}
+            expanded={[]} 
           ></Accordion>
           <Accordion
             dataArray={happyArray}
             style={styles.accordion}
             headerStyle={styles.accordionHeader}
             renderContent={this._renderHappyHour}
+            renderHeader={this._renderHappyHeader}
+            expanded={[]} 
           ></Accordion>
+          <Ratings
+            barId={bar_data.id}>
+          </Ratings>
           <View style={styles.menuandDrinkTile}>
             <TouchableHighlight
               style={styles.menuTile}
@@ -268,9 +350,10 @@ export default class BarPage extends Component {
                 })
               }
             >
-              <ImageBackground style={styles.menuTile} source={menu_pic}>
+              <View style={styles.menuTile}>
                 <Text style={styles.title}>Menu</Text>
-              </ImageBackground>
+                <Icon name='book-open' type='FontAwesome5' style={styles.menuIcon}></Icon>
+              </View>
             </TouchableHighlight>
 
             <TouchableHighlight
@@ -281,13 +364,10 @@ export default class BarPage extends Component {
                 })
               }
             >
-              <ImageBackground
-                style={styles.drinksTile}
-                source={drink_pic}
-                resizeMode={"stretch"}
-              >
+              <View style={styles.drinksTile}>
                 <Text style={styles.title}>Drinks</Text>
-              </ImageBackground>
+                <Icon name='cocktail' type='FontAwesome5' style={styles.drinkIcon}></Icon>
+              </View>
             </TouchableHighlight>
           </View>
           <View style={styles.hours}>

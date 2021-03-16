@@ -32,7 +32,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/Barpedia_icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA0pLjaYqV9pMlUmWlH6etzQgJ9Np4ePUI"
+        }
       }
-    } 
+    }
   }
 }

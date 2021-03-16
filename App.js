@@ -50,7 +50,7 @@ function Tabs() {
           ),
         }}/>
       <Tab.Screen name="Maps" component={Map} options={{
-          tabBarLabel: 'Maps Test',
+          tabBarLabel: 'Maps',
           tabBarIcon: ({ color, size }) => (
             <Icon type="Feather" name="map" color={color} size={size} />
           ),

@@ -9,8 +9,6 @@ import { Container} from 'native-base';
 export default class Map extends React.Component {
   render() {
     return (
-      <Text>HELLO</Text>
-      /*
       <Container>
         <View style={styles.container}>
           <MapView style={styles.map} initialRegion={{
@@ -31,8 +29,6 @@ export default class Map extends React.Component {
         </MapView>
         </View>
       </Container>
-      */
-
     );
   }
 }

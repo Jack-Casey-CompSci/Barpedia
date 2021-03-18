@@ -24,15 +24,20 @@
       "favicon": "./assets/favicon.png"
     },
     "sdkVersion": "38.0.0",
-    "description": "Lineleap update",
+    "description": "Test map",
     "android": {
-      "versionCode": 3,
+      "versionCode": 4,
       "permissions": [],
       "package": "com.dylan.reb.Barpedia",
       "adaptiveIcon": {
         "foregroundImage": "./assets/Barpedia_icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA0pLjaYqV9pMlUmWlH6etzQgJ9Np4ePUI"
+        }
       }
-    } 
+    }
   }
 }

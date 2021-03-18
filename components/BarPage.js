@@ -271,9 +271,6 @@ export default class BarPage extends Component {
     }
     return (
       <>
-        <CoverChargeModal
-          coverCharge={this.props.route.params.coverCharge}
-        ></CoverChargeModal>
         <ScrollView style={styles.scroll} scrollIndicatorInsets={{ right: 1 }}>
           <View style={styles.box}>
             <ImageBackground style={styles.pageImage} imageStyle={{borderRadius: 15}} source={bar_link}>

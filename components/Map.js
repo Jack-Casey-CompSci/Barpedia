@@ -23,7 +23,6 @@ export default class Map extends React.Component {
           coordinate={marker.latlng}
           title={marker.name}
           description={marker.description}
-          image={BeerPic}
         />
         ))}
         </MapView>

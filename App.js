@@ -39,6 +39,7 @@ export default function App() {
   );
 }
 /*
+
 function Tabs() {
   return (
     <Tab.Navigator

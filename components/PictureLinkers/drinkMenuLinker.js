@@ -100,8 +100,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/champsDrinks1.png"),
-        },
+          source: require("../../assets/menuPictures/noMenu.png"),        },
       },
     ];
   } else if (name == "Shandygaff") {

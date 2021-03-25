@@ -152,15 +152,38 @@
     "available": true,
     "happyHour": [
       {
-        "Drink": "White Claw",
-        "Price": "$4.00"
+        "Day": "Every Day 7 - 9 pm"
       },
       {
-        "Drink": "Captain Morgan",
+        "Drink": "White Claw",
         "Price": "$3.00"
       },
       {
         "Drink": "Smirnoff Raspberry Lemonade",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "16 oz Miller Lite/Bud Light",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "16 oz Yuengling Drafts",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "Double Wells",
+        "Price": "$6.00"
+      },
+      {
+        "Drink": "12 oz LIT",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "Green Tea Shot",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "Fireball Shot",
         "Price": "$3.00"
       }
     ]

@@ -8,32 +8,48 @@ export default function HappyHourAccordion({ name }) {
     return element.name === name;
   });
   if (barData.available) {
-    return barData.happyHour.map((data, key) => {
-      if(key % 2 == 0){
-        return(
-          <View style={styles.container} key={key}>
+      return barData.happyHour.map((data, key) => {
+        if (data.Day) {
+          return (
+            <View style={styles.container} key={key}>
+              <Text style={styles.day}>{data.Day}</Text>
+            </View>
+          );
+        }
+        if(key % 2 == 0){
+          return(
+            <View style={styles.container} key={key}>
+              <View style={styles.box}>
+                <Text style={styles.description}>{data.Drink}</Text>
+                <Text style={styles.price}>{data.Price}</Text>
+              </View>
+            </View>
+            );
+        }
+        return (
+          <View style={styles.container2} key={key}>
             <View style={styles.box}>
               <Text style={styles.description}>{data.Drink}</Text>
               <Text style={styles.price}>{data.Price}</Text>
             </View>
           </View>
-          );
-      }
-      return (
-        <View style={styles.container2} key={key}>
-          <View style={styles.box}>
-            <Text style={styles.description}>{data.Drink}</Text>
-            <Text style={styles.price}>{data.Price}</Text>
-          </View>
-        </View>
-      );
-    });
+        );
+      });
   } else {
     return <Text>This is not offered at this bar</Text>;
   }
 }
 
 const styles = StyleSheet.create({
+  day: {
+    alignItems: "center",
+    height: 35,
+    flex: 1,
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: 5,
+    fontSize: 16,
+  },
   container: {
     alignItems: "center",
     height: 35,

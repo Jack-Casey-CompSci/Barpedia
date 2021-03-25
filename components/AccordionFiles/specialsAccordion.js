@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
   container2: {
     marginHorizontal: 10,
     paddingHorizontal: 5,
-    backgroundColor: "#CAD5E9"
+    backgroundColor: "#3FBCFF"
   },
   day: {
     flexDirection: "column",

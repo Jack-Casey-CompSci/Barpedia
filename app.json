@@ -2,7 +2,7 @@
   "expo": {
     "name": "Barpedia",
     "slug": "Barpedia",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/Barpedia_icon.png",
     "splash": {
@@ -18,21 +18,26 @@
     ],
     "ios": {
       "bundleIdentifier": "com.dylan.reb.Barpedia",
-      "buildNumber": "1.0.0"
+      "buildNumber": "1.0.1"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "sdkVersion": "38.0.0",
-    "description": "Lineleap update",
+    "description": "UI update",
     "android": {
-      "versionCode": 2,
+      "versionCode": 4,
       "permissions": [],
       "package": "com.dylan.reb.Barpedia",
       "adaptiveIcon": {
         "foregroundImage": "./assets/Barpedia_icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA0pLjaYqV9pMlUmWlH6etzQgJ9Np4ePUI"
+        }
       }
-    } 
+    }
   }
 }

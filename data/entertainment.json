@@ -382,7 +382,7 @@
   },
   {
     "name": "Doggies",
-    "available": true,
+    "available": false,
     "days": [
       {
         "id": "1",

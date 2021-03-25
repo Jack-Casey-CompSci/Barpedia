@@ -27,7 +27,7 @@ export default function App() {
   return (
       <NavigationContainer>
         <Navigator>
-          <Screen name="Home" component={Tabs} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}} />
+          <Screen name="Home" component={Home} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}} />
           <Screen name="Details" component={BarPage} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
           <Screen name="Map" component={Map} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
           <Screen name="Bar Food" component={BarFood} options={{headerStyle: {backgroundColor: '#0696E9'}, headerTintColor: '#fff'}}/>
@@ -38,6 +38,7 @@ export default function App() {
       </NavigationContainer>
   );
 }
+/*
 
 function Tabs() {
   return (
@@ -59,3 +60,4 @@ function Tabs() {
   </Tab.Navigator>
   );
 }
+*/

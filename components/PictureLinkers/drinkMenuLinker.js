@@ -11,17 +11,22 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/champsDrinks1.png"),
+          source: require("../../assets/menuPictures/champs_drinks.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/champsDrinks2.png"),
+          source: require("../../assets/menuPictures/champs_drinks2.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/champsDrinks3.png"),
+          source: require("../../assets/menuPictures/champs_drinks3.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/champs_drinks4.png"),
         },
       },
     ];

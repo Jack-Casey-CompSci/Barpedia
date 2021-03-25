@@ -85,22 +85,17 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/picklesFood1.png"),
+          source: require("../../assets/menuPictures/pickles_food.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/picklesFood2.png"),
+          source: require("../../assets/menuPictures/pickles_food2.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/picklesFood3.png"),
-        },
-      },
-      {
-        props: {
-          source: require("../../assets/menuPictures/picklesFood4.png"),
+          source: require("../../assets/menuPictures/pickles_food3.png"),
         },
       },
     ];

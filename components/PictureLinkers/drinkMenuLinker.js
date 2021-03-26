@@ -74,17 +74,32 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/DoggiesDrinks1.png"),
+          source: require("../../assets/menuPictures/doggies_drinks.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/DoggiesDrinks2.png"),
+          source: require("../../assets/menuPictures/doggies_drinks2.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/DoggiesDrinks3.png"),
+          source: require("../../assets/menuPictures/doggies_drinks3.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/doggies_drinks4.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/doggies_drinks5.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/doggies_drinks6.png"),
         },
       },
     ];
@@ -101,6 +116,22 @@ function returnFilename(name) {
       {
         props: {
           source: require("../../assets/menuPictures/pickles_drinks.png"),        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/pickles_drinks2.png"),        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/pickles_drinks3.png"),        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/pickles_drinks4.png"),        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/pickles_drinks5.png"),        },
       },
     ];
   } else if (name == "Shandygaff") {

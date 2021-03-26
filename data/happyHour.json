@@ -193,6 +193,13 @@
     "available": true,
     "happyHour": [
       {
+        "Day": "Mon - Fri 4:30 - 6:30"
+      },
+      {
+        "Drink": "Drafts & Wings",
+        "Price": "Half off"
+      },
+      {
         "Drink": "Big Azz Margaritas",
         "Price": "$7.00"
       },

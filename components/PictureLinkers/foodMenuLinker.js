@@ -64,7 +64,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/DoggiesFood1.png"),
+          source: require("../../assets/menuPictures/doggies_food.png"),
         },
       },
     ];

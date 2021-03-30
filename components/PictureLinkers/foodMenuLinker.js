@@ -11,7 +11,12 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/champsFood.png"),
+          source: require("../../assets/menuPictures/champs_food.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/champs_food2.png"),
         },
       },
     ];

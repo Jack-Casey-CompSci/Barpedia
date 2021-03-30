@@ -14,12 +14,12 @@
             },
             "Event2": {
               "Description": "1/2 Price Happys",
-              "Time": "10pm-Midnight"
+              "Time": "7pm-8pm"
             }
           },
           "FoodSpecials": {
-            "Description": "50 cent Wings & Meatless Monday:",
-            "Time": "5pm-10pm"
+            "Description": "50 cent Wings ",
+            "Time": "5pm-11pm"
           }
         }
       },
@@ -33,13 +33,13 @@
               "Time": "All Day"
             },
             "Event2": {
-              "Description": "$2uesday",
-              "Time": "9pm-Midnight"
+              "Description": "1/2 Price Happys",
+              "Time": "7pm-8pm"
             }
           },
           "FoodSpecials": {
             "Description": "$1 Nachos",
-            "Time": "8pm-10pm"
+            "Time": "9pm-11pm"
           }
         }
       },
@@ -54,12 +54,12 @@
             },
             "Event2": {
               "Description": "1/2 Price Happys",
-              "Time": "10pm-Midnight"
+              "Time": "7pm-8pm"
             }
           },
           "FoodSpecials": {
-            "Description": "$1 Tacos",
-            "Time": "8pm-10pm"
+            "Description": "$1 Mozzarella Sticks",
+            "Time": "9pm-11pm"
           }
         }
       },
@@ -69,17 +69,17 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "$4 Frose",
+              "Description": "$4 Frozen Bags",
               "Time": "All Day"
             },
             "Event2": {
-              "Description": "Thirsty Thursday:",
-              "Time": "9pm-Midnight"
+              "Description": "1/2 Price Happys",
+              "Time": "7pm-8pm"
             }
           },
           "FoodSpecials": {
             "Description": "50 cent Wings",
-            "Time": "8pm-11pm"
+            "Time": "9pm-11pm"
           }
         }
       },
@@ -89,12 +89,12 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "$5 Don Julio Shots and Margaritas",
+              "Description": "$5 Villa One",
               "Time": "All Day"
             },
             "Event2": {
               "Description": "1/2 Price Happys",
-              "Time": "10pm-Midnight"
+              "Time": "7pm-8pm"
             }
           },
           "FoodSpecials": {
@@ -109,8 +109,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "1/2 Price Happys",
-              "Time": "10pm-Midnight"
+              "Description": "N/A",
+              "Time": ""
             },
             "Event2": {
               "Description": "",
@@ -129,7 +129,7 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "$3 Mimosas, $3 Brunchboxes, $4 Pedia-Boxes",
+              "Description": "$3 Mimosas,              $3 Brunchboxes,                $4 Pedia-Bombs",
               "Time": "All Day"
             },
             "Event2": {
@@ -139,7 +139,7 @@
           },
           "FoodSpecials": {
             "Description": "$1 Tacos",
-            "Time": "2pm-10pm"
+            "Time": "2pm-11pm"
           }
         }
       }

@@ -78,8 +78,15 @@
   },
   {
     "name": "Primanti Brothers",
-    "available": false,
-    "happyHour": []
+    "available": true,
+    "happyHour": [
+      {
+        "Day": "Mon - Sat 10pm - Midnight"
+      },
+      {
+        "Day": "Bonus Friday 5pm - 7pm"
+      }
+    ]
   },
   {
     "name": "Basement",

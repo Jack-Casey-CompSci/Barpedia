@@ -85,12 +85,12 @@
   },
   {
     "name": "Primanti Brothers",
-    "available": false,
-    "everyday": {
-      "noDeal": {
-        "Message": "This bar does not offer all day everyday deals"
-      }
-    }
+    "available": true,
+    "everyday": [
+      { "Drink": "Aluminums Cans", "Price": "$3.00" },
+      { "Drink": "Craft Cans", "Price": "$5.00" },
+      { "Drink": "Cocktail Pitchers", "Price": "$7.00" }
+    ]
   },
   {
     "name": "Doggies",

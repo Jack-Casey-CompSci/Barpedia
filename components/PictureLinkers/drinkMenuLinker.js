@@ -50,7 +50,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/primantiDrinks.png"),
+          source: require("../../assets/menuPictures/primanti_drinks.jpg"),
         },
       },
     ];

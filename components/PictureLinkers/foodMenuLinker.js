@@ -40,12 +40,12 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/primantiFood1.png"),
+          source: require("../../assets/menuPictures/primanti_food.jpg"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/primantiFood2.png"),
+          source: require("../../assets/menuPictures/primanti_food2.jpg"),
         },
       },
     ];

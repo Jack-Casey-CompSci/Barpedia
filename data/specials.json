@@ -585,7 +585,7 @@
   },
   {
     "name": "Primanti Brothers",
-    "available": false,
+    "available": true,
     "days": [
       {
         "id": "1",
@@ -593,8 +593,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$3 Titos",
+              "Time": "All Day"
             },
             "Event2": {
               "Description": "",
@@ -602,8 +602,8 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
+            "Description": "69 cent Wings",
+            "Time": "All Day"
           }
         }
       },
@@ -613,12 +613,12 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$2.50 16oz Miller Lite",
+              "Time": "All Day"
             },
             "Event2": {
-              "Description": "",
-              "Time": ""
+              "Description": "$3 23oz Miller Lite",
+              "Time": "All Day"
             }
           },
           "FoodSpecials": {
@@ -633,16 +633,16 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$3 16oz Blue Moon Draft",
+              "Time": "All Day"
             },
             "Event2": {
-              "Description": "",
-              "Time": "t"
+              "Description": "$5 23oz Blue Moon Draft",
+              "Time": "All Day"
             }
           },
           "FoodSpecials": {
-            "Description": "$",
+            "Description": "",
             "Time": ""
           }
         }
@@ -653,12 +653,12 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$2.50 16oz Yuengling Draft",
+              "Time": "All Day"
             },
             "Event2": {
-              "Description": "",
-              "Time": ""
+              "Description": "$3 23oz Yuengling Draft",
+              "Time": "All Day"
             }
           },
           "FoodSpecials": {
@@ -673,8 +673,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "$",
-              "Time": ""
+              "Description": "Bottle of the Month",
+              "Time": "All Day"
             },
             "Event2": {
               "Description": "",
@@ -693,7 +693,7 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
+              "Description": "N/A",
               "Time": ""
             },
             "Event2": {
@@ -713,8 +713,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$7 Bud Light Pitchers",
+              "Time": "All Day"
             },
             "Event2": {
               "Description": "",
@@ -722,8 +722,8 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
+            "Description": "69 cent wings",
+            "Time": "All Day"
           }
         }
       }

@@ -1041,8 +1041,8 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
+            "Description": "$4 slice pizza & 12oz domestic draft",
+            "Time": "4pm - 6pm"
           }
         }
       },
@@ -1061,8 +1061,8 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
+            "Description": "$4 slice pizza & 12oz domestic draft",
+            "Time": "4pm - 6pm"
           }
         }
       },
@@ -1081,8 +1081,8 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
+            "Description": "$4 slice pizza & 12oz domestic draft",
+            "Time": "4pm - 6pm"
           }
         }
       },
@@ -1101,8 +1101,8 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
+            "Description": "$4 slice pizza & 12oz domestic draft",
+            "Time": "4pm - 6pm"
           }
         }
       },
@@ -1121,8 +1121,8 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
+            "Description": "$4 slice pizza & 12oz domestic draft",
+            "Time": "4pm - 6pm"
           }
         }
       },
@@ -1316,7 +1316,7 @@
   },
   {
     "name": "Pickles",
-    "available": false,
+    "available": true,
     "days": [
       {
         "id": "1",
@@ -1324,8 +1324,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$4 32oz Plan B Liquor Pitcher",
+              "Time": "All Day"
             },
             "Event2": {
               "Description": "",
@@ -1344,12 +1344,12 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$4 Jack Daniels",
+              "Time": "All Day"
             },
             "Event2": {
-              "Description": "",
-              "Time": ""
+              "Description": "$4 Cuervo Silver",
+              "Time": "All Day"
             }
           },
           "FoodSpecials": {
@@ -1364,16 +1364,16 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$4.50 Yuengling Pitchers",
+              "Time": "All Day"
             },
             "Event2": {
-              "Description": "",
-              "Time": "t"
+              "Description": "Blue Moon $4 Draft/$12 Pitchers",
+              "Time": "All Day"
             }
           },
           "FoodSpecials": {
-            "Description": "$",
+            "Description": "",
             "Time": ""
           }
         }
@@ -1384,7 +1384,7 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
+              "Description": "N/A",
               "Time": ""
             },
             "Event2": {
@@ -1404,12 +1404,12 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "$",
-              "Time": ""
+              "Description": "Blue Moon $4 Draft/$12 Pitchers",
+              "Time": "All Day"
             },
             "Event2": {
-              "Description": "",
-              "Time": ""
+              "Description": "$3.50 Smirnoff & Bacardi Drinks",
+              "Time": "All Day"
             }
           },
           "FoodSpecials": {
@@ -1424,12 +1424,12 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "Blue Moon $4 Draft/$12 Pitchers",
+              "Time": "All Day"
             },
             "Event2": {
-              "Description": "",
-              "Time": ""
+              "Description": "$3.50 Smirnoff & Bacardi Drinks",
+              "Time": "All Day"
             }
           },
           "FoodSpecials": {
@@ -1444,12 +1444,12 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "Blue Moon $4 Draft/$12 Pitchers",
+              "Time": "All Day"
             },
             "Event2": {
-              "Description": "",
-              "Time": ""
+              "Description": "$2.50 Well Liquors & House Wines",
+              "Time": "All Day"
             }
           },
           "FoodSpecials": {

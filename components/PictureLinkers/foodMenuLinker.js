@@ -61,7 +61,22 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/cafe210Food.png"),
+          source: require("../../assets/menuPictures/cafe_food.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/cafe_food2.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/cafe_food3.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/cafe_food4.png"),
         },
       },
     ];

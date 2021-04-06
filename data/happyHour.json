@@ -63,8 +63,15 @@
   },
   {
     "name": "Champs Downtown",
-    "available": false,
-    "happyHour": []
+    "available": true,
+    "happyHour": [
+      {
+        "Day": "Tues, Thur 9pm - 12am"
+      },
+      {
+        "Day": "Wed, Fri, Sun, Mon 10pm - 12am"
+      }
+    ]
   },
   {
     "name": "Bar Bleu",
@@ -232,7 +239,11 @@
   },
   {
     "name": "Pickles",
-    "available": false,
-    "happyHour": []
+    "available": true,
+    "happyHour": [
+      {
+        "Day": "Tues, Wed, Sat, Sun 10pm - Midnight"
+      }
+    ]
   }
 ]

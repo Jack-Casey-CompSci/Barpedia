@@ -69,9 +69,15 @@
     "everyday": [
       { "Drink": "Long Islands", "Price": "$3.00" },
       { "Drink": "Painkillers", "Price": "$3.00" },
-      { "Drink": "Tequila Shots", "Price": "$3.00" },
+      { "Drink": "Pickle Back Shots", "Price": "$3.00" },
+      { "Drink": "Pickle's Punch", "Price": "$4.00" },
+      { "Drink": "Ricky Bobby", "Price": "$4.00" },
+      { "Drink": "Beam Highball", "Price": "$4.00" },
+      { "Drink": "Doctor's Order", "Price": "$5.00" },
       { "Drink": "Miller Lite Draft", "Price": "$2.50" },
-      { "Drink": "Yuengling Draft", "Price": "$2.50" }
+      { "Drink": "Lager Draft", "Price": "$3.00" },
+      { "Drink": "1 Liter Hofbrau", "Price": "$10.00" }
+      
     ]
   },
   {

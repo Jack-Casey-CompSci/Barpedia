@@ -1328,8 +1328,8 @@
               "Time": "All Day"
             },
             "Event2": {
-              "Description": "",
-              "Time": ""
+              "Description": "$6 Manhattans",
+              "Time": "Until Midnight"
             }
           },
           "FoodSpecials": {
@@ -1373,8 +1373,8 @@
             }
           },
           "FoodSpecials": {
-            "Description": "",
-            "Time": ""
+            "Description": "$4 for 6 Wings",
+            "Time": "8pm - 11pm"
           }
         }
       },
@@ -1444,8 +1444,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "Blue Moon $4 Draft/$12 Pitchers",
-              "Time": "All Day"
+              "Description": "$6 Old Fashioned's",
+              "Time": "Until Midnight"
             },
             "Event2": {
               "Description": "$2.50 Well Liquors & House Wines",

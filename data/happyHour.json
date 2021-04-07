@@ -242,7 +242,27 @@
     "available": true,
     "happyHour": [
       {
-        "Day": "Tues, Wed, Sat, Sun 10pm - Midnight"
+        "Day": "Tues - Sat 9pm - 11pm"
+      },
+      {
+        "Drink": "Well Liquors",
+        "Price": "$2.50"
+      },
+      {
+        "Drink": "Green Tea Shots",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "Dealer's Choice",
+        "Price": "$3.00"
+      },
+      {
+        "Drink": "Vegas Bombs",
+        "Price": "$4.00"
+      },
+      {
+        "Drink": "Jager Bombs",
+        "Price": "$4.00"
       }
     ]
   }

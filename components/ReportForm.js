@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, StyleSheet, Button, Text } from "react-native";
-import AsyncStorage from "@react-native-community/async-storage";
+import { AsyncStorage } from 'react-native';
 
 import t from "tcomb-form-native"; // 0.6.9
 

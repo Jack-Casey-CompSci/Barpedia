@@ -3,7 +3,12 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/phyrstFood.png"),
+          source: require("../../assets/menuPictures/phyrst_food.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_food_2.png"),
         },
       },
     ];

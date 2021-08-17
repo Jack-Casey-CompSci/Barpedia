@@ -66,10 +66,7 @@
     "available": true,
     "happyHour": [
       {
-        "Day": "Tues, Thur 9pm - 12am"
-      },
-      {
-        "Day": "Wed, Fri, Sun, Mon 10pm - 12am"
+        "Day": "Mon - Fri 10pm - 12am"
       }
     ]
   },
@@ -186,7 +183,7 @@
       },
       {
         "Drink": "Double Wells",
-        "Price": "$6.00"
+        "Price": "$6.50"
       },
       {
         "Drink": "12 oz LIT",
@@ -210,20 +207,20 @@
         "Day": "Mon - Fri 4:30 - 6:30"
       },
       {
-        "Drink": "Drafts & Wings",
+        "Drink": "Drafts",
         "Price": "Half off"
       },
       {
         "Drink": "Big Azz Margaritas",
-        "Price": "$7.00"
+        "Price": "$8.00"
       },
       {
         "Drink": "12oz House Margaritas",
-        "Price": "$3.00"
+        "Price": "$4.00"
       },
       {
         "Drink": "16oz House Margaritas",
-        "Price": "$5.00"
+        "Price": "$6.00"
       }
     ]
   },

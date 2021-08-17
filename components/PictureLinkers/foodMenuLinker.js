@@ -21,7 +21,7 @@ function returnFilename(name) {
       },
       {
         props: {
-          source: require("../../assets/menuPictures/champs_food2.png"),
+          source: require("../../assets/menuPictures/champs_food_2.png"),
         },
       },
     ];
@@ -97,12 +97,12 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/madMexFood1.png"),
+          source: require("../../assets/menuPictures/madmex_food.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/madMexFood2.png"),
+          source: require("../../assets/menuPictures/madmex_food_2.png"),
         },
       },
     ];

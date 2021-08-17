@@ -81,17 +81,17 @@ function returnFilename(name) {
       },
       {
         props: {
-          source: require("../../assets/menuPictures/champs_drinks2.png"),
+          source: require("../../assets/menuPictures/champs_drinks_2.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/champs_drinks3.png"),
+          source: require("../../assets/menuPictures/champs_drinks_3.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/champs_drinks4.png"),
+          source: require("../../assets/menuPictures/champs_drinks_4.png"),
         },
       },
     ];
@@ -172,7 +172,12 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/madMexDrinks.png"),
+          source: require("../../assets/menuPictures/madmex_drinks.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/madmex_drinks_2.png"),
         },
       },
     ];

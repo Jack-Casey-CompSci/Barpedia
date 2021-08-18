@@ -66,10 +66,7 @@
     "available": true,
     "happyHour": [
       {
-        "Day": "Tues, Thur 9pm - 12am"
-      },
-      {
-        "Day": "Wed, Fri, Sun, Mon 10pm - 12am"
+        "Day": "Mon - Fri 10pm - 12am"
       }
     ]
   },
@@ -100,6 +97,12 @@
     "available": true,
     "happyHour": [
       {
+        "Day": "Thur & Fri 9pm - Midnight"
+      },
+      {
+        "Day": "Sat 10pm - Midnight"
+      },
+      {
         "Drink": "Big Basement Teas",
         "Price": "$2.00"
       },
@@ -108,35 +111,23 @@
         "Price": "$2.00"
       },
       {
-        "Drink": "Red Kamikaze Shots",
+        "Drink": "Blue Kamikaze Shots",
         "Price": "$2.00"
       },
       {
         "Drink": "Well Liquors (Vodka, Rum, Gin, Whiskey)",
-        "Price": "$3.00"
-      },
-      {
-        "Drink": "Fireball Shots",
-        "Price": "$3.00"
+        "Price": "$2.50"
       },
       {
         "Drink": "Tequila Shots",
         "Price": "$3.00"
       },
       {
-        "Drink": "Hypnotiq Cocktails",
-        "Price": "$3.00"
-      },
-      {
-        "Drink": "Bacardi Drinks",
+        "Drink": "Bacardi Dragonberry & Sprite",
         "Price": "$3.50"
       },
       {
-        "Drink": "Captain Morgan Drinks",
-        "Price": "$3.50"
-      },
-      {
-        "Drink": "Smirnoff Drinks",
+        "Drink": "Bacardi Raspberry & Lemonade",
         "Price": "$3.50"
       },
       {
@@ -144,20 +135,16 @@
         "Price": "$4.00"
       },
       {
-        "Drink": "Cuervo & Lemonade",
+        "Drink": "Jager Bombs",
         "Price": "$4.00"
       },
       {
-        "Drink": "Incredible Hulk Shots",
-        "Price": "$5.00"
+        "Drink": "Vegas Bombs",
+        "Price": "$4.00"
       },
       {
         "Drink": "Patron",
         "Price": "$6.00"
-      },
-      {
-        "Drink": "Full Shooter Menu",
-        "Price": "$3.00"
       }
     ]
   },
@@ -186,7 +173,7 @@
       },
       {
         "Drink": "Double Wells",
-        "Price": "$6.00"
+        "Price": "$6.50"
       },
       {
         "Drink": "12 oz LIT",
@@ -210,20 +197,20 @@
         "Day": "Mon - Fri 4:30 - 6:30"
       },
       {
-        "Drink": "Drafts & Wings",
+        "Drink": "Drafts",
         "Price": "Half off"
       },
       {
         "Drink": "Big Azz Margaritas",
-        "Price": "$7.00"
+        "Price": "$8.00"
       },
       {
         "Drink": "12oz House Margaritas",
-        "Price": "$3.00"
+        "Price": "$4.00"
       },
       {
         "Drink": "16oz House Margaritas",
-        "Price": "$5.00"
+        "Price": "$6.00"
       }
     ]
   },
@@ -242,7 +229,7 @@
     "available": true,
     "happyHour": [
       {
-        "Day": "Tues - Sat 9pm - 11pm"
+        "Day": "Tues - Sat 10pm - 12am"
       },
       {
         "Drink": "Well Liquors",

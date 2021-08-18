@@ -13,13 +13,13 @@
               "Time": "All Day"
             },
             "Event2": {
-              "Description": "1/2 Price Happys",
-              "Time": "7pm-8pm"
+              "Description": "",
+              "Time": ""
             }
           },
           "FoodSpecials": {
-            "Description": "50 cent Wings ",
-            "Time": "5pm-11pm"
+            "Description": "",
+            "Time": ""
           }
         }
       },
@@ -33,13 +33,13 @@
               "Time": "All Day"
             },
             "Event2": {
-              "Description": "1/2 Price Happys",
-              "Time": "7pm-8pm"
+              "Description": "",
+              "Time": ""
             }
           },
           "FoodSpecials": {
-            "Description": "$1 Nachos",
-            "Time": "9pm-11pm"
+            "Description": "",
+            "Time": ""
           }
         }
       },
@@ -53,13 +53,13 @@
               "Time": "All Day"
             },
             "Event2": {
-              "Description": "1/2 Price Happys",
-              "Time": "7pm-8pm"
+              "Description": "",
+              "Time": ""
             }
           },
           "FoodSpecials": {
-            "Description": "$1 Mozzarella Sticks",
-            "Time": "9pm-11pm"
+            "Description": "",
+            "Time": ""
           }
         }
       },
@@ -73,13 +73,13 @@
               "Time": "All Day"
             },
             "Event2": {
-              "Description": "1/2 Price Happys",
-              "Time": "7pm-8pm"
+              "Description": "",
+              "Time": ""
             }
           },
           "FoodSpecials": {
-            "Description": "50 cent Wings",
-            "Time": "9pm-11pm"
+            "Description": "",
+            "Time": ""
           }
         }
       },
@@ -93,8 +93,8 @@
               "Time": "All Day"
             },
             "Event2": {
-              "Description": "1/2 Price Happys",
-              "Time": "7pm-8pm"
+              "Description": "",
+              "Time": ""
             }
           },
           "FoodSpecials": {
@@ -138,8 +138,8 @@
             }
           },
           "FoodSpecials": {
-            "Description": "$1 Tacos",
-            "Time": "2pm-11pm"
+            "Description": "",
+            "Time": ""
           }
         }
       }
@@ -729,7 +729,6 @@
       }
     ]
   },
-
   {
     "name": "Basement",
     "available": false,
@@ -1033,16 +1032,16 @@
           "DrinkSpecials": {
             "Event1": {
               "Description": "$8 24oz Margarita",
-              "Time": "All Day"
+              "Time": "Until Midnight"
             },
             "Event2": {
-              "Description": "$8 16oz Mule",
-              "Time": "All Day"
+              "Description": "",
+              "Time": ""
             }
           },
           "FoodSpecials": {
-            "Description": "$4 slice pizza & 12oz domestic draft",
-            "Time": "4pm - 6pm"
+            "Description": "",
+            "Time": ""
           }
         }
       },
@@ -1053,7 +1052,7 @@
           "DrinkSpecials": {
             "Event1": {
               "Description": "$4 24oz Miller Lite, Bud Light, Yuengling ",
-              "Time": "All Day"
+              "Time": "Until Midnight"
             },
             "Event2": {
               "Description": "",
@@ -1072,8 +1071,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "$4 Jameson",
-              "Time": "All Day"
+              "Description": "$5 Jameson",
+              "Time": "Until Midnight"
             },
             "Event2": {
               "Description": "",
@@ -1092,8 +1091,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "$6.50 16oz Dog Bowls",
-              "Time": "All Day"
+              "Description": "$7 16oz Dog Bowls",
+              "Time": "Until Midnight"
             },
             "Event2": {
               "Description": "",
@@ -1113,7 +1112,7 @@
           "DrinkSpecials": {
             "Event1": {
               "Description": "$4 Captain Morgan",
-              "Time": "All Day"
+              "Time": "Until Midnight"
             },
             "Event2": {
               "Description": "",
@@ -1133,11 +1132,11 @@
           "DrinkSpecials": {
             "Event1": {
               "Description": "$4 16oz Sierra Nevada - Hazy Little Thing",
-              "Time": "All Day"
+              "Time": "Until Midnight"
             },
             "Event2": {
               "Description": "$4 16oz Troegs Perpetual",
-              "Time": "All Day"
+              "Time": "Until Midnight"
             }
           },
           "FoodSpecials": {
@@ -1153,7 +1152,7 @@
           "DrinkSpecials": {
             "Event1": {
               "Description": "$8 24oz Bloody Mary",
-              "Time": "All Day"
+              "Time": "Until Midnight"
             },
             "Event2": {
               "Description": "",

@@ -113,16 +113,6 @@ function returnFilename(name) {
           source: require("../../assets/menuPictures/pickles_food.png"),
         },
       },
-      {
-        props: {
-          source: require("../../assets/menuPictures/pickles_food2.png"),
-        },
-      },
-      {
-        props: {
-          source: require("../../assets/menuPictures/pickles_food3.png"),
-        },
-      },
     ];
   } else if (name == "Shandygaff") {
     return [

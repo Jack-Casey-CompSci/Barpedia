@@ -205,7 +205,7 @@ function returnFilename(name) {
       },
       {
         props: {
-          source: require("../../assets/menuPictures/pickles_drinks5.png"),
+          source: require("../../assets/menuPictures/pickles_drinks_5.png"),
         },
       },
     ];

@@ -2,7 +2,7 @@ const images = {
   Champs: require("./bar_pic_list/champs.jpg"),
   Phyrst: require("./bar_pic_list/phyrst.png"),
   Bar_Bleu: require("./bar_pic_list/barBleu.jpg"),
-  Basement: require("./bar_pic_list/Basement_closed.png"),
+  Basement: require("./bar_pic_list/Basement_entrance.png"),
   Cafe_210: require("./bar_pic_list/Cafe_210_entrance.png"),
   Doggies: require("./bar_pic_list/Doggies_entrance.png"),
   Lions_Den: require("./bar_pic_list/lions_den_entrance.png"),

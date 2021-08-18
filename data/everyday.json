@@ -44,12 +44,12 @@
     "available": true,
     "everyday": [
       { "Drink": "Vodka Drinks", "Price": "$3.00" },
-      { "Drink": "16oz Domestic Beers", "Price": "$3.00" },
+      { "Drink": "16oz Domestic Beers", "Price": "$3.50" },
       { "Drink": "Green Tea Shots", "Price": "$3.00" },
       { "Drink": "Red Bull Vodka", "Price": "$4.00" },
       { "Drink": "Corona", "Price": "$4.00" },
-      { "Drink": "Jameson", "Price": "$5.00" },
-      { "Drink": "Dumpsters", "Price": "$6.00" }
+      { "Drink": "Jameson", "Price": "$5.50" },
+      { "Drink": "Buck-Its", "Price": "$7.00" }
     ]
   },
   {

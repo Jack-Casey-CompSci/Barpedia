@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, Text, TouchableOpacity, Button } from "react-native";
-import AsyncStorage from "@react-native-community/async-storage";
+import { AsyncStorage } from 'react-native';
 
 export default function Timer({ barName, lineLeap, onPress = (f) => f }) {
   const [time, setTime] = useState("");
@@ -47,13 +47,13 @@ export default function Timer({ barName, lineLeap, onPress = (f) => f }) {
 
   var button;
   var activeText = "Report Line/Cover Charge for " + barName;
-  if(lineLeap){
-    button = <Button disabled  title="Cannot Report for Line Leap"></Button>;
+  if (lineLeap) {
+    button = <Button disabled title="Cannot Report for Line Leap"></Button>;
   }
   else if (diff > 60000) {
     button = <Button title={activeText} onPress={() => onPress()} color='#E50000'></Button>;
   } else {
-    button = <Button disabled  title="Already Submitted"></Button>;
+    button = <Button disabled title="Already Submitted"></Button>;
   }
 
   return <View style={styles.button}>{button}</View>;

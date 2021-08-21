@@ -306,7 +306,7 @@
   },
   {
     "name": "Cafe 210",
-    "available": false,
+    "available": true,
     "days": [
       {
         "id": "1",
@@ -363,8 +363,8 @@
         "day": "Saturday:",
         "entertainment": [
           {
-            "Band": "N/A",
-            "Time": ""
+            "Band": "Canary Music Group",
+            "Time": "9:30"
           }
         ]
       },

@@ -877,7 +877,7 @@
   },
   {
     "name": "Cafe 210",
-    "available": false,
+    "available": true,
     "days": [
       {
         "id": "1",
@@ -885,8 +885,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$5 Cafe Tea Pitchers",
+              "Time": "All Day"
             },
             "Event2": {
               "Description": "",
@@ -905,8 +905,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$7 Bacardi Pitchers",
+              "Time": "All Day"
             },
             "Event2": {
               "Description": "",
@@ -925,8 +925,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$7 Well Vodka Pitchers",
+              "Time": "All Day"
             },
             "Event2": {
               "Description": "",
@@ -934,7 +934,7 @@
             }
           },
           "FoodSpecials": {
-            "Description": "$",
+            "Description": "",
             "Time": ""
           }
         }
@@ -945,8 +945,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$5 Cafe Tea Pitchers",
+              "Time": "All Day"
             },
             "Event2": {
               "Description": "",
@@ -965,7 +965,7 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "$",
+              "Description": "",
               "Time": ""
             },
             "Event2": {

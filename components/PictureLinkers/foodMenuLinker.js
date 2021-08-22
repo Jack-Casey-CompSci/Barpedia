@@ -3,7 +3,12 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/phyrstFood.png"),
+          source: require("../../assets/menuPictures/phyrst_food.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_food_2.png"),
         },
       },
     ];
@@ -11,7 +16,12 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/champsFood.png"),
+          source: require("../../assets/menuPictures/champs_food.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/champs_food_2.png"),
         },
       },
     ];
@@ -35,12 +45,12 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/primantiFood1.png"),
+          source: require("../../assets/menuPictures/primanti_food.jpg"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/primantiFood2.png"),
+          source: require("../../assets/menuPictures/primanti_food2.jpg"),
         },
       },
     ];
@@ -56,7 +66,22 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/cafe210Food.png"),
+          source: require("../../assets/menuPictures/cafe_food.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/cafe_food2.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/cafe_food3.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/cafe_food4.png"),
         },
       },
     ];
@@ -64,7 +89,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/DoggiesFood1.png"),
+          source: require("../../assets/menuPictures/doggies_food.png"),
         },
       },
     ];
@@ -72,12 +97,12 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/madMexFood1.png"),
+          source: require("../../assets/menuPictures/madmex_food.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/madMexFood2.png"),
+          source: require("../../assets/menuPictures/madmex_food_2.png"),
         },
       },
     ];
@@ -85,22 +110,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/picklesFood1.png"),
-        },
-      },
-      {
-        props: {
-          source: require("../../assets/menuPictures/picklesFood2.png"),
-        },
-      },
-      {
-        props: {
-          source: require("../../assets/menuPictures/picklesFood3.png"),
-        },
-      },
-      {
-        props: {
-          source: require("../../assets/menuPictures/picklesFood4.png"),
+          source: require("../../assets/menuPictures/pickles_food.png"),
         },
       },
     ];

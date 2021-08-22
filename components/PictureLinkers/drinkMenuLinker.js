@@ -3,7 +3,72 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/phyrstDrinks.png"),
+          source: require("../../assets/menuPictures/phyrst_drink_1.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_2.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_3.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_4.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_5.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_6.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_7.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_8.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_9.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_10.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_11.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_12.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_13.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/phyrst_drink_14.png"),
         },
       },
     ];
@@ -11,17 +76,22 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/champsDrinks1.png"),
+          source: require("../../assets/menuPictures/champs_drinks.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/champsDrinks2.png"),
+          source: require("../../assets/menuPictures/champs_drinks_2.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/champsDrinks3.png"),
+          source: require("../../assets/menuPictures/champs_drinks_3.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/champs_drinks_4.png"),
         },
       },
     ];
@@ -45,7 +115,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/primantiDrinks.png"),
+          source: require("../../assets/menuPictures/primanti_drinks.jpg"),
         },
       },
     ];
@@ -69,17 +139,32 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/DoggiesDrinks1.png"),
+          source: require("../../assets/menuPictures/doggies_drinks.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/DoggiesDrinks2.png"),
+          source: require("../../assets/menuPictures/doggies_drinks2.png"),
         },
       },
       {
         props: {
-          source: require("../../assets/menuPictures/DoggiesDrinks3.png"),
+          source: require("../../assets/menuPictures/doggies_drinks3.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/doggies_drinks4.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/doggies_drinks5.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/doggies_drinks6.png"),
         },
       },
     ];
@@ -87,7 +172,12 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/madMexDrinks.png"),
+          source: require("../../assets/menuPictures/madmex_drinks.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/madmex_drinks_2.png"),
         },
       },
     ];
@@ -95,7 +185,27 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/champsDrinks1.png"),
+          source: require("../../assets/menuPictures/pickles_drinks.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/pickles_drinks2.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/pickles_drinks3.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/pickles_drinks4.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/pickles_drinks_5.png"),
         },
       },
     ];
@@ -103,7 +213,7 @@ function returnFilename(name) {
     return [
       {
         props: {
-          source: require("../../assets/menuPictures/noMenu.png"),
+          source: require("../../assets/menuPictures/shandygaff_drinks.png"),
         },
       },
     ];

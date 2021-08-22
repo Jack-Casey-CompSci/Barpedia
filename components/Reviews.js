@@ -1,7 +1,7 @@
 import React, { Component, useState } from "react";
 import { View, StyleSheet, Button, Text } from "react-native";
 import Slider from '@react-native-community/slider';
-import AsyncStorage from "@react-native-community/async-storage";
+import { AsyncStorage } from 'react-native';
 
 
 
@@ -45,7 +45,17 @@ export default class Reviews extends Component {
             .catch((error) => {
                 console.error("Error:", error);
             });
-
+        const num = Date.now().toString();
+        const saveData = async () => {
+            try {
+              await AsyncStorage.setItem(this.props.route.params.name + "review", num);
+              //setTime(num);
+            } catch (e) {
+              console.log(e);
+              alert("Failed to save the data to the storage");
+            }
+        };
+        saveData();
         this.props.navigation.navigate("Details", {
             listenerprop: Date().toLocaleUpperCase(),
         });

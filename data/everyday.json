@@ -44,12 +44,12 @@
     "available": true,
     "everyday": [
       { "Drink": "Vodka Drinks", "Price": "$3.00" },
-      { "Drink": "16oz Domestic Beers", "Price": "$3.00" },
+      { "Drink": "16oz Domestic Beers", "Price": "$3.50" },
       { "Drink": "Green Tea Shots", "Price": "$3.00" },
       { "Drink": "Red Bull Vodka", "Price": "$4.00" },
       { "Drink": "Corona", "Price": "$4.00" },
-      { "Drink": "Jameson", "Price": "$5.00" },
-      { "Drink": "Dumpsters", "Price": "$6.00" }
+      { "Drink": "Jameson", "Price": "$5.50" },
+      { "Drink": "Buck-Its", "Price": "$7.00" }
     ]
   },
   {
@@ -69,9 +69,15 @@
     "everyday": [
       { "Drink": "Long Islands", "Price": "$3.00" },
       { "Drink": "Painkillers", "Price": "$3.00" },
-      { "Drink": "Tequila Shots", "Price": "$3.00" },
+      { "Drink": "Pickle Back Shots", "Price": "$3.00" },
+      { "Drink": "Pickle's Punch", "Price": "$4.00" },
+      { "Drink": "Ricky Bobby", "Price": "$4.00" },
+      { "Drink": "Beam Highball", "Price": "$4.00" },
+      { "Drink": "Doctor's Order", "Price": "$5.00" },
       { "Drink": "Miller Lite Draft", "Price": "$2.50" },
-      { "Drink": "Yuengling Draft", "Price": "$2.50" }
+      { "Drink": "Lager Draft", "Price": "$3.00" },
+      { "Drink": "1 Liter Hofbrau", "Price": "$10.00" }
+      
     ]
   },
   {
@@ -85,12 +91,12 @@
   },
   {
     "name": "Primanti Brothers",
-    "available": false,
-    "everyday": {
-      "noDeal": {
-        "Message": "This bar does not offer all day everyday deals"
-      }
-    }
+    "available": true,
+    "everyday": [
+      { "Drink": "Aluminums Cans", "Price": "$3.00" },
+      { "Drink": "Craft Cans", "Price": "$5.00" },
+      { "Drink": "Cocktail Pitchers", "Price": "$7.00" }
+    ]
   },
   {
     "name": "Doggies",

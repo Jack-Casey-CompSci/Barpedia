@@ -48,7 +48,6 @@ export default class BarPage extends Component {
       loading: true,
     };
   }
-
   componentDidMount() {
     //fetch("http:/192.168.0.5:3000/linedata")
     fetch("https://barpedia.herokuapp.com/api/bars/")
@@ -284,6 +283,7 @@ export default class BarPage extends Component {
           <Timer
             barName={this.props.route.params.name}
             lineLeap = {bar_data.lineleap}
+            Review = "0"
             onPress={() =>
               this.props.navigation.navigate("Line Reporting", {
                 name: this.props.route.params.name,
@@ -292,19 +292,17 @@ export default class BarPage extends Component {
               })
             }
           ></Timer>
-          <View style={styles.review}>
-            <Button
-              title="Submit a Review"
-              color="#E50000"
-              style={styles.review}
+          <Timer
+            barName={this.props.route.params.name}
+            lineLeap = {bar_data.lineleap}
+            Review = "1"
               onPress={() =>
                 this.props.navigation.navigate("Reviews", {
                   name: this.props.route.params.name,
                   id: this.props.route.params.id,
                 })
               }
-            ></Button>
-          </View>
+            ></Timer>
           {closed}
         <Accordion
             expanded={[]}

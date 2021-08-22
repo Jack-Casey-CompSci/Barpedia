@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, Text, TouchableOpacity, Button } from "react-native";
-import AsyncStorage from "@react-native-community/async-storage";
+import { AsyncStorage } from 'react-native';
 
 export default function Timer({ barName, lineLeap, onPress = (f) => f }) {
   const [time, setTime] = useState("");

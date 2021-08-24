@@ -439,7 +439,7 @@
   },
   {
     "name": "Lions Den",
-    "available": false,
+    "available": true,
     "days": [
       {
         "id": "1",
@@ -467,8 +467,8 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "",
-              "Time": ""
+              "Description": "$2 U-CALL-ITS",
+              "Time": "9 - 12am"
             },
             "Event2": {
               "Description": "",
@@ -492,11 +492,11 @@
             },
             "Event2": {
               "Description": "",
-              "Time": "t"
+              "Time": ""
             }
           },
           "FoodSpecials": {
-            "Description": "$",
+            "Description": "",
             "Time": ""
           }
         }
@@ -527,7 +527,7 @@
         "info": {
           "DrinkSpecials": {
             "Event1": {
-              "Description": "$",
+              "Description": "",
               "Time": ""
             },
             "Event2": {

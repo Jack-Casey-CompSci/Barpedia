@@ -1,7 +1,7 @@
 [
   {
     "name": "Champs Downtown",
-    "available": false,
+    "available": true,
     "days": [
       {
         "id": "1",
@@ -18,8 +18,8 @@
         "day": "Tuesday:",
         "entertainment": [
           {
-            "Band": "N/A",
-            "Time": ""
+            "Band": "Dj Dosk",
+            "Time": "10 - 12am"
           }
         ]
       },
@@ -85,7 +85,7 @@
         "entertainment": [
           {
             "Band": "Geeks Who Drink",
-            "Time": "9 - 11:30 pm"
+            "Time": "8 - 10 pm"
           }
         ]
       },
@@ -277,7 +277,7 @@
         "day": "Friday:",
         "entertainment": [
           {
-            "Band": "DJ Alex Nepa & Special Events",
+            "Band": "DJ Caraby",
             "Time": "10pm - Close"
           }
         ]
@@ -287,7 +287,7 @@
         "day": "Saturday:",
         "entertainment": [
           {
-            "Band": "DJ Secr3t",
+            "Band": "DJ Smith",
             "Time": "10pm - Close"
           }
         ]

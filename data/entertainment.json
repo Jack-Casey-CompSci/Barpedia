@@ -94,8 +94,8 @@
         "day": "Tuesday:",
         "entertainment": [
           {
-            "Band": "Jason Davoli",
-            "Time": "9 - 11:30 pm"
+            "Band": "LowJack Music",
+            "Time": "10 - 1:30 am"
           }
         ]
       },
@@ -382,7 +382,7 @@
   },
   {
     "name": "Doggies",
-    "available": false,
+    "available": true,
     "days": [
       {
         "id": "1",
@@ -409,7 +409,7 @@
         "day": "Wednesday:",
         "entertainment": [
           {
-            "Band": "N/A",
+            "Band": "Anchor & Arrow",
             "Time": ""
           }
         ]
@@ -419,7 +419,7 @@
         "day": "Thursday:",
         "entertainment": [
           {
-            "Band": "N/A",
+            "Band": "DJ Alex Nepa",
             "Time": ""
           }
         ]
@@ -429,7 +429,7 @@
         "day": "Friday:",
         "entertainment": [
           {
-            "Band": "N/A",
+            "Band": "Lenina Crowne",
             "Time": ""
           }
         ]
@@ -439,7 +439,7 @@
         "day": "Saturday:",
         "entertainment": [
           {
-            "Band": "N/A",
+            "Band": "Alpha Moses",
             "Time": ""
           }
         ]
@@ -495,8 +495,8 @@
         "day": "Thursday:",
         "entertainment": [
           {
-            "Band": "N/A",
-            "Time": ""
+            "Band": "Alpha Moses",
+            "Time": "9 - 2 am"
           }
         ]
       },

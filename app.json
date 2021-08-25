@@ -2,7 +2,7 @@
   "expo": {
     "name": "Barpedia",
     "slug": "Barpedia",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "orientation": "portrait",
     "icon": "./assets/Barpedia_icon.png",
     "splash": {
@@ -18,14 +18,14 @@
     ],
     "ios": {
       "bundleIdentifier": "com.dylan.reb.Barpedia",
-      "buildNumber": "1.0.1"
+      "buildNumber": "1.0.3"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "description": "UI update",
     "android": {
-      "versionCode": 4,
+      "versionCode": 5,
       "permissions": [],
       "package": "com.dylan.reb.Barpedia",
       "adaptiveIcon": {

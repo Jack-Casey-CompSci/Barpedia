@@ -221,8 +221,19 @@
   },
   {
     "name": "Cafe 210",
-    "available": false,
-    "happyHour": []
+    "available": true,
+    "happyHour": [
+      {
+        "Day": "Mon - Thur 9 - 11 pm"
+      },
+      {
+        "Day": "Fri 6 - 8 pm"
+      },
+      {
+        "Drink": "Draft Beer & 16oz Cafe Tea",
+        "Price": "Half off"
+      }
+    ]
   },
   {
     "name": "Pickles",

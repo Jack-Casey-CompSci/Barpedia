@@ -2,21 +2,37 @@ import React, { useState, useEffect } from "react";
 import { StyleSheet, View, Text, TouchableOpacity, Button } from "react-native";
 import { AsyncStorage } from 'react-native';
 
-export default function Timer({ barName, lineLeap, onPress = (f) => f }) {
-  const [time, setTime] = useState("");
-  const STORAGE_KEY = barName;
+export default function Timer({ barName, lineLeap, Review, onPress = (f) => f }) {
+  const [Linetime, setLineTime] = useState("");
+  const [Reviewtime, setReviewTime] = useState("");
+  const STORAGE_KEY_LINE = barName;
+  const STORAGE_KEY_REVIEW = barName + "review";
+
 
   useEffect(() => {
-    readData();
+    readDataLine();
+    readDataReview();
   }, []);
 
   // read data
-  const readData = async () => {
+  const readDataLine = async () => {
     try {
-      const time = await AsyncStorage.getItem(STORAGE_KEY);
+      const Linetime = await AsyncStorage.getItem(STORAGE_KEY_LINE);
 
-      if (time !== null) {
-        setTime(time);
+      if (Linetime !== null) {
+        setLineTime(Linetime);
+      }
+    } catch (e) {
+      alert("Failed to fetch the data from storage");
+    }
+  };
+
+  const readDataReview = async () => {
+    try {
+      const Reviewtime = await AsyncStorage.getItem(STORAGE_KEY_REVIEW);
+
+      if (Reviewtime !== null) {
+        setReviewTime(Reviewtime);
       }
     } catch (e) {
       alert("Failed to fetch the data from storage");
@@ -25,16 +41,8 @@ export default function Timer({ barName, lineLeap, onPress = (f) => f }) {
 
   // save data
   const num = Date.now().toString();
-  const diff = num - time;
-
-  const saveData = async () => {
-    try {
-      await AsyncStorage.setItem(STORAGE_KEY, num);
-      setTime(num);
-    } catch (e) {
-      alert("Failed to save the data to the storage");
-    }
-  };
+  const Linediff = num - Linetime;
+  const Reviewdiff = num - Reviewtime;
 
   const clearStorage = async () => {
     try {
@@ -46,11 +54,19 @@ export default function Timer({ barName, lineLeap, onPress = (f) => f }) {
   };
 
   var button;
-  var activeText = "Report Line/Cover Charge for " + barName;
+  var activeText;
+  if (Review == "1") {
+    activeText = "Submit Review for " + barName;
+  } else {
+    activeText = "Report Line/Cover Charge for " + barName;
+  }
+
   if (lineLeap) {
     button = <Button disabled title="Cannot Report for Line Leap"></Button>;
   }
-  else if (diff > 60000) {
+  else if (Review == "0" && Linediff > 60000) {
+    button = <Button title={activeText} onPress={() => onPress()} color='#E50000'></Button>;
+  } else if (Review == "1" && Reviewdiff > 60000) {
     button = <Button title={activeText} onPress={() => onPress()} color='#E50000'></Button>;
   } else {
     button = <Button disabled title="Already Submitted"></Button>;

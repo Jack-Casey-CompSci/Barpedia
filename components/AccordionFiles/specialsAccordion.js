@@ -3,13 +3,12 @@ import { StyleSheet, Text, View, FlatList, Dimensions } from "react-native";
 import Constants from "expo-constants";
 
 import DayBox from "../dayBox.js";
-import barsList from "../../data/specials.json";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
-export default function EventsSpecials({ name }) {
-  const barData = barsList.find((element) => {
+export default function EventsSpecials({ name, data }) {
+  const barData = data.find((element) => {
     return element.name === name;
   });
   if (barData.available) {

@@ -1,10 +1,8 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-import HappyHour from "../../data/happyHour.json";
-
-export default function HappyHourAccordion({ name }) {
-  const barData = HappyHour.find((element) => {
+export default function HappyHourAccordion({ name, data }) {
+  const barData = data.find((element) => {
     return element.name === name;
   });
   if (barData.available) {

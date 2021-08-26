@@ -1,10 +1,9 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-import Entertainment from "../../data/entertainment.json";
 
-export default function EntertainmentAccordion({ name }) {
-  const barData = Entertainment.find((element) => {
+export default function EntertainmentAccordion({ name, data }) {
+  const barData = data.find((element) => {
     return element.name === name;
   });
   if (barData.available) {

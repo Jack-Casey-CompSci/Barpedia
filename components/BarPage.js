@@ -11,9 +11,6 @@ import {
 } from "react-native";
 import { Icon } from "native-base";
 import { Accordion } from "native-base";
-import specials from "../data/specials.json";
-import entertainment from "../data/entertainment.json";
-import happyhour from "../data/happyHour.json";
 import EventsSpecials from "./AccordionFiles/specialsAccordion.js";
 import picture_linker from "./PictureLinkers/picture_linker.js";
 import HappyHour from "./AccordionFiles/happyHourAccordion.js";
@@ -44,6 +41,9 @@ export default class BarPage extends Component {
       coverCharge: this.props.route.params.coverCharge,
       dataSource: [],
       everydaySource: [],
+      entertainSource: [],
+      happySource: [],
+      specialSource: [],
       listener: this.props.route.params.listenerprop,
       loading: true,
     };
@@ -52,11 +52,17 @@ export default class BarPage extends Component {
     //fetch("http:/192.168.0.5:3000/linedata")
     Promise.all([
       fetch("https://barpedia.herokuapp.com/api/bars/").then((response) => response.json()),
-      fetch("https://barpedia.herokuapp.com/api/everyday/").then((response) => response.json())
-    ]).then(([responseData1, responseData2]) => {
+      fetch("https://barpedia.herokuapp.com/api/everyday/").then((response) => response.json()),
+      fetch("https://barpedia.herokuapp.com/api/entertainment/").then((response) => response.json()),
+      fetch("https://barpedia.herokuapp.com/api/happyhour/").then((response) => response.json()),
+      fetch("https://barpedia.herokuapp.com/api/specials/").then((response) => response.json())
+    ]).then(([responseData1, responseData2, responseData3, responseData4, responseData5]) => {
       this.setState({
         dataSource: responseData1,
         everydaySource: responseData2,
+        entertainSource: responseData3,
+        happySource: responseData4,
+        specialSource: responseData5,
         loading: false
       });
     })
@@ -86,7 +92,7 @@ export default class BarPage extends Component {
     } else return false;
   }
   _renderDaily = (item) => {
-    return <EventsSpecials name={this.state.barName}></EventsSpecials>;
+    return <EventsSpecials name={this.state.barName} data={this.state.specialSource}></EventsSpecials>;
   };
 
   _renderDailyHeader(item, expanded) {
@@ -110,7 +116,6 @@ export default class BarPage extends Component {
   }
 
   _renderEveryday = (item) => {
-    //console.log(this.state.barName);
     return <Everyday name={this.state.barName} data={this.state.everydaySource}></Everyday>;
   };
 
@@ -135,7 +140,7 @@ export default class BarPage extends Component {
   }  
 
   _renderHappyHour = (item) => {
-    return <HappyHour name={this.state.barName}></HappyHour>;
+    return <HappyHour name={this.state.barName} data={this.state.happySource}></HappyHour>;
   };
 
   _renderHappyHeader(item, expanded) {
@@ -159,7 +164,7 @@ export default class BarPage extends Component {
   }
 
   _renderEntertainment = (item) => {
-    return <Entertainment name={this.state.barName}></Entertainment>;
+    return <Entertainment name={this.state.barName} data={this.state.entertainSource}></Entertainment>;
   };
 
   _renderEnterHeader(item, expanded) {
@@ -193,16 +198,16 @@ export default class BarPage extends Component {
     const bar_data = this.state.dataSource.find((element) => {
       return element.name === this.state.barName;
     });
-    const barspec = specials.find((element) => {
+    const barspec = this.state.specialSource.find((element) => {
       return element.name === this.state.barName;
     });
-    const barenter = entertainment.find((element) => {
+    const barenter = this.state.entertainSource.find((element) => {
       return element.name === this.state.barName;
     });
     const barevery = this.state.everydaySource.find((element) => {
       return element.name === this.state.barName;
     });
-    const barhappy = happyhour.find((element) => {
+    const barhappy = this.state.happySource.find((element) => {
       return element.name === this.state.barName;
     });
     const barpic = this.props.route.params.barPic;

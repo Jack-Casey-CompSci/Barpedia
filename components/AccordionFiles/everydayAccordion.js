@@ -1,12 +1,13 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-import EverydayValues from "../../data/everyday.json";
 
-export default function everydayAccordion({ name }) {
-  const barData = EverydayValues.find((element) => {
+export default function everydayAccordion({ name, data }) {
+
+  const barData = data.find((element) => {
     return element.name === name;
   });
+
   if (barData.available) {
     return barData.everyday.map((data, key) => {
       if(key % 2 == 0){

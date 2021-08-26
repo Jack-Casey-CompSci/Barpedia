@@ -12,7 +12,6 @@ import {
 import { Icon } from "native-base";
 import { Accordion } from "native-base";
 import specials from "../data/specials.json";
-import everyday from "../data/everyday.json";
 import entertainment from "../data/entertainment.json";
 import happyhour from "../data/happyHour.json";
 import EventsSpecials from "./AccordionFiles/specialsAccordion.js";
@@ -44,21 +43,24 @@ export default class BarPage extends Component {
       barName: this.props.route.params.name,
       coverCharge: this.props.route.params.coverCharge,
       dataSource: [],
+      everydaySource: [],
       listener: this.props.route.params.listenerprop,
       loading: true,
     };
   }
   componentDidMount() {
     //fetch("http:/192.168.0.5:3000/linedata")
-    fetch("https://barpedia.herokuapp.com/api/bars/")
-      .then((response) => response.json())
-      .then((responseData) => {
-        this.setState({
-          loading: false,
-          dataSource: responseData,
-        });
-      })
-      .catch((error) => console.log(error)); //to catch the errors if any
+    Promise.all([
+      fetch("https://barpedia.herokuapp.com/api/bars/").then((response) => response.json()),
+      fetch("https://barpedia.herokuapp.com/api/everyday/").then((response) => response.json())
+    ]).then(([responseData1, responseData2]) => {
+      this.setState({
+        dataSource: responseData1,
+        everydaySource: responseData2,
+        loading: false
+      });
+    })
+    .catch((error) => console.log(error)); //to catch the errors if any
   }
 
   componentDidUpdate() {
@@ -108,7 +110,8 @@ export default class BarPage extends Component {
   }
 
   _renderEveryday = (item) => {
-    return <Everyday name={this.state.barName}></Everyday>;
+    //console.log(this.state.barName);
+    return <Everyday name={this.state.barName} data={this.state.everydaySource}></Everyday>;
   };
 
   _renderEveryHeader(item, expanded) {
@@ -196,7 +199,7 @@ export default class BarPage extends Component {
     const barenter = entertainment.find((element) => {
       return element.name === this.state.barName;
     });
-    const barevery = everyday.find((element) => {
+    const barevery = this.state.everydaySource.find((element) => {
       return element.name === this.state.barName;
     });
     const barhappy = happyhour.find((element) => {

@@ -23,6 +23,8 @@ function getBarLink(bar) {
     return barImages.Primanti_Bros;
   } else if (bar == "Shandygaff") {
     return barImages.Shandygaff;
+  } else if (bar == "Jax") {
+    return barImages.Jax;
   }
 }
 

@@ -10,6 +10,7 @@ const images = {
   Pickles: require("./bar_pic_list/Pickles_entrance.png"),
   Primanti_Bros: require("./bar_pic_list/primanti.jpg"),
   Shandygaff: require("./bar_pic_list/Shandygaff_entrance.png"),
+  Jax: require("./bar_pic_list/Jax_entrance.png"),
 };
 
 export default images;

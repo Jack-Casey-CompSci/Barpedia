@@ -11,6 +11,7 @@ const images = {
   Primanti_Bros: require("./bar_pic_list/primanti.jpg"),
   Shandygaff: require("./bar_pic_list/Shandygaff_entrance.png"),
   Jax: require("./bar_pic_list/Jax_entrance.png"),
+  Stagewest: require("./bar_pic_list/Stagewest_entrance.png"),
 };
 
 export default images;

@@ -25,6 +25,8 @@ function getBarLink(bar) {
     return barImages.Shandygaff;
   } else if (bar == "Jax") {
     return barImages.Jax;
+  } else if (bar == "Stagewest") {
+    return barImages.Stagewest;
   }
 }
 

@@ -217,6 +217,24 @@ function returnFilename(name) {
         },
       },
     ];
+  } else if (name == "Jax") {
+    return [
+      {
+        props: {
+          source: require("../../assets/menuPictures/Jax_drinks.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/Jax_drinks_2.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/Jax_drinks_3.png"),
+        },
+      },
+    ];
   }
 }
 

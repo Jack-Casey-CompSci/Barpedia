@@ -235,6 +235,14 @@ function returnFilename(name) {
         },
       },
     ];
+  } else if (name == "Stagewest") {
+    return [
+      {
+        props: {
+          source: require("../../assets/menuPictures/noMenu.png"),
+        },
+      },
+    ];
   }
 }
 

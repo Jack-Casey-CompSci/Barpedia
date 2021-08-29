@@ -122,6 +122,19 @@ function returnFilename(name) {
         },
       },
     ];
+  } else if (name == "Jax") {
+    return [
+      {
+        props: {
+          source: require("../../assets/menuPictures/Jax_food.png"),
+        },
+      },
+      {
+        props: {
+          source: require("../../assets/menuPictures/Jax_food_2.jpg"),
+        },
+      },
+    ];
   }
 }
 

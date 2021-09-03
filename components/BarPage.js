@@ -103,7 +103,8 @@ export default class BarPage extends Component {
         justifyContent: "space-between",
         alignItems: "center" ,
         backgroundColor: "#FFF",
-        borderRadius:10,
+        borderRadius: 10,
+        height: 50,
         marginHorizontal: 5 }}>
         <Text style={{ fontWeight: "600" }}>
           Daily Specials
@@ -127,7 +128,8 @@ export default class BarPage extends Component {
         justifyContent: "space-between",
         alignItems: "center" ,
         backgroundColor: "#FFF",
-        borderRadius:10,
+        borderRadius: 10,
+        height: 50,
         marginHorizontal: 5  }}>
         <Text style={{ fontWeight: "600" }}>
           All Day Everyday
@@ -151,7 +153,8 @@ export default class BarPage extends Component {
         justifyContent: "space-between",
         alignItems: "center" ,
         backgroundColor: "#FFF",
-        borderRadius:10,
+        borderRadius: 10,
+        height: 50,
         marginHorizontal: 5  }}>
         <Text style={{ fontWeight: "600" }}>
           Happy Hours
@@ -175,7 +178,8 @@ export default class BarPage extends Component {
         justifyContent: "space-between",
         alignItems: "center" ,
         backgroundColor: "#FFF",
-        borderRadius:10,
+        borderRadius: 10,
+        height: 50,
         marginHorizontal: 5  }}>
         <Text style={{ fontWeight: "600" }}>
           Entertainment
@@ -312,7 +316,7 @@ export default class BarPage extends Component {
               }
             ></Timer>
           {closed}
-        <Accordion
+          <Accordion
             expanded={[]}
             dataArray={dailyArray}
             style={styles.accordion}
@@ -400,7 +404,7 @@ export default class BarPage extends Component {
               Sunday: {bar_data.hours.Sunday}
             </Text>
           </View>
-          <Image style={styles.logo} source={logo}></Image>
+          <Image style={styles.logo} source={logo} resizeMode="contain"></Image>
         </ScrollView>
       </>
     );

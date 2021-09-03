@@ -104,7 +104,7 @@ export default class BarPage extends Component {
         alignItems: "center" ,
         backgroundColor: "#FFF",
         borderRadius: 10,
-        height: 64,
+        height: 50,
         marginHorizontal: 5 }}>
         <Text style={{ fontWeight: "600" }}>
           Daily Specials
@@ -129,7 +129,7 @@ export default class BarPage extends Component {
         alignItems: "center" ,
         backgroundColor: "#FFF",
         borderRadius: 10,
-        height: 64,
+        height: 50,
         marginHorizontal: 5  }}>
         <Text style={{ fontWeight: "600" }}>
           All Day Everyday
@@ -154,7 +154,7 @@ export default class BarPage extends Component {
         alignItems: "center" ,
         backgroundColor: "#FFF",
         borderRadius: 10,
-        height: 64,
+        height: 50,
         marginHorizontal: 5  }}>
         <Text style={{ fontWeight: "600" }}>
           Happy Hours
@@ -179,7 +179,7 @@ export default class BarPage extends Component {
         alignItems: "center" ,
         backgroundColor: "#FFF",
         borderRadius: 10,
-        height: 64,
+        height: 50,
         marginHorizontal: 5  }}>
         <Text style={{ fontWeight: "600" }}>
           Entertainment

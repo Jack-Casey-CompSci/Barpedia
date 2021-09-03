@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
       marginTop: 3,
     },
     title: {
-      fontSize: 24,
+      fontSize: 28,
       color: "white",
     },
     drinksTile: {
